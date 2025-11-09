@@ -1,0 +1,29 @@
+controlsys/CMakeFiles/ControlSys.dir/src/core/state_machine.c.o: \
+ /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/state_machine.c \
+ /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/state_machine.h \
+ /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/tx.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9.2.1/include/stddef.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/ansi.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/ansi.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_ansi.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/cdefs.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/cdefs.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/cdefs.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/cdefs_elf.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/int_types.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/int_types.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_int_types.h \
+ /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/events.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9.2.1/include/stdbool.h \
+ /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/event_channel.h \
+ /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/log.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9.2.1/include/stdarg.h \
+ /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/card_verifier.h \
+ /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/status_verifier.h \
+ /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/auth_module.h \
+ /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/journal.h \
+ /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/txn_builder.h \
+ /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/update_loader.h \
+ /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/update_storage.h \
+ /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/update_verifier.h \
+ /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/update_installer.h

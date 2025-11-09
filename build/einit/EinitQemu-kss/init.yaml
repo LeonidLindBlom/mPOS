@@ -1,0 +1,28 @@
+entities:
+
+- name: controlsys.ControlSys
+  autostart: true
+  command: /ControlSys
+  args: []
+  
+
+- name: kl.VfsNet
+  path: VfsNet
+  connections:
+  - target: kl.EntropyEntity
+    id: kl.EntropyEntity
+
+  args:
+
+    - -l
+    - devfs /dev devfs 0
+    - -l
+    - romfs /etc romfs ro
+  env:
+        VFS_NETWORK_BACKEND: server:kl.VfsNet
+        VFS_FILESYSTEM_BACKEND: server:kl.VfsNet
+        DEFAULT_DNS_SERVER: 8.8.8.8
+
+- name: kl.EntropyEntity
+  path: Entropy
+

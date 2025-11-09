@@ -1,0 +1,9 @@
+entities:
+
+- name: controlsys.ControlSys
+  autostart: true
+  command: /ControlSys
+  args: []
+  
+
+

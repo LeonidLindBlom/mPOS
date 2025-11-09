@@ -1,0 +1,39 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/ControlSys.dir/src/core/auth_module.c.o"
+  "CMakeFiles/ControlSys.dir/src/core/auth_module.c.o.d"
+  "CMakeFiles/ControlSys.dir/src/core/card_verifier.c.o"
+  "CMakeFiles/ControlSys.dir/src/core/card_verifier.c.o.d"
+  "CMakeFiles/ControlSys.dir/src/core/event_channel.c.o"
+  "CMakeFiles/ControlSys.dir/src/core/event_channel.c.o.d"
+  "CMakeFiles/ControlSys.dir/src/core/event_script.c.o"
+  "CMakeFiles/ControlSys.dir/src/core/event_script.c.o.d"
+  "CMakeFiles/ControlSys.dir/src/core/journal.c.o"
+  "CMakeFiles/ControlSys.dir/src/core/journal.c.o.d"
+  "CMakeFiles/ControlSys.dir/src/core/log.c.o"
+  "CMakeFiles/ControlSys.dir/src/core/log.c.o.d"
+  "CMakeFiles/ControlSys.dir/src/core/state_machine.c.o"
+  "CMakeFiles/ControlSys.dir/src/core/state_machine.c.o.d"
+  "CMakeFiles/ControlSys.dir/src/core/status_verifier.c.o"
+  "CMakeFiles/ControlSys.dir/src/core/status_verifier.c.o.d"
+  "CMakeFiles/ControlSys.dir/src/core/tx.c.o"
+  "CMakeFiles/ControlSys.dir/src/core/tx.c.o.d"
+  "CMakeFiles/ControlSys.dir/src/core/txn_builder.c.o"
+  "CMakeFiles/ControlSys.dir/src/core/txn_builder.c.o.d"
+  "CMakeFiles/ControlSys.dir/src/core/update_installer.c.o"
+  "CMakeFiles/ControlSys.dir/src/core/update_installer.c.o.d"
+  "CMakeFiles/ControlSys.dir/src/core/update_loader.c.o"
+  "CMakeFiles/ControlSys.dir/src/core/update_loader.c.o.d"
+  "CMakeFiles/ControlSys.dir/src/core/update_storage.c.o"
+  "CMakeFiles/ControlSys.dir/src/core/update_storage.c.o.d"
+  "CMakeFiles/ControlSys.dir/src/core/update_verifier.c.o"
+  "CMakeFiles/ControlSys.dir/src/core/update_verifier.c.o.d"
+  "CMakeFiles/ControlSys.dir/src/main.c.o"
+  "CMakeFiles/ControlSys.dir/src/main.c.o.d"
+  "ControlSys"
+  "ControlSys.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/ControlSys.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
