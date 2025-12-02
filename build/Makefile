@@ -253,6 +253,19 @@ pal-test0/fast:
 .PHONY : pal-test0/fast
 
 #=============================================================================
+# Target rules for targets named pal-test-negative
+
+# Build rule for target.
+pal-test-negative: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pal-test-negative
+.PHONY : pal-test-negative
+
+# fast build rule for target.
+pal-test-negative/fast:
+	$(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/pal-test-negative.dir/build.make controlsys/CMakeFiles/pal-test-negative.dir/build
+.PHONY : pal-test-negative/fast
+
+#=============================================================================
 # Target rules for targets named env_edl_files_copy_env.Env.edl
 
 # Build rule for target.
@@ -638,6 +651,7 @@ help:
 	@echo "... gdbsim"
 	@echo "... kos-image"
 	@echo "... kos-qemu-image"
+	@echo "... pal-test-negative"
 	@echo "... pal-test0"
 	@echo "... sd-image"
 	@echo "... sim"

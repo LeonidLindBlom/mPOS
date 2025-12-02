@@ -11,6 +11,7 @@
 /home/mpos/mpos-lab/kos/controlsys/build/controlsys/CMakeFiles/controlsys_edl_files.dir
 /home/mpos/mpos-lab/kos/controlsys/build/controlsys/CMakeFiles/ControlSys.dir
 /home/mpos/mpos-lab/kos/controlsys/build/controlsys/CMakeFiles/pal-test0.dir
+/home/mpos/mpos-lab/kos/controlsys/build/controlsys/CMakeFiles/pal-test-negative.dir
 /home/mpos/mpos-lab/kos/controlsys/build/controlsys/CMakeFiles/edit_cache.dir
 /home/mpos/mpos-lab/kos/controlsys/build/controlsys/CMakeFiles/rebuild_cache.dir
 /home/mpos/mpos-lab/kos/controlsys/build/controlsys/CMakeFiles/list_install_components.dir

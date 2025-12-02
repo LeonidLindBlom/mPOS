@@ -41,3 +41,10 @@ add_custom_target(pal-test0
     DEPENDS ControlSys
     COMMENT "Running PAL tests"
 )
+
+add_custom_target(pal-test-negative
+    COMMAND ${CMAKE_COMMAND} -E env BUILD_DIR=${CMAKE_BINARY_DIR} bash ${CMAKE_SOURCE_DIR}/tools/run_pal_negative_tests.sh
+    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+    DEPENDS ControlSys
+    COMMENT "Running PAL negative tests"
+)

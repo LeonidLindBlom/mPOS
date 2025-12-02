@@ -245,6 +245,20 @@ pal-test0/fast:
 	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/pal-test0.dir/build.make controlsys/CMakeFiles/pal-test0.dir/build
 .PHONY : pal-test0/fast
 
+# Convenience name for target.
+controlsys/CMakeFiles/pal-test-negative.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/pal-test-negative.dir/rule
+.PHONY : controlsys/CMakeFiles/pal-test-negative.dir/rule
+
+# Convenience name for target.
+pal-test-negative: controlsys/CMakeFiles/pal-test-negative.dir/rule
+.PHONY : pal-test-negative
+
+# fast build rule for target.
+pal-test-negative/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/pal-test-negative.dir/build.make controlsys/CMakeFiles/pal-test-negative.dir/build
+.PHONY : pal-test-negative/fast
+
 src/core/auth_module.o: src/core/auth_module.c.o
 .PHONY : src/core/auth_module.o
 
@@ -716,6 +730,7 @@ help:
 	@echo "... controlsys_edl_files_copy_controlsys.ControlSys.edl"
 	@echo "... controlsys_edl_files_copy_gen_controlsys.ControlSys.edl"
 	@echo "... controlsys_edl_files_gen_controlsys.ControlSys.edl"
+	@echo "... pal-test-negative"
 	@echo "... pal-test0"
 	@echo "... ControlSys"
 	@echo "... controlsys_edl_files"

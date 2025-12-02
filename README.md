@@ -128,4 +128,12 @@ Smoke-проверки собраны в кастомный таргет `pal-te
 
 Каждый тест выводится в формате `RUN <test>` / `OK <test>` и дублируется в `out/pal-tests.log`.
 
+Для негативных сценариев (нарушение условий безопасности, откаты обновлений и т.д.) добавлен отдельный набор `pal/tests/controlsys_negative.pal` и таргет:
+
+```bash
+./cross-build.sh --target pal-test-negative
+```
+
+Скрипт `tools/run_pal_negative_tests.sh` так же выводит каждую проверку (`RUN/OK`) и сохраняет журнал в `out/pal-negative-tests.log`.
+
 © 2024 AO Kaspersky Lab / mPOS Lab

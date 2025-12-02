@@ -100,6 +100,7 @@ controlsys/clean: controlsys/CMakeFiles/controlsys_edl_files_copy_gen_controlsys
 controlsys/clean: controlsys/CMakeFiles/controlsys_edl_files.dir/clean
 controlsys/clean: controlsys/CMakeFiles/ControlSys.dir/clean
 controlsys/clean: controlsys/CMakeFiles/pal-test0.dir/clean
+controlsys/clean: controlsys/CMakeFiles/pal-test-negative.dir/clean
 .PHONY : controlsys/clean
 
 #=============================================================================
@@ -326,7 +327,7 @@ controlsys/CMakeFiles/ControlSys.dir/clean:
 controlsys/CMakeFiles/pal-test0.dir/all: controlsys/CMakeFiles/ControlSys.dir/all
 	$(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/pal-test0.dir/build.make controlsys/CMakeFiles/pal-test0.dir/depend
 	$(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/pal-test0.dir/build.make controlsys/CMakeFiles/pal-test0.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=50 "Built target pal-test0"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=51 "Built target pal-test0"
 .PHONY : controlsys/CMakeFiles/pal-test0.dir/all
 
 # Build rule for subdir invocation for target.
@@ -344,6 +345,32 @@ pal-test0: controlsys/CMakeFiles/pal-test0.dir/rule
 controlsys/CMakeFiles/pal-test0.dir/clean:
 	$(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/pal-test0.dir/build.make controlsys/CMakeFiles/pal-test0.dir/clean
 .PHONY : controlsys/CMakeFiles/pal-test0.dir/clean
+
+#=============================================================================
+# Target rules for target controlsys/CMakeFiles/pal-test-negative.dir
+
+# All Build rule for target.
+controlsys/CMakeFiles/pal-test-negative.dir/all: controlsys/CMakeFiles/ControlSys.dir/all
+	$(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/pal-test-negative.dir/build.make controlsys/CMakeFiles/pal-test-negative.dir/depend
+	$(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/pal-test-negative.dir/build.make controlsys/CMakeFiles/pal-test-negative.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=50 "Built target pal-test-negative"
+.PHONY : controlsys/CMakeFiles/pal-test-negative.dir/all
+
+# Build rule for subdir invocation for target.
+controlsys/CMakeFiles/pal-test-negative.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 24
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/pal-test-negative.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 0
+.PHONY : controlsys/CMakeFiles/pal-test-negative.dir/rule
+
+# Convenience name for target.
+pal-test-negative: controlsys/CMakeFiles/pal-test-negative.dir/rule
+.PHONY : pal-test-negative
+
+# clean rule for target.
+controlsys/CMakeFiles/pal-test-negative.dir/clean:
+	$(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/pal-test-negative.dir/build.make controlsys/CMakeFiles/pal-test-negative.dir/clean
+.PHONY : controlsys/CMakeFiles/pal-test-negative.dir/clean
 
 #=============================================================================
 # Target rules for target external/env/CMakeFiles/env_edl_files_copy_env.Env.edl.dir
@@ -919,7 +946,7 @@ einit/CMakeFiles/kos-qemu-image.dir/clean:
 einit/CMakeFiles/sim.dir/all: einit/CMakeFiles/kos-qemu-image.dir/all
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/sim.dir/build.make einit/CMakeFiles/sim.dir/depend
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/sim.dir/build.make einit/CMakeFiles/sim.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=51 "Built target sim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=52 "Built target sim"
 .PHONY : einit/CMakeFiles/sim.dir/all
 
 # Build rule for subdir invocation for target.
