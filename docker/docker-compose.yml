@@ -17,12 +17,19 @@ services:
     environment:
       KOS_PROJECT_ROOT: /workspace
       KOS_SDK_PREFIX: *kos_sdk_path
-      CONTROL_SYS_QEMU_HOSTFWD: ",hostfwd=tcp::28081-:8081,hostfwd=tcp::28082-:8082"
+      CONTROL_SYS_QEMU_HOSTFWD: ",hostfwd=tcp::28080-:28080,hostfwd=tcp::28081-:8081,hostfwd=tcp::28082-:8082,hostfwd=tcp::28083-:8083,hostfwd=tcp::28084-:8084,hostfwd=tcp::29090-:9090"
+      CONTROL_SYS_EVENT_PORT: "28090"
+      CONTROL_SYS_EVENT_HOST: "0.0.0.0"
     stdin_open: true
     tty: true
     ports:
+      - "28080:28080"
       - "28081:28081"
       - "28082:28082"
+      - "28083:28083"
+      - "28084:28084"
+      - "29090:29090"
+      - "28090:28090"
 
   input:
     build:

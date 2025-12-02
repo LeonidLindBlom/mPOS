@@ -16,13 +16,20 @@ controlsys/CMakeFiles/ControlSys.dir/src/core/event_channel.c.o: \
  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_int_types.h \
  /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/log.h \
  /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9.2.1/include/stdarg.h \
- /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/stdio.h \
- /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/stdio.h \
- /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/c/stdio.h \
- /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/io_types.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/ctype.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/netbsd-ctype.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/featuretest.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/ctype_inline.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/ctype_bits.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/errno.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/c/errno.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/c/errno.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/netbsd-errno.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/errno.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/fcntl.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/fcntl.h \
  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/types.h \
  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/types.h \
- /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/featuretest.h \
  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/sys/types.h \
  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/ansi.h \
  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/pthread_types.h \
@@ -47,15 +54,22 @@ controlsys/CMakeFiles/ControlSys.dir/src/core/event_channel.c.o: \
  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/int_const.h \
  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/wchar_limits.h \
  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/wchar_limits.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/stat.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/sys/stat.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/time.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/time.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/c/time.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/stdio.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/stdio.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/c/stdio.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/io_types.h \
  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/ssp/ssp.h \
  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/vfs/stdio_defs.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/stdlib.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/stdlib.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/c/stdlib.h \
  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/string.h \
  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/string.h \
  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/c/string.h \
- /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/ctype.h \
- /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/netbsd-ctype.h \
- /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/ctype_inline.h \
- /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/ctype_bits.h \
- /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/stdlib.h \
- /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/stdlib.h \
- /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/c/stdlib.h
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/unistd.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/unistd.h

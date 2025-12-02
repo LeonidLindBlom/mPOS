@@ -66,7 +66,8 @@ include einit/CMakeFiles/EinitHw-kss-entities-built.dir/compiler_depend.make
 # Include the progress variables for this target.
 include einit/CMakeFiles/EinitHw-kss-entities-built.dir/progress.make
 
-einit/CMakeFiles/EinitHw-kss-entities-built:
+einit/CMakeFiles/EinitHw-kss-entities-built: /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/bin/dnet_entity
+einit/CMakeFiles/EinitHw-kss-entities-built: /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/bin/bcm2711_mbox_arm2vc_hw
 	cd /home/mpos/mpos-lab/kos/controlsys/build/einit && touch EinitHw-kss-entities-built
 
 EinitHw-kss-entities-built: einit/CMakeFiles/EinitHw-kss-entities-built

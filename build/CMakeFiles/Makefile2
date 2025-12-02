@@ -64,17 +64,20 @@ CMAKE_BINARY_DIR = /home/mpos/mpos-lab/kos/controlsys/build
 
 # The main recursive "all" target.
 all: controlsys/all
+all: external/env/all
 all: einit/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: controlsys/preinstall
+preinstall: external/env/preinstall
 preinstall: einit/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/doc.dir/clean
 clean: controlsys/clean
+clean: external/env/clean
 clean: einit/clean
 .PHONY : clean
 
@@ -96,6 +99,7 @@ controlsys/clean: controlsys/CMakeFiles/controlsys_edl_files_gen_controlsys.Cont
 controlsys/clean: controlsys/CMakeFiles/controlsys_edl_files_copy_gen_controlsys.ControlSys.edl.dir/clean
 controlsys/clean: controlsys/CMakeFiles/controlsys_edl_files.dir/clean
 controlsys/clean: controlsys/CMakeFiles/ControlSys.dir/clean
+controlsys/clean: controlsys/CMakeFiles/pal-test0.dir/clean
 .PHONY : controlsys/clean
 
 #=============================================================================
@@ -140,6 +144,26 @@ einit/clean: einit/CMakeFiles/GET_BUILD_ID_kos-qemu-image.dir/clean
 .PHONY : einit/clean
 
 #=============================================================================
+# Directory level rules for directory external/env
+
+# Recursive "all" directory target.
+external/env/all: external/env/CMakeFiles/env_edl_files.dir/all
+external/env/all: external/env/CMakeFiles/Env.dir/all
+.PHONY : external/env/all
+
+# Recursive "preinstall" directory target.
+external/env/preinstall:
+.PHONY : external/env/preinstall
+
+# Recursive "clean" directory target.
+external/env/clean: external/env/CMakeFiles/env_edl_files_copy_env.Env.edl.dir/clean
+external/env/clean: external/env/CMakeFiles/env_edl_files_gen_env.Env.edl.dir/clean
+external/env/clean: external/env/CMakeFiles/env_edl_files_copy_gen_env.Env.edl.dir/clean
+external/env/clean: external/env/CMakeFiles/env_edl_files.dir/clean
+external/env/clean: external/env/CMakeFiles/Env.dir/clean
+.PHONY : external/env/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/doc.dir
 
 # All Build rule for target.
@@ -172,7 +196,7 @@ CMakeFiles/doc.dir/clean:
 controlsys/CMakeFiles/controlsys_edl_files_copy_controlsys.ControlSys.edl.dir/all:
 	$(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/controlsys_edl_files_copy_controlsys.ControlSys.edl.dir/build.make controlsys/CMakeFiles/controlsys_edl_files_copy_controlsys.ControlSys.edl.dir/depend
 	$(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/controlsys_edl_files_copy_controlsys.ControlSys.edl.dir/build.make controlsys/CMakeFiles/controlsys_edl_files_copy_controlsys.ControlSys.edl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=32 "Built target controlsys_edl_files_copy_controlsys.ControlSys.edl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=38 "Built target controlsys_edl_files_copy_controlsys.ControlSys.edl"
 .PHONY : controlsys/CMakeFiles/controlsys_edl_files_copy_controlsys.ControlSys.edl.dir/all
 
 # Build rule for subdir invocation for target.
@@ -198,7 +222,7 @@ controlsys/CMakeFiles/controlsys_edl_files_copy_controlsys.ControlSys.edl.dir/cl
 controlsys/CMakeFiles/controlsys_edl_files_gen_controlsys.ControlSys.edl.dir/all: controlsys/CMakeFiles/controlsys_edl_files_copy_controlsys.ControlSys.edl.dir/all
 	$(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/controlsys_edl_files_gen_controlsys.ControlSys.edl.dir/build.make controlsys/CMakeFiles/controlsys_edl_files_gen_controlsys.ControlSys.edl.dir/depend
 	$(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/controlsys_edl_files_gen_controlsys.ControlSys.edl.dir/build.make controlsys/CMakeFiles/controlsys_edl_files_gen_controlsys.ControlSys.edl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=34 "Built target controlsys_edl_files_gen_controlsys.ControlSys.edl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=40 "Built target controlsys_edl_files_gen_controlsys.ControlSys.edl"
 .PHONY : controlsys/CMakeFiles/controlsys_edl_files_gen_controlsys.ControlSys.edl.dir/all
 
 # Build rule for subdir invocation for target.
@@ -224,7 +248,7 @@ controlsys/CMakeFiles/controlsys_edl_files_gen_controlsys.ControlSys.edl.dir/cle
 controlsys/CMakeFiles/controlsys_edl_files_copy_gen_controlsys.ControlSys.edl.dir/all: controlsys/CMakeFiles/controlsys_edl_files_gen_controlsys.ControlSys.edl.dir/all
 	$(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/controlsys_edl_files_copy_gen_controlsys.ControlSys.edl.dir/build.make controlsys/CMakeFiles/controlsys_edl_files_copy_gen_controlsys.ControlSys.edl.dir/depend
 	$(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/controlsys_edl_files_copy_gen_controlsys.ControlSys.edl.dir/build.make controlsys/CMakeFiles/controlsys_edl_files_copy_gen_controlsys.ControlSys.edl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=33 "Built target controlsys_edl_files_copy_gen_controlsys.ControlSys.edl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=39 "Built target controlsys_edl_files_copy_gen_controlsys.ControlSys.edl"
 .PHONY : controlsys/CMakeFiles/controlsys_edl_files_copy_gen_controlsys.ControlSys.edl.dir/all
 
 # Build rule for subdir invocation for target.
@@ -250,7 +274,7 @@ controlsys/CMakeFiles/controlsys_edl_files_copy_gen_controlsys.ControlSys.edl.di
 controlsys/CMakeFiles/controlsys_edl_files.dir/all: controlsys/CMakeFiles/controlsys_edl_files_gen_controlsys.ControlSys.edl.dir/all
 	$(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/controlsys_edl_files.dir/build.make controlsys/CMakeFiles/controlsys_edl_files.dir/depend
 	$(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/controlsys_edl_files.dir/build.make controlsys/CMakeFiles/controlsys_edl_files.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=31 "Built target controlsys_edl_files"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=37 "Built target controlsys_edl_files"
 .PHONY : controlsys/CMakeFiles/controlsys_edl_files.dir/all
 
 # Build rule for subdir invocation for target.
@@ -276,12 +300,12 @@ controlsys/CMakeFiles/controlsys_edl_files.dir/clean:
 controlsys/CMakeFiles/ControlSys.dir/all: controlsys/CMakeFiles/controlsys_edl_files.dir/all
 	$(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/depend
 	$(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16 "Built target ControlSys"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 "Built target ControlSys"
 .PHONY : controlsys/CMakeFiles/ControlSys.dir/all
 
 # Build rule for subdir invocation for target.
 controlsys/CMakeFiles/ControlSys.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 19
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 23
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/ControlSys.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 0
 .PHONY : controlsys/CMakeFiles/ControlSys.dir/rule
@@ -294,6 +318,162 @@ ControlSys: controlsys/CMakeFiles/ControlSys.dir/rule
 controlsys/CMakeFiles/ControlSys.dir/clean:
 	$(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/clean
 .PHONY : controlsys/CMakeFiles/ControlSys.dir/clean
+
+#=============================================================================
+# Target rules for target controlsys/CMakeFiles/pal-test0.dir
+
+# All Build rule for target.
+controlsys/CMakeFiles/pal-test0.dir/all: controlsys/CMakeFiles/ControlSys.dir/all
+	$(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/pal-test0.dir/build.make controlsys/CMakeFiles/pal-test0.dir/depend
+	$(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/pal-test0.dir/build.make controlsys/CMakeFiles/pal-test0.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=50 "Built target pal-test0"
+.PHONY : controlsys/CMakeFiles/pal-test0.dir/all
+
+# Build rule for subdir invocation for target.
+controlsys/CMakeFiles/pal-test0.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 24
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/pal-test0.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 0
+.PHONY : controlsys/CMakeFiles/pal-test0.dir/rule
+
+# Convenience name for target.
+pal-test0: controlsys/CMakeFiles/pal-test0.dir/rule
+.PHONY : pal-test0
+
+# clean rule for target.
+controlsys/CMakeFiles/pal-test0.dir/clean:
+	$(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/pal-test0.dir/build.make controlsys/CMakeFiles/pal-test0.dir/clean
+.PHONY : controlsys/CMakeFiles/pal-test0.dir/clean
+
+#=============================================================================
+# Target rules for target external/env/CMakeFiles/env_edl_files_copy_env.Env.edl.dir
+
+# All Build rule for target.
+external/env/CMakeFiles/env_edl_files_copy_env.Env.edl.dir/all:
+	$(MAKE) $(MAKESILENT) -f external/env/CMakeFiles/env_edl_files_copy_env.Env.edl.dir/build.make external/env/CMakeFiles/env_edl_files_copy_env.Env.edl.dir/depend
+	$(MAKE) $(MAKESILENT) -f external/env/CMakeFiles/env_edl_files_copy_env.Env.edl.dir/build.make external/env/CMakeFiles/env_edl_files_copy_env.Env.edl.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=42 "Built target env_edl_files_copy_env.Env.edl"
+.PHONY : external/env/CMakeFiles/env_edl_files_copy_env.Env.edl.dir/all
+
+# Build rule for subdir invocation for target.
+external/env/CMakeFiles/env_edl_files_copy_env.Env.edl.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 1
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/env/CMakeFiles/env_edl_files_copy_env.Env.edl.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 0
+.PHONY : external/env/CMakeFiles/env_edl_files_copy_env.Env.edl.dir/rule
+
+# Convenience name for target.
+env_edl_files_copy_env.Env.edl: external/env/CMakeFiles/env_edl_files_copy_env.Env.edl.dir/rule
+.PHONY : env_edl_files_copy_env.Env.edl
+
+# clean rule for target.
+external/env/CMakeFiles/env_edl_files_copy_env.Env.edl.dir/clean:
+	$(MAKE) $(MAKESILENT) -f external/env/CMakeFiles/env_edl_files_copy_env.Env.edl.dir/build.make external/env/CMakeFiles/env_edl_files_copy_env.Env.edl.dir/clean
+.PHONY : external/env/CMakeFiles/env_edl_files_copy_env.Env.edl.dir/clean
+
+#=============================================================================
+# Target rules for target external/env/CMakeFiles/env_edl_files_gen_env.Env.edl.dir
+
+# All Build rule for target.
+external/env/CMakeFiles/env_edl_files_gen_env.Env.edl.dir/all: external/env/CMakeFiles/env_edl_files_copy_env.Env.edl.dir/all
+	$(MAKE) $(MAKESILENT) -f external/env/CMakeFiles/env_edl_files_gen_env.Env.edl.dir/build.make external/env/CMakeFiles/env_edl_files_gen_env.Env.edl.dir/depend
+	$(MAKE) $(MAKESILENT) -f external/env/CMakeFiles/env_edl_files_gen_env.Env.edl.dir/build.make external/env/CMakeFiles/env_edl_files_gen_env.Env.edl.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=44 "Built target env_edl_files_gen_env.Env.edl"
+.PHONY : external/env/CMakeFiles/env_edl_files_gen_env.Env.edl.dir/all
+
+# Build rule for subdir invocation for target.
+external/env/CMakeFiles/env_edl_files_gen_env.Env.edl.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/env/CMakeFiles/env_edl_files_gen_env.Env.edl.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 0
+.PHONY : external/env/CMakeFiles/env_edl_files_gen_env.Env.edl.dir/rule
+
+# Convenience name for target.
+env_edl_files_gen_env.Env.edl: external/env/CMakeFiles/env_edl_files_gen_env.Env.edl.dir/rule
+.PHONY : env_edl_files_gen_env.Env.edl
+
+# clean rule for target.
+external/env/CMakeFiles/env_edl_files_gen_env.Env.edl.dir/clean:
+	$(MAKE) $(MAKESILENT) -f external/env/CMakeFiles/env_edl_files_gen_env.Env.edl.dir/build.make external/env/CMakeFiles/env_edl_files_gen_env.Env.edl.dir/clean
+.PHONY : external/env/CMakeFiles/env_edl_files_gen_env.Env.edl.dir/clean
+
+#=============================================================================
+# Target rules for target external/env/CMakeFiles/env_edl_files_copy_gen_env.Env.edl.dir
+
+# All Build rule for target.
+external/env/CMakeFiles/env_edl_files_copy_gen_env.Env.edl.dir/all: external/env/CMakeFiles/env_edl_files_gen_env.Env.edl.dir/all
+	$(MAKE) $(MAKESILENT) -f external/env/CMakeFiles/env_edl_files_copy_gen_env.Env.edl.dir/build.make external/env/CMakeFiles/env_edl_files_copy_gen_env.Env.edl.dir/depend
+	$(MAKE) $(MAKESILENT) -f external/env/CMakeFiles/env_edl_files_copy_gen_env.Env.edl.dir/build.make external/env/CMakeFiles/env_edl_files_copy_gen_env.Env.edl.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=43 "Built target env_edl_files_copy_gen_env.Env.edl"
+.PHONY : external/env/CMakeFiles/env_edl_files_copy_gen_env.Env.edl.dir/all
+
+# Build rule for subdir invocation for target.
+external/env/CMakeFiles/env_edl_files_copy_gen_env.Env.edl.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/env/CMakeFiles/env_edl_files_copy_gen_env.Env.edl.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 0
+.PHONY : external/env/CMakeFiles/env_edl_files_copy_gen_env.Env.edl.dir/rule
+
+# Convenience name for target.
+env_edl_files_copy_gen_env.Env.edl: external/env/CMakeFiles/env_edl_files_copy_gen_env.Env.edl.dir/rule
+.PHONY : env_edl_files_copy_gen_env.Env.edl
+
+# clean rule for target.
+external/env/CMakeFiles/env_edl_files_copy_gen_env.Env.edl.dir/clean:
+	$(MAKE) $(MAKESILENT) -f external/env/CMakeFiles/env_edl_files_copy_gen_env.Env.edl.dir/build.make external/env/CMakeFiles/env_edl_files_copy_gen_env.Env.edl.dir/clean
+.PHONY : external/env/CMakeFiles/env_edl_files_copy_gen_env.Env.edl.dir/clean
+
+#=============================================================================
+# Target rules for target external/env/CMakeFiles/env_edl_files.dir
+
+# All Build rule for target.
+external/env/CMakeFiles/env_edl_files.dir/all: external/env/CMakeFiles/env_edl_files_gen_env.Env.edl.dir/all
+	$(MAKE) $(MAKESILENT) -f external/env/CMakeFiles/env_edl_files.dir/build.make external/env/CMakeFiles/env_edl_files.dir/depend
+	$(MAKE) $(MAKESILENT) -f external/env/CMakeFiles/env_edl_files.dir/build.make external/env/CMakeFiles/env_edl_files.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=41 "Built target env_edl_files"
+.PHONY : external/env/CMakeFiles/env_edl_files.dir/all
+
+# Build rule for subdir invocation for target.
+external/env/CMakeFiles/env_edl_files.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/env/CMakeFiles/env_edl_files.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 0
+.PHONY : external/env/CMakeFiles/env_edl_files.dir/rule
+
+# Convenience name for target.
+env_edl_files: external/env/CMakeFiles/env_edl_files.dir/rule
+.PHONY : env_edl_files
+
+# clean rule for target.
+external/env/CMakeFiles/env_edl_files.dir/clean:
+	$(MAKE) $(MAKESILENT) -f external/env/CMakeFiles/env_edl_files.dir/build.make external/env/CMakeFiles/env_edl_files.dir/clean
+.PHONY : external/env/CMakeFiles/env_edl_files.dir/clean
+
+#=============================================================================
+# Target rules for target external/env/CMakeFiles/Env.dir
+
+# All Build rule for target.
+external/env/CMakeFiles/Env.dir/all: external/env/CMakeFiles/env_edl_files.dir/all
+	$(MAKE) $(MAKESILENT) -f external/env/CMakeFiles/Env.dir/build.make external/env/CMakeFiles/Env.dir/depend
+	$(MAKE) $(MAKESILENT) -f external/env/CMakeFiles/Env.dir/build.make external/env/CMakeFiles/Env.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=33,34 "Built target Env"
+.PHONY : external/env/CMakeFiles/Env.dir/all
+
+# Build rule for subdir invocation for target.
+external/env/CMakeFiles/Env.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/env/CMakeFiles/Env.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 0
+.PHONY : external/env/CMakeFiles/Env.dir/rule
+
+# Convenience name for target.
+Env: external/env/CMakeFiles/Env.dir/rule
+.PHONY : Env
+
+# clean rule for target.
+external/env/CMakeFiles/Env.dir/clean:
+	$(MAKE) $(MAKESILENT) -f external/env/CMakeFiles/Env.dir/build.make external/env/CMakeFiles/Env.dir/clean
+.PHONY : external/env/CMakeFiles/Env.dir/clean
 
 #=============================================================================
 # Target rules for target einit/CMakeFiles/EinitHw-edl_copy_kl.Einit.edl.dir
@@ -328,7 +508,7 @@ einit/CMakeFiles/EinitHw-edl_copy_kl.Einit.edl.dir/clean:
 einit/CMakeFiles/EinitHw-edl_copy_gen_kl.Einit.edl.dir/all: einit/CMakeFiles/EinitHw-edl_copy_kl.Einit.edl.dir/all
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/EinitHw-edl_copy_gen_kl.Einit.edl.dir/build.make einit/CMakeFiles/EinitHw-edl_copy_gen_kl.Einit.edl.dir/depend
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/EinitHw-edl_copy_gen_kl.Einit.edl.dir/build.make einit/CMakeFiles/EinitHw-edl_copy_gen_kl.Einit.edl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=21 "Built target EinitHw-edl_copy_gen_kl.Einit.edl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=25 "Built target EinitHw-edl_copy_gen_kl.Einit.edl"
 .PHONY : einit/CMakeFiles/EinitHw-edl_copy_gen_kl.Einit.edl.dir/all
 
 # Build rule for subdir invocation for target.
@@ -354,7 +534,7 @@ einit/CMakeFiles/EinitHw-edl_copy_gen_kl.Einit.edl.dir/clean:
 einit/CMakeFiles/EinitHw-edl.dir/all: einit/CMakeFiles/EinitHw-edl_copy_kl.Einit.edl.dir/all
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/EinitHw-edl.dir/build.make einit/CMakeFiles/EinitHw-edl.dir/depend
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/EinitHw-edl.dir/build.make einit/CMakeFiles/EinitHw-edl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=20 "Built target EinitHw-edl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=24 "Built target EinitHw-edl"
 .PHONY : einit/CMakeFiles/EinitHw-edl.dir/all
 
 # Build rule for subdir invocation for target.
@@ -378,16 +558,17 @@ einit/CMakeFiles/EinitHw-edl.dir/clean:
 
 # All Build rule for target.
 einit/CMakeFiles/EinitHw.dir/all: controlsys/CMakeFiles/controlsys_edl_files_copy_controlsys.ControlSys.edl.dir/all
+einit/CMakeFiles/EinitHw.dir/all: external/env/CMakeFiles/env_edl_files_copy_env.Env.edl.dir/all
 einit/CMakeFiles/EinitHw.dir/all: einit/CMakeFiles/EinitHw-edl_copy_kl.Einit.edl.dir/all
 einit/CMakeFiles/EinitHw.dir/all: einit/CMakeFiles/EinitHw-edl.dir/all
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/EinitHw.dir/build.make einit/CMakeFiles/EinitHw.dir/depend
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/EinitHw.dir/build.make einit/CMakeFiles/EinitHw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=17,18,19 "Built target EinitHw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=21,22,23 "Built target EinitHw"
 .PHONY : einit/CMakeFiles/EinitHw.dir/all
 
 # Build rule for subdir invocation for target.
 einit/CMakeFiles/EinitHw.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 einit/CMakeFiles/EinitHw.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 0
 .PHONY : einit/CMakeFiles/EinitHw.dir/rule
@@ -406,6 +587,7 @@ einit/CMakeFiles/EinitHw.dir/clean:
 
 # All Build rule for target.
 einit/CMakeFiles/EinitHw-kss-entities-built.dir/all: controlsys/CMakeFiles/controlsys_edl_files_copy_controlsys.ControlSys.edl.dir/all
+einit/CMakeFiles/EinitHw-kss-entities-built.dir/all: external/env/CMakeFiles/env_edl_files_copy_env.Env.edl.dir/all
 einit/CMakeFiles/EinitHw-kss-entities-built.dir/all: einit/CMakeFiles/EinitHw-edl_copy_kl.Einit.edl.dir/all
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/EinitHw-kss-entities-built.dir/build.make einit/CMakeFiles/EinitHw-kss-entities-built.dir/depend
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/EinitHw-kss-entities-built.dir/build.make einit/CMakeFiles/EinitHw-kss-entities-built.dir/build
@@ -414,7 +596,7 @@ einit/CMakeFiles/EinitHw-kss-entities-built.dir/all: einit/CMakeFiles/EinitHw-ed
 
 # Build rule for subdir invocation for target.
 einit/CMakeFiles/EinitHw-kss-entities-built.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 einit/CMakeFiles/EinitHw-kss-entities-built.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 0
 .PHONY : einit/CMakeFiles/EinitHw-kss-entities-built.dir/rule
@@ -435,12 +617,12 @@ einit/CMakeFiles/EinitHw-kss-entities-built.dir/clean:
 einit/CMakeFiles/EinitHw-kss-makekss-output.dir/all: einit/CMakeFiles/EinitHw-kss-entities-built.dir/all
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/EinitHw-kss-makekss-output.dir/build.make einit/CMakeFiles/EinitHw-kss-makekss-output.dir/depend
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/EinitHw-kss-makekss-output.dir/build.make einit/CMakeFiles/EinitHw-kss-makekss-output.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=22 "Built target EinitHw-kss-makekss-output"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=26 "Built target EinitHw-kss-makekss-output"
 .PHONY : einit/CMakeFiles/EinitHw-kss-makekss-output.dir/all
 
 # Build rule for subdir invocation for target.
 einit/CMakeFiles/EinitHw-kss-makekss-output.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 einit/CMakeFiles/EinitHw-kss-makekss-output.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 0
 .PHONY : einit/CMakeFiles/EinitHw-kss-makekss-output.dir/rule
@@ -459,18 +641,19 @@ einit/CMakeFiles/EinitHw-kss-makekss-output.dir/clean:
 
 # All Build rule for target.
 einit/CMakeFiles/kos-image.dir/all: controlsys/CMakeFiles/ControlSys.dir/all
+einit/CMakeFiles/kos-image.dir/all: external/env/CMakeFiles/Env.dir/all
 einit/CMakeFiles/kos-image.dir/all: einit/CMakeFiles/EinitHw.dir/all
 einit/CMakeFiles/kos-image.dir/all: einit/CMakeFiles/EinitHw-kss-entities-built.dir/all
 einit/CMakeFiles/kos-image.dir/all: einit/CMakeFiles/EinitHw-kss-makekss-output.dir/all
 einit/CMakeFiles/kos-image.dir/all: einit/CMakeFiles/GET_BUILD_ID_kos-image.dir/all
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/kos-image.dir/build.make einit/CMakeFiles/kos-image.dir/depend
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/kos-image.dir/build.make einit/CMakeFiles/kos-image.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=36,37 "Built target kos-image"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=46,47 "Built target kos-image"
 .PHONY : einit/CMakeFiles/kos-image.dir/all
 
 # Build rule for subdir invocation for target.
 einit/CMakeFiles/kos-image.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 27
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 36
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 einit/CMakeFiles/kos-image.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 0
 .PHONY : einit/CMakeFiles/kos-image.dir/rule
@@ -489,14 +672,15 @@ einit/CMakeFiles/kos-image.dir/clean:
 
 # All Build rule for target.
 einit/CMakeFiles/GET_BUILD_ID_kos-image.dir/all: controlsys/CMakeFiles/ControlSys.dir/all
+einit/CMakeFiles/GET_BUILD_ID_kos-image.dir/all: external/env/CMakeFiles/Env.dir/all
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/GET_BUILD_ID_kos-image.dir/build.make einit/CMakeFiles/GET_BUILD_ID_kos-image.dir/depend
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/GET_BUILD_ID_kos-image.dir/build.make einit/CMakeFiles/GET_BUILD_ID_kos-image.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=29 "Built target GET_BUILD_ID_kos-image"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=35 "Built target GET_BUILD_ID_kos-image"
 .PHONY : einit/CMakeFiles/GET_BUILD_ID_kos-image.dir/all
 
 # Build rule for subdir invocation for target.
 einit/CMakeFiles/GET_BUILD_ID_kos-image.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 29
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 einit/CMakeFiles/GET_BUILD_ID_kos-image.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 0
 .PHONY : einit/CMakeFiles/GET_BUILD_ID_kos-image.dir/rule
@@ -522,7 +706,7 @@ einit/CMakeFiles/sd-image.dir/all: einit/CMakeFiles/kos-image.dir/all
 
 # Build rule for subdir invocation for target.
 einit/CMakeFiles/sd-image.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 27
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 36
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 einit/CMakeFiles/sd-image.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 0
 .PHONY : einit/CMakeFiles/sd-image.dir/rule
@@ -569,7 +753,7 @@ einit/CMakeFiles/EinitQeu-edl_copy_kl.Einit.edl.dir/clean:
 einit/CMakeFiles/EinitQeu-edl_copy_gen_kl.Einit.edl.dir/all: einit/CMakeFiles/EinitQeu-edl_copy_kl.Einit.edl.dir/all
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/EinitQeu-edl_copy_gen_kl.Einit.edl.dir/build.make einit/CMakeFiles/EinitQeu-edl_copy_gen_kl.Einit.edl.dir/depend
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/EinitQeu-edl_copy_gen_kl.Einit.edl.dir/build.make einit/CMakeFiles/EinitQeu-edl_copy_gen_kl.Einit.edl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=27 "Built target EinitQeu-edl_copy_gen_kl.Einit.edl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=31 "Built target EinitQeu-edl_copy_gen_kl.Einit.edl"
 .PHONY : einit/CMakeFiles/EinitQeu-edl_copy_gen_kl.Einit.edl.dir/all
 
 # Build rule for subdir invocation for target.
@@ -595,7 +779,7 @@ einit/CMakeFiles/EinitQeu-edl_copy_gen_kl.Einit.edl.dir/clean:
 einit/CMakeFiles/EinitQeu-edl.dir/all: einit/CMakeFiles/EinitQeu-edl_copy_kl.Einit.edl.dir/all
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/EinitQeu-edl.dir/build.make einit/CMakeFiles/EinitQeu-edl.dir/depend
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/EinitQeu-edl.dir/build.make einit/CMakeFiles/EinitQeu-edl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=26 "Built target EinitQeu-edl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=30 "Built target EinitQeu-edl"
 .PHONY : einit/CMakeFiles/EinitQeu-edl.dir/all
 
 # Build rule for subdir invocation for target.
@@ -619,16 +803,17 @@ einit/CMakeFiles/EinitQeu-edl.dir/clean:
 
 # All Build rule for target.
 einit/CMakeFiles/EinitQeu.dir/all: controlsys/CMakeFiles/controlsys_edl_files_copy_controlsys.ControlSys.edl.dir/all
+einit/CMakeFiles/EinitQeu.dir/all: external/env/CMakeFiles/env_edl_files_copy_env.Env.edl.dir/all
 einit/CMakeFiles/EinitQeu.dir/all: einit/CMakeFiles/EinitQeu-edl_copy_kl.Einit.edl.dir/all
 einit/CMakeFiles/EinitQeu.dir/all: einit/CMakeFiles/EinitQeu-edl.dir/all
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/EinitQeu.dir/build.make einit/CMakeFiles/EinitQeu.dir/depend
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/EinitQeu.dir/build.make einit/CMakeFiles/EinitQeu.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=23,24,25 "Built target EinitQeu"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=27,28,29 "Built target EinitQeu"
 .PHONY : einit/CMakeFiles/EinitQeu.dir/all
 
 # Build rule for subdir invocation for target.
 einit/CMakeFiles/EinitQeu.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 einit/CMakeFiles/EinitQeu.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 0
 .PHONY : einit/CMakeFiles/EinitQeu.dir/rule
@@ -647,6 +832,7 @@ einit/CMakeFiles/EinitQeu.dir/clean:
 
 # All Build rule for target.
 einit/CMakeFiles/EinitQeu-kss-entities-built.dir/all: controlsys/CMakeFiles/controlsys_edl_files_copy_controlsys.ControlSys.edl.dir/all
+einit/CMakeFiles/EinitQeu-kss-entities-built.dir/all: external/env/CMakeFiles/env_edl_files_copy_env.Env.edl.dir/all
 einit/CMakeFiles/EinitQeu-kss-entities-built.dir/all: einit/CMakeFiles/EinitQeu-edl_copy_kl.Einit.edl.dir/all
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/EinitQeu-kss-entities-built.dir/build.make einit/CMakeFiles/EinitQeu-kss-entities-built.dir/depend
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/EinitQeu-kss-entities-built.dir/build.make einit/CMakeFiles/EinitQeu-kss-entities-built.dir/build
@@ -655,7 +841,7 @@ einit/CMakeFiles/EinitQeu-kss-entities-built.dir/all: einit/CMakeFiles/EinitQeu-
 
 # Build rule for subdir invocation for target.
 einit/CMakeFiles/EinitQeu-kss-entities-built.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 einit/CMakeFiles/EinitQeu-kss-entities-built.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 0
 .PHONY : einit/CMakeFiles/EinitQeu-kss-entities-built.dir/rule
@@ -676,12 +862,12 @@ einit/CMakeFiles/EinitQeu-kss-entities-built.dir/clean:
 einit/CMakeFiles/EinitQeu-kss-makekss-output.dir/all: einit/CMakeFiles/EinitQeu-kss-entities-built.dir/all
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/EinitQeu-kss-makekss-output.dir/build.make einit/CMakeFiles/EinitQeu-kss-makekss-output.dir/depend
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/EinitQeu-kss-makekss-output.dir/build.make einit/CMakeFiles/EinitQeu-kss-makekss-output.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=28 "Built target EinitQeu-kss-makekss-output"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=32 "Built target EinitQeu-kss-makekss-output"
 .PHONY : einit/CMakeFiles/EinitQeu-kss-makekss-output.dir/all
 
 # Build rule for subdir invocation for target.
 einit/CMakeFiles/EinitQeu-kss-makekss-output.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 einit/CMakeFiles/EinitQeu-kss-makekss-output.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 0
 .PHONY : einit/CMakeFiles/EinitQeu-kss-makekss-output.dir/rule
@@ -700,18 +886,19 @@ einit/CMakeFiles/EinitQeu-kss-makekss-output.dir/clean:
 
 # All Build rule for target.
 einit/CMakeFiles/kos-qemu-image.dir/all: controlsys/CMakeFiles/ControlSys.dir/all
+einit/CMakeFiles/kos-qemu-image.dir/all: external/env/CMakeFiles/Env.dir/all
 einit/CMakeFiles/kos-qemu-image.dir/all: einit/CMakeFiles/EinitQeu.dir/all
 einit/CMakeFiles/kos-qemu-image.dir/all: einit/CMakeFiles/EinitQeu-kss-entities-built.dir/all
 einit/CMakeFiles/kos-qemu-image.dir/all: einit/CMakeFiles/EinitQeu-kss-makekss-output.dir/all
 einit/CMakeFiles/kos-qemu-image.dir/all: einit/CMakeFiles/GET_BUILD_ID_kos-qemu-image.dir/all
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/kos-qemu-image.dir/build.make einit/CMakeFiles/kos-qemu-image.dir/depend
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/kos-qemu-image.dir/build.make einit/CMakeFiles/kos-qemu-image.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=38,39 "Built target kos-qemu-image"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=48,49 "Built target kos-qemu-image"
 .PHONY : einit/CMakeFiles/kos-qemu-image.dir/all
 
 # Build rule for subdir invocation for target.
 einit/CMakeFiles/kos-qemu-image.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 27
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 36
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 einit/CMakeFiles/kos-qemu-image.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 0
 .PHONY : einit/CMakeFiles/kos-qemu-image.dir/rule
@@ -732,12 +919,12 @@ einit/CMakeFiles/kos-qemu-image.dir/clean:
 einit/CMakeFiles/sim.dir/all: einit/CMakeFiles/kos-qemu-image.dir/all
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/sim.dir/build.make einit/CMakeFiles/sim.dir/depend
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/sim.dir/build.make einit/CMakeFiles/sim.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=40 "Built target sim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=51 "Built target sim"
 .PHONY : einit/CMakeFiles/sim.dir/all
 
 # Build rule for subdir invocation for target.
 einit/CMakeFiles/sim.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 37
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 einit/CMakeFiles/sim.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 0
 .PHONY : einit/CMakeFiles/sim.dir/rule
@@ -758,12 +945,12 @@ einit/CMakeFiles/sim.dir/clean:
 einit/CMakeFiles/gdbsim.dir/all: einit/CMakeFiles/kos-qemu-image.dir/all
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/gdbsim.dir/build.make einit/CMakeFiles/gdbsim.dir/depend
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/gdbsim.dir/build.make einit/CMakeFiles/gdbsim.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=35 "Built target gdbsim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=45 "Built target gdbsim"
 .PHONY : einit/CMakeFiles/gdbsim.dir/all
 
 # Build rule for subdir invocation for target.
 einit/CMakeFiles/gdbsim.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 37
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 einit/CMakeFiles/gdbsim.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 0
 .PHONY : einit/CMakeFiles/gdbsim.dir/rule
@@ -782,6 +969,7 @@ einit/CMakeFiles/gdbsim.dir/clean:
 
 # All Build rule for target.
 einit/CMakeFiles/ext_debug.dir/all: controlsys/CMakeFiles/ControlSys.dir/all
+einit/CMakeFiles/ext_debug.dir/all: external/env/CMakeFiles/Env.dir/all
 einit/CMakeFiles/ext_debug.dir/all: einit/CMakeFiles/kos-qemu-image.dir/all
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/ext_debug.dir/build.make einit/CMakeFiles/ext_debug.dir/depend
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/ext_debug.dir/build.make einit/CMakeFiles/ext_debug.dir/build
@@ -790,7 +978,7 @@ einit/CMakeFiles/ext_debug.dir/all: einit/CMakeFiles/kos-qemu-image.dir/all
 
 # Build rule for subdir invocation for target.
 einit/CMakeFiles/ext_debug.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 27
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 36
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 einit/CMakeFiles/ext_debug.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 0
 .PHONY : einit/CMakeFiles/ext_debug.dir/rule
@@ -816,7 +1004,7 @@ einit/CMakeFiles/gdb.dir/all: einit/CMakeFiles/kos-qemu-image.dir/all
 
 # Build rule for subdir invocation for target.
 einit/CMakeFiles/gdb.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 27
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 36
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 einit/CMakeFiles/gdb.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 0
 .PHONY : einit/CMakeFiles/gdb.dir/rule
@@ -842,7 +1030,7 @@ einit/CMakeFiles/cgdb.dir/all: einit/CMakeFiles/kos-qemu-image.dir/all
 
 # Build rule for subdir invocation for target.
 einit/CMakeFiles/cgdb.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 27
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 36
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 einit/CMakeFiles/cgdb.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 0
 .PHONY : einit/CMakeFiles/cgdb.dir/rule
@@ -861,14 +1049,15 @@ einit/CMakeFiles/cgdb.dir/clean:
 
 # All Build rule for target.
 einit/CMakeFiles/GET_BUILD_ID_kos-qemu-image.dir/all: controlsys/CMakeFiles/ControlSys.dir/all
+einit/CMakeFiles/GET_BUILD_ID_kos-qemu-image.dir/all: external/env/CMakeFiles/Env.dir/all
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/GET_BUILD_ID_kos-qemu-image.dir/build.make einit/CMakeFiles/GET_BUILD_ID_kos-qemu-image.dir/depend
 	$(MAKE) $(MAKESILENT) -f einit/CMakeFiles/GET_BUILD_ID_kos-qemu-image.dir/build.make einit/CMakeFiles/GET_BUILD_ID_kos-qemu-image.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=30 "Built target GET_BUILD_ID_kos-qemu-image"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=36 "Built target GET_BUILD_ID_kos-qemu-image"
 .PHONY : einit/CMakeFiles/GET_BUILD_ID_kos-qemu-image.dir/all
 
 # Build rule for subdir invocation for target.
 einit/CMakeFiles/GET_BUILD_ID_kos-qemu-image.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 29
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 einit/CMakeFiles/GET_BUILD_ID_kos-qemu-image.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles 0
 .PHONY : einit/CMakeFiles/GET_BUILD_ID_kos-qemu-image.dir/rule

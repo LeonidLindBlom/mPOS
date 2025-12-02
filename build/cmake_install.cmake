@@ -40,6 +40,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/mpos/mpos-lab/kos/controlsys/build/controlsys/cmake_install.cmake")
+  include("/home/mpos/mpos-lab/kos/controlsys/build/external/env/cmake_install.cmake")
   include("/home/mpos/mpos-lab/kos/controlsys/build/einit/cmake_install.cmake")
 
 endif()

@@ -69,7 +69,7 @@ include einit/CMakeFiles/gdbsim.dir/progress.make
 einit/CMakeFiles/gdbsim: einit/.gdbinit.ide
 einit/CMakeFiles/gdbsim: einit/.gdbinit
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Running QEMU with KasperskyOS image..."
-	cd /home/mpos/mpos-lab/kos/controlsys/build/einit && QEMU_AUDIO_DRV=none /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/qemu-system-aarch64 -m 2048 -machine vexpress-a15,secure=on -cpu cortex-a72 -nographic -monitor none -smp 4 -nic user -serial stdio --nographic -monitor none -netdev user,id=hostnet0 -device virtio-net-device,netdev=hostnet0 -serial tcp::12345,server,nowait -gdb tcp::1234 -S -kernel /home/mpos/mpos-lab/kos/controlsys/build/einit/kos-qemu-image
+	cd /home/mpos/mpos-lab/kos/controlsys/build/einit && QEMU_AUDIO_DRV=none /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/qemu-system-aarch64 -m 2048 -machine vexpress-a15,secure=on -cpu cortex-a72 -nographic -monitor none -smp 4 -nic user -serial stdio --nographic -monitor none -chardev socket,id=eventbus,host=127.0.0.1,port=28090,server=on,wait=off -serial chardev:eventbus -netdev user,id=hostnet0,hostfwd=tcp::28080-:28080,hostfwd=tcp::28081-:8081,hostfwd=tcp::28082-:8082,hostfwd=tcp::28083-:8083,hostfwd=tcp::28084-:8084,hostfwd=tcp::29090-:9090 -device virtio-net-device,netdev=hostnet0 -serial tcp::12345,server,nowait -gdb tcp::1234 -S -kernel /home/mpos/mpos-lab/kos/controlsys/build/einit/kos-qemu-image
 
 gdbsim: einit/CMakeFiles/gdbsim
 gdbsim: einit/CMakeFiles/gdbsim.dir/build.make

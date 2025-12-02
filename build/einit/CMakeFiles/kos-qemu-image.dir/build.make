@@ -69,10 +69,13 @@ include einit/CMakeFiles/kos-qemu-image.dir/progress.make
 einit/CMakeFiles/kos-qemu-image: einit/kos-qemu-image
 
 einit/kos-qemu-image: controlsys/ControlSys
+einit/kos-qemu-image: external/env/Env
+einit/kos-qemu-image: /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/bin/dnet_entity
+einit/kos-qemu-image: /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/bin/bcm2711_mbox_arm2vc_qemu
 einit/kos-qemu-image: einit/EinitQeu
 einit/kos-qemu-image: einit/EinitQeu-kss/ksm.module
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating KasperskyOS image: /home/mpos/mpos-lab/kos/controlsys/build/einit/kos-qemu-image"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/einit && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/makeimg --target=aarch64-kos --with-extra-ldflags=-no-pie --sys-root=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos --with-toolchain=/opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain --with-python= --ldscript=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/../libexec/aarch64-kos/kos-qemu.ld --img-src=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/../libexec/aarch64-kos/kos-qemu --img-dst=/home/mpos/mpos-lab/kos/controlsys/build/einit/kos-qemu-image --aboot_dtb_file= --aboot_mkboot= --aboot_config_file= --with-init=/home/mpos/mpos-lab/kos/controlsys/build/einit/EinitQeu  /home/mpos/mpos-lab/kos/controlsys/build/controlsys/ControlSys /home/mpos/mpos-lab/kos/controlsys/build/einit/EinitQeu-kss/ksm.module
+	cd /home/mpos/mpos-lab/kos/controlsys/build/einit && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/makeimg --target=aarch64-kos --with-extra-ldflags=-no-pie --sys-root=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos --with-toolchain=/opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain --with-python= --ldscript=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/../libexec/aarch64-kos/kos-qemu.ld --img-src=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/../libexec/aarch64-kos/kos-qemu --img-dst=/home/mpos/mpos-lab/kos/controlsys/build/einit/kos-qemu-image --aboot_dtb_file= --aboot_mkboot= --aboot_config_file= --with-init=/home/mpos/mpos-lab/kos/controlsys/build/einit/EinitQeu  /home/mpos/mpos-lab/kos/controlsys/build/controlsys/ControlSys\ /home/mpos/mpos-lab/kos/controlsys/build/external/env/Env\ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/bin/dnet_entity\ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/bin/bcm2711_mbox_arm2vc_qemu /home/mpos/mpos-lab/kos/controlsys/build/einit/EinitQeu-kss/ksm.module
 
 einit/EinitQeu-kss/ksm.module: einit/EinitQeu-kss/security.psl
 einit/EinitQeu-kss/ksm.module: einit/CMakeFiles/kos-qemu-image.dir/compiler_depend.ts

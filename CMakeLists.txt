@@ -12,4 +12,5 @@ include (platform/doxygen)
 add_project_documentation_main_target ()
 
 add_subdirectory (controlsys)
+add_subdirectory (external/env)
 add_subdirectory (einit)

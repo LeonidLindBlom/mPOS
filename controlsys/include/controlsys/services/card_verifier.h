@@ -7,6 +7,7 @@ typedef struct {
     const char* pan_masked;
     const char* expiry;
     bool emv_ok;
+    const char* cardholder;
 } CardData;
 
 bool card_verify(const CardData* data);

@@ -19,7 +19,7 @@ typedef enum {
 
 const char* ctl_state_name(CtlState state);
 
-typedef struct {
+typedef struct TxContext {
     CtlState state;
     char tx_id[48];
     unsigned seq;

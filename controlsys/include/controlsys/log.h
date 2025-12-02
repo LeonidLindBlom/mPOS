@@ -8,6 +8,7 @@ extern "C" {
 #endif
 
 void log_ts(const char* fmt, ...) __attribute__((format(printf, 1, 2)));
+void log_box(const char* module, const char* fmt, ...) __attribute__((format(printf, 2, 3)));
 
 #ifdef __cplusplus
 }

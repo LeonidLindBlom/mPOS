@@ -1,0 +1,13 @@
+RUN controlsys-binary
+OK  controlsys-binary
+RUN event-scripts
+kTransactionScript: 5 events validated
+kUpdateScript: 5 events validated
+kLogExportScript: 4 events validated
+OK  event-scripts
+RUN architecture-doc
+found marker: Домены безопасности ControlSys
+found marker: Сценарии из диаграмм
+found marker: Тестирование сквозных сценариев
+OK  architecture-doc
+PAL TESTS COMPLETED

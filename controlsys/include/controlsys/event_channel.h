@@ -6,5 +6,6 @@
 
 void ctl_event_channel_init(void);
 bool ctl_event_channel_next(CtlEvent* evt);
+bool ctl_event_channel_available(void);
 
 #endif /* CONTROLSYS_EVENT_CHANNEL_H */

@@ -1,0 +1,168 @@
+assert "transaction_flow" {
+    setup {
+        core <- execute dst=kl.core.Core
+        einit <- execute src=core dst=Einit
+        manager <- execute src=einit dst=controlsys.Manager
+        inputguard <- execute src=einit dst=controlsys.InputGuard
+        output <- execute src=einit dst=controlsys.OutputController
+        cardverif <- execute src=einit dst=controlsys.CardVerifier
+        txn <- execute src=einit dst=controlsys.TransactionGenerator
+        statusverif <- execute src=einit dst=controlsys.StatusVerifier
+        auth <- execute src=einit dst=controlsys.AuthModule
+        journal <- execute src=einit dst=controlsys.Journal
+    }
+
+    sequence "heartbeat" {
+        grant "InputGuard reports environment" response src=inputguard dst=manager endpoint=inputguard.service method=Heartbeat {
+            powerOK : true, networkOK : true
+        }
+    }
+
+    sequence "amount" {
+        grant "Input module calls manager" request src=manager dst=inputguard endpoint=manager.service method=BeginTransaction {
+            amount : 12345, currency : "RUB"
+        }
+    }
+
+    sequence "card" {
+        grant "Manager calls card verifier" request src=manager dst=cardverif endpoint=cardverifier.service method=CheckCard {
+            pan : "4256********9310", expiry : "2712", holder : "CARDHOLDER"
+        }
+        grant "Card verifier approves" response src=cardverif dst=manager endpoint=cardverifier.service method=CheckCard {
+            emvOk : true
+        }
+    }
+
+    sequence "pin" {
+        grant "Output controller asks for PIN" request src=manager dst=output endpoint=output.service method=RequestPIN {}
+        grant "Output controller notifies manager" response src=output dst=manager endpoint=output.service method=RequestPIN {}
+    }
+
+    sequence "bank" {
+        grant "Manager builds transaction" request src=manager dst=txn endpoint=txn.service method=Build {
+            txId : "demo", amount : 12345
+        }
+        grant "Transaction result" response src=txn dst=manager endpoint=txn.service method=Build {
+            payload : "ARQC"
+        }
+        grant "Manager validates status" request src=manager dst=statusverif endpoint=statusverifier.service method=Validate {
+            seq : 1, approved : true
+        }
+        grant "Status verifier approves" response src=statusverif dst=manager endpoint=statusverifier.service method=Validate {
+            ok : true
+        }
+        grant "Journal writes record" request src=manager dst=journal endpoint=journal.service method=Append {
+            txId : "demo", amount : 12345, result : "APPROVED"
+        }
+    }
+
+    sequence "status" {
+        grant "Manager updates output" request src=manager dst=output endpoint=output.service method=ShowStatus {
+            status : "Операция подтверждена"
+        }
+        grant "Output acknowledges status" response src=output dst=manager endpoint=output.service method=ShowStatus {}
+    }
+
+    sequence "receipt" {
+        grant "Manager requests receipt" request src=manager dst=output endpoint=output.service method=PrintReceipt {
+            txId : "demo", amount : 12345
+        }
+        grant "Output confirms receipt" response src=output dst=manager endpoint=output.service method=PrintReceipt {}
+    }
+}
+
+assert "update_flow" {
+    setup {
+        core <- execute dst=kl.core.Core
+        einit <- execute src=core dst=Einit
+        manager <- execute src=einit dst=controlsys.Manager
+        auth <- execute src=einit dst=controlsys.AuthModule
+        loader <- execute src=einit dst=controlsys.UpdateLoader
+        storage <- execute src=einit dst=controlsys.UpdateStorage
+        verifier <- execute src=einit dst=controlsys.UpdateVerifier
+        installer <- execute src=einit dst=controlsys.UpdateInstaller
+    }
+
+    sequence "request" {
+        grant "Manager authenticates operator" request src=manager dst=auth endpoint=auth.service method=CheckRole {
+            role : "operator"
+        }
+        grant "Auth approves operator" response src=auth dst=manager endpoint=auth.service method=CheckRole {
+            ok : true
+        }
+        grant "Manager starts loader" request src=manager dst=loader endpoint=loader.service method=Begin {}
+    }
+
+    sequence "chunks" {
+        grant "Chunk 1" request src=manager dst=loader endpoint=loader.service method=PushChunk {
+            version : "1.0.1", chunk : 1, chunks : 2, size : 1048576
+        }
+        grant "Chunk 2" request src=manager dst=loader endpoint=loader.service method=PushChunk {
+            version : "1.0.1", chunk : 2, chunks : 2, size : 1048576
+        }
+        grant "Loader closes session" response src=loader dst=manager endpoint=loader.service method=PushChunk {}
+    }
+
+    sequence "snapshot" {
+        grant "Manager snapshots storage" request src=manager dst=storage endpoint=storage.service method=Snapshot {}
+        grant "Storage ready" response src=storage dst=manager endpoint=storage.service method=Snapshot {
+            complete : true
+        }
+    }
+
+    sequence "verify-signature" {
+        grant "Verifier checks image" request src=manager dst=verifier endpoint=verifier.service method=Verify {
+            version : "1.0.1", signatureOk : true
+        }
+        grant "Verifier approves" response src=verifier dst=manager endpoint=verifier.service method=Verify {
+            ok : true
+        }
+    }
+
+    sequence "install" {
+        grant "Installer applies" request src=manager dst=installer endpoint=installer.service method=Install {
+            version : "1.0.1"
+        }
+        grant "Installer confirms" response src=installer dst=manager endpoint=installer.service method=Install {
+            ok : true
+        }
+    }
+}
+
+assert "log_export_flow" {
+    setup {
+        core <- execute dst=kl.core.Core
+        einit <- execute src=core dst=Einit
+        manager <- execute src=einit dst=controlsys.Manager
+        auth <- execute src=einit dst=controlsys.AuthModule
+        journal <- execute src=einit dst=controlsys.Journal
+        output <- execute src=einit dst=controlsys.OutputController
+    }
+
+    sequence "auth" {
+        grant "Engineer authenticates" request src=manager dst=auth endpoint=auth.service method=CheckRole {
+            role : "engineer"
+        }
+        grant "Auth OK" response src=auth dst=manager endpoint=auth.service method=CheckRole {
+            ok : true
+        }
+    }
+
+    sequence "export" {
+        grant "Manager requests journal" request src=manager dst=journal endpoint=journal.service method=Export {
+            count : 2
+        }
+        grant "Journal streams record" response src=journal dst=manager endpoint=journal.service method=Export {
+            record : "tx=demo-001"
+        }
+    }
+
+    sequence "export-complete" {
+        grant "Journal signals completion" response src=journal dst=manager endpoint=journal.service method=Export {
+            record : "DONE"
+        }
+        grant "Manager notifies output" request src=manager dst=output endpoint=output.service method=ShowStatus {
+            status : "Выгрузка завершена"
+        }
+    }
+}

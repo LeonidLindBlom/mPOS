@@ -22,7 +22,10 @@ bool update_storage_append(const char* version,
     g_slot.total_size += chunk_size;
     if (chunk_index == chunk_total) {
         g_slot.complete = true;
-        log_ts("UpdateStorage: version %s total=%zu bytes assembled", g_slot.version, g_slot.total_size);
+        log_box("UpdateStorage",
+                "version %s\ntotal=%zu bytes",
+                g_slot.version,
+                g_slot.total_size);
     }
     return true;
 }

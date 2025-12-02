@@ -44,6 +44,95 @@ controlsys/CMakeFiles/ControlSys.dir/src/core/event_channel.c.o: /home/mpos/mpos
   /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_int_types.h \
   /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/log.h \
   /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9.2.1/include/stdarg.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/ctype.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/netbsd-ctype.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/featuretest.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/ctype_inline.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/ctype_bits.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/errno.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/c/errno.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/c/errno.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/netbsd-errno.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/errno.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/fcntl.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/fcntl.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/sys/types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/ansi.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/pthread_types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/netbsd-pthread_types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/endian.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/endian.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/endian_machdep.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/endian_machdep.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/bswap.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/bswap.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/aarch64/byte_swap.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/bswap.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/stdint.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/netbsd-stdint.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/int_mwgwtypes.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/int_mwgwtypes.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_int_mwgwtypes.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/int_limits.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/int_limits.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_int_limits.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/int_const.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/int_const.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/wchar_limits.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/wchar_limits.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/stat.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/sys/stat.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/time.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/time.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/c/time.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/stdio.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/stdio.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/c/stdio.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/io_types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/ssp/ssp.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/vfs/stdio_defs.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/stdlib.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/stdlib.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/c/stdlib.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/string.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/string.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/c/string.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/unistd.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/unistd.h
+
+controlsys/CMakeFiles/ControlSys.dir/src/core/event_script.c.o: /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/event_script.c \
+  /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/events.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9.2.1/include/stdbool.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9.2.1/include/stddef.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/ansi.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/ansi.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_ansi.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/cdefs.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/cdefs.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/cdefs.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/cdefs_elf.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/int_types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/int_types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_int_types.h
+
+controlsys/CMakeFiles/ControlSys.dir/src/core/init_module.c.o: /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/init_module.c \
+  /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/init_module.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9.2.1/include/stdbool.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9.2.1/include/stddef.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/ansi.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/ansi.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_ansi.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/cdefs.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/cdefs.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/cdefs.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/cdefs_elf.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/int_types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/int_types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_int_types.h \
+  /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/log.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9.2.1/include/stdarg.h \
   /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/stdio.h \
   /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/stdio.h \
   /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/c/stdio.h \
@@ -79,29 +168,7 @@ controlsys/CMakeFiles/ControlSys.dir/src/core/event_channel.c.o: /home/mpos/mpos
   /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/vfs/stdio_defs.h \
   /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/string.h \
   /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/string.h \
-  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/c/string.h \
-  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/ctype.h \
-  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/netbsd-ctype.h \
-  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/ctype_inline.h \
-  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/ctype_bits.h \
-  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/stdlib.h \
-  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/stdlib.h \
-  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/c/stdlib.h
-
-controlsys/CMakeFiles/ControlSys.dir/src/core/event_script.c.o: /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/event_script.c \
-  /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/events.h \
-  /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9.2.1/include/stdbool.h \
-  /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9.2.1/include/stddef.h \
-  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/ansi.h \
-  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/ansi.h \
-  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_ansi.h \
-  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/cdefs.h \
-  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/cdefs.h \
-  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/cdefs.h \
-  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/cdefs_elf.h \
-  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/int_types.h \
-  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/int_types.h \
-  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_int_types.h
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/c/string.h
 
 controlsys/CMakeFiles/ControlSys.dir/src/core/journal.c.o: /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/journal.c \
   /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/journal.h \
@@ -163,6 +230,163 @@ controlsys/CMakeFiles/ControlSys.dir/src/core/log.c.o: /home/mpos/mpos-lab/kos/c
   /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/string.h \
   /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/c/string.h
 
+controlsys/CMakeFiles/ControlSys.dir/src/core/net_verifier.c.o: /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/net_verifier.c \
+  /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/net_verifier.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9.2.1/include/stdbool.h \
+  /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/log.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9.2.1/include/stdarg.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/stdio.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/stdio.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/c/stdio.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/io_types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/cdefs.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/cdefs.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/cdefs.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/cdefs_elf.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/featuretest.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/int_types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_int_types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/sys/types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/ansi.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/ansi.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_ansi.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/int_types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/ansi.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/pthread_types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/netbsd-pthread_types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/endian.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/endian.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/endian_machdep.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/endian_machdep.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/bswap.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/bswap.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/aarch64/byte_swap.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/bswap.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/stdint.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/netbsd-stdint.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/int_mwgwtypes.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/int_mwgwtypes.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_int_mwgwtypes.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/int_limits.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/int_limits.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_int_limits.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/int_const.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/int_const.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/wchar_limits.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/wchar_limits.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9.2.1/include/stddef.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/ssp/ssp.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/vfs/stdio_defs.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/string.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/string.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/c/string.h
+
+controlsys/CMakeFiles/ControlSys.dir/src/core/output_controller.c.o: /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/output_controller.c \
+  /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/output_controller.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9.2.1/include/stdbool.h \
+  /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/tx.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9.2.1/include/stddef.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/ansi.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/ansi.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_ansi.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/cdefs.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/cdefs.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/cdefs.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/cdefs_elf.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/int_types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/int_types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_int_types.h \
+  /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/log.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9.2.1/include/stdarg.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/stdio.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/stdio.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/c/stdio.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/io_types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/featuretest.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/sys/types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/ansi.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/pthread_types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/netbsd-pthread_types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/endian.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/endian.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/endian_machdep.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/endian_machdep.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/bswap.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/bswap.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/aarch64/byte_swap.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/bswap.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/stdint.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/netbsd-stdint.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/int_mwgwtypes.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/int_mwgwtypes.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_int_mwgwtypes.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/int_limits.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/int_limits.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_int_limits.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/int_const.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/int_const.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/wchar_limits.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/wchar_limits.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/ssp/ssp.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/vfs/stdio_defs.h
+
+controlsys/CMakeFiles/ControlSys.dir/src/core/power_verifier.c.o: /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/power_verifier.c \
+  /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/power_verifier.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9.2.1/include/stdbool.h \
+  /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/log.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9.2.1/include/stdarg.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/stdio.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/stdio.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/c/stdio.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/io_types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/cdefs.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/cdefs.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/cdefs.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/cdefs_elf.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/featuretest.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/int_types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_int_types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/sys/types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/ansi.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/ansi.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_ansi.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/int_types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/ansi.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/pthread_types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/netbsd-pthread_types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/endian.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/endian.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/endian_machdep.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/endian_machdep.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/bswap.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/bswap.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/aarch64/byte_swap.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/bswap.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/stdint.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/netbsd-stdint.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/int_mwgwtypes.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/int_mwgwtypes.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_int_mwgwtypes.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/int_limits.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/int_limits.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_int_limits.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/int_const.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/int_const.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/wchar_limits.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/wchar_limits.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9.2.1/include/stddef.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/ssp/ssp.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/vfs/stdio_defs.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/string.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/string.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/c/string.h
+
 controlsys/CMakeFiles/ControlSys.dir/src/core/state_machine.c.o: /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/state_machine.c \
   /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/state_machine.h \
   /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/tx.h \
@@ -179,24 +403,104 @@ controlsys/CMakeFiles/ControlSys.dir/src/core/state_machine.c.o: /home/mpos/mpos
   /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_int_types.h \
   /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/events.h \
   /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9.2.1/include/stdbool.h \
-  /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/event_channel.h \
   /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/log.h \
   /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9.2.1/include/stdarg.h \
   /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/card_verifier.h \
   /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/status_verifier.h \
+  /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/net_verifier.h \
+  /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/power_verifier.h \
+  /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/init_module.h \
+  /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/output_controller.h \
   /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/auth_module.h \
   /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/journal.h \
   /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/txn_builder.h \
   /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/update_loader.h \
   /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/update_storage.h \
   /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/update_verifier.h \
-  /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/update_installer.h
+  /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/update_installer.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/unistd.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/unistd.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/featuretest.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/sys/types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/ansi.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/pthread_types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/netbsd-pthread_types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/endian.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/endian.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/endian_machdep.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/endian_machdep.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/bswap.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/bswap.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/aarch64/byte_swap.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/bswap.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/stdint.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/netbsd-stdint.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/int_mwgwtypes.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/int_mwgwtypes.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_int_mwgwtypes.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/int_limits.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/int_limits.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_int_limits.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/int_const.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/int_const.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/wchar_limits.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/wchar_limits.h
 
 controlsys/CMakeFiles/ControlSys.dir/src/core/status_verifier.c.o: /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/status_verifier.c \
   /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/status_verifier.h \
   /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9.2.1/include/stdbool.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9.2.1/include/stddef.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/ansi.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/ansi.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_ansi.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/cdefs.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/cdefs.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/cdefs.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/cdefs_elf.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/int_types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/int_types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_int_types.h \
+  /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/tx.h \
   /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/log.h \
-  /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9.2.1/include/stdarg.h
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9.2.1/include/stdarg.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/stdio.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/stdio.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/c/stdio.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/io_types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/featuretest.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/sys/types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/ansi.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/pthread_types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/netbsd-pthread_types.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/endian.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/endian.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/endian_machdep.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/endian_machdep.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/bswap.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/bswap.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/aarch64/byte_swap.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/bswap.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/stdint.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/netbsd-stdint.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/int_mwgwtypes.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/int_mwgwtypes.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_int_mwgwtypes.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/int_limits.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/int_limits.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_int_limits.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/int_const.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/int_const.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/wchar_limits.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/wchar_limits.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/ssp/ssp.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/vfs/stdio_defs.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/string.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/string.h \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/c/string.h
 
 controlsys/CMakeFiles/ControlSys.dir/src/core/tx.c.o: /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/tx.c \
   /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/tx.h \
@@ -359,15 +663,29 @@ controlsys/CMakeFiles/ControlSys.dir/src/main.c.o: /home/mpos/mpos-lab/kos/contr
 
 /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/update_storage.h:
 
+/home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/state_machine.c:
+
+/home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/power_verifier.c:
+
 /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/tx.h:
+
+/home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/output_controller.h:
+
+/home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/output_controller.c:
+
+/home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/net_verifier.h:
 
 /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/state_machine.h:
 
-/home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/state_machine.c:
+/home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/net_verifier.c:
 
 /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/log.c:
 
 /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/journal.c:
+
+/home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/init_module.h:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/unistd.h:
 
 /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/event_script.c:
 
@@ -375,17 +693,33 @@ controlsys/CMakeFiles/ControlSys.dir/src/main.c.o: /home/mpos/mpos-lab/kos/contr
 
 /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/stdlib.h:
 
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/time.h:
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/vfs/stdio_defs.h:
 
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/stdlib.h:
+/home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/init_module.c:
 
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/ctype_inline.h:
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/ssp/ssp.h:
 
 /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/io_types.h:
 
-/home/mpos/mpos-lab/kos/controlsys/controlsys/src/main.c:
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/unistd.h:
 
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/cdefs.h:
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/sys/stat.h:
+
+/home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/journal.h:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/stat.h:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/wchar_limits.h:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/wchar_limits.h:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/int_const.h:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/netbsd-ctype.h:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/ctype.h:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/string.h:
 
 /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/txn_builder.c:
 
@@ -395,23 +729,35 @@ controlsys/CMakeFiles/ControlSys.dir/src/main.c.o: /home/mpos/mpos-lab/kos/contr
 
 /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/card_verifier.h:
 
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/ctype_inline.h:
+
+/home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/txn_builder.h:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/featuretest.h:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_int_limits.h:
+
 /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/cdefs_elf.h:
 
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/cdefs.h:
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/netbsd-errno.h:
 
 /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9.2.1/include/stddef.h:
 
 /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/card_verifier.c:
 
+/home/mpos/mpos-lab/kos/controlsys/controlsys/src/main.c:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/cdefs.h:
+
 /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/auth_module.c:
 
 /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_ansi.h:
 
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_int_mwgwtypes.h:
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/time.h:
 
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/types.h:
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/stdint.h:
 
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/int_const.h:
+/opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9.2.1/include/stdbool.h:
 
 /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/aarch64/byte_swap.h:
 
@@ -419,9 +765,13 @@ controlsys/CMakeFiles/ControlSys.dir/src/main.c.o: /home/mpos/mpos-lab/kos/contr
 
 /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/log.h:
 
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/errno.h:
+
 /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/c/string.h:
 
 /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/string.h:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/c/errno.h:
 
 /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/cdefs.h:
 
@@ -439,21 +789,41 @@ controlsys/CMakeFiles/ControlSys.dir/src/main.c.o: /home/mpos/mpos-lab/kos/contr
 
 /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/endian.h:
 
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/vfs/stdio_defs.h:
-
 /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/events.h:
 
 /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9.2.1/include/stdarg.h:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/string.h:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/ctype.h:
 
 /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/update_storage.c:
 
 /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/ansi.h:
 
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/c/errno.h:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/stdlib.h:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/time.h:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/fcntl.h:
+
+/home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/auth_module.h:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/netbsd-pthread_types.h:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/cdefs.h:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/fcntl.h:
+
+/home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/power_verifier.h:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_int_mwgwtypes.h:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/types.h:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/int_const.h:
+
 /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/int_types.h:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/errno.h:
 
 /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/types.h:
 
@@ -479,12 +849,6 @@ controlsys/CMakeFiles/ControlSys.dir/src/main.c.o: /home/mpos/mpos-lab/kos/contr
 
 /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/endian.h:
 
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/wchar_limits.h:
-
-/home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/auth_module.h:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/netbsd-pthread_types.h:
-
 /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/endian_machdep.h:
 
 /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/machine/bswap.h:
@@ -495,18 +859,6 @@ controlsys/CMakeFiles/ControlSys.dir/src/main.c.o: /home/mpos/mpos-lab/kos/contr
 
 /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/bswap.h:
 
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/time.h:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9.2.1/include/stdbool.h:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/stdint.h:
-
-/home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/txn_builder.h:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/featuretest.h:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_int_limits.h:
-
 /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/update_verifier.c:
 
 /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/ctype_bits.h:
@@ -514,13 +866,3 @@ controlsys/CMakeFiles/ControlSys.dir/src/main.c.o: /home/mpos/mpos-lab/kos/contr
 /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/netbsd-stdint.h:
 
 /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/int_limits.h:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/int_const.h:
-
-/home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/journal.h:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/arm/wchar_limits.h:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/ssp/ssp.h:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/netbsd-ctype.h:

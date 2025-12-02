@@ -10,8 +10,11 @@ use nk.base._
 use EDL Einit
 use EDL kl.core.Core
 use EDL controlsys.ControlSys
+use EDL env.Env
+use EDL kl.drivers.DNetSrv
 
-
+use kl.drivers.DNetSrv._
+use kl.drivers.Bcm2711MboxArmToVc._
 
 /* Security policy in this example allows any interaction between processes and the KasperskyOS kernel. */
 /* It is used to simplify the example and it must not be used in real applications. */

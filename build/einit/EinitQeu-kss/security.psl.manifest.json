@@ -8,6 +8,14 @@
             "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/ControlSys.edl",
             "parent": "security.psl"
         },
+        "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/env/Env.edl": {
+            "deps": {
+                "cdlDeps": [],
+                "idlDeps": []
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/env/Env.edl",
+            "parent": "security.psl"
+        },
         "/home/mpos/mpos-lab/kos/controlsys/build/einit/EinitQeu-kss/Einit.edl": {
             "deps": {
                 "cdlDeps": [],
@@ -40,6 +48,27 @@
                 "idlDeps": []
             },
             "found": "/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Core.edl",
+            "parent": "security.psl"
+        },
+        "/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Bcm2711MboxArmToVc.edl": {
+            "deps": {
+                "cdlDeps": [],
+                "idlDeps": [
+                    "kl/drivers/Bcm2711MboxArmToVc.idl",
+                    "kl/drivers/Driver.idl"
+                ]
+            },
+            "found": "/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Bcm2711MboxArmToVc.edl",
+            "parent": "kl/drivers/DNetSrv.psl"
+        },
+        "/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetSrv.edl": {
+            "deps": {
+                "cdlDeps": [
+                    "kl/drivers/DNet.cdl"
+                ],
+                "idlDeps": []
+            },
+            "found": "/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetSrv.edl",
             "parent": "security.psl"
         },
         "kl/core/Audit.cdl": {
@@ -212,6 +241,19 @@
             },
             "found": "/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/XHCIDBG.cdl",
             "parent": "/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Core.edl"
+        },
+        "kl/drivers/DNet.cdl": {
+            "deps": {
+                "cdlDeps": [],
+                "idlDeps": [
+                    "kl/drivers/DNet.idl",
+                    "kl/drivers/DNetMac.idl",
+                    "kl/drivers/DNetSupplicant.idl",
+                    "kl/drivers/DNetWifi.idl"
+                ]
+            },
+            "found": "/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNet.cdl",
+            "parent": "/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetSrv.edl"
         }
     },
     "edls": {
@@ -221,6 +263,14 @@
                 "idlDeps": []
             },
             "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/ControlSys.edl",
+            "parent": "security.psl"
+        },
+        "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/env/Env.edl": {
+            "deps": {
+                "cdlDeps": [],
+                "idlDeps": []
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/env/Env.edl",
             "parent": "security.psl"
         },
         "/home/mpos/mpos-lab/kos/controlsys/build/einit/EinitQeu-kss/Einit.edl": {
@@ -255,6 +305,27 @@
                 "idlDeps": []
             },
             "found": "/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Core.edl",
+            "parent": "security.psl"
+        },
+        "/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Bcm2711MboxArmToVc.edl": {
+            "deps": {
+                "cdlDeps": [],
+                "idlDeps": [
+                    "kl/drivers/Bcm2711MboxArmToVc.idl",
+                    "kl/drivers/Driver.idl"
+                ]
+            },
+            "found": "/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Bcm2711MboxArmToVc.edl",
+            "parent": "kl/drivers/DNetSrv.psl"
+        },
+        "/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetSrv.edl": {
+            "deps": {
+                "cdlDeps": [
+                    "kl/drivers/DNet.cdl"
+                ],
+                "idlDeps": []
+            },
+            "found": "/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetSrv.edl",
             "parent": "security.psl"
         }
     },
@@ -421,7 +492,7 @@
                 "idlDeps": []
             },
             "found": "/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Types.idl",
-            "parent": "kl/core/XHCIDBG.idl"
+            "parent": "kl/drivers/DNet.idl"
         },
         "kl/core/VMM.idl": {
             "deps": {
@@ -440,6 +511,64 @@
             },
             "found": "/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/XHCIDBG.idl",
             "parent": "kl/core/XHCIDBG.cdl"
+        },
+        "kl/drivers/Bcm2711MboxArmToVc.idl": {
+            "deps": {
+                "idlDeps": [
+                    "kl/core/Types.idl",
+                    "kl/drivers/Driver.idl"
+                ]
+            },
+            "found": "/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Bcm2711MboxArmToVc.idl",
+            "parent": "/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Bcm2711MboxArmToVc.edl"
+        },
+        "kl/drivers/DNet.idl": {
+            "deps": {
+                "idlDeps": [
+                    "kl/core/Types.idl"
+                ]
+            },
+            "found": "/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNet.idl",
+            "parent": "kl/drivers/DNet.cdl"
+        },
+        "kl/drivers/DNetMac.idl": {
+            "deps": {
+                "idlDeps": [
+                    "kl/core/Types.idl",
+                    "kl/drivers/DNet.idl"
+                ]
+            },
+            "found": "/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetMac.idl",
+            "parent": "kl/drivers/DNet.cdl"
+        },
+        "kl/drivers/DNetSupplicant.idl": {
+            "deps": {
+                "idlDeps": [
+                    "kl/core/Types.idl",
+                    "kl/drivers/DNet.idl"
+                ]
+            },
+            "found": "/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetSupplicant.idl",
+            "parent": "kl/drivers/DNet.cdl"
+        },
+        "kl/drivers/DNetWifi.idl": {
+            "deps": {
+                "idlDeps": [
+                    "kl/core/Types.idl",
+                    "kl/drivers/DNet.idl"
+                ]
+            },
+            "found": "/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetWifi.idl",
+            "parent": "kl/drivers/DNet.cdl"
+        },
+        "kl/drivers/Driver.idl": {
+            "deps": {
+                "idlDeps": [
+                    "kl/core/Types.idl"
+                ]
+            },
+            "found": "/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Driver.idl",
+            "parent": "kl/drivers/Bcm2711MboxArmToVc.idl"
         }
     },
     "platform": [
@@ -451,6 +580,33 @@
         }
     ],
     "psls": {
+        "kl/drivers/Bcm2711MboxArmToVc.psl": {
+            "deps": {
+                "cdlDeps": [],
+                "edlDeps": [
+                    "/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Bcm2711MboxArmToVc.edl"
+                ],
+                "idlDeps": [],
+                "pslDeps": [],
+                "pslProviders": []
+            },
+            "found": "/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Bcm2711MboxArmToVc.psl",
+            "parent": "security.psl"
+        },
+        "kl/drivers/DNetSrv.psl": {
+            "deps": {
+                "cdlDeps": [],
+                "edlDeps": [
+                    "/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Bcm2711MboxArmToVc.edl",
+                    "/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetSrv.edl"
+                ],
+                "idlDeps": [],
+                "pslDeps": [],
+                "pslProviders": []
+            },
+            "found": "/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetSrv.psl",
+            "parent": "security.psl"
+        },
         "nk/base.psl": {
             "deps": {
                 "cdlDeps": [],
@@ -480,13 +636,17 @@
                 "cdlDeps": [],
                 "edlDeps": [
                     "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/ControlSys.edl",
+                    "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/env/Env.edl",
                     "/home/mpos/mpos-lab/kos/controlsys/build/einit/EinitQeu-kss/Einit.edl",
-                    "/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Core.edl"
+                    "/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Core.edl",
+                    "/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetSrv.edl"
                 ],
                 "idlDeps": [
                     "kl/core/Execute.idl"
                 ],
                 "pslDeps": [
+                    "kl/drivers/Bcm2711MboxArmToVc.psl",
+                    "kl/drivers/DNetSrv.psl",
                     "nk/base.psl",
                     "nonsecurity.psl"
                 ],

@@ -18,6 +18,10 @@ set (CONTROLSYS_SOURCES
      src/core/event_channel.c
      src/core/card_verifier.c
      src/core/status_verifier.c
+     src/core/net_verifier.c
+     src/core/power_verifier.c
+     src/core/init_module.c
+     src/core/output_controller.c
      src/core/auth_module.c
      src/core/journal.c
      src/core/update_loader.c
@@ -30,3 +34,10 @@ add_executable (ControlSys ${CONTROLSYS_SOURCES})
 add_dependencies (ControlSys controlsys_edl_files)
 target_include_directories (ControlSys PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/include")
 set_target_properties (ControlSys PROPERTIES ENTITY_PATH "${CMAKE_BINARY_DIR}/controlsys/ControlSys")
+
+add_custom_target(pal-test0
+    COMMAND ${CMAKE_COMMAND} -E env BUILD_DIR=${CMAKE_BINARY_DIR} bash ${CMAKE_SOURCE_DIR}/tools/run_pal_tests.sh
+    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+    DEPENDS ControlSys
+    COMMENT "Running PAL tests"
+)

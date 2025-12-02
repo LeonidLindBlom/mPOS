@@ -240,6 +240,84 @@ ControlSys/fast:
 .PHONY : ControlSys/fast
 
 #=============================================================================
+# Target rules for targets named pal-test0
+
+# Build rule for target.
+pal-test0: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pal-test0
+.PHONY : pal-test0
+
+# fast build rule for target.
+pal-test0/fast:
+	$(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/pal-test0.dir/build.make controlsys/CMakeFiles/pal-test0.dir/build
+.PHONY : pal-test0/fast
+
+#=============================================================================
+# Target rules for targets named env_edl_files_copy_env.Env.edl
+
+# Build rule for target.
+env_edl_files_copy_env.Env.edl: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 env_edl_files_copy_env.Env.edl
+.PHONY : env_edl_files_copy_env.Env.edl
+
+# fast build rule for target.
+env_edl_files_copy_env.Env.edl/fast:
+	$(MAKE) $(MAKESILENT) -f external/env/CMakeFiles/env_edl_files_copy_env.Env.edl.dir/build.make external/env/CMakeFiles/env_edl_files_copy_env.Env.edl.dir/build
+.PHONY : env_edl_files_copy_env.Env.edl/fast
+
+#=============================================================================
+# Target rules for targets named env_edl_files_gen_env.Env.edl
+
+# Build rule for target.
+env_edl_files_gen_env.Env.edl: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 env_edl_files_gen_env.Env.edl
+.PHONY : env_edl_files_gen_env.Env.edl
+
+# fast build rule for target.
+env_edl_files_gen_env.Env.edl/fast:
+	$(MAKE) $(MAKESILENT) -f external/env/CMakeFiles/env_edl_files_gen_env.Env.edl.dir/build.make external/env/CMakeFiles/env_edl_files_gen_env.Env.edl.dir/build
+.PHONY : env_edl_files_gen_env.Env.edl/fast
+
+#=============================================================================
+# Target rules for targets named env_edl_files_copy_gen_env.Env.edl
+
+# Build rule for target.
+env_edl_files_copy_gen_env.Env.edl: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 env_edl_files_copy_gen_env.Env.edl
+.PHONY : env_edl_files_copy_gen_env.Env.edl
+
+# fast build rule for target.
+env_edl_files_copy_gen_env.Env.edl/fast:
+	$(MAKE) $(MAKESILENT) -f external/env/CMakeFiles/env_edl_files_copy_gen_env.Env.edl.dir/build.make external/env/CMakeFiles/env_edl_files_copy_gen_env.Env.edl.dir/build
+.PHONY : env_edl_files_copy_gen_env.Env.edl/fast
+
+#=============================================================================
+# Target rules for targets named env_edl_files
+
+# Build rule for target.
+env_edl_files: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 env_edl_files
+.PHONY : env_edl_files
+
+# fast build rule for target.
+env_edl_files/fast:
+	$(MAKE) $(MAKESILENT) -f external/env/CMakeFiles/env_edl_files.dir/build.make external/env/CMakeFiles/env_edl_files.dir/build
+.PHONY : env_edl_files/fast
+
+#=============================================================================
+# Target rules for targets named Env
+
+# Build rule for target.
+Env: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Env
+.PHONY : Env
+
+# fast build rule for target.
+Env/fast:
+	$(MAKE) $(MAKESILENT) -f external/env/CMakeFiles/Env.dir/build.make external/env/CMakeFiles/Env.dir/build
+.PHONY : Env/fast
+
+#=============================================================================
 # Target rules for targets named EinitHw-edl_copy_kl.Einit.edl
 
 # Build rule for target.
@@ -552,11 +630,15 @@ help:
 	@echo "... controlsys_edl_files_copy_gen_controlsys.ControlSys.edl"
 	@echo "... controlsys_edl_files_gen_controlsys.ControlSys.edl"
 	@echo "... doc"
+	@echo "... env_edl_files_copy_env.Env.edl"
+	@echo "... env_edl_files_copy_gen_env.Env.edl"
+	@echo "... env_edl_files_gen_env.Env.edl"
 	@echo "... ext_debug"
 	@echo "... gdb"
 	@echo "... gdbsim"
 	@echo "... kos-image"
 	@echo "... kos-qemu-image"
+	@echo "... pal-test0"
 	@echo "... sd-image"
 	@echo "... sim"
 	@echo "... ControlSys"
@@ -564,7 +646,9 @@ help:
 	@echo "... EinitHw-edl"
 	@echo "... EinitQeu"
 	@echo "... EinitQeu-edl"
+	@echo "... Env"
 	@echo "... controlsys_edl_files"
+	@echo "... env_edl_files"
 .PHONY : help
 
 

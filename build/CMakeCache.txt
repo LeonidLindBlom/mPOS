@@ -449,6 +449,12 @@ android_dtb_DIR:PATH=android_dtb_DIR-NOTFOUND
 //The directory containing a CMake configuration file for android_mkbootimg.
 android_mkbootimg_DIR:PATH=android_mkbootimg_DIR-NOTFOUND
 
+//The directory containing a CMake configuration file for bcm2711_mbox_arm2vc.
+bcm2711_mbox_arm2vc_DIR:PATH=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/lib/cmake/bcm2711_mbox_arm2vc
+
+//The bcm2711_mbox_arm2vc include directory
+bcm2711_mbox_arm2vc_INCLUDE:PATH=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/standalone
+
 //The directory containing a CMake configuration file for blob_container.
 blob_container_DIR:PATH=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/lib/cmake/blob_container
 
@@ -482,6 +488,12 @@ controlsys_project_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 controlsys_project_SOURCE_DIR:STATIC=/home/mpos/mpos-lab/kos/controlsys
 
+//The directory containing a CMake configuration file for dnet.
+dnet_DIR:PATH=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/lib/cmake/dnet
+
+//The dnet include directory
+dnet_INCLUDE:PATH=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include
+
 //Value Computed by CMake
 einit_BINARY_DIR:STATIC=/home/mpos/mpos-lab/kos/controlsys/build/einit
 
@@ -491,29 +503,47 @@ einit_IS_TOP_LEVEL:STATIC=OFF
 //Value Computed by CMake
 einit_SOURCE_DIR:STATIC=/home/mpos/mpos-lab/kos/controlsys/einit
 
-//The directory containing a CMake configuration file for entropy.
-entropy_DIR:PATH=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/lib/cmake/entropy
+//Value Computed by CMake
+env_BINARY_DIR:STATIC=/home/mpos/mpos-lab/kos/controlsys/build/external/env
+
+//The directory containing a CMake configuration file for env.
+env_DIR:PATH=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/lib/cmake/env
+
+//The env include directory
+env_INCLUDE:PATH=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include
+
+//Value Computed by CMake
+env_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+env_SOURCE_DIR:STATIC=/home/mpos/mpos-lab/kos/controlsys/external/env
+
+//The directory containing a CMake configuration file for fdt.
+fdt_DIR:PATH=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/lib/cmake/fdt
+
+//The directory containing a CMake configuration file for fdthelpers.
+fdthelpers_DIR:PATH=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/lib/cmake/fdthelpers
+
+//The directory containing a CMake configuration file for gpio.
+gpio_DIR:PATH=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/lib/cmake/gpio
+
+//The gpio include directory
+gpio_INCLUDE:PATH=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include
+
+//The directory containing a CMake configuration file for kdf.
+kdf_DIR:PATH=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/lib/cmake/kdf
+
+//The kdf include directory
+kdf_INCLUDE:PATH=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include
 
 //The directory containing a CMake configuration file for nk.
 nk_DIR:PATH=/opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/share/cmake/nk
 
-//The directory containing a CMake configuration file for precompiled_vfs.
-precompiled_vfs_DIR:PATH=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/lib/cmake/precompiled_vfs
+//The directory containing a CMake configuration file for phy.
+phy_DIR:PATH=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/lib/cmake/phy
 
-//The precompiled_vfs include directory
-precompiled_vfs_INCLUDE:PATH=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include
-
-//The directory containing a CMake configuration file for ramdisk.
-ramdisk_DIR:PATH=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/lib/cmake/ramdisk
-
-//The ramdisk include directory
-ramdisk_INCLUDE:PATH=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include
-
-//The directory containing a CMake configuration file for sdcard.
-sdcard_DIR:PATH=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/lib/cmake/sdcard
-
-//The sdcard include directory
-sdcard_INCLUDE:PATH=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include
+//The phy include directory
+phy_INCLUDE:PATH=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include
 
 //The directory containing a CMake configuration file for system_entities.
 system_entities_DIR:PATH=system_entities_DIR-NOTFOUND
@@ -655,7 +685,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -704,18 +734,22 @@ DOXYGEN_DOT_EXECUTABLE-ADVANCED:INTERNAL=1
 DOXYGEN_EXECUTABLE-ADVANCED:INTERNAL=1
 //Details about finding Doxygen
 FIND_PACKAGE_MESSAGE_DETAILS_Doxygen:INTERNAL=[/usr/bin/doxygen][cfound components: doxygen dot ][v1.9.1()]
+//Details about finding bcm2711_mbox_arm2vc
+FIND_PACKAGE_MESSAGE_DETAILS_bcm2711_mbox_arm2vc:INTERNAL=[/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/standalone][cfound components: ENTITY ][v0.0.1()]
 //Details about finding bsp
-FIND_PACKAGE_MESSAGE_DETAILS_bsp:INTERNAL=[/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include][cfound components: ENTITY ][v0.0.1()]
+FIND_PACKAGE_MESSAGE_DETAILS_bsp:INTERNAL=[/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include][cfound components: CLIENT_LIB ][v0.0.1()]
 //Details about finding bsp_entity
 FIND_PACKAGE_MESSAGE_DETAILS_bsp_entity:INTERNAL=[/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include][cfound components: ENTITY ][v0.0.3()]
-//Details about finding entropy
-FIND_PACKAGE_MESSAGE_DETAILS_entropy:INTERNAL=[entropy::entity][cfound components: ENTITY ][v()]
-//Details about finding precompiled_vfs
-FIND_PACKAGE_MESSAGE_DETAILS_precompiled_vfs:INTERNAL=[/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include][c ][v0.0.1()]
-//Details about finding ramdisk
-FIND_PACKAGE_MESSAGE_DETAILS_ramdisk:INTERNAL=[/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include][cfound components: ENTITY ][v1.0.0()]
-//Details about finding sdcard
-FIND_PACKAGE_MESSAGE_DETAILS_sdcard:INTERNAL=[/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include][cfound components: ENTITY ][v1.0.1()]
+//Details about finding dnet
+FIND_PACKAGE_MESSAGE_DETAILS_dnet:INTERNAL=[/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include][cfound components: ENTITY ][v0.0.2()]
+//Details about finding env
+FIND_PACKAGE_MESSAGE_DETAILS_env:INTERNAL=[/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include][cfound components: SERVER_LIB ][v1.0.0()]
+//Details about finding gpio
+FIND_PACKAGE_MESSAGE_DETAILS_gpio:INTERNAL=[/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include][cfound components: CLIENT_LIB ][v0.1.1()]
+//Details about finding kdf
+FIND_PACKAGE_MESSAGE_DETAILS_kdf:INTERNAL=[/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include][c ][v0.0.1()]
+//Details about finding phy
+FIND_PACKAGE_MESSAGE_DETAILS_phy:INTERNAL=[/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include][c ][v0.0.2()]
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
 //CMAKE_INSTALL_PREFIX during last run

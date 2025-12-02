@@ -7,26 +7,168 @@
 #include <coresrv/entity/entity_api.h>
 #include <services/handle/if_connection.h>
 
-
+#include <env/env.h>
 
 static const EntityInfo taskInfo_controlsys_ControlSys_0 = {
     .eiid = "controlsys.ControlSys",
     .max_endpoints = 0,
     .endpoints = NK_NULL,
 };
+static const EntityInfo taskInfo_env_Env_1 = {
+    .eiid = "env.Env",
+    .max_endpoints = 0,
+    .endpoints = NK_NULL,
+};
+static const EndpointInfo endpointsInfo_kl_drivers_Bcm2711MboxArmToVc_2[4] = {
+    {
+        .name = "kl.drivers.Bcm2711MboxArmToVc.driver",
+        .riid = 0,
+        .iface_name = "kl.drivers.Driver",
+    },
+    {
+        .name = "driver",
+        .riid = 0,
+        .iface_name = "kl.drivers.Driver",
+    },
+    {
+        .name = "kl.drivers.Bcm2711MboxArmToVc.bcm2711mboxarmtovc",
+        .riid = 1,
+        .iface_name = "kl.drivers.Bcm2711MboxArmToVc",
+    },
+    {
+        .name = "bcm2711mboxarmtovc",
+        .riid = 1,
+        .iface_name = "kl.drivers.Bcm2711MboxArmToVc",
+    }
+};
+static const EntityInfo taskInfo_kl_drivers_Bcm2711MboxArmToVc_2 = {
+    .eiid = "kl.drivers.Bcm2711MboxArmToVc",
+    .max_endpoints = 4,
+    .endpoints = endpointsInfo_kl_drivers_Bcm2711MboxArmToVc_2,
+};
+static const EndpointInfo endpointsInfo_kl_drivers_DNetSrv_3[8] = {
+    {
+        .name = "kl.drivers.DNet.dnet",
+        .riid = 0,
+        .iface_name = "kl.drivers.DNet",
+    },
+    {
+        .name = "dnet.dnet",
+        .riid = 0,
+        .iface_name = "kl.drivers.DNet",
+    },
+    {
+        .name = "kl.drivers.DNet.mac",
+        .riid = 1,
+        .iface_name = "kl.drivers.DNetMac",
+    },
+    {
+        .name = "dnet.mac",
+        .riid = 1,
+        .iface_name = "kl.drivers.DNetMac",
+    },
+    {
+        .name = "kl.drivers.DNet.wifi",
+        .riid = 2,
+        .iface_name = "kl.drivers.DNetWifi",
+    },
+    {
+        .name = "dnet.wifi",
+        .riid = 2,
+        .iface_name = "kl.drivers.DNetWifi",
+    },
+    {
+        .name = "kl.drivers.DNet.supplicant",
+        .riid = 3,
+        .iface_name = "kl.drivers.DNetSupplicant",
+    },
+    {
+        .name = "dnet.supplicant",
+        .riid = 3,
+        .iface_name = "kl.drivers.DNetSupplicant",
+    }
+};
+static const EntityInfo taskInfo_kl_drivers_DNetSrv_3 = {
+    .eiid = "kl.drivers.DNetSrv",
+    .max_endpoints = 8,
+    .endpoints = endpointsInfo_kl_drivers_DNetSrv_3,
+};
 
 /* init entity entry point */
 int main(void) {
 
     Entity * task_controlsys_ControlSys_0;
+    Entity * task_env_Env_1;
+    Entity * task_kl_drivers_Bcm2711MboxArmToVc_2;
+    Entity * task_kl_drivers_DNetSrv_3;
 
     const char * taskInfo_controlsys_ControlSys_0_args[] = {
         "ControlSys",
         RTL_NULL
     };
+    const char * taskInfo_env_Env_1_args[] = {
+        "Env",
+        RTL_NULL
+    };
+    const char * taskInfo_kl_drivers_Bcm2711MboxArmToVc_2_args[] = {
+        "bcm2711_mbox_arm2vc_qemu",
+        RTL_NULL
+    };
+    const char * taskInfo_kl_drivers_DNetSrv_3_args[] = {
+        "dnet_entity",
+        RTL_NULL
+    };
 
     /* initialize entities */
 
+    task_kl_drivers_Bcm2711MboxArmToVc_2 = EntityInitEx(
+        &taskInfo_kl_drivers_Bcm2711MboxArmToVc_2, "kl.drivers.Bcm2711MboxArmToVc", "bcm2711_mbox_arm2vc_qemu"
+    );
+    if (!task_kl_drivers_Bcm2711MboxArmToVc_2) {
+        fprintf(
+            stderr, "Can't initialize task \"kl.drivers.Bcm2711MboxArmToVc\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+
+    if (EntitySetArgs(task_kl_drivers_Bcm2711MboxArmToVc_2, taskInfo_kl_drivers_Bcm2711MboxArmToVc_2_args) != rcOk) {
+        fprintf(
+            stderr, "Can't set args for task \"kl.drivers.Bcm2711MboxArmToVc\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+    task_kl_drivers_DNetSrv_3 = EntityInitEx(
+        &taskInfo_kl_drivers_DNetSrv_3, "kl.drivers.DNetSrv", "dnet_entity"
+    );
+    if (!task_kl_drivers_DNetSrv_3) {
+        fprintf(
+            stderr, "Can't initialize task \"kl.drivers.DNetSrv\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+
+    if (EntitySetArgs(task_kl_drivers_DNetSrv_3, taskInfo_kl_drivers_DNetSrv_3_args) != rcOk) {
+        fprintf(
+            stderr, "Can't set args for task \"kl.drivers.DNetSrv\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+    task_env_Env_1 = EntityInitEx(
+        &taskInfo_env_Env_1, "env.Env", "Env"
+    );
+    if (!task_env_Env_1) {
+        fprintf(
+            stderr, "Can't initialize task \"env.Env\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+
+    if (EntitySetArgs(task_env_Env_1, taskInfo_env_Env_1_args) != rcOk) {
+        fprintf(
+            stderr, "Can't set args for task \"env.Env\"\n"
+        );
+        return EXIT_FAILURE;
+    }
     task_controlsys_ControlSys_0 = EntityInitEx(
         &taskInfo_controlsys_ControlSys_0, "controlsys.ControlSys", "ControlSys"
     );
@@ -46,12 +188,38 @@ int main(void) {
 
     /* setup connections between entities */
 
+    if (EntityConnectToService(task_kl_drivers_DNetSrv_3, task_kl_drivers_Bcm2711MboxArmToVc_2, "kl.drivers.Bcm2711MboxArmToVc") != rcOk) {
+        fprintf(stderr, "Can't setup a connection %s\n", "kl.drivers.Bcm2711MboxArmToVc");
+        return EXIT_FAILURE;
+    }
 
+    if (EntityConnectToService(task_controlsys_ControlSys_0, task_env_Env_1, ENV_SERVICE_NAME) != rcOk) {
+        fprintf(stderr, "Can't setup a connection %s\n", ENV_SERVICE_NAME);
+        return EXIT_FAILURE;
+    }
 
 
 
     /* run entities */
 
+    if (EntityRun(task_kl_drivers_Bcm2711MboxArmToVc_2) != rcOk) {
+        fprintf(
+            stderr, "Can't run task \"kl.drivers.Bcm2711MboxArmToVc\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+    if (EntityRun(task_kl_drivers_DNetSrv_3) != rcOk) {
+        fprintf(
+            stderr, "Can't run task \"kl.drivers.DNetSrv\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+    if (EntityRun(task_env_Env_1) != rcOk) {
+        fprintf(
+            stderr, "Can't run task \"env.Env\"\n"
+        );
+        return EXIT_FAILURE;
+    }
     if (EntityRun(task_controlsys_ControlSys_0) != rcOk) {
         fprintf(
             stderr, "Can't run task \"controlsys.ControlSys\"\n"

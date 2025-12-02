@@ -231,6 +231,20 @@ ControlSys/fast:
 	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/build
 .PHONY : ControlSys/fast
 
+# Convenience name for target.
+controlsys/CMakeFiles/pal-test0.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/pal-test0.dir/rule
+.PHONY : controlsys/CMakeFiles/pal-test0.dir/rule
+
+# Convenience name for target.
+pal-test0: controlsys/CMakeFiles/pal-test0.dir/rule
+.PHONY : pal-test0
+
+# fast build rule for target.
+pal-test0/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/pal-test0.dir/build.make controlsys/CMakeFiles/pal-test0.dir/build
+.PHONY : pal-test0/fast
+
 src/core/auth_module.o: src/core/auth_module.c.o
 .PHONY : src/core/auth_module.o
 
@@ -327,6 +341,30 @@ src/core/event_script.c.s:
 	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/event_script.c.s
 .PHONY : src/core/event_script.c.s
 
+src/core/init_module.o: src/core/init_module.c.o
+.PHONY : src/core/init_module.o
+
+# target to build an object file
+src/core/init_module.c.o:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/init_module.c.o
+.PHONY : src/core/init_module.c.o
+
+src/core/init_module.i: src/core/init_module.c.i
+.PHONY : src/core/init_module.i
+
+# target to preprocess a source file
+src/core/init_module.c.i:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/init_module.c.i
+.PHONY : src/core/init_module.c.i
+
+src/core/init_module.s: src/core/init_module.c.s
+.PHONY : src/core/init_module.s
+
+# target to generate assembly for a file
+src/core/init_module.c.s:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/init_module.c.s
+.PHONY : src/core/init_module.c.s
+
 src/core/journal.o: src/core/journal.c.o
 .PHONY : src/core/journal.o
 
@@ -374,6 +412,78 @@ src/core/log.s: src/core/log.c.s
 src/core/log.c.s:
 	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/log.c.s
 .PHONY : src/core/log.c.s
+
+src/core/net_verifier.o: src/core/net_verifier.c.o
+.PHONY : src/core/net_verifier.o
+
+# target to build an object file
+src/core/net_verifier.c.o:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/net_verifier.c.o
+.PHONY : src/core/net_verifier.c.o
+
+src/core/net_verifier.i: src/core/net_verifier.c.i
+.PHONY : src/core/net_verifier.i
+
+# target to preprocess a source file
+src/core/net_verifier.c.i:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/net_verifier.c.i
+.PHONY : src/core/net_verifier.c.i
+
+src/core/net_verifier.s: src/core/net_verifier.c.s
+.PHONY : src/core/net_verifier.s
+
+# target to generate assembly for a file
+src/core/net_verifier.c.s:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/net_verifier.c.s
+.PHONY : src/core/net_verifier.c.s
+
+src/core/output_controller.o: src/core/output_controller.c.o
+.PHONY : src/core/output_controller.o
+
+# target to build an object file
+src/core/output_controller.c.o:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/output_controller.c.o
+.PHONY : src/core/output_controller.c.o
+
+src/core/output_controller.i: src/core/output_controller.c.i
+.PHONY : src/core/output_controller.i
+
+# target to preprocess a source file
+src/core/output_controller.c.i:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/output_controller.c.i
+.PHONY : src/core/output_controller.c.i
+
+src/core/output_controller.s: src/core/output_controller.c.s
+.PHONY : src/core/output_controller.s
+
+# target to generate assembly for a file
+src/core/output_controller.c.s:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/output_controller.c.s
+.PHONY : src/core/output_controller.c.s
+
+src/core/power_verifier.o: src/core/power_verifier.c.o
+.PHONY : src/core/power_verifier.o
+
+# target to build an object file
+src/core/power_verifier.c.o:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/power_verifier.c.o
+.PHONY : src/core/power_verifier.c.o
+
+src/core/power_verifier.i: src/core/power_verifier.c.i
+.PHONY : src/core/power_verifier.i
+
+# target to preprocess a source file
+src/core/power_verifier.c.i:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/power_verifier.c.i
+.PHONY : src/core/power_verifier.c.i
+
+src/core/power_verifier.s: src/core/power_verifier.c.s
+.PHONY : src/core/power_verifier.s
+
+# target to generate assembly for a file
+src/core/power_verifier.c.s:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/power_verifier.c.s
+.PHONY : src/core/power_verifier.c.s
 
 src/core/state_machine.o: src/core/state_machine.c.o
 .PHONY : src/core/state_machine.o
@@ -606,6 +716,7 @@ help:
 	@echo "... controlsys_edl_files_copy_controlsys.ControlSys.edl"
 	@echo "... controlsys_edl_files_copy_gen_controlsys.ControlSys.edl"
 	@echo "... controlsys_edl_files_gen_controlsys.ControlSys.edl"
+	@echo "... pal-test0"
 	@echo "... ControlSys"
 	@echo "... controlsys_edl_files"
 	@echo "... src/core/auth_module.o"
@@ -620,12 +731,24 @@ help:
 	@echo "... src/core/event_script.o"
 	@echo "... src/core/event_script.i"
 	@echo "... src/core/event_script.s"
+	@echo "... src/core/init_module.o"
+	@echo "... src/core/init_module.i"
+	@echo "... src/core/init_module.s"
 	@echo "... src/core/journal.o"
 	@echo "... src/core/journal.i"
 	@echo "... src/core/journal.s"
 	@echo "... src/core/log.o"
 	@echo "... src/core/log.i"
 	@echo "... src/core/log.s"
+	@echo "... src/core/net_verifier.o"
+	@echo "... src/core/net_verifier.i"
+	@echo "... src/core/net_verifier.s"
+	@echo "... src/core/output_controller.o"
+	@echo "... src/core/output_controller.i"
+	@echo "... src/core/output_controller.s"
+	@echo "... src/core/power_verifier.o"
+	@echo "... src/core/power_verifier.i"
+	@echo "... src/core/power_verifier.s"
 	@echo "... src/core/state_machine.o"
 	@echo "... src/core/state_machine.i"
 	@echo "... src/core/state_machine.s"

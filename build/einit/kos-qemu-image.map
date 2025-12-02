@@ -11,7 +11,7 @@ Name             Origin             Length             Attributes
 Linker script and memory map
 
 LOAD /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/../libexec/aarch64-kos/kos-qemu
-LOAD /tmp/tmp.NRi7AT5A7S
+LOAD /tmp/tmp.k6bHNU7vRw
 LOAD /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9.2.1/libgcc.a
                 0x0000000082000000                . = 0x82000000
                 0x0000000082000000                _begin = .
@@ -151,7 +151,7 @@ LOAD /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9
                 0x0000000082005050                rtl_snprintf
                 0x00000000820050a0                rtl_vprintf
                 0x0000000082005120                rtl_vsnprintf
- .text          0x0000000082005f6c        0x0 /tmp/tmp.NRi7AT5A7S
+ .text          0x0000000082005f6c        0x0 /tmp/tmp.k6bHNU7vRw
  *(.text.*)
  *(.stub)
                 0x0000000082006000                . = ALIGN (0x1000)
@@ -204,7 +204,7 @@ LOAD /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9
                 0x000000008200edb0                uartHw
                 0x000000008200eeb0                fbConsole
                 0x000000008200ef18                InitialStackSize
- .data          0x000000008200ef60        0x0 /tmp/tmp.NRi7AT5A7S
+ .data          0x000000008200ef60        0x0 /tmp/tmp.k6bHNU7vRw
  *(.data.rel)
  *(.data.rel.local)
  *(.got.plt)
@@ -214,7 +214,7 @@ LOAD /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9
  *fill*         0x000000008200ef60       0xa0 
                 0x000000008200f000                . = ALIGN (0x1000)
 
-.rodata         0x000000008200f000   0x28f000
+.rodata         0x000000008200f000   0x580000
  *(.rodata)
  .rodata        0x000000008200f000    0xc5cb9 /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/../libexec/aarch64-kos/kos-qemu
                 0x000000008200f000                kernelImageBegin
@@ -232,42 +232,42 @@ LOAD /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9
  *fill*         0x00000000820d54f7      0xb09 
                 0x00000000820d6000                __RomfsBegin = .
  *(.romfs)
- .romfs         0x00000000820d6000   0x1c8000 /tmp/tmp.NRi7AT5A7S
+ .romfs         0x00000000820d6000   0x4b9000 /tmp/tmp.k6bHNU7vRw
  *(.romfs.*)
-                0x000000008229e000                __RomfsEnd = .
-                0x000000008229e000                . = ALIGN (0x1000)
-                0x000000008229e000                . = ALIGN (0x1000)
+                0x000000008258f000                __RomfsEnd = .
+                0x000000008258f000                . = ALIGN (0x1000)
+                0x000000008258f000                . = ALIGN (0x1000)
 
 .note.gnu.build-id
-                0x000000008229e000     0x1000
+                0x000000008258f000     0x1000
  *(.note.gnu.build-id)
  .note.gnu.build-id
-                0x000000008229e000       0x24 /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/../libexec/aarch64-kos/kos-qemu
-                0x000000008229f000                . = ALIGN (0x1000)
- *fill*         0x000000008229e024      0xfdc 
-                0x000000000029f000                _imagesize = (. - _begin)
-                0x000000008229f000                . = ALIGN (0x1000)
+                0x000000008258f000       0x24 /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/../libexec/aarch64-kos/kos-qemu
+                0x0000000082590000                . = ALIGN (0x1000)
+ *fill*         0x000000008258f024      0xfdc 
+                0x0000000000590000                _imagesize = (. - _begin)
+                0x0000000082590000                . = ALIGN (0x1000)
 
-.bootstub       0x000000008229f000        0x0
+.bootstub       0x0000000082590000        0x0
  *(.bootstub)
-                0x000000008229f000                . = ALIGN (0x1000)
-                0x000000008229f000                . = ALIGN (0x1000)
+                0x0000000082590000                . = ALIGN (0x1000)
+                0x0000000082590000                . = ALIGN (0x1000)
 
-.bss            0x000000008229f000     0xc000
+.bss            0x0000000082590000     0xc000
  *(.bss..page_aligned)
  *(.dynbss)
  *(.bss)
- .bss           0x000000008229f000     0xb120 /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/../libexec/aarch64-kos/kos-qemu
-                0x000000008229fe60                fbBase
-                0x000000008229fe88                realFbBase
-                0x00000000822a2000                InitialStack
- .bss           0x00000000822aa120        0x0 /tmp/tmp.NRi7AT5A7S
+ .bss           0x0000000082590000     0xb120 /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/../libexec/aarch64-kos/kos-qemu
+                0x0000000082590e60                fbBase
+                0x0000000082590e88                realFbBase
+                0x0000000082593000                InitialStack
+ .bss           0x000000008259b120        0x0 /tmp/tmp.k6bHNU7vRw
  *(COMMON)
  *(.sbss)
  *(.scommon)
-                0x00000000822ab000                . = ALIGN (0x1000)
- *fill*         0x00000000822aa120      0xee0 
-                0x00000000822ab000                _end = .
+                0x000000008259c000                . = ALIGN (0x1000)
+ *fill*         0x000000008259b120      0xee0 
+                0x000000008259c000                _end = .
 
 /DISCARD/
  *(.discard)

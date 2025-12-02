@@ -70,6 +70,8 @@ include einit/CMakeFiles/EinitQeu.dir/progress.make
 include einit/CMakeFiles/EinitQeu.dir/flags.make
 
 einit/EinitQeu-kss/EinitQeu.c: einit/EinitQeu-kss/init.yaml
+einit/EinitQeu-kss/EinitQeu.c: /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/bin/dnet_entity
+einit/EinitQeu-kss/EinitQeu.c: /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/bin/bcm2711_mbox_arm2vc_qemu
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EinitQeu-kss/EinitQeu.c"
 	cd /home/mpos/mpos-lab/kos/controlsys/build/einit && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/einit -I /home/mpos/mpos-lab/kos/controlsys/build/_headers_ -I /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/.. -I /home/mpos/mpos-lab/kos/controlsys/build/../install/include -I /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include -I /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/aarch64-kos/include -I /usr/local/include -I /usr/include -I //include -I /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/include -I /usr/X11R6/include -I /usr/pkg/include -I /opt/include -I /sysroot-aarch64-kos/include -o /home/mpos/mpos-lab/kos/controlsys/build/einit/EinitQeu-kss/EinitQeu.c /home/mpos/mpos-lab/kos/controlsys/build/einit/EinitQeu-kss/init.yaml
 

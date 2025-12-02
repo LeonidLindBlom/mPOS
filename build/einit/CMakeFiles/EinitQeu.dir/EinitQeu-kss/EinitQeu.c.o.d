@@ -103,4 +103,5 @@ einit/CMakeFiles/EinitQeu.dir/EinitQeu-kss/EinitQeu.c.o: \
  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/nk/errno.h \
  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/nk/stand.h \
  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/services/task/scp.h \
- /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/rtl/random.h
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/rtl/random.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/env/env.h

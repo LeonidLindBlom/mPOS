@@ -1,5 +1,6 @@
 ksm.module: \
   /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/ControlSys.edl \
+  /home/mpos/mpos-lab/kos/controlsys/build/_headers_/env/Env.edl \
   /home/mpos/mpos-lab/kos/controlsys/build/einit/EinitQeu-kss/Einit.edl \
   /opt/KasperskyOS-Community-Edition-1.2.0.89/common/nonsecurity.psl \
   /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Audit.cdl \
@@ -40,4 +41,15 @@ ksm.module: \
   /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/VMM.idl \
   /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/XHCIDBG.cdl \
   /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/XHCIDBG.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Bcm2711MboxArmToVc.edl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Bcm2711MboxArmToVc.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Bcm2711MboxArmToVc.psl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNet.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNet.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetMac.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetSrv.edl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetSrv.psl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetSupplicant.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetWifi.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Driver.idl \
   /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/include/nk/base.psl

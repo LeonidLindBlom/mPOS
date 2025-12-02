@@ -10,6 +10,8 @@ use nk.base._
 use EDL Einit
 use EDL kl.core.Core
 use EDL controlsys.ControlSys
+use EDL env.Env
+use EDL kl.drivers.DNetSrv
 
 @INIT_EXTERNAL_ENTITIES@
 
