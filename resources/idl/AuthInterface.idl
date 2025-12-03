@@ -1,0 +1,10 @@
+package controlsys.AuthInterface
+
+typedef UInt8 Bool;
+
+const UInt8 RoleLen = 16;
+
+interface {
+    CheckRole(in string<RoleLen> role,
+              out Bool accepted);
+}

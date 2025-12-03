@@ -69,13 +69,24 @@ include einit/CMakeFiles/kos-image.dir/progress.make
 einit/CMakeFiles/kos-image: einit/kos-image
 
 einit/kos-image: controlsys/ControlSys
+einit/kos-image: controlsys/domains/InputGuard/InputGuard
+einit/kos-image: controlsys/domains/OutputController/OutputController
+einit/kos-image: controlsys/domains/CardVerifier/CardVerifier
+einit/kos-image: controlsys/domains/TransactionGenerator/TransactionGenerator
+einit/kos-image: controlsys/domains/StatusVerifier/StatusVerifier
+einit/kos-image: controlsys/domains/AuthModule/AuthModule
+einit/kos-image: controlsys/domains/Journal/Journal
+einit/kos-image: controlsys/domains/UpdateLoader/UpdateLoader
+einit/kos-image: controlsys/domains/UpdateStorage/UpdateStorage
+einit/kos-image: controlsys/domains/UpdateVerifier/UpdateVerifier
+einit/kos-image: controlsys/domains/UpdateInstaller/UpdateInstaller
 einit/kos-image: external/env/Env
 einit/kos-image: /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/bin/dnet_entity
 einit/kos-image: /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/bin/bcm2711_mbox_arm2vc_hw
 einit/kos-image: einit/EinitHw
 einit/kos-image: einit/EinitHw-kss/ksm.module
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating KasperskyOS image: /home/mpos/mpos-lab/kos/controlsys/build/einit/kos-image"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/einit && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/makeimg --target=aarch64-kos --with-extra-ldflags=-no-pie --sys-root=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos --with-toolchain=/opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain --with-python= --ldscript=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/../libexec/aarch64-kos/kos.ld --img-src=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/../libexec/aarch64-kos/kos --img-dst=/home/mpos/mpos-lab/kos/controlsys/build/einit/kos-image --aboot_dtb_file= --aboot_mkboot= --aboot_config_file= --with-init=/home/mpos/mpos-lab/kos/controlsys/build/einit/EinitHw  /home/mpos/mpos-lab/kos/controlsys/build/controlsys/ControlSys\ /home/mpos/mpos-lab/kos/controlsys/build/external/env/Env\ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/bin/dnet_entity\ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/bin/bcm2711_mbox_arm2vc_hw /home/mpos/mpos-lab/kos/controlsys/build/einit/EinitHw-kss/ksm.module
+	cd /home/mpos/mpos-lab/kos/controlsys/build/einit && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/makeimg --target=aarch64-kos --with-extra-ldflags=-no-pie --sys-root=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos --with-toolchain=/opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain --with-python= --ldscript=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/../libexec/aarch64-kos/kos.ld --img-src=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/../libexec/aarch64-kos/kos --img-dst=/home/mpos/mpos-lab/kos/controlsys/build/einit/kos-image --aboot_dtb_file= --aboot_mkboot= --aboot_config_file= --with-init=/home/mpos/mpos-lab/kos/controlsys/build/einit/EinitHw  /home/mpos/mpos-lab/kos/controlsys/build/controlsys/ControlSys\ /home/mpos/mpos-lab/kos/controlsys/build/controlsys/domains/InputGuard/InputGuard\ /home/mpos/mpos-lab/kos/controlsys/build/controlsys/domains/OutputController/OutputController\ /home/mpos/mpos-lab/kos/controlsys/build/controlsys/domains/CardVerifier/CardVerifier\ /home/mpos/mpos-lab/kos/controlsys/build/controlsys/domains/TransactionGenerator/TransactionGenerator\ /home/mpos/mpos-lab/kos/controlsys/build/controlsys/domains/StatusVerifier/StatusVerifier\ /home/mpos/mpos-lab/kos/controlsys/build/controlsys/domains/AuthModule/AuthModule\ /home/mpos/mpos-lab/kos/controlsys/build/controlsys/domains/Journal/Journal\ /home/mpos/mpos-lab/kos/controlsys/build/controlsys/domains/UpdateLoader/UpdateLoader\ /home/mpos/mpos-lab/kos/controlsys/build/controlsys/domains/UpdateStorage/UpdateStorage\ /home/mpos/mpos-lab/kos/controlsys/build/controlsys/domains/UpdateVerifier/UpdateVerifier\ /home/mpos/mpos-lab/kos/controlsys/build/controlsys/domains/UpdateInstaller/UpdateInstaller\ /home/mpos/mpos-lab/kos/controlsys/build/external/env/Env\ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/bin/dnet_entity\ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/bin/bcm2711_mbox_arm2vc_hw /home/mpos/mpos-lab/kos/controlsys/build/einit/EinitHw-kss/ksm.module
 
 einit/EinitHw-kss/ksm.module: einit/EinitHw-kss/security.psl
 einit/EinitHw-kss/ksm.module: einit/CMakeFiles/kos-image.dir/compiler_depend.ts

@@ -9,8 +9,11 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
+#include <time.h>
 
 #define CTL_EVENT_BUFFER 512
+#define CTL_EVENT_RETRY_COUNT 200
+#define CTL_EVENT_RETRY_DELAY_NS 100000000L
 
 static int event_fd = -1;
 static char rx_buffer[CTL_EVENT_BUFFER];
@@ -19,9 +22,18 @@ static size_t rx_len = 0;
 static const char* json_find_string(const char* line, const char* key);
 static int json_find_int(const char* line, const char* key, int def);
 static bool parse_line(const char* line, CtlEvent* evt);
+static int open_with_retry(const char* path);
 
 void ctl_event_channel_init(void) {
     const char* env_path = getenv("CTL_EVENT_TTY");
+    if (env_path && (*env_path == '\0' ||
+                     strcmp(env_path, "stdin") == 0 ||
+                     strcmp(env_path, "/dev/stdin") == 0)) {
+        event_fd = STDIN_FILENO;
+        rx_len = 0;
+        log_ts("EventChannel: читаю события из stdin (env)");
+        return;
+    }
     const char* candidates[] = {
         env_path && *env_path ? env_path : NULL,
         "/dev/ttyAMA1",
@@ -36,7 +48,7 @@ void ctl_event_channel_init(void) {
         if (!path || !*path) {
             continue;
         }
-        event_fd = open(path, O_RDWR | O_NONBLOCK);
+        event_fd = open_with_retry(path);
         if (event_fd >= 0) {
             log_ts("EventChannel: читаю события из '%s'", path);
             rx_len = 0;
@@ -47,7 +59,11 @@ void ctl_event_channel_init(void) {
 
     event_fd = STDIN_FILENO;
     rx_len = 0;
-    log_ts("EventChannel: читаю события из stdin");
+    if (env_path && *env_path) {
+        log_ts("EventChannel: fallback на stdin (env='%s')", env_path);
+    } else {
+        log_ts("EventChannel: читаю события из stdin");
+    }
 }
 
 bool ctl_event_channel_available(void) {
@@ -85,10 +101,25 @@ static bool read_line(char* out, size_t out_sz) {
     if (n == 0) {
         return false;
     }
-    if (errno != EAGAIN && errno != EWOULDBLOCK && errno != EINTR) {
+    if (errno != EAGAIN && errno != EWOULDBLOCK && errno != EINTR && errno != EIO) {
         log_ts("EventChannel: read() failed (errno=%d)", errno);
     }
     return false;
+}
+
+static int open_with_retry(const char* path) {
+    for (int attempt = 0; attempt < CTL_EVENT_RETRY_COUNT; ++attempt) {
+        int fd = open(path, O_RDONLY | O_NONBLOCK);
+        if (fd >= 0) {
+            return fd;
+        }
+        if (errno != ENOENT && errno != ENXIO && errno != EIO) {
+            break;
+        }
+        struct timespec ts = {0, CTL_EVENT_RETRY_DELAY_NS};
+        nanosleep(&ts, NULL);
+    }
+    return -1;
 }
 
 bool ctl_event_channel_next(CtlEvent* evt) {

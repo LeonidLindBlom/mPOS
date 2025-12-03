@@ -2,19 +2,24 @@ assert "negative_unsigned_transaction" {
     setup {
         core <- execute dst=kl.core.Core
         einit <- execute src=core dst=Einit
-        manager <- execute src=einit dst=controlsys.Manager
-        txn <- execute src=einit dst=controlsys.TransactionGenerator
+        manager <- execute src=einit dst=controlsys.ControlSys
+        statusverif <- execute src=einit dst=controlsys.StatusVerifier
+        output <- execute src=einit dst=controlsys.OutputController
     }
 
     sequence "ui-bypass-attempt" {
-        grant "Unprotected UI forms packet" request src=ui dst=manager endpoint=ui.channel method=InjectRaw {
-            payload : "raw-bytes", signature : false
+        grant "ControlSys detects replay" request src=manager dst=statusverif endpoint=statusverif.interface method=Validate {
+            txId : "20251203T200000Z-0007", seqNumber : 7,
+            approved : true, latencyMs : 15
+        }
+        grant "Status verifier rejects response" response src=statusverif dst=manager endpoint=statusverif.interface method=Validate {
+            ok : false
         }
     }
 
     sequence "manager-rejects-unsigned" {
-        grant "Manager rejects unsigned tx" response src=manager dst=ui endpoint=ui.channel method=InjectRaw {
-            error : "NO_SIGNATURE"
+        grant "ControlSys reports error" request src=manager dst=output endpoint=output.interface method=ShowError {
+            message : "Ответ банка отклонён"
         }
     }
 }
@@ -23,18 +28,24 @@ assert "negative_journal_loss" {
     setup {
         core <- execute dst=kl.core.Core
         einit <- execute src=core dst=Einit
+        manager <- execute src=einit dst=controlsys.ControlSys
         journal <- execute src=einit dst=controlsys.Journal
+        output <- execute src=einit dst=controlsys.OutputController
     }
 
-    sequence "restart-detected" {
-        grant "Journal detects previous shutdown" request src=journal dst=journal endpoint=journal.service method=IntegrityCheck {
-            tailHash : "abc"
+    sequence "journal-rejects" {
+        grant "ControlSys attempts to append record" request src=manager dst=journal endpoint=journal.interface method=Append {
+            txId : "20251203T200500Z-0008", amountCents : 5550,
+            currency : "RUB", approved : true
+        }
+        grant "Journal signals integrity error" response src=journal dst=manager endpoint=journal.interface method=Append {
+            ok : false
         }
     }
 
-    sequence "prevent-overwrite" {
-        grant "Journal switches to recovery" response src=journal dst=manager endpoint=journal.service method=IntegrityCheck {
-            mode : "append-only"
+    sequence "receipt-blocked" {
+        grant "ControlSys refuses to print" request src=manager dst=output endpoint=output.interface method=ShowError {
+            message : "Журнал недоступен"
         }
     }
 }
@@ -43,104 +54,158 @@ assert "negative_corrupted_update" {
     setup {
         core <- execute dst=kl.core.Core
         einit <- execute src=core dst=Einit
-        loader <- execute src=einit dst=controlsys.UpdateLoader
+        manager <- execute src=einit dst=controlsys.ControlSys
+        storage <- execute src=einit dst=controlsys.UpdateStorage
         verifier <- execute src=einit dst=controlsys.UpdateVerifier
     }
 
     sequence "corrupted-image" {
-        grant "Loader assembled corrupted file" request src=loader dst=verifier endpoint=verifier.service method=Verify {
-            version : "1.0.1", signatureOk : false
+        grant "ControlSys pushes suspicious chunk" request src=manager dst=storage endpoint=storage.interface method=Append {
+            chunkIndex : 1, chunkTotal : 2, chunkSize : 1048576,
+            version : "1.0.9"
+        }
+        grant "Storage declines append" response src=storage dst=manager endpoint=storage.interface method=Append {
+            accepted : false
         }
     }
 
     sequence "verifier-fails" {
-        grant "Verifier blocks installation" response src=verifier dst=loader endpoint=verifier.service method=Verify {
-            ok : false, reason : "SIGNATURE_ERROR"
+        grant "Verifier sees invalid signature" request src=manager dst=verifier endpoint=verifier.interface method=Verify {
+            version : "1.0.9", totalSize : 1048576, signatureOk : false
+        }
+        grant "Verifier rejects install" response src=verifier dst=manager endpoint=verifier.interface method=Verify {
+            ok : false
         }
     }
 }
 
 assert "negative_card_data_corruption" {
     setup {
-        cardverif <- execute dst=controlsys.CardVerifier
+        core <- execute dst=kl.core.Core
+        einit <- execute src=core dst=Einit
+        manager <- execute src=einit dst=controlsys.ControlSys
+        cardverif <- execute src=einit dst=controlsys.CardVerifier
     }
 
     sequence "invalid-track" {
-        grant "Card verifier rejects corrupted track" response src=cardverif dst=manager endpoint=cardverifier.service method=CheckCard {
-            emvOk : false, error : "CRC_FAIL"
+        grant "ControlSys forwards damaged card data" request src=manager dst=cardverif endpoint=cardverif.interface method=CheckCard {
+            panMasked : "4256********9310", expiry : "2712",
+            holder : "CARDHOLDER", emvOk : false
+        }
+        grant "Card verifier rejects corrupted track" response src=cardverif dst=manager endpoint=cardverif.interface method=CheckCard {
+            accepted : false
         }
     }
 }
 
 assert "negative_replayed_bank_response" {
     setup {
-        statusverif <- execute dst=controlsys.StatusVerifier
+        core <- execute dst=kl.core.Core
+        einit <- execute src=core dst=Einit
+        manager <- execute src=einit dst=controlsys.ControlSys
+        statusverif <- execute src=einit dst=controlsys.StatusVerifier
     }
 
     sequence "replay-detected" {
-        grant "Status verifier sees old seq" response src=statusverif dst=manager endpoint=statusverifier.service method=Validate {
-            ok : false, error : "REPLAY"
+        grant "Out-of-order sequence blocked" request src=manager dst=statusverif endpoint=statusverif.interface method=Validate {
+            txId : "20251203T202000Z-0010", seqNumber : 1,
+            approved : true, latencyMs : 5
+        }
+        grant "Status verifier signals REPLAY" response src=statusverif dst=manager endpoint=statusverif.interface method=Validate {
+            ok : false
         }
     }
 }
 
 assert "negative_receipt_without_journal" {
     setup {
-        manager <- execute dst=controlsys.Manager
-        output <- execute dst=controlsys.OutputController
-        journal <- execute dst=controlsys.Journal
+        core <- execute dst=kl.core.Core
+        einit <- execute src=core dst=Einit
+        manager <- execute src=einit dst=controlsys.ControlSys
+        journal <- execute src=einit dst=controlsys.Journal
+        output <- execute src=einit dst=controlsys.OutputController
     }
 
-    sequence "receipt-blocked" {
-        grant "Manager refuses to print until journal write" response src=manager dst=output endpoint=output.service method=PrintReceipt {
-            error : "JOURNAL_PENDING"
+    sequence "journal-missing" {
+        grant "ControlSys polls journal" request src=manager dst=journal endpoint=journal.interface method=Append {
+            txId : "20251203T203000Z-0011", amountCents : 1000,
+            currency : "RUB", approved : true
+        }
+        grant "Journal fails to persist" response src=journal dst=manager endpoint=journal.interface method=Append {
+            ok : false
+        }
+    }
+
+    sequence "print-blocked" {
+        grant "ControlSys blocks receipt" request src=manager dst=output endpoint=output.interface method=ShowError {
+            message : "Нельзя печатать без записи"
         }
     }
 }
 
 assert "negative_power_drop_before_card" {
     setup {
-        inputguard <- execute dst=controlsys.InputGuard
+        core <- execute dst=kl.core.Core
+        einit <- execute src=core dst=Einit
+        manager <- execute src=einit dst=controlsys.ControlSys
+        inputguard <- execute src=einit dst=controlsys.InputGuard
     }
 
     sequence "battery-low" {
-        grant "InputGuard halts FSM" response src=inputguard dst=manager endpoint=inputguard.service method=Heartbeat {
-            powerOK : false, block : true
+        grant "Heartbeat reports low power" request src=manager dst=inputguard endpoint=inputguard.interface method=Heartbeat {
+            networkOk : true, pingOk : true, powerOk : false,
+            signalStrength : 80, soc : 5
         }
-    }
-}
-
-assert "negative_third_party_app" {
-    setup {
-        manager <- execute dst=controlsys.Manager
-        cardverif <- execute dst=controlsys.CardVerifier
-    }
-
-    sequence "forged-source" {
-        grant "Manager requests source proof" request src=manager dst=cardverif endpoint=cardverifier.service method=CheckCard {
-            source : "untrusted"
-        }
-        grant "Card verifier rejects" response src=cardverif dst=manager endpoint=cardverifier.service method=CheckCard {
-            emvOk : false, error : "UNAUTHORIZED_SOURCE"
+        grant "InputGuard denies continuation" response src=inputguard dst=manager endpoint=inputguard.interface method=Heartbeat {
+            powerReady : false, networkReady : true
         }
     }
 }
 
 assert "negative_update_low_battery" {
     setup {
-        power <- execute dst=controlsys.PowerVerifier
-        installer <- execute dst=controlsys.UpdateInstaller
+        core <- execute dst=kl.core.Core
+        einit <- execute src=core dst=Einit
+        manager <- execute src=einit dst=controlsys.ControlSys
+        inputguard <- execute src=einit dst=controlsys.InputGuard
+        installer <- execute src=einit dst=controlsys.UpdateInstaller
     }
 
     sequence "battery-warning" {
-        grant "Power verifier warns" response src=power dst=installer endpoint=power.service method=CheckPower {
-            ok : false, reason : "LOW_BATTERY"
+        grant "Heartbeat reports low battery" request src=manager dst=inputguard endpoint=inputguard.interface method=Heartbeat {
+            networkOk : true, pingOk : true, powerOk : false,
+            signalStrength : 70, soc : 4
+        }
+        grant "InputGuard orders to halt update" response src=inputguard dst=manager endpoint=inputguard.interface method=Heartbeat {
+            powerReady : false, networkReady : true
         }
     }
 
     sequence "install-aborted" {
-        grant "Installer aborts" response src=installer dst=manager endpoint=installer.service method=Install {
-            ok : false, error : "POWER_FAIL"
+        grant "ControlSys attempts install" request src=manager dst=installer endpoint=installer.interface method=Install {
+            version : "1.0.1", totalSize : 2097152, allow : 0
+        }
+        grant "Installer aborts due to power" response src=installer dst=manager endpoint=installer.interface method=Install {
+            ok : 0
+        }
+    }
+}
+
+assert "negative_third_party_app" {
+    setup {
+        core <- execute dst=kl.core.Core
+        einit <- execute src=core dst=Einit
+        manager <- execute src=einit dst=controlsys.ControlSys
+        cardverif <- execute src=einit dst=controlsys.CardVerifier
+    }
+
+    sequence "forged-source" {
+        grant "ControlSys demands trusted source" request src=manager dst=cardverif endpoint=cardverif.interface method=CheckCard {
+            panMasked : "4030********1111", expiry : "2412",
+            holder : "UNKNOWN", emvOk : true
+        }
+        grant "Card verifier rejects third-party module" response src=cardverif dst=manager endpoint=cardverif.interface method=CheckCard {
+            accepted : false
         }
     }
 }

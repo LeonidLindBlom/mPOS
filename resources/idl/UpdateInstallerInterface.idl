@@ -1,0 +1,12 @@
+package controlsys.UpdateInstallerInterface
+
+typedef UInt8 Bool;
+
+const UInt8 VersionLen = 16;
+
+interface {
+    Install(in string<VersionLen> version,
+            in UInt32 totalSize,
+            in UInt8 allow,
+            out UInt8 ok);
+}

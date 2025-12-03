@@ -1,19 +1,12 @@
 #include "controlsys/services/update_loader.h"
-#include "controlsys/services/update_storage.h"
-#include "controlsys/services/auth_module.h"
 #include "controlsys/log.h"
 
 static bool g_loader_active = false;
 
 bool update_loader_begin(const char* requester_role) {
-    if (!auth_check_operator(requester_role)) {
-        log_box("UpdateLoader", "requester %s rejected",
-                requester_role ? requester_role : "unknown");
-        return false;
-    }
     g_loader_active = true;
-    update_storage_reset();
-    log_box("UpdateLoader", "begin session by %s", requester_role);
+    log_box("UpdateLoader", "begin session by %s",
+            requester_role ? requester_role : "unknown");
     return true;
 }
 
@@ -31,10 +24,11 @@ bool update_loader_push_chunk(const char* version,
         return false;
     }
     log_box("UpdateLoader",
-            "chunk %zu/%zu\nsize=%zu\nsignature=%s",
+            "chunk %zu/%zu\nsize=%zu\nsignature=%s\nversion=%s",
             chunk_index, chunk_total, chunk_size,
-            signature_hint_ok ? "ok" : "warn");
-    return update_storage_append(version, chunk_size, chunk_index, chunk_total);
+            signature_hint_ok ? "ok" : "warn",
+            version);
+    return true;
 }
 
 bool update_loader_finalize(void) {

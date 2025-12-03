@@ -15,11 +15,11 @@
    -serial chardev:eventbus
    ```
 
-   Настройка лежит в `einit/CMakeLists.txt` (переменные `CONTROL_SYS_EVENT_PORT`, `CONTROL_SYS_EVENT_HOST`, `CONTROL_SYS_QEMU_HOSTFWD`). По умолчанию слушаем `127.0.0.1:28090` (локальный стенд). В docker-compose переменные переопределены (`host=0.0.0.0`), чтобы порт был доступен с хоста через `ports:`.
+   Настройка лежит в `einit/CMakeLists.txt` (переменные `CONTROL_SYS_EVENT_PORT`, `CONTROL_SYS_EVENT_HOST`, `CONTROL_SYS_QEMU_HOSTFWD`). По умолчанию слушаем `127.0.0.1:28090`, но переменные можно переопределить перед запуском `cmake --build ... --target sim`.
 
 2. **Гостевая сторона.** ControlSys пытается открыть `/dev/ttyAMA1` → `/dev/ttyAMA2` → `/dev/ttyS1` → `/dev/ttyS2` (можно задать путь через `CTL_EVENT_TTY`). Успешное открытие означает, что все события читаются из UART; если открыть не удалось, модуль падает обратно на stdin (как раньше).
 
-3. **Хостовая сторона.** Любой клиент (docker-модуль, `nc`, `python`-скрипт) может подключиться к `tcp://<docker_host>:28090`, передать строку JSON и закрыть соединение. Строки должны завершаться `\n`. Параллельные подключения обслуживаются последовательно (QEMU socket позволяет только одного клиента в момент времени).
+3. **Хостовая сторона.** Любой клиент (скрипты из `scripts/test_events`, `nc`, произвольный Python) может подключиться к `tcp://<host>:28090`, передать строку JSON и закрыть соединение. Строки должны завершаться `\n`. Параллельные подключения обслуживаются последовательно (chardev позволяет только одно соединение одновременно).
 
 4. **Fallback.** Если UART недоступен или порт занят, ControlSys продолжает работать: встроенный сценарий отрабатывает один цикл, а дальше state-machine остаётся в фоне и ждёт, пока UART откроется (например, когда `event_sender.py` подключится повторно). Для полного отключения UART можно установить `CTL_EVENT_TTY=/dev/stdin`.
 
@@ -28,7 +28,7 @@
 Диаграмма потока:
 
 ```
-docker modules (input/card/net) --TCP--> QEMU chardev (port 28090)
+test scripts (input/card/net) --TCP--> QEMU chardev (port 28090)
                                      |
                                  virt serial (ttyAMA1)
                                      |
@@ -38,7 +38,7 @@ docker modules (input/card/net) --TCP--> QEMU chardev (port 28090)
 ## Проброс сетевых портов
 
 * `CONTROL_SYS_QEMU_HOSTFWD` (см. `einit/CMakeLists.txt`) управляет user-net пробросами (`28080..28084`, `29090`). Эти порты пока резервируются под будущие сервисы (дисплей, принтер, netgw, банк).
-* UART-порт (`CONTROL_SYS_EVENT_PORT`, по умолчанию 28090) не идёт через user-net; он публикуется прямым `-chardev socket` + `docker-compose` `ports:`.
+* UART-порт (`CONTROL_SYS_EVENT_PORT`, по умолчанию 28090) не идёт через user-net; он публикуется прямым `-chardev socket`. Если нужно слушать на другом интерфейсе/порту, задайте переменные окружения перед сборкой/запуском.
 
 ## Документы и принятые решения
 
@@ -51,7 +51,7 @@ docker modules (input/card/net) --TCP--> QEMU chardev (port 28090)
 Для автоматизации интеграции используется скрипт `tools/event_broker.py`. Он запускает ControlSys (через `cmake --build build --target run`) и слушает TCP-порт (по умолчанию 28090). Каждый JSON, полученный от модуля, пересылается в stdin ControlSys. Таким образом:
 
 ```
-docker module → broker (TCP 28090) → stdin ControlSys (host binary) → state-machine
+test script → broker (TCP 28090) → stdin ControlSys (host binary) → state-machine
 ```
 
 ControlSys читает stdin (переменная `CTL_EVENT_TTY=/dev/stdin`), поэтому никакие дополнительные UART-устройства не нужны. Для быстрой отладки в обход KOS собираем host-версию (`tools/build_host_controlsys.sh`) и запускаем через `tools/run_host_controlsys.sh`. Брокер можно расширить — например, добавив подтверждения, маршрутизацию по `target`, статистику и т.п.
@@ -89,7 +89,7 @@ ControlSys читает stdin (переменная `CTL_EVENT_TTY=/dev/stdin`),
 
 1. Собрать образ: `./cross-build.sh`.
 2. Запустить брокер/кос: `tools/run_kos_via_broker.sh` (лог автоматически пишется в `out.txt`).
-3. Отправить эталонную последовательность событий: `cd docker && EVENT_HOST=127.0.0.1 EVENT_PORT=28090 python3 modules/event_sender.py`.
+3. Отправить эталонную последовательность событий: `EVENT_HOST=127.0.0.1 EVENT_PORT=28090 python3 scripts/test_events/event_sender.py`.
 4. Негативные сценарии: измените параметры `Heartbeat` (например, `"signal":5` или `"mv":2800`) и убедитесь, что `init_module`/`output_controller` блокируют запуск; повторите `BankResponse` с меньшим `seq`, чтобы увидеть отказ `status_verifier`.
 
 Все наблюдения (ошибки EventChannel, разрешения доменов и т.д.) автоматически попадают в `out.txt`, который прикладываем к отчёту.

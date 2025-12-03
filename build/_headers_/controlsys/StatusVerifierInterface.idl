@@ -1,0 +1,11 @@
+package controlsys.StatusVerifierInterface
+
+typedef UInt8 Bool;
+
+interface {
+    Validate(in string<48> txId,
+             in UInt32 seqNumber,
+             in Bool approved,
+             in UInt32 latencyMs,
+             out Bool ok);
+}

@@ -1,0 +1,19 @@
+package controlsys.UpdateLoaderInterface
+
+typedef UInt8 Bool;
+
+const UInt8 VersionLen = 16;
+
+interface {
+    Begin(in string<16> requester,
+          out Bool ok);
+
+    PushChunk(in string<VersionLen> version,
+              in UInt32 chunkIndex,
+              in UInt32 chunkTotal,
+              in UInt32 chunkSize,
+              in Bool signatureHint,
+              out Bool ok);
+
+    Finalize(out Bool ok);
+}

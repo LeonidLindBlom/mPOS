@@ -1,0 +1,5 @@
+entity controlsys.UpdateLoader
+
+endpoints {
+    interface : controlsys.UpdateLoaderInterface
+}

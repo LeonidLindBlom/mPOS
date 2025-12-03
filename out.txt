@@ -1,120 +1,98 @@
-[run-kos] запускаю ./cross-build.sh
-Not searching for unused variables given on the command line.
--- New version 1.3.0.166 of KasperskyOS SDK available!
--- Cross compiling to: KOS-GNU-dynamic 1.2.0.89
--- Processor: aarch64
--- Compiler: GCC
--- CMake generates Unix Makefiles
--- IMAGE_BINARY_DIR_BIN: /home/mpos/mpos-lab/kos/controlsys/build/einit
--- Building image without aboot files
--- IMAGE_BINARY_DIR_BIN: /home/mpos/mpos-lab/kos/controlsys/build/einit
--- Building image without aboot files
--- Configuring done
--- Generating done
--- Build files have been written to: /home/mpos/mpos-lab/kos/controlsys/build
-[  2%] Built target env_edl_files_copy_env.Env.edl
-[  5%] Built target env_edl_files_gen_env.Env.edl
-[  8%] Built target env_edl_files
-[ 13%] Built target Env
-[ 16%] Built target controlsys_edl_files_copy_controlsys.ControlSys.edl
-[ 18%] Built target controlsys_edl_files_gen_controlsys.ControlSys.edl
-[ 21%] Built target controlsys_edl_files
-[ 75%] Built target ControlSys
-[ 78%] Generating BUILD_ID_kos-qemu-image
+[  0%] Built target env_edl_files_copy_env.Env.edl
+[  0%] Built target env_edl_files_gen_env.Env.edl
+[  1%] Built target env_edl_files
+[  2%] Built target Env
+[  2%] Built target UpdateInstallerInterface_idl_copy_controlsys.UpdateInstallerInterface.idl
+[  2%] Built target UpdateInstaller_edl_copy_controlsys.UpdateInstaller.edl
+[  2%] Built target UpdateInstaller_edl_gen_controlsys.UpdateInstaller.edl
+[  2%] Built target UpdateInstallerInterface_idl_gen_controlsys.UpdateInstallerInterface.idl
+[  3%] Built target UpdateInstallerInterface_idl
+[  5%] Built target UpdateInstaller_edl
+[  5%] Built target InputGuardInterface_idl_copy_controlsys.InputGuardInterface.idl
+[  5%] Built target InputGuardInterface_idl_gen_controlsys.InputGuardInterface.idl
+[  6%] Built target InputGuardInterface_idl
+[  6%] Built target OutputControllerInterface_idl_copy_controlsys.OutputControllerInterface.idl
+[  6%] Built target OutputControllerInterface_idl_gen_controlsys.OutputControllerInterface.idl
+[  7%] Built target OutputControllerInterface_idl
+[  7%] Built target CardVerifierInterface_idl_copy_controlsys.CardVerifierInterface.idl
+[  7%] Built target CardVerifierInterface_idl_gen_controlsys.CardVerifierInterface.idl
+[  9%] Built target CardVerifierInterface_idl
+[  9%] Built target TransactionGeneratorInterface_idl_copy_controlsys.TransactionGeneratorInterface.idl
+[  9%] Built target TransactionGeneratorInterface_idl_gen_controlsys.TransactionGeneratorInterface.idl
+[ 10%] Built target TransactionGeneratorInterface_idl
+[ 11%] Built target StatusVerifierInterface_idl_copy_controlsys.StatusVerifierInterface.idl
+[ 13%] Built target StatusVerifierInterface_idl_gen_controlsys.StatusVerifierInterface.idl
+[ 13%] Built target StatusVerifierInterface_idl
+[ 14%] Built target AuthInterface_idl_copy_controlsys.AuthInterface.idl
+[ 15%] Built target AuthInterface_idl_gen_controlsys.AuthInterface.idl
+[ 15%] Built target AuthInterface_idl
+[ 15%] Built target JournalInterface_idl_copy_controlsys.JournalInterface.idl
+[ 15%] Built target JournalInterface_idl_gen_controlsys.JournalInterface.idl
+[ 17%] Built target JournalInterface_idl
+[ 18%] Built target UpdateLoaderInterface_idl_copy_controlsys.UpdateLoaderInterface.idl
+[ 18%] Built target UpdateLoaderInterface_idl_gen_controlsys.UpdateLoaderInterface.idl
+[ 18%] Built target UpdateLoaderInterface_idl
+[ 19%] Built target UpdateStorageInterface_idl_copy_controlsys.UpdateStorageInterface.idl
+[ 21%] Built target UpdateStorageInterface_idl_gen_controlsys.UpdateStorageInterface.idl
+[ 21%] Built target UpdateStorageInterface_idl
+[ 22%] Built target UpdateVerifierInterface_idl_copy_controlsys.UpdateVerifierInterface.idl
+[ 23%] Built target UpdateVerifierInterface_idl_gen_controlsys.UpdateVerifierInterface.idl
+[ 23%] Built target UpdateVerifierInterface_idl
+[ 23%] Built target controlsys_edl_files_copy_controlsys.ControlSys.edl
+[ 23%] Built target controlsys_edl_files_gen_controlsys.ControlSys.edl
+[ 25%] Built target controlsys_edl_files
+[ 26%] Built target InputGuard_edl_copy_controlsys.InputGuard.edl
+[ 27%] Built target InputGuard_edl_gen_controlsys.InputGuard.edl
+[ 28%] Built target InputGuard_edl
+[ 28%] Built target OutputController_edl_copy_controlsys.OutputController.edl
+[ 28%] Built target OutputController_edl_gen_controlsys.OutputController.edl
+[ 30%] Built target OutputController_edl
+[ 30%] Built target CardVerifier_edl_copy_controlsys.CardVerifier.edl
+[ 30%] Built target CardVerifier_edl_gen_controlsys.CardVerifier.edl
+[ 31%] Built target CardVerifier_edl
+[ 31%] Built target TransactionGenerator_edl_copy_controlsys.TransactionGenerator.edl
+[ 31%] Built target TransactionGenerator_edl_gen_controlsys.TransactionGenerator.edl
+[ 32%] Built target TransactionGenerator_edl
+[ 34%] Built target StatusVerifier_edl_copy_controlsys.StatusVerifier.edl
+[ 35%] Built target StatusVerifier_edl_gen_controlsys.StatusVerifier.edl
+[ 35%] Built target StatusVerifier_edl
+[ 35%] Built target AuthModule_edl_copy_controlsys.AuthModule.edl
+[ 35%] Built target AuthModule_edl_gen_controlsys.AuthModule.edl
+[ 36%] Built target AuthModule_edl
+[ 36%] Built target Journal_edl_copy_controlsys.Journal.edl
+[ 38%] Built target Journal_edl_gen_controlsys.Journal.edl
+[ 39%] Built target Journal_edl
+[ 39%] Built target UpdateLoader_edl_copy_controlsys.UpdateLoader.edl
+[ 39%] Built target UpdateLoader_edl_gen_controlsys.UpdateLoader.edl
+[ 40%] Built target UpdateLoader_edl
+[ 42%] Built target UpdateStorage_edl_copy_controlsys.UpdateStorage.edl
+[ 42%] Built target UpdateStorage_edl_gen_controlsys.UpdateStorage.edl
+[ 42%] Built target UpdateStorage_edl
+[ 43%] Built target UpdateVerifier_edl_copy_controlsys.UpdateVerifier.edl
+[ 44%] Built target UpdateVerifier_edl_gen_controlsys.UpdateVerifier.edl
+[ 44%] Built target UpdateVerifier_edl
+[ 51%] Built target ControlSys
+[ 55%] Built target InputGuard
+[ 57%] Built target OutputController
+[ 61%] Built target CardVerifier
+[ 65%] Built target TransactionGenerator
+[ 71%] Built target StatusVerifier
+[ 73%] Built target AuthModule
+[ 76%] Built target Journal
+[ 80%] Built target UpdateLoader
+[ 84%] Built target UpdateStorage
+[ 88%] Built target UpdateVerifier
+[ 92%] Built target UpdateInstaller
+[ 93%] Generating BUILD_ID_kos-qemu-image
 ...
 Produced build-id symbols.
-[ 78%] Built target GET_BUILD_ID_kos-qemu-image
-[ 78%] Built target EinitQeu-edl_copy_kl.Einit.edl
-[ 81%] Built target EinitQeu-edl
-[ 89%] Built target EinitQeu
-[ 89%] Built target EinitQeu-kss-entities-built
-[ 91%] Built target EinitQeu-kss-makekss-output
-[ 94%] Generating KasperskyOS image: /home/mpos/mpos-lab/kos/controlsys/build/einit/kos-qemu-image
-/opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc
-Checking root directory.. /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos
-Checking entity: /home/mpos/mpos-lab/kos/controlsys/build/controlsys/ControlSys... ok
-Checking entity: /home/mpos/mpos-lab/kos/controlsys/build/external/env/Env... ok
-Checking entity: /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/bin/dnet_entity... ok
-Checking entity: /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/bin/bcm2711_mbox_arm2vc_qemu... ok
-Checking entity: /home/mpos/mpos-lab/kos/controlsys/build/einit/EinitQeu-kss/ksm.module... ok
-Checking linker.. /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc
-Checking assembler.. /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc
-Checking objdump.. /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-objdump
-Checking readelf.. /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-readelf
-Checking piggy asm.. /tmp/tmp.0Rp3JKxqG1
-Checking piggy obj.. /tmp/tmp.k6bHNU7vRw
-.section .romfs, "w", %progbits
-__romfs_Base:
-.long 6
-# [File #0] 'einit', path: '/home/mpos/mpos-lab/kos/controlsys/build/einit/EinitQeu'
-.long __file0_Name - __romfs_Base
-.long __file0_DataBegin - __romfs_Base
-.long __file0_DataEnd - __file0_DataBegin
-# [File #1] 'ControlSys', path: '/home/mpos/mpos-lab/kos/controlsys/build/controlsys/ControlSys'
-.long __file1_Name - __romfs_Base
-.long __file1_DataBegin - __romfs_Base
-.long __file1_DataEnd - __file1_DataBegin
-# [File #2] 'Env', path: '/home/mpos/mpos-lab/kos/controlsys/build/external/env/Env'
-.long __file2_Name - __romfs_Base
-.long __file2_DataBegin - __romfs_Base
-.long __file2_DataEnd - __file2_DataBegin
-# [File #3] 'dnet_entity', path: '/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/bin/dnet_entity'
-.long __file3_Name - __romfs_Base
-.long __file3_DataBegin - __romfs_Base
-.long __file3_DataEnd - __file3_DataBegin
-# [File #4] 'bcm2711_mbox_arm2vc_qemu', path: '/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/bin/bcm2711_mbox_arm2vc_qemu'
-.long __file4_Name - __romfs_Base
-.long __file4_DataBegin - __romfs_Base
-.long __file4_DataEnd - __file4_DataBegin
-# [File #5] 'ksm.module', path: '/home/mpos/mpos-lab/kos/controlsys/build/einit/EinitQeu-kss/ksm.module'
-.long __file5_Name - __romfs_Base
-.long __file5_DataBegin - __romfs_Base
-.long __file5_DataEnd - __file5_DataBegin
-__file0_Name:
-.asciz "einit"
-__file1_Name:
-.asciz "ControlSys"
-__file2_Name:
-.asciz "Env"
-__file3_Name:
-.asciz "dnet_entity"
-__file4_Name:
-.asciz "bcm2711_mbox_arm2vc_qemu"
-__file5_Name:
-.asciz "ksm.module"
-.p2align 12
-__file0_DataBegin:
-.incbin "/home/mpos/mpos-lab/kos/controlsys/build/einit/EinitQeu"
-__file0_DataEnd:
-.p2align 12
-__file1_DataBegin:
-.incbin "/home/mpos/mpos-lab/kos/controlsys/build/controlsys/ControlSys"
-__file1_DataEnd:
-.p2align 12
-__file2_DataBegin:
-.incbin "/home/mpos/mpos-lab/kos/controlsys/build/external/env/Env"
-__file2_DataEnd:
-.p2align 12
-__file3_DataBegin:
-.incbin "/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/bin/dnet_entity"
-__file3_DataEnd:
-.p2align 12
-__file4_DataBegin:
-.incbin "/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/bin/bcm2711_mbox_arm2vc_qemu"
-__file4_DataEnd:
-.p2align 12
-__file5_DataBegin:
-.incbin "/home/mpos/mpos-lab/kos/controlsys/build/einit/EinitQeu-kss/ksm.module"
-__file5_DataEnd:
-.p2align 12
-Assembling piggy file:  ... /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc  -x assembler -c  -o /tmp/tmp.k6bHNU7vRw /tmp/tmp.0Rp3JKxqG1
-ok /tmp/tmp.k6bHNU7vRw
-Generating romfs file...
-Linking image: /home/mpos/mpos-lab/kos/controlsys/build/einit/kos-qemu-image ... /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc -nostdlib -no-pie -no-pie -o /home/mpos/mpos-lab/kos/controlsys/build/einit/kos-qemu-image -T /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/../libexec/aarch64-kos/kos-qemu.ld -Wl,-Map=/home/mpos/mpos-lab/kos/controlsys/build/einit/kos-qemu-image.map /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/../libexec/aarch64-kos/kos-qemu /tmp/tmp.k6bHNU7vRw -lgcc
-ok
-Generating binary image...
-Generating stripped image...
-[ 97%] Built target kos-qemu-image
+[ 93%] Built target GET_BUILD_ID_kos-qemu-image
+[ 93%] Built target EinitQeu-edl_copy_kl.Einit.edl
+[ 93%] Built target EinitQeu-edl
+[ 96%] Built target EinitQeu
+[ 96%] Built target EinitQeu-kss-entities-built
+[ 97%] Built target EinitQeu-kss-makekss-output
+[ 98%] Built target kos-qemu-image
 [100%] Running QEMU with KasperskyOS image...
 [BOOT ] Starting...
 [BOOT ] Setting up architecture...
@@ -164,7 +142,7 @@ System control register:
 [HAL  ] PTE Table Area begin : 0xffff800000000000
 [HAL  ] PTE Table Area end : 0xffff807fffffffff
 [HAL  ] PTE Table Area size : 0x0000008000000000
-[HAL  ] cpu #0 - 2621MHz
+[HAL  ] cpu #0 - 2425MHz
 [HAL  ] Cpu initialized.
 [HAL  ] Temporary PTEs area has been initialized.
 [HAL  ] Shared area has been initialized.
@@ -226,11 +204,11 @@ CPU3 - ordinary processor
 [MM   ] PFN range #09[rwx] end : 0x00000000000820d5
 [MM   ] PFN range #09[rwx] size : 0x00000000000000cb
 [MM   ] PFN range #10[rwx] begin : 0x00000000000820d6
-[MM   ] PFN range #10[rwx] end : 0x000000000008258e
-[MM   ] PFN range #10[rwx] size : 0x00000000000004b9
-[MM   ] PFN range #11[rwx] begin : 0x000000000008258f
+[MM   ] PFN range #10[rwx] end : 0x0000000000082fbc
+[MM   ] PFN range #10[rwx] size : 0x0000000000000ee7
+[MM   ] PFN range #11[rwx] begin : 0x0000000000082fbd
 [MM   ] PFN range #11[rwx] end : 0x00000000000dffff
-[MM   ] PFN range #11[rwx] size : 0x000000000005da71
+[MM   ] PFN range #11[rwx] size : 0x000000000005d043
 [MM   ] Range mapped begin : 0xffffc00006000000
 [MM   ] Range mapped end : 0xffffc00006bfffff
 [MM   ] Range mapped size : 0x0000000000c00000
@@ -242,9 +220,9 @@ CPU3 - ordinary processor
 [MM   ] Add PFN range begin : 0x000000008200b000
 [MM   ] Add PFN range end : 0x00000000820d5fff
 [MM   ] Add PFN range size : 0x00000000000cb000
-[MM   ] Add PFN range begin : 0x000000008258f000
+[MM   ] Add PFN range begin : 0x0000000082fbd000
 [MM   ] Add PFN range end : 0x00000000dfffffff
-[MM   ] Add PFN range size : 0x000000005da71000
+[MM   ] Add PFN range size : 0x000000005d043000
 [MM   ] Atomic buddy object created (8 MB).
 [MM   ] Atomic PFN allocator initialized.
 [MM   ] 	cache line size 64
@@ -274,21 +252,32 @@ CPU3 - ordinary processor
 [SMP  ] Idle thread for CPU #3 created.
 [TASK ] Scheduler interrupts initialized.
 [TASK ] GSI page initialized.
-[HAL  ] cpu #3 - 1705MHz
-[HAL  ] cpu #2 - 2194MHz
-[SMP  ] CPU #2 - boostrapped.
+[HAL  ] cpu #3 - 1233MHz
 [SMP  ] CPU #3 - boostrapped.
-[HAL  ] cpu #1 - 2804MHz
+[HAL  ] cpu #2 - 2093MHz
+[SMP  ] CPU #2 - boostrapped.
+[HAL  ] cpu #1 - 1984MHz
 [SMP  ] CPU #1 - boostrapped.
 [TASK ] Multitasking infrastructure initialized.
 [TIME ] Time infrastructure initialized.
-[ROFS ] Files: 6, size: 4952064 (0x004b9000).
-[ROFS ] File #00: einit            - size:   841024 (0x000cd540)
-[ROFS ] File #01: ControlSys       - size:   981112 (0x000ef878)
-[ROFS ] File #02: Env              - size:   827312 (0x000c9fb0)
-[ROFS ] File #03: dnet_entity      - size:  1391776 (0x00153ca0)
-[ROFS ] File #04: bcm2711_mbox_arm2vc_qemu - size:   737664 (0x000b4180)
-[ROFS ] File #05: ksm.module       - size:   156712 (0x00026428)
+[ROFS ] Files: 17, size: 15626240 (0x00ee7000).
+[ROFS ] File #00: einit            - size:   876752 (0x000d60d0)
+[ROFS ] File #01: ControlSys       - size:  1168920 (0x0011d618)
+[ROFS ] File #02: InputGuard       - size:   940488 (0x000e59c8)
+[ROFS ] File #03: OutputController - size:   950344 (0x000e8048)
+[ROFS ] File #04: CardVerifier     - size:   931240 (0x000e35a8)
+[ROFS ] File #05: TransactionGenerator - size:   940560 (0x000e5a10)
+[ROFS ] File #06: StatusVerifier   - size:   938272 (0x000e5120)
+[ROFS ] File #07: AuthModule       - size:   928160 (0x000e29a0)
+[ROFS ] File #08: Journal          - size:   935720 (0x000e4728)
+[ROFS ] File #09: UpdateLoader     - size:   936520 (0x000e4a48)
+[ROFS ] File #10: UpdateStorage    - size:   937712 (0x000e4ef0)
+[ROFS ] File #11: UpdateVerifier   - size:   929288 (0x000e2e08)
+[ROFS ] File #12: UpdateInstaller  - size:   929240 (0x000e2dd8)
+[ROFS ] File #13: Env              - size:   827312 (0x000c9fb0)
+[ROFS ] File #14: dnet_entity      - size:  1391776 (0x00153ca0)
+[ROFS ] File #15: bcm2711_mbox_arm2vc_qemu - size:   737664 (0x000b4180)
+[ROFS ] File #16: ksm.module       - size:   287800 (0x00046438)
 [AUDIT] Starting core audit...
 [VLOG ] Virtual logging subsystem initialized.
 [VMM  ] Virtual Memory Manager service initialized.
@@ -303,175 +292,144 @@ CPU3 - ordinary processor
 [KSM  ] Security system successfully initialized.
 [INIT ] Starting 'Einit' ...
 [INIT ] Starting system worker.
-[2025-12-02T17:18:18.708][Info][kl.drivers.DNetSrv][27:28][DNET] Server starting.
-[2025-12-02T17:18:18.711][Fatal][kl.drivers.DNetSrv][27:28][DNET] Can't find service.
-[2025-12-02T17:18:18.711][Fatal][kl.drivers.DNetSrv][27:28][DNET] Failed to initialize server.
-[2025-12-02T17:18:18.709][Info][kl.drivers.Bcm2711MboxArmToVc][21:22][BCM2711ARM2VC] Initialize server at channel 'kl.drivers.Bcm2711MboxArmToVc'.
-[2025-12-02T17:18:18Z] ControlSys: boot
-[2025-12-02T17:18:18Z] +===========[OutputCtrl]===========+
-[2025-12-02T17:18:18Z] | reset display/printer state      |
-[2025-12-02T17:18:18Z] +----------------------------------+
-[2025-12-02T17:18:18Z] +============[Scenario]============+
-[2025-12-02T17:18:18Z] | Старт: Транзакция |
-[2025-12-02T17:18:18Z] +----------------------------------+
-[2025-12-02T17:18:18Z] +==========[NetVerifier]===========+
-[2025-12-02T17:18:18Z] | stable link (signal=90, ping=ok) |
-[2025-12-02T17:18:18Z] +----------------------------------+
-[2025-12-02T17:18:18Z] +=========[PowerVerifier]==========+
-[2025-12-02T17:18:18Z] | power stable (soc=85% mv=3950)   |
-[2025-12-02T17:18:18Z] +----------------------------------+
-[2025-12-02T17:18:18Z] ControlSys: start tx=20251202T171818Z-0001 amount=123.45 RUB
-[2025-12-02T17:18:18Z] +===============[InitModule]===============+
-[2025-12-02T17:18:18Z] | tx=20251202T171818Z-0001                 |
-[2025-12-02T17:18:18Z] | power=power stable (soc=85% mv=3950)     |
-[2025-12-02T17:18:18Z] | network=stable link (signal=90, ping=ok) |
-[2025-12-02T17:18:18Z] +------------------------------------------+
-[2025-12-02T17:18:18Z] ControlSys: tx=20251202T171818Z-0001 seq=1 state=Idle
-[2025-12-02T17:18:18Z] ControlSys: tx=20251202T171818Z-0001 seq=2 state=AwaitCard
-[2025-12-02T17:18:18Z] +================[OutputCtrl]================+
-[2025-12-02T17:18:18Z] | DISPLAY                                    |
-[2025-12-02T17:18:18Z] | Приложите карту (123.45 RUB) |
-[2025-12-02T17:18:18Z] +--------------------------------------------+
-[2025-12-02T17:18:18Z] +==========[CardVerifier]==========+
-[2025-12-02T17:18:18Z] | PAN=4256********9310             |
-[2025-12-02T17:18:18Z] | Expiry=2712                      |
-[2025-12-02T17:18:19Z] | Holder=CARDHOLDER                |
-[2025-12-02T17:18:19Z] | EMV=OK                           |
-[2025-12-02T17:18:19Z] +----------------------------------+
-[2025-12-02T17:18:19Z] ControlSys: tx=20251202T171818Z-0001 seq=3 state=AwaitPIN
-[2025-12-02T17:18:19Z] +===========[OutputCtrl]===========+
-[2025-12-02T17:18:19Z] | DISPLAY                          |
-[2025-12-02T17:18:19Z] | Введите ПИН-код     |
-[2025-12-02T17:18:19Z] | tx=20251202T171818Z-0001         |
-[2025-12-02T17:18:19Z] +----------------------------------+
-[2025-12-02T17:18:19Z] ControlSys: tx=20251202T171818Z-0001 seq=4 state=AwaitBankResp
-[2025-12-02T17:18:19Z] +===========[OutputCtrl]===========+
-[2025-12-02T17:18:19Z] | DISPLAY                          |
-[2025-12-02T17:18:19Z] | PIN принят                 |
-[2025-12-02T17:18:19Z] | tx=20251202T171818Z-0001         |
-[2025-12-02T17:18:19Z] +----------------------------------+
-[2025-12-02T17:18:19Z] +==============[StatusVerifier]==============+
-[2025-12-02T17:18:19Z] | bank reply APPROVED (seq=1, latency=120ms) |
-[2025-12-02T17:18:19Z] +--------------------------------------------+
-[2025-12-02T17:18:19Z] ControlSys: tx=20251202T171818Z-0001 seq=5 state=Approved
-[2025-12-02T17:18:19Z] +===========[TxnBuilder]===========+
-[2025-12-02T17:18:19Z] | tx=20251202T171818Z-0001         |
-[2025-12-02T17:18:19Z] | amount=123.45 RUB                |
-[2025-12-02T17:18:19Z] | result=APPROVED                  |
-[2025-12-02T17:18:19Z] +----------------------------------+
-[2025-12-02T17:18:19Z] +============[Journal]=============+
-[2025-12-02T17:18:19Z] | tx=20251202T171818Z-0001         |
-[2025-12-02T17:18:19Z] | amount=123.45 RUB                |
-[2025-12-02T17:18:19Z] | result=APPROVED                  |
-[2025-12-02T17:18:19Z] +----------------------------------+
-[2025-12-02T17:18:19Z] +===============[OutputCtrl]================+
-[2025-12-02T17:18:19Z] | DISPLAY                                   |
-[2025-12-02T17:18:19Z] | Операция подтверждена |
-[2025-12-02T17:18:19Z] | tx=20251202T171818Z-0001                  |
-[2025-12-02T17:18:19Z] +-------------------------------------------+
-[2025-12-02T17:18:19Z] +===========[OutputCtrl]===========+
-[2025-12-02T17:18:19Z] | PRINTER                          |
-[2025-12-02T17:18:19Z] | чек APPROVED (123.45 RUB)     |
-[2025-12-02T17:18:19Z] +----------------------------------+
-[2025-12-02T17:18:19Z] ControlSys: tx=20251202T171818Z-0001 seq=6 state=Printed
-[2025-12-02T17:18:19Z] +=================[Scenario]=================+
-[2025-12-02T17:18:19Z] | Завершение: Транзакция |
-[2025-12-02T17:18:19Z] +--------------------------------------------+
-[2025-12-02T17:18:19Z] +============[Scenario]============+
-[2025-12-02T17:18:19Z] | Старт: Обновление |
-[2025-12-02T17:18:19Z] +----------------------------------+
-[2025-12-02T17:18:19Z] +==============[Auth]==============+
-[2025-12-02T17:18:19Z] | role=operator                    |
-[2025-12-02T17:18:19Z] | status=accepted                  |
-[2025-12-02T17:18:19Z] +----------------------------------+
-[2025-12-02T17:18:19Z] +==========[UpdateLoader]==========+
-[2025-12-02T17:18:19Z] | begin session by operator        |
-[2025-12-02T17:18:19Z] +----------------------------------+
-[2025-12-02T17:18:19Z] +===========[OutputCtrl]============+
-[2025-12-02T17:18:19Z] | DISPLAY                           |
-[2025-12-02T17:18:19Z] | Начато обновление |
-[2025-12-02T17:18:19Z] | tx=n/a                            |
-[2025-12-02T17:18:19Z] +-----------------------------------+
-[2025-12-02T17:18:19Z] +==========[UpdateLoader]==========+
-[2025-12-02T17:18:19Z] | chunk 1/2                        |
-[2025-12-02T17:18:19Z] | size=1048576                     |
-[2025-12-02T17:18:19Z] | signature=ok                     |
-[2025-12-02T17:18:19Z] +----------------------------------+
-[2025-12-02T17:18:19Z] +================[OutputCtrl]================+
-[2025-12-02T17:18:19Z] | DISPLAY                                    |
-[2025-12-02T17:18:19Z] | Чанк обновления принят |
-[2025-12-02T17:18:19Z] | tx=n/a                                     |
-[2025-12-02T17:18:19Z] +--------------------------------------------+
-[2025-12-02T17:18:19Z] +==========[UpdateLoader]==========+
-[2025-12-02T17:18:19Z] | chunk 2/2                        |
-[2025-12-02T17:18:19Z] | size=1048576                     |
-[2025-12-02T17:18:19Z] | signature=ok                     |
-[2025-12-02T17:18:19Z] +----------------------------------+
-[2025-12-02T17:18:19Z] +=========[UpdateStorage]==========+
-[2025-12-02T17:18:19Z] | version 1.0.1                    |
-[2025-12-02T17:18:19Z] | total=2097152 bytes              |
-[2025-12-02T17:18:19Z] +----------------------------------+
-[2025-12-02T17:18:19Z] +================[OutputCtrl]================+
-[2025-12-02T17:18:19Z] | DISPLAY                                    |
-[2025-12-02T17:18:19Z] | Чанк обновления принят |
-[2025-12-02T17:18:19Z] | tx=n/a                                     |
-[2025-12-02T17:18:19Z] +--------------------------------------------+
-[2025-12-02T17:18:19Z] +==========[UpdateLoader]==========+
-[2025-12-02T17:18:19Z] | session closed                   |
-[2025-12-02T17:18:19Z] +----------------------------------+
-[2025-12-02T17:18:19Z] +=========[UpdateVerifier]=========+
-[2025-12-02T17:18:19Z] | verifying 1.0.1                  |
-[2025-12-02T17:18:19Z] | size=2097152                     |
-[2025-12-02T17:18:19Z] | key=BANK_PUBKEY_STUB             |
-[2025-12-02T17:18:19Z] +----------------------------------+
-[2025-12-02T17:18:19Z] Update: verifier approved 1.0.1
-[2025-12-02T17:18:19Z] +==============[OutputCtrl]===============+
-[2025-12-02T17:18:19Z] | DISPLAY                                 |
-[2025-12-02T17:18:19Z] | Обновление проверено |
-[2025-12-02T17:18:19Z] | tx=n/a                                  |
-[2025-12-02T17:18:19Z] +-----------------------------------------+
-[2025-12-02T17:18:19Z] +========[UpdateInstaller]=========+
-[2025-12-02T17:18:19Z] | version 1.0.1 installed          |
-[2025-12-02T17:18:19Z] | size=2097152                     |
-[2025-12-02T17:18:19Z] +----------------------------------+
-[2025-12-02T17:18:19Z] +================[OutputCtrl]=================+
-[2025-12-02T17:18:19Z] | DISPLAY                                     |
-[2025-12-02T17:18:19Z] | Обновление установлено |
-[2025-12-02T17:18:19Z] | tx=n/a                                      |
-[2025-12-02T17:18:19Z] +---------------------------------------------+
-[2025-12-02T17:18:19Z] +=================[Scenario]=================+
-[2025-12-02T17:18:19Z] | Завершение: Обновление |
-[2025-12-02T17:18:19Z] +--------------------------------------------+
-[2025-12-02T17:18:19Z] +=================[Scenario]==================+
-[2025-12-02T17:18:19Z] | Старт: Выгрузка журнала |
-[2025-12-02T17:18:19Z] +---------------------------------------------+
-[2025-12-02T17:18:19Z] +==============[Auth]==============+
-[2025-12-02T17:18:19Z] | role=engineer                    |
-[2025-12-02T17:18:19Z] | status=rejected                  |
-[2025-12-02T17:18:19Z] +----------------------------------+
-[2025-12-02T17:18:19Z] +================[OutputCtrl]=================+
-[2025-12-02T17:18:19Z] | DISPLAY ERROR                               |
-[2025-12-02T17:18:19Z] | Журнал: доступ отклонён |
-[2025-12-02T17:18:19Z] +---------------------------------------------+
-[2025-12-02T17:18:19Z] +======================[OutputCtrl]======================+
-[2025-12-02T17:18:19Z] | DISPLAY                                                |
-[2025-12-02T17:18:19Z] | Журнал: запись #1 tx=20251202T120000Z-0001 |
-[2025-12-02T17:18:19Z] | tx=n/a                                                 |
-[2025-12-02T17:18:19Z] +--------------------------------------------------------+
-[2025-12-02T17:18:19Z] +======================[OutputCtrl]======================+
-[2025-12-02T17:18:19Z] | DISPLAY                                                |
-[2025-12-02T17:18:19Z] | Журнал: запись #2 tx=20251202T120501Z-0002 |
-[2025-12-02T17:18:19Z] | tx=n/a                                                 |
-[2025-12-02T17:18:19Z] +--------------------------------------------------------+
-[2025-12-02T17:18:19Z] +====================[OutputCtrl]====================+
-[2025-12-02T17:18:19Z] | DISPLAY                                            |
-[2025-12-02T17:18:19Z] | Выгрузка завершена успешно |
-[2025-12-02T17:18:19Z] | tx=n/a                                             |
-[2025-12-02T17:18:19Z] +----------------------------------------------------+
-[2025-12-02T17:18:19Z] +======================[Scenario]=======================+
-[2025-12-02T17:18:19Z] | Завершение: Выгрузка журнала |
-[2025-12-02T17:18:19Z] +-------------------------------------------------------+
-[2025-12-02T17:18:19Z] +==================================[ControlSys]==================================+
-[2025-12-02T17:18:19Z] | Демо завершено. Внешние команды отключены. |
-[2025-12-02T17:18:19Z] +--------------------------------------------------------------------------------+
-qemu-system-aarch64: Slirp: Failed to send packet, ret: -1
+[2025-12-03T20:45:48.133][Info][kl.drivers.Bcm2711MboxArmToVc][21:22][BCM2711ARM2VC] Initialize server at channel 'kl.drivers.Bcm2711MboxArmToVc'.
+[2025-12-03T20:45:48.361][Info][kl.drivers.DNetSrv][27:28][DNET] Server starting.
+[2025-12-03T20:45:48.367][Fatal][kl.drivers.DNetSrv][27:28][DNET] Can't find service.
+[2025-12-03T20:45:48.406][Fatal][kl.drivers.DNetSrv][27:28][DNET] Failed to initialize server.
+[2025-12-03T20:45:48Z] +===========[OutputCtrl]===========+
+[2025-12-03T20:45:48Z] +===========[InputGuard]===========+
+[2025-12-03T20:45:48Z] | reset display/printer state      |
+[2025-12-03T20:45:48Z] +----------------------------------+
+[2025-12-03T20:45:48Z] | started                          |
+[2025-12-03T20:45:48Z] ControlSys: boot
+[2025-12-03T20:45:48Z] +----------------------------------+
+[2025-12-03T20:45:48Z] +==========[NetVerifier]===========+
+[2025-12-03T20:45:49Z] | stable link (signal=90, ping=ok) |
+[2025-12-03T20:45:49Z] +----------------------------------+
+[2025-12-03T20:45:49Z] +=========[PowerVerifier]==========+
+[2025-12-03T20:45:49Z] | power stable (soc=85% mv=3800)   |
+[2025-12-03T20:45:49Z] +----------------------------------+
+[2025-12-03T20:45:49Z] +===============[InitModule]===============+
+[2025-12-03T20:45:49Z] | tx=remote                                |
+[2025-12-03T20:45:49Z] | power=power stable (soc=85% mv=3800)     |
+[2025-12-03T20:45:49Z] | network=stable link (signal=90, ping=ok) |
+[2025-12-03T20:45:49Z] +------------------------------------------+
+[2025-12-03T20:45:49Z] ControlSys: start tx=20251203T204549Z-0001 amount=123.45 RUB
+[2025-12-03T20:45:49Z] ControlSys: tx=20251203T204549Z-0001 seq=1 state=Idle
+[2025-12-03T20:45:49Z] ControlSys: tx=20251203T204549Z-0001 seq=2 state=AwaitCard
+[2025-12-03T20:45:49Z] +================[OutputCtrl]================+
+[2025-12-03T20:45:49Z] | DISPLAY                                    |
+[2025-12-03T20:45:49Z] | Приложите карту (123.45 RUB) |
+[2025-12-03T20:45:49Z] +--------------------------------------------+
+[2025-12-03T20:45:49Z] +==========[CardVerifier]==========+
+[2025-12-03T20:45:49Z] | PAN=4256********9310             |
+[2025-12-03T20:45:49Z] | Expiry=2712                      |
+[2025-12-03T20:45:49Z] | Holder=CARDHOLDER                |
+[2025-12-03T20:45:49Z] | EMV=OK                           |
+[2025-12-03T20:45:49Z] +----------------------------------+
+[2025-12-03T20:45:49Z] ControlSys: tx=20251203T204549Z-0001 seq=3 state=AwaitPIN
+[2025-12-03T20:45:49Z] +===========[OutputCtrl]===========+
+[2025-12-03T20:45:49Z] | DISPLAY                          |
+[2025-12-03T20:45:49Z] | Введите ПИН-код     |
+[2025-12-03T20:45:49Z] | tx=20251203T204549Z-0001         |
+[2025-12-03T20:45:49Z] +----------------------------------+
+[2025-12-03T20:45:49Z] ControlSys: tx=20251203T204549Z-0001 seq=4 state=AwaitBankResp
+[2025-12-03T20:45:49Z] +===========[OutputCtrl]===========+
+[2025-12-03T20:45:49Z] | DISPLAY                          |
+[2025-12-03T20:45:49Z] | PIN принят                 |
+[2025-12-03T20:45:49Z] | tx=n/a                           |
+[2025-12-03T20:45:49Z] +----------------------------------+
+[2025-12-03T20:45:49Z] +==============[StatusVerifier]==============+
+[2025-12-03T20:45:49Z] | bank reply APPROVED (seq=1, latency=120ms) |
+[2025-12-03T20:45:49Z] +--------------------------------------------+
+[2025-12-03T20:45:49Z] ControlSys: tx=20251203T204549Z-0001 seq=5 state=Approved
+[2025-12-03T20:45:49Z] +===========[TxnBuilder]===========+
+[2025-12-03T20:45:49Z] | tx=20251203T204549Z-0001         |
+[2025-12-03T20:45:49Z] | amount=123.45 RUB                |
+[2025-12-03T20:45:49Z] | result=APPROVED                  |
+[2025-12-03T20:45:49Z] +----------------------------------+
+[2025-12-03T20:45:49Z] +============[Journal]=============+
+[2025-12-03T20:45:49Z] | tx=20251203T204549Z-0001         |
+[2025-12-03T20:45:49Z] | amount=123.45 RUB                |
+[2025-12-03T20:45:49Z] | result=APPROVED                  |
+[2025-12-03T20:45:49Z] +----------------------------------+
+[2025-12-03T20:45:49Z] +===============[OutputCtrl]================+
+[2025-12-03T20:45:49Z] | DISPLAY                                   |
+[2025-12-03T20:45:49Z] | Операция подтверждена |
+[2025-12-03T20:45:49Z] | tx=n/a                                    |
+[2025-12-03T20:45:49Z] +-------------------------------------------+
+[2025-12-03T20:45:49Z] +===========[OutputCtrl]===========+
+[2025-12-03T20:45:49Z] | PRINTER                          |
+[2025-12-03T20:45:49Z] | чек APPROVED (123.45 RUB)     |
+[2025-12-03T20:45:49Z] +----------------------------------+
+[2025-12-03T20:45:49Z] ControlSys: tx=20251203T204549Z-0001 seq=6 state=Printed
+[2025-12-03T20:45:49Z] +==============[Auth]==============+
+[2025-12-03T20:45:49Z] | role=operator                    |
+[2025-12-03T20:45:49Z] | status=accepted                  |
+[2025-12-03T20:45:49Z] +----------------------------------+
+[2025-12-03T20:45:49Z] +==========[UpdateLoader]==========+
+[2025-12-03T20:45:49Z] | begin session by operator        |
+[2025-12-03T20:45:49Z] +----------------------------------+
+[2025-12-03T20:45:49Z] +===========[OutputCtrl]============+
+[2025-12-03T20:45:49Z] | DISPLAY                           |
+[2025-12-03T20:45:49Z] | Начато обновление |
+[2025-12-03T20:45:49Z] | tx=n/a                            |
+[2025-12-03T20:45:49Z] +-----------------------------------+
+[2025-12-03T20:45:49Z] +==========[UpdateLoader]==========+
+[2025-12-03T20:45:49Z] | chunk 1/2                        |
+[2025-12-03T20:45:49Z] | size=1048576                     |
+[2025-12-03T20:45:49Z] | signature=ok                     |
+[2025-12-03T20:45:49Z] | version=1.0.1                    |
+[2025-12-03T20:45:49Z] +----------------------------------+
+[2025-12-03T20:45:49Z] +===========[OutputCtrl]===========+
+[2025-12-03T20:45:49Z] | DISPLAY ERROR                    |
+[2025-12-03T20:45:49Z] | Чанк отклонён        |
+[2025-12-03T20:45:49Z] +----------------------------------+
+[2025-12-03T20:45:49Z] +==========[UpdateLoader]==========+
+[2025-12-03T20:45:49Z] | chunk 2/2                        |
+[2025-12-03T20:45:49Z] | size=1048576                     |
+[2025-12-03T20:45:49Z] | signature=ok                     |
+[2025-12-03T20:45:49Z] | version=1.0.1                    |
+[2025-12-03T20:45:49Z] +----------------------------------+
+[2025-12-03T20:45:49Z] +===========[OutputCtrl]===========+
+[2025-12-03T20:45:49Z] | DISPLAY ERROR                    |
+[2025-12-03T20:45:49Z] | Чанк отклонён        |
+[2025-12-03T20:45:49Z] +----------------------------------+
+[2025-12-03T20:45:49Z] +==========[UpdateLoader]==========+
+[2025-12-03T20:45:49Z] | session closed                   |
+[2025-12-03T20:45:49Z] +----------------------------------+
+[2025-12-03T20:45:49Z] +====================[OutputCtrl]====================+
+[2025-12-03T20:45:49Z] | DISPLAY ERROR                                      |
+[2025-12-03T20:45:49Z] | Ошибка проверки обновления |
+[2025-12-03T20:45:49Z] +----------------------------------------------------+
+[2025-12-03T20:45:49Z] +=========================[OutputCtrl]==========================+
+[2025-12-03T20:45:49Z] | DISPLAY ERROR                                                 |
+[2025-12-03T20:45:49Z] | Не удалось установить обновление |
+[2025-12-03T20:45:49Z] +---------------------------------------------------------------+
+[2025-12-03T20:45:49Z] +==============[Auth]==============+
+[2025-12-03T20:45:49Z] | role=engineer                    |
+[2025-12-03T20:45:49Z] | status=rejected                  |
+[2025-12-03T20:45:49Z] +----------------------------------+
+[2025-12-03T20:45:49Z] +================[OutputCtrl]=================+
+[2025-12-03T20:45:49Z] | DISPLAY ERROR                               |
+[2025-12-03T20:45:49Z] | Журнал: доступ запрещён |
+[2025-12-03T20:45:49Z] +---------------------------------------------+
+[2025-12-03T20:45:49Z] +======================[OutputCtrl]======================+
+[2025-12-03T20:45:49Z] | DISPLAY                                                |
+[2025-12-03T20:45:49Z] | Журнал: запись #1 tx=20251202T120000Z-0001 |
+[2025-12-03T20:45:49Z] | tx=n/a                                                 |
+[2025-12-03T20:45:49Z] +--------------------------------------------------------+
+[2025-12-03T20:45:49Z] +======================[OutputCtrl]======================+
+[2025-12-03T20:45:49Z] | DISPLAY                                                |
+[2025-12-03T20:45:49Z] | Журнал: запись #2 tx=20251202T120501Z-0002 |
+[2025-12-03T20:45:49Z] | tx=n/a                                                 |
+[2025-12-03T20:45:49Z] +--------------------------------------------------------+
+[2025-12-03T20:45:49Z] +====================[OutputCtrl]====================+
+[2025-12-03T20:45:49Z] | DISPLAY                                            |
+[2025-12-03T20:45:49Z] | Выгрузка завершена успешно |
+[2025-12-03T20:45:49Z] | tx=n/a                                             |
+[2025-12-03T20:45:49Z] +----------------------------------------------------+
+[2025-12-03T20:45:49Z] EventChannel: читаю события из stdin (env)
+[2025-12-03T20:45:49Z] +===============================[ControlSys]===============================+
+[2025-12-03T20:45:49Z] | Демо завершено. Ожидаю внешние события. |
+[2025-12-03T20:45:49Z] +--------------------------------------------------------------------------+

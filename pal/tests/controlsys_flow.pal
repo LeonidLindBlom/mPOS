@@ -2,72 +2,88 @@ assert "transaction_flow" {
     setup {
         core <- execute dst=kl.core.Core
         einit <- execute src=core dst=Einit
-        manager <- execute src=einit dst=controlsys.Manager
+        manager <- execute src=einit dst=controlsys.ControlSys
         inputguard <- execute src=einit dst=controlsys.InputGuard
         output <- execute src=einit dst=controlsys.OutputController
         cardverif <- execute src=einit dst=controlsys.CardVerifier
         txn <- execute src=einit dst=controlsys.TransactionGenerator
         statusverif <- execute src=einit dst=controlsys.StatusVerifier
-        auth <- execute src=einit dst=controlsys.AuthModule
         journal <- execute src=einit dst=controlsys.Journal
     }
 
     sequence "heartbeat" {
-        grant "InputGuard reports environment" response src=inputguard dst=manager endpoint=inputguard.service method=Heartbeat {
-            powerOK : true, networkOK : true
+        grant "ControlSys polls InputGuard" request src=manager dst=inputguard endpoint=inputguard.interface method=Heartbeat {
+            networkOk : true, pingOk : true, powerOk : true,
+            signalStrength : 90, soc : 85
+        }
+        grant "InputGuard reports readiness" response src=inputguard dst=manager endpoint=inputguard.interface method=Heartbeat {
+            powerReady : true, networkReady : true
         }
     }
 
     sequence "amount" {
-        grant "Input module calls manager" request src=manager dst=inputguard endpoint=manager.service method=BeginTransaction {
-            amount : 12345, currency : "RUB"
+        grant "ControlSys requests transaction start" request src=manager dst=inputguard endpoint=inputguard.interface method=BeginTransaction {
+            amountCents : 12345, currency : "RUB"
+        }
+        grant "InputGuard allows continuation" response src=inputguard dst=manager endpoint=inputguard.interface method=BeginTransaction {
+            allowed : true
+        }
+        grant "ControlSys invites customer" request src=manager dst=output endpoint=output.interface method=InviteCard {
+            txId : "20251203T193615Z-0001", amountCents : 12345, currency : "RUB"
         }
     }
 
     sequence "card" {
-        grant "Manager calls card verifier" request src=manager dst=cardverif endpoint=cardverifier.service method=CheckCard {
-            pan : "4256********9310", expiry : "2712", holder : "CARDHOLDER"
+        grant "ControlSys validates card" request src=manager dst=cardverif endpoint=cardverif.interface method=CheckCard {
+            panMasked : "4256********9310", expiry : "2712",
+            holder : "CARDHOLDER", emvOk : true
         }
-        grant "Card verifier approves" response src=cardverif dst=manager endpoint=cardverifier.service method=CheckCard {
-            emvOk : true
+        grant "Card verifier approves" response src=cardverif dst=manager endpoint=cardverif.interface method=CheckCard {
+            accepted : true
         }
     }
 
     sequence "pin" {
-        grant "Output controller asks for PIN" request src=manager dst=output endpoint=output.service method=RequestPIN {}
-        grant "Output controller notifies manager" response src=output dst=manager endpoint=output.service method=RequestPIN {}
+        grant "ControlSys asks for PIN" request src=manager dst=output endpoint=output.interface method=RequestPIN {
+            txId : "20251203T193615Z-0001"
+        }
     }
 
     sequence "bank" {
-        grant "Manager builds transaction" request src=manager dst=txn endpoint=txn.service method=Build {
-            txId : "demo", amount : 12345
+        grant "ControlSys builds ARQC" request src=manager dst=txn endpoint=txn.interface method=Build {
+            txId : "20251203T193615Z-0001", amountCents : 12345,
+            currency : "RUB", approved : true
         }
-        grant "Transaction result" response src=txn dst=manager endpoint=txn.service method=Build {
+        grant "Transaction payload ready" response src=txn dst=manager endpoint=txn.interface method=Build {
             payload : "ARQC"
         }
-        grant "Manager validates status" request src=manager dst=statusverif endpoint=statusverifier.service method=Validate {
-            seq : 1, approved : true
+        grant "ControlSys validates status" request src=manager dst=statusverif endpoint=statusverif.interface method=Validate {
+            txId : "20251203T193615Z-0001", seqNumber : 1,
+            approved : true, latencyMs : 120
         }
-        grant "Status verifier approves" response src=statusverif dst=manager endpoint=statusverifier.service method=Validate {
+        grant "Status verifier confirms" response src=statusverif dst=manager endpoint=statusverif.interface method=Validate {
             ok : true
         }
-        grant "Journal writes record" request src=manager dst=journal endpoint=journal.service method=Append {
-            txId : "demo", amount : 12345, result : "APPROVED"
+        grant "Journal records transaction" request src=manager dst=journal endpoint=journal.interface method=Append {
+            txId : "20251203T193615Z-0001", amountCents : 12345,
+            currency : "RUB", approved : true
+        }
+        grant "Journal acknowledges" response src=journal dst=manager endpoint=journal.interface method=Append {
+            ok : true
         }
     }
 
     sequence "status" {
-        grant "Manager updates output" request src=manager dst=output endpoint=output.service method=ShowStatus {
-            status : "Операция подтверждена"
+        grant "ControlSys shows success" request src=manager dst=output endpoint=output.interface method=ShowStatus {
+            message : "Операция подтверждена"
         }
-        grant "Output acknowledges status" response src=output dst=manager endpoint=output.service method=ShowStatus {}
     }
 
     sequence "receipt" {
-        grant "Manager requests receipt" request src=manager dst=output endpoint=output.service method=PrintReceipt {
-            txId : "demo", amount : 12345
+        grant "ControlSys prints receipt" request src=manager dst=output endpoint=output.interface method=PrintReceipt {
+            txId : "20251203T193615Z-0001", amountCents : 12345,
+            currency : "RUB", approved : true
         }
-        grant "Output confirms receipt" response src=output dst=manager endpoint=output.service method=PrintReceipt {}
     }
 }
 
@@ -75,7 +91,7 @@ assert "update_flow" {
     setup {
         core <- execute dst=kl.core.Core
         einit <- execute src=core dst=Einit
-        manager <- execute src=einit dst=controlsys.Manager
+        manager <- execute src=einit dst=controlsys.ControlSys
         auth <- execute src=einit dst=controlsys.AuthModule
         loader <- execute src=einit dst=controlsys.UpdateLoader
         storage <- execute src=einit dst=controlsys.UpdateStorage
@@ -84,47 +100,64 @@ assert "update_flow" {
     }
 
     sequence "request" {
-        grant "Manager authenticates operator" request src=manager dst=auth endpoint=auth.service method=CheckRole {
+        grant "ControlSys resets storage" request src=manager dst=storage endpoint=storage.interface method=Reset {}
+        grant "ControlSys authenticates operator" request src=manager dst=auth endpoint=auth.interface method=CheckRole {
             role : "operator"
         }
-        grant "Auth approves operator" response src=auth dst=manager endpoint=auth.service method=CheckRole {
+        grant "Auth approves operator" response src=auth dst=manager endpoint=auth.interface method=CheckRole {
+            accepted : true
+        }
+        grant "ControlSys starts loader" request src=manager dst=loader endpoint=loader.interface method=Begin {
+            requester : "operator"
+        }
+        grant "Loader ready" response src=loader dst=manager endpoint=loader.interface method=Begin {
             ok : true
         }
-        grant "Manager starts loader" request src=manager dst=loader endpoint=loader.service method=Begin {}
     }
 
     sequence "chunks" {
-        grant "Chunk 1" request src=manager dst=loader endpoint=loader.service method=PushChunk {
-            version : "1.0.1", chunk : 1, chunks : 2, size : 1048576
+        grant "Chunk 1 uploaded" request src=manager dst=loader endpoint=loader.interface method=PushChunk {
+            version : "1.0.1", chunkIndex : 1, chunkTotal : 2,
+            chunkSize : 1048576, signatureHint : true
         }
-        grant "Chunk 2" request src=manager dst=loader endpoint=loader.service method=PushChunk {
-            version : "1.0.1", chunk : 2, chunks : 2, size : 1048576
+        grant "Loader accepts chunk 1" response src=loader dst=manager endpoint=loader.interface method=PushChunk {
+            ok : true
         }
-        grant "Loader closes session" response src=loader dst=manager endpoint=loader.service method=PushChunk {}
+        grant "Chunk 2 uploaded" request src=manager dst=loader endpoint=loader.interface method=PushChunk {
+            version : "1.0.1", chunkIndex : 2, chunkTotal : 2,
+            chunkSize : 1048576, signatureHint : true
+        }
+        grant "Loader accepts chunk 2" response src=loader dst=manager endpoint=loader.interface method=PushChunk {
+            ok : true
+        }
+        grant "Loader finalizes session" request src=manager dst=loader endpoint=loader.interface method=Finalize {}
+        grant "Loader finished" response src=loader dst=manager endpoint=loader.interface method=Finalize {
+            ok : true
+        }
     }
 
     sequence "snapshot" {
-        grant "Manager snapshots storage" request src=manager dst=storage endpoint=storage.service method=Snapshot {}
-        grant "Storage ready" response src=storage dst=manager endpoint=storage.service method=Snapshot {
-            complete : true
+        grant "ControlSys snapshots storage" request src=manager dst=storage endpoint=storage.interface method=Snapshot {}
+        grant "Storage reports assembled image" response src=storage dst=manager endpoint=storage.interface method=Snapshot {
+            version : "1.0.1", totalSize : 2097152, complete : true
         }
     }
 
     sequence "verify-signature" {
-        grant "Verifier checks image" request src=manager dst=verifier endpoint=verifier.service method=Verify {
-            version : "1.0.1", signatureOk : true
+        grant "Verifier checks bundle" request src=manager dst=verifier endpoint=verifier.interface method=Verify {
+            version : "1.0.1", totalSize : 2097152, signatureOk : true
         }
-        grant "Verifier approves" response src=verifier dst=manager endpoint=verifier.service method=Verify {
+        grant "Verifier approves" response src=verifier dst=manager endpoint=verifier.interface method=Verify {
             ok : true
         }
     }
 
     sequence "install" {
-        grant "Installer applies" request src=manager dst=installer endpoint=installer.service method=Install {
-            version : "1.0.1"
+        grant "Installer applies image" request src=manager dst=installer endpoint=installer.interface method=Install {
+            version : "1.0.1", totalSize : 2097152, allow : 1
         }
-        grant "Installer confirms" response src=installer dst=manager endpoint=installer.service method=Install {
-            ok : true
+        grant "Installer confirms" response src=installer dst=manager endpoint=installer.interface method=Install {
+            ok : 1
         }
     }
 }
@@ -133,36 +166,39 @@ assert "log_export_flow" {
     setup {
         core <- execute dst=kl.core.Core
         einit <- execute src=core dst=Einit
-        manager <- execute src=einit dst=controlsys.Manager
+        manager <- execute src=einit dst=controlsys.ControlSys
         auth <- execute src=einit dst=controlsys.AuthModule
         journal <- execute src=einit dst=controlsys.Journal
         output <- execute src=einit dst=controlsys.OutputController
     }
 
     sequence "auth" {
-        grant "Engineer authenticates" request src=manager dst=auth endpoint=auth.service method=CheckRole {
+        grant "ControlSys authenticates engineer" request src=manager dst=auth endpoint=auth.interface method=CheckRole {
             role : "engineer"
         }
-        grant "Auth OK" response src=auth dst=manager endpoint=auth.service method=CheckRole {
-            ok : true
+        grant "Auth grants access" response src=auth dst=manager endpoint=auth.interface method=CheckRole {
+            accepted : true
         }
     }
 
     sequence "export" {
-        grant "Manager requests journal" request src=manager dst=journal endpoint=journal.service method=Export {
-            count : 2
+        grant "ControlSys requests journal export" request src=manager dst=journal endpoint=journal.interface method=Export {
+            maxRecords : 2
         }
-        grant "Journal streams record" response src=journal dst=manager endpoint=journal.service method=Export {
-            record : "tx=demo-001"
+        grant "Journal streams record #1" response src=journal dst=manager endpoint=journal.interface method=Export {
+            record : "tx=20251202T120000Z-0001"
+        }
+        grant "Journal streams record #2" response src=journal dst=manager endpoint=journal.interface method=Export {
+            record : "tx=20251202T120501Z-0002"
         }
     }
 
     sequence "export-complete" {
-        grant "Journal signals completion" response src=journal dst=manager endpoint=journal.service method=Export {
+        grant "Journal signals completion" response src=journal dst=manager endpoint=journal.interface method=Export {
             record : "DONE"
         }
-        grant "Manager notifies output" request src=manager dst=output endpoint=output.service method=ShowStatus {
-            status : "Выгрузка завершена"
+        grant "ControlSys reports status" request src=manager dst=output endpoint=output.interface method=ShowStatus {
+            message : "Выгрузка завершена"
         }
     }
 }

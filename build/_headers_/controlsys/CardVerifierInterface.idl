@@ -1,0 +1,15 @@
+package controlsys.CardVerifierInterface
+
+typedef UInt8 Bool;
+
+const UInt8 PanLen = 32;
+const UInt8 ExpiryLen = 8;
+const UInt8 HolderLen = 32;
+
+interface {
+    CheckCard(in string<PanLen> panMasked,
+              in string<ExpiryLen> expiry,
+              in string<HolderLen> holder,
+              in Bool emvOk,
+              out Bool accepted);
+}

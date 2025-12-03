@@ -162,6 +162,622 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+controlsys/CMakeFiles/InputGuardInterface_idl_copy_controlsys.InputGuardInterface.idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/InputGuardInterface_idl_copy_controlsys.InputGuardInterface.idl.dir/rule
+.PHONY : controlsys/CMakeFiles/InputGuardInterface_idl_copy_controlsys.InputGuardInterface.idl.dir/rule
+
+# Convenience name for target.
+InputGuardInterface_idl_copy_controlsys.InputGuardInterface.idl: controlsys/CMakeFiles/InputGuardInterface_idl_copy_controlsys.InputGuardInterface.idl.dir/rule
+.PHONY : InputGuardInterface_idl_copy_controlsys.InputGuardInterface.idl
+
+# fast build rule for target.
+InputGuardInterface_idl_copy_controlsys.InputGuardInterface.idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/InputGuardInterface_idl_copy_controlsys.InputGuardInterface.idl.dir/build.make controlsys/CMakeFiles/InputGuardInterface_idl_copy_controlsys.InputGuardInterface.idl.dir/build
+.PHONY : InputGuardInterface_idl_copy_controlsys.InputGuardInterface.idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/InputGuardInterface_idl_gen_controlsys.InputGuardInterface.idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/InputGuardInterface_idl_gen_controlsys.InputGuardInterface.idl.dir/rule
+.PHONY : controlsys/CMakeFiles/InputGuardInterface_idl_gen_controlsys.InputGuardInterface.idl.dir/rule
+
+# Convenience name for target.
+InputGuardInterface_idl_gen_controlsys.InputGuardInterface.idl: controlsys/CMakeFiles/InputGuardInterface_idl_gen_controlsys.InputGuardInterface.idl.dir/rule
+.PHONY : InputGuardInterface_idl_gen_controlsys.InputGuardInterface.idl
+
+# fast build rule for target.
+InputGuardInterface_idl_gen_controlsys.InputGuardInterface.idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/InputGuardInterface_idl_gen_controlsys.InputGuardInterface.idl.dir/build.make controlsys/CMakeFiles/InputGuardInterface_idl_gen_controlsys.InputGuardInterface.idl.dir/build
+.PHONY : InputGuardInterface_idl_gen_controlsys.InputGuardInterface.idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/InputGuardInterface_idl_copy_gen_controlsys.InputGuardInterface.idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/InputGuardInterface_idl_copy_gen_controlsys.InputGuardInterface.idl.dir/rule
+.PHONY : controlsys/CMakeFiles/InputGuardInterface_idl_copy_gen_controlsys.InputGuardInterface.idl.dir/rule
+
+# Convenience name for target.
+InputGuardInterface_idl_copy_gen_controlsys.InputGuardInterface.idl: controlsys/CMakeFiles/InputGuardInterface_idl_copy_gen_controlsys.InputGuardInterface.idl.dir/rule
+.PHONY : InputGuardInterface_idl_copy_gen_controlsys.InputGuardInterface.idl
+
+# fast build rule for target.
+InputGuardInterface_idl_copy_gen_controlsys.InputGuardInterface.idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/InputGuardInterface_idl_copy_gen_controlsys.InputGuardInterface.idl.dir/build.make controlsys/CMakeFiles/InputGuardInterface_idl_copy_gen_controlsys.InputGuardInterface.idl.dir/build
+.PHONY : InputGuardInterface_idl_copy_gen_controlsys.InputGuardInterface.idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/InputGuardInterface_idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/InputGuardInterface_idl.dir/rule
+.PHONY : controlsys/CMakeFiles/InputGuardInterface_idl.dir/rule
+
+# Convenience name for target.
+InputGuardInterface_idl: controlsys/CMakeFiles/InputGuardInterface_idl.dir/rule
+.PHONY : InputGuardInterface_idl
+
+# fast build rule for target.
+InputGuardInterface_idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/InputGuardInterface_idl.dir/build.make controlsys/CMakeFiles/InputGuardInterface_idl.dir/build
+.PHONY : InputGuardInterface_idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/OutputControllerInterface_idl_copy_controlsys.OutputControllerInterface.idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/OutputControllerInterface_idl_copy_controlsys.OutputControllerInterface.idl.dir/rule
+.PHONY : controlsys/CMakeFiles/OutputControllerInterface_idl_copy_controlsys.OutputControllerInterface.idl.dir/rule
+
+# Convenience name for target.
+OutputControllerInterface_idl_copy_controlsys.OutputControllerInterface.idl: controlsys/CMakeFiles/OutputControllerInterface_idl_copy_controlsys.OutputControllerInterface.idl.dir/rule
+.PHONY : OutputControllerInterface_idl_copy_controlsys.OutputControllerInterface.idl
+
+# fast build rule for target.
+OutputControllerInterface_idl_copy_controlsys.OutputControllerInterface.idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/OutputControllerInterface_idl_copy_controlsys.OutputControllerInterface.idl.dir/build.make controlsys/CMakeFiles/OutputControllerInterface_idl_copy_controlsys.OutputControllerInterface.idl.dir/build
+.PHONY : OutputControllerInterface_idl_copy_controlsys.OutputControllerInterface.idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/OutputControllerInterface_idl_gen_controlsys.OutputControllerInterface.idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/OutputControllerInterface_idl_gen_controlsys.OutputControllerInterface.idl.dir/rule
+.PHONY : controlsys/CMakeFiles/OutputControllerInterface_idl_gen_controlsys.OutputControllerInterface.idl.dir/rule
+
+# Convenience name for target.
+OutputControllerInterface_idl_gen_controlsys.OutputControllerInterface.idl: controlsys/CMakeFiles/OutputControllerInterface_idl_gen_controlsys.OutputControllerInterface.idl.dir/rule
+.PHONY : OutputControllerInterface_idl_gen_controlsys.OutputControllerInterface.idl
+
+# fast build rule for target.
+OutputControllerInterface_idl_gen_controlsys.OutputControllerInterface.idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/OutputControllerInterface_idl_gen_controlsys.OutputControllerInterface.idl.dir/build.make controlsys/CMakeFiles/OutputControllerInterface_idl_gen_controlsys.OutputControllerInterface.idl.dir/build
+.PHONY : OutputControllerInterface_idl_gen_controlsys.OutputControllerInterface.idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/OutputControllerInterface_idl_copy_gen_controlsys.OutputControllerInterface.idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/OutputControllerInterface_idl_copy_gen_controlsys.OutputControllerInterface.idl.dir/rule
+.PHONY : controlsys/CMakeFiles/OutputControllerInterface_idl_copy_gen_controlsys.OutputControllerInterface.idl.dir/rule
+
+# Convenience name for target.
+OutputControllerInterface_idl_copy_gen_controlsys.OutputControllerInterface.idl: controlsys/CMakeFiles/OutputControllerInterface_idl_copy_gen_controlsys.OutputControllerInterface.idl.dir/rule
+.PHONY : OutputControllerInterface_idl_copy_gen_controlsys.OutputControllerInterface.idl
+
+# fast build rule for target.
+OutputControllerInterface_idl_copy_gen_controlsys.OutputControllerInterface.idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/OutputControllerInterface_idl_copy_gen_controlsys.OutputControllerInterface.idl.dir/build.make controlsys/CMakeFiles/OutputControllerInterface_idl_copy_gen_controlsys.OutputControllerInterface.idl.dir/build
+.PHONY : OutputControllerInterface_idl_copy_gen_controlsys.OutputControllerInterface.idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/OutputControllerInterface_idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/OutputControllerInterface_idl.dir/rule
+.PHONY : controlsys/CMakeFiles/OutputControllerInterface_idl.dir/rule
+
+# Convenience name for target.
+OutputControllerInterface_idl: controlsys/CMakeFiles/OutputControllerInterface_idl.dir/rule
+.PHONY : OutputControllerInterface_idl
+
+# fast build rule for target.
+OutputControllerInterface_idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/OutputControllerInterface_idl.dir/build.make controlsys/CMakeFiles/OutputControllerInterface_idl.dir/build
+.PHONY : OutputControllerInterface_idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/CardVerifierInterface_idl_copy_controlsys.CardVerifierInterface.idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/CardVerifierInterface_idl_copy_controlsys.CardVerifierInterface.idl.dir/rule
+.PHONY : controlsys/CMakeFiles/CardVerifierInterface_idl_copy_controlsys.CardVerifierInterface.idl.dir/rule
+
+# Convenience name for target.
+CardVerifierInterface_idl_copy_controlsys.CardVerifierInterface.idl: controlsys/CMakeFiles/CardVerifierInterface_idl_copy_controlsys.CardVerifierInterface.idl.dir/rule
+.PHONY : CardVerifierInterface_idl_copy_controlsys.CardVerifierInterface.idl
+
+# fast build rule for target.
+CardVerifierInterface_idl_copy_controlsys.CardVerifierInterface.idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/CardVerifierInterface_idl_copy_controlsys.CardVerifierInterface.idl.dir/build.make controlsys/CMakeFiles/CardVerifierInterface_idl_copy_controlsys.CardVerifierInterface.idl.dir/build
+.PHONY : CardVerifierInterface_idl_copy_controlsys.CardVerifierInterface.idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/CardVerifierInterface_idl_gen_controlsys.CardVerifierInterface.idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/CardVerifierInterface_idl_gen_controlsys.CardVerifierInterface.idl.dir/rule
+.PHONY : controlsys/CMakeFiles/CardVerifierInterface_idl_gen_controlsys.CardVerifierInterface.idl.dir/rule
+
+# Convenience name for target.
+CardVerifierInterface_idl_gen_controlsys.CardVerifierInterface.idl: controlsys/CMakeFiles/CardVerifierInterface_idl_gen_controlsys.CardVerifierInterface.idl.dir/rule
+.PHONY : CardVerifierInterface_idl_gen_controlsys.CardVerifierInterface.idl
+
+# fast build rule for target.
+CardVerifierInterface_idl_gen_controlsys.CardVerifierInterface.idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/CardVerifierInterface_idl_gen_controlsys.CardVerifierInterface.idl.dir/build.make controlsys/CMakeFiles/CardVerifierInterface_idl_gen_controlsys.CardVerifierInterface.idl.dir/build
+.PHONY : CardVerifierInterface_idl_gen_controlsys.CardVerifierInterface.idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/CardVerifierInterface_idl_copy_gen_controlsys.CardVerifierInterface.idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/CardVerifierInterface_idl_copy_gen_controlsys.CardVerifierInterface.idl.dir/rule
+.PHONY : controlsys/CMakeFiles/CardVerifierInterface_idl_copy_gen_controlsys.CardVerifierInterface.idl.dir/rule
+
+# Convenience name for target.
+CardVerifierInterface_idl_copy_gen_controlsys.CardVerifierInterface.idl: controlsys/CMakeFiles/CardVerifierInterface_idl_copy_gen_controlsys.CardVerifierInterface.idl.dir/rule
+.PHONY : CardVerifierInterface_idl_copy_gen_controlsys.CardVerifierInterface.idl
+
+# fast build rule for target.
+CardVerifierInterface_idl_copy_gen_controlsys.CardVerifierInterface.idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/CardVerifierInterface_idl_copy_gen_controlsys.CardVerifierInterface.idl.dir/build.make controlsys/CMakeFiles/CardVerifierInterface_idl_copy_gen_controlsys.CardVerifierInterface.idl.dir/build
+.PHONY : CardVerifierInterface_idl_copy_gen_controlsys.CardVerifierInterface.idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/CardVerifierInterface_idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/CardVerifierInterface_idl.dir/rule
+.PHONY : controlsys/CMakeFiles/CardVerifierInterface_idl.dir/rule
+
+# Convenience name for target.
+CardVerifierInterface_idl: controlsys/CMakeFiles/CardVerifierInterface_idl.dir/rule
+.PHONY : CardVerifierInterface_idl
+
+# fast build rule for target.
+CardVerifierInterface_idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/CardVerifierInterface_idl.dir/build.make controlsys/CMakeFiles/CardVerifierInterface_idl.dir/build
+.PHONY : CardVerifierInterface_idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/TransactionGeneratorInterface_idl_copy_controlsys.TransactionGeneratorInterface.idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/TransactionGeneratorInterface_idl_copy_controlsys.TransactionGeneratorInterface.idl.dir/rule
+.PHONY : controlsys/CMakeFiles/TransactionGeneratorInterface_idl_copy_controlsys.TransactionGeneratorInterface.idl.dir/rule
+
+# Convenience name for target.
+TransactionGeneratorInterface_idl_copy_controlsys.TransactionGeneratorInterface.idl: controlsys/CMakeFiles/TransactionGeneratorInterface_idl_copy_controlsys.TransactionGeneratorInterface.idl.dir/rule
+.PHONY : TransactionGeneratorInterface_idl_copy_controlsys.TransactionGeneratorInterface.idl
+
+# fast build rule for target.
+TransactionGeneratorInterface_idl_copy_controlsys.TransactionGeneratorInterface.idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/TransactionGeneratorInterface_idl_copy_controlsys.TransactionGeneratorInterface.idl.dir/build.make controlsys/CMakeFiles/TransactionGeneratorInterface_idl_copy_controlsys.TransactionGeneratorInterface.idl.dir/build
+.PHONY : TransactionGeneratorInterface_idl_copy_controlsys.TransactionGeneratorInterface.idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/TransactionGeneratorInterface_idl_gen_controlsys.TransactionGeneratorInterface.idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/TransactionGeneratorInterface_idl_gen_controlsys.TransactionGeneratorInterface.idl.dir/rule
+.PHONY : controlsys/CMakeFiles/TransactionGeneratorInterface_idl_gen_controlsys.TransactionGeneratorInterface.idl.dir/rule
+
+# Convenience name for target.
+TransactionGeneratorInterface_idl_gen_controlsys.TransactionGeneratorInterface.idl: controlsys/CMakeFiles/TransactionGeneratorInterface_idl_gen_controlsys.TransactionGeneratorInterface.idl.dir/rule
+.PHONY : TransactionGeneratorInterface_idl_gen_controlsys.TransactionGeneratorInterface.idl
+
+# fast build rule for target.
+TransactionGeneratorInterface_idl_gen_controlsys.TransactionGeneratorInterface.idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/TransactionGeneratorInterface_idl_gen_controlsys.TransactionGeneratorInterface.idl.dir/build.make controlsys/CMakeFiles/TransactionGeneratorInterface_idl_gen_controlsys.TransactionGeneratorInterface.idl.dir/build
+.PHONY : TransactionGeneratorInterface_idl_gen_controlsys.TransactionGeneratorInterface.idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/TransactionGeneratorInterface_idl_copy_gen_controlsys.TransactionGeneratorInterface.idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/TransactionGeneratorInterface_idl_copy_gen_controlsys.TransactionGeneratorInterface.idl.dir/rule
+.PHONY : controlsys/CMakeFiles/TransactionGeneratorInterface_idl_copy_gen_controlsys.TransactionGeneratorInterface.idl.dir/rule
+
+# Convenience name for target.
+TransactionGeneratorInterface_idl_copy_gen_controlsys.TransactionGeneratorInterface.idl: controlsys/CMakeFiles/TransactionGeneratorInterface_idl_copy_gen_controlsys.TransactionGeneratorInterface.idl.dir/rule
+.PHONY : TransactionGeneratorInterface_idl_copy_gen_controlsys.TransactionGeneratorInterface.idl
+
+# fast build rule for target.
+TransactionGeneratorInterface_idl_copy_gen_controlsys.TransactionGeneratorInterface.idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/TransactionGeneratorInterface_idl_copy_gen_controlsys.TransactionGeneratorInterface.idl.dir/build.make controlsys/CMakeFiles/TransactionGeneratorInterface_idl_copy_gen_controlsys.TransactionGeneratorInterface.idl.dir/build
+.PHONY : TransactionGeneratorInterface_idl_copy_gen_controlsys.TransactionGeneratorInterface.idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/TransactionGeneratorInterface_idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/TransactionGeneratorInterface_idl.dir/rule
+.PHONY : controlsys/CMakeFiles/TransactionGeneratorInterface_idl.dir/rule
+
+# Convenience name for target.
+TransactionGeneratorInterface_idl: controlsys/CMakeFiles/TransactionGeneratorInterface_idl.dir/rule
+.PHONY : TransactionGeneratorInterface_idl
+
+# fast build rule for target.
+TransactionGeneratorInterface_idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/TransactionGeneratorInterface_idl.dir/build.make controlsys/CMakeFiles/TransactionGeneratorInterface_idl.dir/build
+.PHONY : TransactionGeneratorInterface_idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/StatusVerifierInterface_idl_copy_controlsys.StatusVerifierInterface.idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/StatusVerifierInterface_idl_copy_controlsys.StatusVerifierInterface.idl.dir/rule
+.PHONY : controlsys/CMakeFiles/StatusVerifierInterface_idl_copy_controlsys.StatusVerifierInterface.idl.dir/rule
+
+# Convenience name for target.
+StatusVerifierInterface_idl_copy_controlsys.StatusVerifierInterface.idl: controlsys/CMakeFiles/StatusVerifierInterface_idl_copy_controlsys.StatusVerifierInterface.idl.dir/rule
+.PHONY : StatusVerifierInterface_idl_copy_controlsys.StatusVerifierInterface.idl
+
+# fast build rule for target.
+StatusVerifierInterface_idl_copy_controlsys.StatusVerifierInterface.idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/StatusVerifierInterface_idl_copy_controlsys.StatusVerifierInterface.idl.dir/build.make controlsys/CMakeFiles/StatusVerifierInterface_idl_copy_controlsys.StatusVerifierInterface.idl.dir/build
+.PHONY : StatusVerifierInterface_idl_copy_controlsys.StatusVerifierInterface.idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/StatusVerifierInterface_idl_gen_controlsys.StatusVerifierInterface.idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/StatusVerifierInterface_idl_gen_controlsys.StatusVerifierInterface.idl.dir/rule
+.PHONY : controlsys/CMakeFiles/StatusVerifierInterface_idl_gen_controlsys.StatusVerifierInterface.idl.dir/rule
+
+# Convenience name for target.
+StatusVerifierInterface_idl_gen_controlsys.StatusVerifierInterface.idl: controlsys/CMakeFiles/StatusVerifierInterface_idl_gen_controlsys.StatusVerifierInterface.idl.dir/rule
+.PHONY : StatusVerifierInterface_idl_gen_controlsys.StatusVerifierInterface.idl
+
+# fast build rule for target.
+StatusVerifierInterface_idl_gen_controlsys.StatusVerifierInterface.idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/StatusVerifierInterface_idl_gen_controlsys.StatusVerifierInterface.idl.dir/build.make controlsys/CMakeFiles/StatusVerifierInterface_idl_gen_controlsys.StatusVerifierInterface.idl.dir/build
+.PHONY : StatusVerifierInterface_idl_gen_controlsys.StatusVerifierInterface.idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/StatusVerifierInterface_idl_copy_gen_controlsys.StatusVerifierInterface.idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/StatusVerifierInterface_idl_copy_gen_controlsys.StatusVerifierInterface.idl.dir/rule
+.PHONY : controlsys/CMakeFiles/StatusVerifierInterface_idl_copy_gen_controlsys.StatusVerifierInterface.idl.dir/rule
+
+# Convenience name for target.
+StatusVerifierInterface_idl_copy_gen_controlsys.StatusVerifierInterface.idl: controlsys/CMakeFiles/StatusVerifierInterface_idl_copy_gen_controlsys.StatusVerifierInterface.idl.dir/rule
+.PHONY : StatusVerifierInterface_idl_copy_gen_controlsys.StatusVerifierInterface.idl
+
+# fast build rule for target.
+StatusVerifierInterface_idl_copy_gen_controlsys.StatusVerifierInterface.idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/StatusVerifierInterface_idl_copy_gen_controlsys.StatusVerifierInterface.idl.dir/build.make controlsys/CMakeFiles/StatusVerifierInterface_idl_copy_gen_controlsys.StatusVerifierInterface.idl.dir/build
+.PHONY : StatusVerifierInterface_idl_copy_gen_controlsys.StatusVerifierInterface.idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/StatusVerifierInterface_idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/StatusVerifierInterface_idl.dir/rule
+.PHONY : controlsys/CMakeFiles/StatusVerifierInterface_idl.dir/rule
+
+# Convenience name for target.
+StatusVerifierInterface_idl: controlsys/CMakeFiles/StatusVerifierInterface_idl.dir/rule
+.PHONY : StatusVerifierInterface_idl
+
+# fast build rule for target.
+StatusVerifierInterface_idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/StatusVerifierInterface_idl.dir/build.make controlsys/CMakeFiles/StatusVerifierInterface_idl.dir/build
+.PHONY : StatusVerifierInterface_idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/AuthInterface_idl_copy_controlsys.AuthInterface.idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/AuthInterface_idl_copy_controlsys.AuthInterface.idl.dir/rule
+.PHONY : controlsys/CMakeFiles/AuthInterface_idl_copy_controlsys.AuthInterface.idl.dir/rule
+
+# Convenience name for target.
+AuthInterface_idl_copy_controlsys.AuthInterface.idl: controlsys/CMakeFiles/AuthInterface_idl_copy_controlsys.AuthInterface.idl.dir/rule
+.PHONY : AuthInterface_idl_copy_controlsys.AuthInterface.idl
+
+# fast build rule for target.
+AuthInterface_idl_copy_controlsys.AuthInterface.idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/AuthInterface_idl_copy_controlsys.AuthInterface.idl.dir/build.make controlsys/CMakeFiles/AuthInterface_idl_copy_controlsys.AuthInterface.idl.dir/build
+.PHONY : AuthInterface_idl_copy_controlsys.AuthInterface.idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/AuthInterface_idl_gen_controlsys.AuthInterface.idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/AuthInterface_idl_gen_controlsys.AuthInterface.idl.dir/rule
+.PHONY : controlsys/CMakeFiles/AuthInterface_idl_gen_controlsys.AuthInterface.idl.dir/rule
+
+# Convenience name for target.
+AuthInterface_idl_gen_controlsys.AuthInterface.idl: controlsys/CMakeFiles/AuthInterface_idl_gen_controlsys.AuthInterface.idl.dir/rule
+.PHONY : AuthInterface_idl_gen_controlsys.AuthInterface.idl
+
+# fast build rule for target.
+AuthInterface_idl_gen_controlsys.AuthInterface.idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/AuthInterface_idl_gen_controlsys.AuthInterface.idl.dir/build.make controlsys/CMakeFiles/AuthInterface_idl_gen_controlsys.AuthInterface.idl.dir/build
+.PHONY : AuthInterface_idl_gen_controlsys.AuthInterface.idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/AuthInterface_idl_copy_gen_controlsys.AuthInterface.idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/AuthInterface_idl_copy_gen_controlsys.AuthInterface.idl.dir/rule
+.PHONY : controlsys/CMakeFiles/AuthInterface_idl_copy_gen_controlsys.AuthInterface.idl.dir/rule
+
+# Convenience name for target.
+AuthInterface_idl_copy_gen_controlsys.AuthInterface.idl: controlsys/CMakeFiles/AuthInterface_idl_copy_gen_controlsys.AuthInterface.idl.dir/rule
+.PHONY : AuthInterface_idl_copy_gen_controlsys.AuthInterface.idl
+
+# fast build rule for target.
+AuthInterface_idl_copy_gen_controlsys.AuthInterface.idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/AuthInterface_idl_copy_gen_controlsys.AuthInterface.idl.dir/build.make controlsys/CMakeFiles/AuthInterface_idl_copy_gen_controlsys.AuthInterface.idl.dir/build
+.PHONY : AuthInterface_idl_copy_gen_controlsys.AuthInterface.idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/AuthInterface_idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/AuthInterface_idl.dir/rule
+.PHONY : controlsys/CMakeFiles/AuthInterface_idl.dir/rule
+
+# Convenience name for target.
+AuthInterface_idl: controlsys/CMakeFiles/AuthInterface_idl.dir/rule
+.PHONY : AuthInterface_idl
+
+# fast build rule for target.
+AuthInterface_idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/AuthInterface_idl.dir/build.make controlsys/CMakeFiles/AuthInterface_idl.dir/build
+.PHONY : AuthInterface_idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/JournalInterface_idl_copy_controlsys.JournalInterface.idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/JournalInterface_idl_copy_controlsys.JournalInterface.idl.dir/rule
+.PHONY : controlsys/CMakeFiles/JournalInterface_idl_copy_controlsys.JournalInterface.idl.dir/rule
+
+# Convenience name for target.
+JournalInterface_idl_copy_controlsys.JournalInterface.idl: controlsys/CMakeFiles/JournalInterface_idl_copy_controlsys.JournalInterface.idl.dir/rule
+.PHONY : JournalInterface_idl_copy_controlsys.JournalInterface.idl
+
+# fast build rule for target.
+JournalInterface_idl_copy_controlsys.JournalInterface.idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/JournalInterface_idl_copy_controlsys.JournalInterface.idl.dir/build.make controlsys/CMakeFiles/JournalInterface_idl_copy_controlsys.JournalInterface.idl.dir/build
+.PHONY : JournalInterface_idl_copy_controlsys.JournalInterface.idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/JournalInterface_idl_gen_controlsys.JournalInterface.idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/JournalInterface_idl_gen_controlsys.JournalInterface.idl.dir/rule
+.PHONY : controlsys/CMakeFiles/JournalInterface_idl_gen_controlsys.JournalInterface.idl.dir/rule
+
+# Convenience name for target.
+JournalInterface_idl_gen_controlsys.JournalInterface.idl: controlsys/CMakeFiles/JournalInterface_idl_gen_controlsys.JournalInterface.idl.dir/rule
+.PHONY : JournalInterface_idl_gen_controlsys.JournalInterface.idl
+
+# fast build rule for target.
+JournalInterface_idl_gen_controlsys.JournalInterface.idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/JournalInterface_idl_gen_controlsys.JournalInterface.idl.dir/build.make controlsys/CMakeFiles/JournalInterface_idl_gen_controlsys.JournalInterface.idl.dir/build
+.PHONY : JournalInterface_idl_gen_controlsys.JournalInterface.idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/JournalInterface_idl_copy_gen_controlsys.JournalInterface.idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/JournalInterface_idl_copy_gen_controlsys.JournalInterface.idl.dir/rule
+.PHONY : controlsys/CMakeFiles/JournalInterface_idl_copy_gen_controlsys.JournalInterface.idl.dir/rule
+
+# Convenience name for target.
+JournalInterface_idl_copy_gen_controlsys.JournalInterface.idl: controlsys/CMakeFiles/JournalInterface_idl_copy_gen_controlsys.JournalInterface.idl.dir/rule
+.PHONY : JournalInterface_idl_copy_gen_controlsys.JournalInterface.idl
+
+# fast build rule for target.
+JournalInterface_idl_copy_gen_controlsys.JournalInterface.idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/JournalInterface_idl_copy_gen_controlsys.JournalInterface.idl.dir/build.make controlsys/CMakeFiles/JournalInterface_idl_copy_gen_controlsys.JournalInterface.idl.dir/build
+.PHONY : JournalInterface_idl_copy_gen_controlsys.JournalInterface.idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/JournalInterface_idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/JournalInterface_idl.dir/rule
+.PHONY : controlsys/CMakeFiles/JournalInterface_idl.dir/rule
+
+# Convenience name for target.
+JournalInterface_idl: controlsys/CMakeFiles/JournalInterface_idl.dir/rule
+.PHONY : JournalInterface_idl
+
+# fast build rule for target.
+JournalInterface_idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/JournalInterface_idl.dir/build.make controlsys/CMakeFiles/JournalInterface_idl.dir/build
+.PHONY : JournalInterface_idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/UpdateLoaderInterface_idl_copy_controlsys.UpdateLoaderInterface.idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/UpdateLoaderInterface_idl_copy_controlsys.UpdateLoaderInterface.idl.dir/rule
+.PHONY : controlsys/CMakeFiles/UpdateLoaderInterface_idl_copy_controlsys.UpdateLoaderInterface.idl.dir/rule
+
+# Convenience name for target.
+UpdateLoaderInterface_idl_copy_controlsys.UpdateLoaderInterface.idl: controlsys/CMakeFiles/UpdateLoaderInterface_idl_copy_controlsys.UpdateLoaderInterface.idl.dir/rule
+.PHONY : UpdateLoaderInterface_idl_copy_controlsys.UpdateLoaderInterface.idl
+
+# fast build rule for target.
+UpdateLoaderInterface_idl_copy_controlsys.UpdateLoaderInterface.idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/UpdateLoaderInterface_idl_copy_controlsys.UpdateLoaderInterface.idl.dir/build.make controlsys/CMakeFiles/UpdateLoaderInterface_idl_copy_controlsys.UpdateLoaderInterface.idl.dir/build
+.PHONY : UpdateLoaderInterface_idl_copy_controlsys.UpdateLoaderInterface.idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/UpdateLoaderInterface_idl_gen_controlsys.UpdateLoaderInterface.idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/UpdateLoaderInterface_idl_gen_controlsys.UpdateLoaderInterface.idl.dir/rule
+.PHONY : controlsys/CMakeFiles/UpdateLoaderInterface_idl_gen_controlsys.UpdateLoaderInterface.idl.dir/rule
+
+# Convenience name for target.
+UpdateLoaderInterface_idl_gen_controlsys.UpdateLoaderInterface.idl: controlsys/CMakeFiles/UpdateLoaderInterface_idl_gen_controlsys.UpdateLoaderInterface.idl.dir/rule
+.PHONY : UpdateLoaderInterface_idl_gen_controlsys.UpdateLoaderInterface.idl
+
+# fast build rule for target.
+UpdateLoaderInterface_idl_gen_controlsys.UpdateLoaderInterface.idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/UpdateLoaderInterface_idl_gen_controlsys.UpdateLoaderInterface.idl.dir/build.make controlsys/CMakeFiles/UpdateLoaderInterface_idl_gen_controlsys.UpdateLoaderInterface.idl.dir/build
+.PHONY : UpdateLoaderInterface_idl_gen_controlsys.UpdateLoaderInterface.idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/UpdateLoaderInterface_idl_copy_gen_controlsys.UpdateLoaderInterface.idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/UpdateLoaderInterface_idl_copy_gen_controlsys.UpdateLoaderInterface.idl.dir/rule
+.PHONY : controlsys/CMakeFiles/UpdateLoaderInterface_idl_copy_gen_controlsys.UpdateLoaderInterface.idl.dir/rule
+
+# Convenience name for target.
+UpdateLoaderInterface_idl_copy_gen_controlsys.UpdateLoaderInterface.idl: controlsys/CMakeFiles/UpdateLoaderInterface_idl_copy_gen_controlsys.UpdateLoaderInterface.idl.dir/rule
+.PHONY : UpdateLoaderInterface_idl_copy_gen_controlsys.UpdateLoaderInterface.idl
+
+# fast build rule for target.
+UpdateLoaderInterface_idl_copy_gen_controlsys.UpdateLoaderInterface.idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/UpdateLoaderInterface_idl_copy_gen_controlsys.UpdateLoaderInterface.idl.dir/build.make controlsys/CMakeFiles/UpdateLoaderInterface_idl_copy_gen_controlsys.UpdateLoaderInterface.idl.dir/build
+.PHONY : UpdateLoaderInterface_idl_copy_gen_controlsys.UpdateLoaderInterface.idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/UpdateLoaderInterface_idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/UpdateLoaderInterface_idl.dir/rule
+.PHONY : controlsys/CMakeFiles/UpdateLoaderInterface_idl.dir/rule
+
+# Convenience name for target.
+UpdateLoaderInterface_idl: controlsys/CMakeFiles/UpdateLoaderInterface_idl.dir/rule
+.PHONY : UpdateLoaderInterface_idl
+
+# fast build rule for target.
+UpdateLoaderInterface_idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/UpdateLoaderInterface_idl.dir/build.make controlsys/CMakeFiles/UpdateLoaderInterface_idl.dir/build
+.PHONY : UpdateLoaderInterface_idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/UpdateStorageInterface_idl_copy_controlsys.UpdateStorageInterface.idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/UpdateStorageInterface_idl_copy_controlsys.UpdateStorageInterface.idl.dir/rule
+.PHONY : controlsys/CMakeFiles/UpdateStorageInterface_idl_copy_controlsys.UpdateStorageInterface.idl.dir/rule
+
+# Convenience name for target.
+UpdateStorageInterface_idl_copy_controlsys.UpdateStorageInterface.idl: controlsys/CMakeFiles/UpdateStorageInterface_idl_copy_controlsys.UpdateStorageInterface.idl.dir/rule
+.PHONY : UpdateStorageInterface_idl_copy_controlsys.UpdateStorageInterface.idl
+
+# fast build rule for target.
+UpdateStorageInterface_idl_copy_controlsys.UpdateStorageInterface.idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/UpdateStorageInterface_idl_copy_controlsys.UpdateStorageInterface.idl.dir/build.make controlsys/CMakeFiles/UpdateStorageInterface_idl_copy_controlsys.UpdateStorageInterface.idl.dir/build
+.PHONY : UpdateStorageInterface_idl_copy_controlsys.UpdateStorageInterface.idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/UpdateStorageInterface_idl_gen_controlsys.UpdateStorageInterface.idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/UpdateStorageInterface_idl_gen_controlsys.UpdateStorageInterface.idl.dir/rule
+.PHONY : controlsys/CMakeFiles/UpdateStorageInterface_idl_gen_controlsys.UpdateStorageInterface.idl.dir/rule
+
+# Convenience name for target.
+UpdateStorageInterface_idl_gen_controlsys.UpdateStorageInterface.idl: controlsys/CMakeFiles/UpdateStorageInterface_idl_gen_controlsys.UpdateStorageInterface.idl.dir/rule
+.PHONY : UpdateStorageInterface_idl_gen_controlsys.UpdateStorageInterface.idl
+
+# fast build rule for target.
+UpdateStorageInterface_idl_gen_controlsys.UpdateStorageInterface.idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/UpdateStorageInterface_idl_gen_controlsys.UpdateStorageInterface.idl.dir/build.make controlsys/CMakeFiles/UpdateStorageInterface_idl_gen_controlsys.UpdateStorageInterface.idl.dir/build
+.PHONY : UpdateStorageInterface_idl_gen_controlsys.UpdateStorageInterface.idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/UpdateStorageInterface_idl_copy_gen_controlsys.UpdateStorageInterface.idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/UpdateStorageInterface_idl_copy_gen_controlsys.UpdateStorageInterface.idl.dir/rule
+.PHONY : controlsys/CMakeFiles/UpdateStorageInterface_idl_copy_gen_controlsys.UpdateStorageInterface.idl.dir/rule
+
+# Convenience name for target.
+UpdateStorageInterface_idl_copy_gen_controlsys.UpdateStorageInterface.idl: controlsys/CMakeFiles/UpdateStorageInterface_idl_copy_gen_controlsys.UpdateStorageInterface.idl.dir/rule
+.PHONY : UpdateStorageInterface_idl_copy_gen_controlsys.UpdateStorageInterface.idl
+
+# fast build rule for target.
+UpdateStorageInterface_idl_copy_gen_controlsys.UpdateStorageInterface.idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/UpdateStorageInterface_idl_copy_gen_controlsys.UpdateStorageInterface.idl.dir/build.make controlsys/CMakeFiles/UpdateStorageInterface_idl_copy_gen_controlsys.UpdateStorageInterface.idl.dir/build
+.PHONY : UpdateStorageInterface_idl_copy_gen_controlsys.UpdateStorageInterface.idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/UpdateStorageInterface_idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/UpdateStorageInterface_idl.dir/rule
+.PHONY : controlsys/CMakeFiles/UpdateStorageInterface_idl.dir/rule
+
+# Convenience name for target.
+UpdateStorageInterface_idl: controlsys/CMakeFiles/UpdateStorageInterface_idl.dir/rule
+.PHONY : UpdateStorageInterface_idl
+
+# fast build rule for target.
+UpdateStorageInterface_idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/UpdateStorageInterface_idl.dir/build.make controlsys/CMakeFiles/UpdateStorageInterface_idl.dir/build
+.PHONY : UpdateStorageInterface_idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/UpdateVerifierInterface_idl_copy_controlsys.UpdateVerifierInterface.idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/UpdateVerifierInterface_idl_copy_controlsys.UpdateVerifierInterface.idl.dir/rule
+.PHONY : controlsys/CMakeFiles/UpdateVerifierInterface_idl_copy_controlsys.UpdateVerifierInterface.idl.dir/rule
+
+# Convenience name for target.
+UpdateVerifierInterface_idl_copy_controlsys.UpdateVerifierInterface.idl: controlsys/CMakeFiles/UpdateVerifierInterface_idl_copy_controlsys.UpdateVerifierInterface.idl.dir/rule
+.PHONY : UpdateVerifierInterface_idl_copy_controlsys.UpdateVerifierInterface.idl
+
+# fast build rule for target.
+UpdateVerifierInterface_idl_copy_controlsys.UpdateVerifierInterface.idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/UpdateVerifierInterface_idl_copy_controlsys.UpdateVerifierInterface.idl.dir/build.make controlsys/CMakeFiles/UpdateVerifierInterface_idl_copy_controlsys.UpdateVerifierInterface.idl.dir/build
+.PHONY : UpdateVerifierInterface_idl_copy_controlsys.UpdateVerifierInterface.idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/UpdateVerifierInterface_idl_gen_controlsys.UpdateVerifierInterface.idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/UpdateVerifierInterface_idl_gen_controlsys.UpdateVerifierInterface.idl.dir/rule
+.PHONY : controlsys/CMakeFiles/UpdateVerifierInterface_idl_gen_controlsys.UpdateVerifierInterface.idl.dir/rule
+
+# Convenience name for target.
+UpdateVerifierInterface_idl_gen_controlsys.UpdateVerifierInterface.idl: controlsys/CMakeFiles/UpdateVerifierInterface_idl_gen_controlsys.UpdateVerifierInterface.idl.dir/rule
+.PHONY : UpdateVerifierInterface_idl_gen_controlsys.UpdateVerifierInterface.idl
+
+# fast build rule for target.
+UpdateVerifierInterface_idl_gen_controlsys.UpdateVerifierInterface.idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/UpdateVerifierInterface_idl_gen_controlsys.UpdateVerifierInterface.idl.dir/build.make controlsys/CMakeFiles/UpdateVerifierInterface_idl_gen_controlsys.UpdateVerifierInterface.idl.dir/build
+.PHONY : UpdateVerifierInterface_idl_gen_controlsys.UpdateVerifierInterface.idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/UpdateVerifierInterface_idl_copy_gen_controlsys.UpdateVerifierInterface.idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/UpdateVerifierInterface_idl_copy_gen_controlsys.UpdateVerifierInterface.idl.dir/rule
+.PHONY : controlsys/CMakeFiles/UpdateVerifierInterface_idl_copy_gen_controlsys.UpdateVerifierInterface.idl.dir/rule
+
+# Convenience name for target.
+UpdateVerifierInterface_idl_copy_gen_controlsys.UpdateVerifierInterface.idl: controlsys/CMakeFiles/UpdateVerifierInterface_idl_copy_gen_controlsys.UpdateVerifierInterface.idl.dir/rule
+.PHONY : UpdateVerifierInterface_idl_copy_gen_controlsys.UpdateVerifierInterface.idl
+
+# fast build rule for target.
+UpdateVerifierInterface_idl_copy_gen_controlsys.UpdateVerifierInterface.idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/UpdateVerifierInterface_idl_copy_gen_controlsys.UpdateVerifierInterface.idl.dir/build.make controlsys/CMakeFiles/UpdateVerifierInterface_idl_copy_gen_controlsys.UpdateVerifierInterface.idl.dir/build
+.PHONY : UpdateVerifierInterface_idl_copy_gen_controlsys.UpdateVerifierInterface.idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/UpdateVerifierInterface_idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/UpdateVerifierInterface_idl.dir/rule
+.PHONY : controlsys/CMakeFiles/UpdateVerifierInterface_idl.dir/rule
+
+# Convenience name for target.
+UpdateVerifierInterface_idl: controlsys/CMakeFiles/UpdateVerifierInterface_idl.dir/rule
+.PHONY : UpdateVerifierInterface_idl
+
+# fast build rule for target.
+UpdateVerifierInterface_idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/UpdateVerifierInterface_idl.dir/build.make controlsys/CMakeFiles/UpdateVerifierInterface_idl.dir/build
+.PHONY : UpdateVerifierInterface_idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/UpdateInstallerInterface_idl_copy_controlsys.UpdateInstallerInterface.idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/UpdateInstallerInterface_idl_copy_controlsys.UpdateInstallerInterface.idl.dir/rule
+.PHONY : controlsys/CMakeFiles/UpdateInstallerInterface_idl_copy_controlsys.UpdateInstallerInterface.idl.dir/rule
+
+# Convenience name for target.
+UpdateInstallerInterface_idl_copy_controlsys.UpdateInstallerInterface.idl: controlsys/CMakeFiles/UpdateInstallerInterface_idl_copy_controlsys.UpdateInstallerInterface.idl.dir/rule
+.PHONY : UpdateInstallerInterface_idl_copy_controlsys.UpdateInstallerInterface.idl
+
+# fast build rule for target.
+UpdateInstallerInterface_idl_copy_controlsys.UpdateInstallerInterface.idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/UpdateInstallerInterface_idl_copy_controlsys.UpdateInstallerInterface.idl.dir/build.make controlsys/CMakeFiles/UpdateInstallerInterface_idl_copy_controlsys.UpdateInstallerInterface.idl.dir/build
+.PHONY : UpdateInstallerInterface_idl_copy_controlsys.UpdateInstallerInterface.idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/UpdateInstallerInterface_idl_gen_controlsys.UpdateInstallerInterface.idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/UpdateInstallerInterface_idl_gen_controlsys.UpdateInstallerInterface.idl.dir/rule
+.PHONY : controlsys/CMakeFiles/UpdateInstallerInterface_idl_gen_controlsys.UpdateInstallerInterface.idl.dir/rule
+
+# Convenience name for target.
+UpdateInstallerInterface_idl_gen_controlsys.UpdateInstallerInterface.idl: controlsys/CMakeFiles/UpdateInstallerInterface_idl_gen_controlsys.UpdateInstallerInterface.idl.dir/rule
+.PHONY : UpdateInstallerInterface_idl_gen_controlsys.UpdateInstallerInterface.idl
+
+# fast build rule for target.
+UpdateInstallerInterface_idl_gen_controlsys.UpdateInstallerInterface.idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/UpdateInstallerInterface_idl_gen_controlsys.UpdateInstallerInterface.idl.dir/build.make controlsys/CMakeFiles/UpdateInstallerInterface_idl_gen_controlsys.UpdateInstallerInterface.idl.dir/build
+.PHONY : UpdateInstallerInterface_idl_gen_controlsys.UpdateInstallerInterface.idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/UpdateInstallerInterface_idl_copy_gen_controlsys.UpdateInstallerInterface.idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/UpdateInstallerInterface_idl_copy_gen_controlsys.UpdateInstallerInterface.idl.dir/rule
+.PHONY : controlsys/CMakeFiles/UpdateInstallerInterface_idl_copy_gen_controlsys.UpdateInstallerInterface.idl.dir/rule
+
+# Convenience name for target.
+UpdateInstallerInterface_idl_copy_gen_controlsys.UpdateInstallerInterface.idl: controlsys/CMakeFiles/UpdateInstallerInterface_idl_copy_gen_controlsys.UpdateInstallerInterface.idl.dir/rule
+.PHONY : UpdateInstallerInterface_idl_copy_gen_controlsys.UpdateInstallerInterface.idl
+
+# fast build rule for target.
+UpdateInstallerInterface_idl_copy_gen_controlsys.UpdateInstallerInterface.idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/UpdateInstallerInterface_idl_copy_gen_controlsys.UpdateInstallerInterface.idl.dir/build.make controlsys/CMakeFiles/UpdateInstallerInterface_idl_copy_gen_controlsys.UpdateInstallerInterface.idl.dir/build
+.PHONY : UpdateInstallerInterface_idl_copy_gen_controlsys.UpdateInstallerInterface.idl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/UpdateInstallerInterface_idl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/UpdateInstallerInterface_idl.dir/rule
+.PHONY : controlsys/CMakeFiles/UpdateInstallerInterface_idl.dir/rule
+
+# Convenience name for target.
+UpdateInstallerInterface_idl: controlsys/CMakeFiles/UpdateInstallerInterface_idl.dir/rule
+.PHONY : UpdateInstallerInterface_idl
+
+# fast build rule for target.
+UpdateInstallerInterface_idl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/UpdateInstallerInterface_idl.dir/build.make controlsys/CMakeFiles/UpdateInstallerInterface_idl.dir/build
+.PHONY : UpdateInstallerInterface_idl/fast
+
+# Convenience name for target.
 controlsys/CMakeFiles/controlsys_edl_files_copy_controlsys.ControlSys.edl.dir/rule:
 	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/controlsys_edl_files_copy_controlsys.ControlSys.edl.dir/rule
 .PHONY : controlsys/CMakeFiles/controlsys_edl_files_copy_controlsys.ControlSys.edl.dir/rule
@@ -218,6 +834,622 @@ controlsys_edl_files/fast:
 .PHONY : controlsys_edl_files/fast
 
 # Convenience name for target.
+controlsys/CMakeFiles/InputGuard_edl_copy_controlsys.InputGuard.edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/InputGuard_edl_copy_controlsys.InputGuard.edl.dir/rule
+.PHONY : controlsys/CMakeFiles/InputGuard_edl_copy_controlsys.InputGuard.edl.dir/rule
+
+# Convenience name for target.
+InputGuard_edl_copy_controlsys.InputGuard.edl: controlsys/CMakeFiles/InputGuard_edl_copy_controlsys.InputGuard.edl.dir/rule
+.PHONY : InputGuard_edl_copy_controlsys.InputGuard.edl
+
+# fast build rule for target.
+InputGuard_edl_copy_controlsys.InputGuard.edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/InputGuard_edl_copy_controlsys.InputGuard.edl.dir/build.make controlsys/CMakeFiles/InputGuard_edl_copy_controlsys.InputGuard.edl.dir/build
+.PHONY : InputGuard_edl_copy_controlsys.InputGuard.edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/InputGuard_edl_gen_controlsys.InputGuard.edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/InputGuard_edl_gen_controlsys.InputGuard.edl.dir/rule
+.PHONY : controlsys/CMakeFiles/InputGuard_edl_gen_controlsys.InputGuard.edl.dir/rule
+
+# Convenience name for target.
+InputGuard_edl_gen_controlsys.InputGuard.edl: controlsys/CMakeFiles/InputGuard_edl_gen_controlsys.InputGuard.edl.dir/rule
+.PHONY : InputGuard_edl_gen_controlsys.InputGuard.edl
+
+# fast build rule for target.
+InputGuard_edl_gen_controlsys.InputGuard.edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/InputGuard_edl_gen_controlsys.InputGuard.edl.dir/build.make controlsys/CMakeFiles/InputGuard_edl_gen_controlsys.InputGuard.edl.dir/build
+.PHONY : InputGuard_edl_gen_controlsys.InputGuard.edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/InputGuard_edl_copy_gen_controlsys.InputGuard.edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/InputGuard_edl_copy_gen_controlsys.InputGuard.edl.dir/rule
+.PHONY : controlsys/CMakeFiles/InputGuard_edl_copy_gen_controlsys.InputGuard.edl.dir/rule
+
+# Convenience name for target.
+InputGuard_edl_copy_gen_controlsys.InputGuard.edl: controlsys/CMakeFiles/InputGuard_edl_copy_gen_controlsys.InputGuard.edl.dir/rule
+.PHONY : InputGuard_edl_copy_gen_controlsys.InputGuard.edl
+
+# fast build rule for target.
+InputGuard_edl_copy_gen_controlsys.InputGuard.edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/InputGuard_edl_copy_gen_controlsys.InputGuard.edl.dir/build.make controlsys/CMakeFiles/InputGuard_edl_copy_gen_controlsys.InputGuard.edl.dir/build
+.PHONY : InputGuard_edl_copy_gen_controlsys.InputGuard.edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/InputGuard_edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/InputGuard_edl.dir/rule
+.PHONY : controlsys/CMakeFiles/InputGuard_edl.dir/rule
+
+# Convenience name for target.
+InputGuard_edl: controlsys/CMakeFiles/InputGuard_edl.dir/rule
+.PHONY : InputGuard_edl
+
+# fast build rule for target.
+InputGuard_edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/InputGuard_edl.dir/build.make controlsys/CMakeFiles/InputGuard_edl.dir/build
+.PHONY : InputGuard_edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/OutputController_edl_copy_controlsys.OutputController.edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/OutputController_edl_copy_controlsys.OutputController.edl.dir/rule
+.PHONY : controlsys/CMakeFiles/OutputController_edl_copy_controlsys.OutputController.edl.dir/rule
+
+# Convenience name for target.
+OutputController_edl_copy_controlsys.OutputController.edl: controlsys/CMakeFiles/OutputController_edl_copy_controlsys.OutputController.edl.dir/rule
+.PHONY : OutputController_edl_copy_controlsys.OutputController.edl
+
+# fast build rule for target.
+OutputController_edl_copy_controlsys.OutputController.edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/OutputController_edl_copy_controlsys.OutputController.edl.dir/build.make controlsys/CMakeFiles/OutputController_edl_copy_controlsys.OutputController.edl.dir/build
+.PHONY : OutputController_edl_copy_controlsys.OutputController.edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/OutputController_edl_gen_controlsys.OutputController.edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/OutputController_edl_gen_controlsys.OutputController.edl.dir/rule
+.PHONY : controlsys/CMakeFiles/OutputController_edl_gen_controlsys.OutputController.edl.dir/rule
+
+# Convenience name for target.
+OutputController_edl_gen_controlsys.OutputController.edl: controlsys/CMakeFiles/OutputController_edl_gen_controlsys.OutputController.edl.dir/rule
+.PHONY : OutputController_edl_gen_controlsys.OutputController.edl
+
+# fast build rule for target.
+OutputController_edl_gen_controlsys.OutputController.edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/OutputController_edl_gen_controlsys.OutputController.edl.dir/build.make controlsys/CMakeFiles/OutputController_edl_gen_controlsys.OutputController.edl.dir/build
+.PHONY : OutputController_edl_gen_controlsys.OutputController.edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/OutputController_edl_copy_gen_controlsys.OutputController.edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/OutputController_edl_copy_gen_controlsys.OutputController.edl.dir/rule
+.PHONY : controlsys/CMakeFiles/OutputController_edl_copy_gen_controlsys.OutputController.edl.dir/rule
+
+# Convenience name for target.
+OutputController_edl_copy_gen_controlsys.OutputController.edl: controlsys/CMakeFiles/OutputController_edl_copy_gen_controlsys.OutputController.edl.dir/rule
+.PHONY : OutputController_edl_copy_gen_controlsys.OutputController.edl
+
+# fast build rule for target.
+OutputController_edl_copy_gen_controlsys.OutputController.edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/OutputController_edl_copy_gen_controlsys.OutputController.edl.dir/build.make controlsys/CMakeFiles/OutputController_edl_copy_gen_controlsys.OutputController.edl.dir/build
+.PHONY : OutputController_edl_copy_gen_controlsys.OutputController.edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/OutputController_edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/OutputController_edl.dir/rule
+.PHONY : controlsys/CMakeFiles/OutputController_edl.dir/rule
+
+# Convenience name for target.
+OutputController_edl: controlsys/CMakeFiles/OutputController_edl.dir/rule
+.PHONY : OutputController_edl
+
+# fast build rule for target.
+OutputController_edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/OutputController_edl.dir/build.make controlsys/CMakeFiles/OutputController_edl.dir/build
+.PHONY : OutputController_edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/CardVerifier_edl_copy_controlsys.CardVerifier.edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/CardVerifier_edl_copy_controlsys.CardVerifier.edl.dir/rule
+.PHONY : controlsys/CMakeFiles/CardVerifier_edl_copy_controlsys.CardVerifier.edl.dir/rule
+
+# Convenience name for target.
+CardVerifier_edl_copy_controlsys.CardVerifier.edl: controlsys/CMakeFiles/CardVerifier_edl_copy_controlsys.CardVerifier.edl.dir/rule
+.PHONY : CardVerifier_edl_copy_controlsys.CardVerifier.edl
+
+# fast build rule for target.
+CardVerifier_edl_copy_controlsys.CardVerifier.edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/CardVerifier_edl_copy_controlsys.CardVerifier.edl.dir/build.make controlsys/CMakeFiles/CardVerifier_edl_copy_controlsys.CardVerifier.edl.dir/build
+.PHONY : CardVerifier_edl_copy_controlsys.CardVerifier.edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/CardVerifier_edl_gen_controlsys.CardVerifier.edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/CardVerifier_edl_gen_controlsys.CardVerifier.edl.dir/rule
+.PHONY : controlsys/CMakeFiles/CardVerifier_edl_gen_controlsys.CardVerifier.edl.dir/rule
+
+# Convenience name for target.
+CardVerifier_edl_gen_controlsys.CardVerifier.edl: controlsys/CMakeFiles/CardVerifier_edl_gen_controlsys.CardVerifier.edl.dir/rule
+.PHONY : CardVerifier_edl_gen_controlsys.CardVerifier.edl
+
+# fast build rule for target.
+CardVerifier_edl_gen_controlsys.CardVerifier.edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/CardVerifier_edl_gen_controlsys.CardVerifier.edl.dir/build.make controlsys/CMakeFiles/CardVerifier_edl_gen_controlsys.CardVerifier.edl.dir/build
+.PHONY : CardVerifier_edl_gen_controlsys.CardVerifier.edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/CardVerifier_edl_copy_gen_controlsys.CardVerifier.edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/CardVerifier_edl_copy_gen_controlsys.CardVerifier.edl.dir/rule
+.PHONY : controlsys/CMakeFiles/CardVerifier_edl_copy_gen_controlsys.CardVerifier.edl.dir/rule
+
+# Convenience name for target.
+CardVerifier_edl_copy_gen_controlsys.CardVerifier.edl: controlsys/CMakeFiles/CardVerifier_edl_copy_gen_controlsys.CardVerifier.edl.dir/rule
+.PHONY : CardVerifier_edl_copy_gen_controlsys.CardVerifier.edl
+
+# fast build rule for target.
+CardVerifier_edl_copy_gen_controlsys.CardVerifier.edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/CardVerifier_edl_copy_gen_controlsys.CardVerifier.edl.dir/build.make controlsys/CMakeFiles/CardVerifier_edl_copy_gen_controlsys.CardVerifier.edl.dir/build
+.PHONY : CardVerifier_edl_copy_gen_controlsys.CardVerifier.edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/CardVerifier_edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/CardVerifier_edl.dir/rule
+.PHONY : controlsys/CMakeFiles/CardVerifier_edl.dir/rule
+
+# Convenience name for target.
+CardVerifier_edl: controlsys/CMakeFiles/CardVerifier_edl.dir/rule
+.PHONY : CardVerifier_edl
+
+# fast build rule for target.
+CardVerifier_edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/CardVerifier_edl.dir/build.make controlsys/CMakeFiles/CardVerifier_edl.dir/build
+.PHONY : CardVerifier_edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/TransactionGenerator_edl_copy_controlsys.TransactionGenerator.edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/TransactionGenerator_edl_copy_controlsys.TransactionGenerator.edl.dir/rule
+.PHONY : controlsys/CMakeFiles/TransactionGenerator_edl_copy_controlsys.TransactionGenerator.edl.dir/rule
+
+# Convenience name for target.
+TransactionGenerator_edl_copy_controlsys.TransactionGenerator.edl: controlsys/CMakeFiles/TransactionGenerator_edl_copy_controlsys.TransactionGenerator.edl.dir/rule
+.PHONY : TransactionGenerator_edl_copy_controlsys.TransactionGenerator.edl
+
+# fast build rule for target.
+TransactionGenerator_edl_copy_controlsys.TransactionGenerator.edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/TransactionGenerator_edl_copy_controlsys.TransactionGenerator.edl.dir/build.make controlsys/CMakeFiles/TransactionGenerator_edl_copy_controlsys.TransactionGenerator.edl.dir/build
+.PHONY : TransactionGenerator_edl_copy_controlsys.TransactionGenerator.edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/TransactionGenerator_edl_gen_controlsys.TransactionGenerator.edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/TransactionGenerator_edl_gen_controlsys.TransactionGenerator.edl.dir/rule
+.PHONY : controlsys/CMakeFiles/TransactionGenerator_edl_gen_controlsys.TransactionGenerator.edl.dir/rule
+
+# Convenience name for target.
+TransactionGenerator_edl_gen_controlsys.TransactionGenerator.edl: controlsys/CMakeFiles/TransactionGenerator_edl_gen_controlsys.TransactionGenerator.edl.dir/rule
+.PHONY : TransactionGenerator_edl_gen_controlsys.TransactionGenerator.edl
+
+# fast build rule for target.
+TransactionGenerator_edl_gen_controlsys.TransactionGenerator.edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/TransactionGenerator_edl_gen_controlsys.TransactionGenerator.edl.dir/build.make controlsys/CMakeFiles/TransactionGenerator_edl_gen_controlsys.TransactionGenerator.edl.dir/build
+.PHONY : TransactionGenerator_edl_gen_controlsys.TransactionGenerator.edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/TransactionGenerator_edl_copy_gen_controlsys.TransactionGenerator.edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/TransactionGenerator_edl_copy_gen_controlsys.TransactionGenerator.edl.dir/rule
+.PHONY : controlsys/CMakeFiles/TransactionGenerator_edl_copy_gen_controlsys.TransactionGenerator.edl.dir/rule
+
+# Convenience name for target.
+TransactionGenerator_edl_copy_gen_controlsys.TransactionGenerator.edl: controlsys/CMakeFiles/TransactionGenerator_edl_copy_gen_controlsys.TransactionGenerator.edl.dir/rule
+.PHONY : TransactionGenerator_edl_copy_gen_controlsys.TransactionGenerator.edl
+
+# fast build rule for target.
+TransactionGenerator_edl_copy_gen_controlsys.TransactionGenerator.edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/TransactionGenerator_edl_copy_gen_controlsys.TransactionGenerator.edl.dir/build.make controlsys/CMakeFiles/TransactionGenerator_edl_copy_gen_controlsys.TransactionGenerator.edl.dir/build
+.PHONY : TransactionGenerator_edl_copy_gen_controlsys.TransactionGenerator.edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/TransactionGenerator_edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/TransactionGenerator_edl.dir/rule
+.PHONY : controlsys/CMakeFiles/TransactionGenerator_edl.dir/rule
+
+# Convenience name for target.
+TransactionGenerator_edl: controlsys/CMakeFiles/TransactionGenerator_edl.dir/rule
+.PHONY : TransactionGenerator_edl
+
+# fast build rule for target.
+TransactionGenerator_edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/TransactionGenerator_edl.dir/build.make controlsys/CMakeFiles/TransactionGenerator_edl.dir/build
+.PHONY : TransactionGenerator_edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/StatusVerifier_edl_copy_controlsys.StatusVerifier.edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/StatusVerifier_edl_copy_controlsys.StatusVerifier.edl.dir/rule
+.PHONY : controlsys/CMakeFiles/StatusVerifier_edl_copy_controlsys.StatusVerifier.edl.dir/rule
+
+# Convenience name for target.
+StatusVerifier_edl_copy_controlsys.StatusVerifier.edl: controlsys/CMakeFiles/StatusVerifier_edl_copy_controlsys.StatusVerifier.edl.dir/rule
+.PHONY : StatusVerifier_edl_copy_controlsys.StatusVerifier.edl
+
+# fast build rule for target.
+StatusVerifier_edl_copy_controlsys.StatusVerifier.edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/StatusVerifier_edl_copy_controlsys.StatusVerifier.edl.dir/build.make controlsys/CMakeFiles/StatusVerifier_edl_copy_controlsys.StatusVerifier.edl.dir/build
+.PHONY : StatusVerifier_edl_copy_controlsys.StatusVerifier.edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/StatusVerifier_edl_gen_controlsys.StatusVerifier.edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/StatusVerifier_edl_gen_controlsys.StatusVerifier.edl.dir/rule
+.PHONY : controlsys/CMakeFiles/StatusVerifier_edl_gen_controlsys.StatusVerifier.edl.dir/rule
+
+# Convenience name for target.
+StatusVerifier_edl_gen_controlsys.StatusVerifier.edl: controlsys/CMakeFiles/StatusVerifier_edl_gen_controlsys.StatusVerifier.edl.dir/rule
+.PHONY : StatusVerifier_edl_gen_controlsys.StatusVerifier.edl
+
+# fast build rule for target.
+StatusVerifier_edl_gen_controlsys.StatusVerifier.edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/StatusVerifier_edl_gen_controlsys.StatusVerifier.edl.dir/build.make controlsys/CMakeFiles/StatusVerifier_edl_gen_controlsys.StatusVerifier.edl.dir/build
+.PHONY : StatusVerifier_edl_gen_controlsys.StatusVerifier.edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/StatusVerifier_edl_copy_gen_controlsys.StatusVerifier.edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/StatusVerifier_edl_copy_gen_controlsys.StatusVerifier.edl.dir/rule
+.PHONY : controlsys/CMakeFiles/StatusVerifier_edl_copy_gen_controlsys.StatusVerifier.edl.dir/rule
+
+# Convenience name for target.
+StatusVerifier_edl_copy_gen_controlsys.StatusVerifier.edl: controlsys/CMakeFiles/StatusVerifier_edl_copy_gen_controlsys.StatusVerifier.edl.dir/rule
+.PHONY : StatusVerifier_edl_copy_gen_controlsys.StatusVerifier.edl
+
+# fast build rule for target.
+StatusVerifier_edl_copy_gen_controlsys.StatusVerifier.edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/StatusVerifier_edl_copy_gen_controlsys.StatusVerifier.edl.dir/build.make controlsys/CMakeFiles/StatusVerifier_edl_copy_gen_controlsys.StatusVerifier.edl.dir/build
+.PHONY : StatusVerifier_edl_copy_gen_controlsys.StatusVerifier.edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/StatusVerifier_edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/StatusVerifier_edl.dir/rule
+.PHONY : controlsys/CMakeFiles/StatusVerifier_edl.dir/rule
+
+# Convenience name for target.
+StatusVerifier_edl: controlsys/CMakeFiles/StatusVerifier_edl.dir/rule
+.PHONY : StatusVerifier_edl
+
+# fast build rule for target.
+StatusVerifier_edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/StatusVerifier_edl.dir/build.make controlsys/CMakeFiles/StatusVerifier_edl.dir/build
+.PHONY : StatusVerifier_edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/AuthModule_edl_copy_controlsys.AuthModule.edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/AuthModule_edl_copy_controlsys.AuthModule.edl.dir/rule
+.PHONY : controlsys/CMakeFiles/AuthModule_edl_copy_controlsys.AuthModule.edl.dir/rule
+
+# Convenience name for target.
+AuthModule_edl_copy_controlsys.AuthModule.edl: controlsys/CMakeFiles/AuthModule_edl_copy_controlsys.AuthModule.edl.dir/rule
+.PHONY : AuthModule_edl_copy_controlsys.AuthModule.edl
+
+# fast build rule for target.
+AuthModule_edl_copy_controlsys.AuthModule.edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/AuthModule_edl_copy_controlsys.AuthModule.edl.dir/build.make controlsys/CMakeFiles/AuthModule_edl_copy_controlsys.AuthModule.edl.dir/build
+.PHONY : AuthModule_edl_copy_controlsys.AuthModule.edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/AuthModule_edl_gen_controlsys.AuthModule.edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/AuthModule_edl_gen_controlsys.AuthModule.edl.dir/rule
+.PHONY : controlsys/CMakeFiles/AuthModule_edl_gen_controlsys.AuthModule.edl.dir/rule
+
+# Convenience name for target.
+AuthModule_edl_gen_controlsys.AuthModule.edl: controlsys/CMakeFiles/AuthModule_edl_gen_controlsys.AuthModule.edl.dir/rule
+.PHONY : AuthModule_edl_gen_controlsys.AuthModule.edl
+
+# fast build rule for target.
+AuthModule_edl_gen_controlsys.AuthModule.edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/AuthModule_edl_gen_controlsys.AuthModule.edl.dir/build.make controlsys/CMakeFiles/AuthModule_edl_gen_controlsys.AuthModule.edl.dir/build
+.PHONY : AuthModule_edl_gen_controlsys.AuthModule.edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/AuthModule_edl_copy_gen_controlsys.AuthModule.edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/AuthModule_edl_copy_gen_controlsys.AuthModule.edl.dir/rule
+.PHONY : controlsys/CMakeFiles/AuthModule_edl_copy_gen_controlsys.AuthModule.edl.dir/rule
+
+# Convenience name for target.
+AuthModule_edl_copy_gen_controlsys.AuthModule.edl: controlsys/CMakeFiles/AuthModule_edl_copy_gen_controlsys.AuthModule.edl.dir/rule
+.PHONY : AuthModule_edl_copy_gen_controlsys.AuthModule.edl
+
+# fast build rule for target.
+AuthModule_edl_copy_gen_controlsys.AuthModule.edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/AuthModule_edl_copy_gen_controlsys.AuthModule.edl.dir/build.make controlsys/CMakeFiles/AuthModule_edl_copy_gen_controlsys.AuthModule.edl.dir/build
+.PHONY : AuthModule_edl_copy_gen_controlsys.AuthModule.edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/AuthModule_edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/AuthModule_edl.dir/rule
+.PHONY : controlsys/CMakeFiles/AuthModule_edl.dir/rule
+
+# Convenience name for target.
+AuthModule_edl: controlsys/CMakeFiles/AuthModule_edl.dir/rule
+.PHONY : AuthModule_edl
+
+# fast build rule for target.
+AuthModule_edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/AuthModule_edl.dir/build.make controlsys/CMakeFiles/AuthModule_edl.dir/build
+.PHONY : AuthModule_edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/Journal_edl_copy_controlsys.Journal.edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/Journal_edl_copy_controlsys.Journal.edl.dir/rule
+.PHONY : controlsys/CMakeFiles/Journal_edl_copy_controlsys.Journal.edl.dir/rule
+
+# Convenience name for target.
+Journal_edl_copy_controlsys.Journal.edl: controlsys/CMakeFiles/Journal_edl_copy_controlsys.Journal.edl.dir/rule
+.PHONY : Journal_edl_copy_controlsys.Journal.edl
+
+# fast build rule for target.
+Journal_edl_copy_controlsys.Journal.edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/Journal_edl_copy_controlsys.Journal.edl.dir/build.make controlsys/CMakeFiles/Journal_edl_copy_controlsys.Journal.edl.dir/build
+.PHONY : Journal_edl_copy_controlsys.Journal.edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/Journal_edl_gen_controlsys.Journal.edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/Journal_edl_gen_controlsys.Journal.edl.dir/rule
+.PHONY : controlsys/CMakeFiles/Journal_edl_gen_controlsys.Journal.edl.dir/rule
+
+# Convenience name for target.
+Journal_edl_gen_controlsys.Journal.edl: controlsys/CMakeFiles/Journal_edl_gen_controlsys.Journal.edl.dir/rule
+.PHONY : Journal_edl_gen_controlsys.Journal.edl
+
+# fast build rule for target.
+Journal_edl_gen_controlsys.Journal.edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/Journal_edl_gen_controlsys.Journal.edl.dir/build.make controlsys/CMakeFiles/Journal_edl_gen_controlsys.Journal.edl.dir/build
+.PHONY : Journal_edl_gen_controlsys.Journal.edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/Journal_edl_copy_gen_controlsys.Journal.edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/Journal_edl_copy_gen_controlsys.Journal.edl.dir/rule
+.PHONY : controlsys/CMakeFiles/Journal_edl_copy_gen_controlsys.Journal.edl.dir/rule
+
+# Convenience name for target.
+Journal_edl_copy_gen_controlsys.Journal.edl: controlsys/CMakeFiles/Journal_edl_copy_gen_controlsys.Journal.edl.dir/rule
+.PHONY : Journal_edl_copy_gen_controlsys.Journal.edl
+
+# fast build rule for target.
+Journal_edl_copy_gen_controlsys.Journal.edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/Journal_edl_copy_gen_controlsys.Journal.edl.dir/build.make controlsys/CMakeFiles/Journal_edl_copy_gen_controlsys.Journal.edl.dir/build
+.PHONY : Journal_edl_copy_gen_controlsys.Journal.edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/Journal_edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/Journal_edl.dir/rule
+.PHONY : controlsys/CMakeFiles/Journal_edl.dir/rule
+
+# Convenience name for target.
+Journal_edl: controlsys/CMakeFiles/Journal_edl.dir/rule
+.PHONY : Journal_edl
+
+# fast build rule for target.
+Journal_edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/Journal_edl.dir/build.make controlsys/CMakeFiles/Journal_edl.dir/build
+.PHONY : Journal_edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/UpdateLoader_edl_copy_controlsys.UpdateLoader.edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/UpdateLoader_edl_copy_controlsys.UpdateLoader.edl.dir/rule
+.PHONY : controlsys/CMakeFiles/UpdateLoader_edl_copy_controlsys.UpdateLoader.edl.dir/rule
+
+# Convenience name for target.
+UpdateLoader_edl_copy_controlsys.UpdateLoader.edl: controlsys/CMakeFiles/UpdateLoader_edl_copy_controlsys.UpdateLoader.edl.dir/rule
+.PHONY : UpdateLoader_edl_copy_controlsys.UpdateLoader.edl
+
+# fast build rule for target.
+UpdateLoader_edl_copy_controlsys.UpdateLoader.edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/UpdateLoader_edl_copy_controlsys.UpdateLoader.edl.dir/build.make controlsys/CMakeFiles/UpdateLoader_edl_copy_controlsys.UpdateLoader.edl.dir/build
+.PHONY : UpdateLoader_edl_copy_controlsys.UpdateLoader.edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/UpdateLoader_edl_gen_controlsys.UpdateLoader.edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/UpdateLoader_edl_gen_controlsys.UpdateLoader.edl.dir/rule
+.PHONY : controlsys/CMakeFiles/UpdateLoader_edl_gen_controlsys.UpdateLoader.edl.dir/rule
+
+# Convenience name for target.
+UpdateLoader_edl_gen_controlsys.UpdateLoader.edl: controlsys/CMakeFiles/UpdateLoader_edl_gen_controlsys.UpdateLoader.edl.dir/rule
+.PHONY : UpdateLoader_edl_gen_controlsys.UpdateLoader.edl
+
+# fast build rule for target.
+UpdateLoader_edl_gen_controlsys.UpdateLoader.edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/UpdateLoader_edl_gen_controlsys.UpdateLoader.edl.dir/build.make controlsys/CMakeFiles/UpdateLoader_edl_gen_controlsys.UpdateLoader.edl.dir/build
+.PHONY : UpdateLoader_edl_gen_controlsys.UpdateLoader.edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/UpdateLoader_edl_copy_gen_controlsys.UpdateLoader.edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/UpdateLoader_edl_copy_gen_controlsys.UpdateLoader.edl.dir/rule
+.PHONY : controlsys/CMakeFiles/UpdateLoader_edl_copy_gen_controlsys.UpdateLoader.edl.dir/rule
+
+# Convenience name for target.
+UpdateLoader_edl_copy_gen_controlsys.UpdateLoader.edl: controlsys/CMakeFiles/UpdateLoader_edl_copy_gen_controlsys.UpdateLoader.edl.dir/rule
+.PHONY : UpdateLoader_edl_copy_gen_controlsys.UpdateLoader.edl
+
+# fast build rule for target.
+UpdateLoader_edl_copy_gen_controlsys.UpdateLoader.edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/UpdateLoader_edl_copy_gen_controlsys.UpdateLoader.edl.dir/build.make controlsys/CMakeFiles/UpdateLoader_edl_copy_gen_controlsys.UpdateLoader.edl.dir/build
+.PHONY : UpdateLoader_edl_copy_gen_controlsys.UpdateLoader.edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/UpdateLoader_edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/UpdateLoader_edl.dir/rule
+.PHONY : controlsys/CMakeFiles/UpdateLoader_edl.dir/rule
+
+# Convenience name for target.
+UpdateLoader_edl: controlsys/CMakeFiles/UpdateLoader_edl.dir/rule
+.PHONY : UpdateLoader_edl
+
+# fast build rule for target.
+UpdateLoader_edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/UpdateLoader_edl.dir/build.make controlsys/CMakeFiles/UpdateLoader_edl.dir/build
+.PHONY : UpdateLoader_edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/UpdateStorage_edl_copy_controlsys.UpdateStorage.edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/UpdateStorage_edl_copy_controlsys.UpdateStorage.edl.dir/rule
+.PHONY : controlsys/CMakeFiles/UpdateStorage_edl_copy_controlsys.UpdateStorage.edl.dir/rule
+
+# Convenience name for target.
+UpdateStorage_edl_copy_controlsys.UpdateStorage.edl: controlsys/CMakeFiles/UpdateStorage_edl_copy_controlsys.UpdateStorage.edl.dir/rule
+.PHONY : UpdateStorage_edl_copy_controlsys.UpdateStorage.edl
+
+# fast build rule for target.
+UpdateStorage_edl_copy_controlsys.UpdateStorage.edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/UpdateStorage_edl_copy_controlsys.UpdateStorage.edl.dir/build.make controlsys/CMakeFiles/UpdateStorage_edl_copy_controlsys.UpdateStorage.edl.dir/build
+.PHONY : UpdateStorage_edl_copy_controlsys.UpdateStorage.edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/UpdateStorage_edl_gen_controlsys.UpdateStorage.edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/UpdateStorage_edl_gen_controlsys.UpdateStorage.edl.dir/rule
+.PHONY : controlsys/CMakeFiles/UpdateStorage_edl_gen_controlsys.UpdateStorage.edl.dir/rule
+
+# Convenience name for target.
+UpdateStorage_edl_gen_controlsys.UpdateStorage.edl: controlsys/CMakeFiles/UpdateStorage_edl_gen_controlsys.UpdateStorage.edl.dir/rule
+.PHONY : UpdateStorage_edl_gen_controlsys.UpdateStorage.edl
+
+# fast build rule for target.
+UpdateStorage_edl_gen_controlsys.UpdateStorage.edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/UpdateStorage_edl_gen_controlsys.UpdateStorage.edl.dir/build.make controlsys/CMakeFiles/UpdateStorage_edl_gen_controlsys.UpdateStorage.edl.dir/build
+.PHONY : UpdateStorage_edl_gen_controlsys.UpdateStorage.edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/UpdateStorage_edl_copy_gen_controlsys.UpdateStorage.edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/UpdateStorage_edl_copy_gen_controlsys.UpdateStorage.edl.dir/rule
+.PHONY : controlsys/CMakeFiles/UpdateStorage_edl_copy_gen_controlsys.UpdateStorage.edl.dir/rule
+
+# Convenience name for target.
+UpdateStorage_edl_copy_gen_controlsys.UpdateStorage.edl: controlsys/CMakeFiles/UpdateStorage_edl_copy_gen_controlsys.UpdateStorage.edl.dir/rule
+.PHONY : UpdateStorage_edl_copy_gen_controlsys.UpdateStorage.edl
+
+# fast build rule for target.
+UpdateStorage_edl_copy_gen_controlsys.UpdateStorage.edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/UpdateStorage_edl_copy_gen_controlsys.UpdateStorage.edl.dir/build.make controlsys/CMakeFiles/UpdateStorage_edl_copy_gen_controlsys.UpdateStorage.edl.dir/build
+.PHONY : UpdateStorage_edl_copy_gen_controlsys.UpdateStorage.edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/UpdateStorage_edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/UpdateStorage_edl.dir/rule
+.PHONY : controlsys/CMakeFiles/UpdateStorage_edl.dir/rule
+
+# Convenience name for target.
+UpdateStorage_edl: controlsys/CMakeFiles/UpdateStorage_edl.dir/rule
+.PHONY : UpdateStorage_edl
+
+# fast build rule for target.
+UpdateStorage_edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/UpdateStorage_edl.dir/build.make controlsys/CMakeFiles/UpdateStorage_edl.dir/build
+.PHONY : UpdateStorage_edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/UpdateVerifier_edl_copy_controlsys.UpdateVerifier.edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/UpdateVerifier_edl_copy_controlsys.UpdateVerifier.edl.dir/rule
+.PHONY : controlsys/CMakeFiles/UpdateVerifier_edl_copy_controlsys.UpdateVerifier.edl.dir/rule
+
+# Convenience name for target.
+UpdateVerifier_edl_copy_controlsys.UpdateVerifier.edl: controlsys/CMakeFiles/UpdateVerifier_edl_copy_controlsys.UpdateVerifier.edl.dir/rule
+.PHONY : UpdateVerifier_edl_copy_controlsys.UpdateVerifier.edl
+
+# fast build rule for target.
+UpdateVerifier_edl_copy_controlsys.UpdateVerifier.edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/UpdateVerifier_edl_copy_controlsys.UpdateVerifier.edl.dir/build.make controlsys/CMakeFiles/UpdateVerifier_edl_copy_controlsys.UpdateVerifier.edl.dir/build
+.PHONY : UpdateVerifier_edl_copy_controlsys.UpdateVerifier.edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/UpdateVerifier_edl_gen_controlsys.UpdateVerifier.edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/UpdateVerifier_edl_gen_controlsys.UpdateVerifier.edl.dir/rule
+.PHONY : controlsys/CMakeFiles/UpdateVerifier_edl_gen_controlsys.UpdateVerifier.edl.dir/rule
+
+# Convenience name for target.
+UpdateVerifier_edl_gen_controlsys.UpdateVerifier.edl: controlsys/CMakeFiles/UpdateVerifier_edl_gen_controlsys.UpdateVerifier.edl.dir/rule
+.PHONY : UpdateVerifier_edl_gen_controlsys.UpdateVerifier.edl
+
+# fast build rule for target.
+UpdateVerifier_edl_gen_controlsys.UpdateVerifier.edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/UpdateVerifier_edl_gen_controlsys.UpdateVerifier.edl.dir/build.make controlsys/CMakeFiles/UpdateVerifier_edl_gen_controlsys.UpdateVerifier.edl.dir/build
+.PHONY : UpdateVerifier_edl_gen_controlsys.UpdateVerifier.edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/UpdateVerifier_edl_copy_gen_controlsys.UpdateVerifier.edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/UpdateVerifier_edl_copy_gen_controlsys.UpdateVerifier.edl.dir/rule
+.PHONY : controlsys/CMakeFiles/UpdateVerifier_edl_copy_gen_controlsys.UpdateVerifier.edl.dir/rule
+
+# Convenience name for target.
+UpdateVerifier_edl_copy_gen_controlsys.UpdateVerifier.edl: controlsys/CMakeFiles/UpdateVerifier_edl_copy_gen_controlsys.UpdateVerifier.edl.dir/rule
+.PHONY : UpdateVerifier_edl_copy_gen_controlsys.UpdateVerifier.edl
+
+# fast build rule for target.
+UpdateVerifier_edl_copy_gen_controlsys.UpdateVerifier.edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/UpdateVerifier_edl_copy_gen_controlsys.UpdateVerifier.edl.dir/build.make controlsys/CMakeFiles/UpdateVerifier_edl_copy_gen_controlsys.UpdateVerifier.edl.dir/build
+.PHONY : UpdateVerifier_edl_copy_gen_controlsys.UpdateVerifier.edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/UpdateVerifier_edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/UpdateVerifier_edl.dir/rule
+.PHONY : controlsys/CMakeFiles/UpdateVerifier_edl.dir/rule
+
+# Convenience name for target.
+UpdateVerifier_edl: controlsys/CMakeFiles/UpdateVerifier_edl.dir/rule
+.PHONY : UpdateVerifier_edl
+
+# fast build rule for target.
+UpdateVerifier_edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/UpdateVerifier_edl.dir/build.make controlsys/CMakeFiles/UpdateVerifier_edl.dir/build
+.PHONY : UpdateVerifier_edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/UpdateInstaller_edl_copy_controlsys.UpdateInstaller.edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/UpdateInstaller_edl_copy_controlsys.UpdateInstaller.edl.dir/rule
+.PHONY : controlsys/CMakeFiles/UpdateInstaller_edl_copy_controlsys.UpdateInstaller.edl.dir/rule
+
+# Convenience name for target.
+UpdateInstaller_edl_copy_controlsys.UpdateInstaller.edl: controlsys/CMakeFiles/UpdateInstaller_edl_copy_controlsys.UpdateInstaller.edl.dir/rule
+.PHONY : UpdateInstaller_edl_copy_controlsys.UpdateInstaller.edl
+
+# fast build rule for target.
+UpdateInstaller_edl_copy_controlsys.UpdateInstaller.edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/UpdateInstaller_edl_copy_controlsys.UpdateInstaller.edl.dir/build.make controlsys/CMakeFiles/UpdateInstaller_edl_copy_controlsys.UpdateInstaller.edl.dir/build
+.PHONY : UpdateInstaller_edl_copy_controlsys.UpdateInstaller.edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/UpdateInstaller_edl_gen_controlsys.UpdateInstaller.edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/UpdateInstaller_edl_gen_controlsys.UpdateInstaller.edl.dir/rule
+.PHONY : controlsys/CMakeFiles/UpdateInstaller_edl_gen_controlsys.UpdateInstaller.edl.dir/rule
+
+# Convenience name for target.
+UpdateInstaller_edl_gen_controlsys.UpdateInstaller.edl: controlsys/CMakeFiles/UpdateInstaller_edl_gen_controlsys.UpdateInstaller.edl.dir/rule
+.PHONY : UpdateInstaller_edl_gen_controlsys.UpdateInstaller.edl
+
+# fast build rule for target.
+UpdateInstaller_edl_gen_controlsys.UpdateInstaller.edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/UpdateInstaller_edl_gen_controlsys.UpdateInstaller.edl.dir/build.make controlsys/CMakeFiles/UpdateInstaller_edl_gen_controlsys.UpdateInstaller.edl.dir/build
+.PHONY : UpdateInstaller_edl_gen_controlsys.UpdateInstaller.edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/UpdateInstaller_edl_copy_gen_controlsys.UpdateInstaller.edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/UpdateInstaller_edl_copy_gen_controlsys.UpdateInstaller.edl.dir/rule
+.PHONY : controlsys/CMakeFiles/UpdateInstaller_edl_copy_gen_controlsys.UpdateInstaller.edl.dir/rule
+
+# Convenience name for target.
+UpdateInstaller_edl_copy_gen_controlsys.UpdateInstaller.edl: controlsys/CMakeFiles/UpdateInstaller_edl_copy_gen_controlsys.UpdateInstaller.edl.dir/rule
+.PHONY : UpdateInstaller_edl_copy_gen_controlsys.UpdateInstaller.edl
+
+# fast build rule for target.
+UpdateInstaller_edl_copy_gen_controlsys.UpdateInstaller.edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/UpdateInstaller_edl_copy_gen_controlsys.UpdateInstaller.edl.dir/build.make controlsys/CMakeFiles/UpdateInstaller_edl_copy_gen_controlsys.UpdateInstaller.edl.dir/build
+.PHONY : UpdateInstaller_edl_copy_gen_controlsys.UpdateInstaller.edl/fast
+
+# Convenience name for target.
+controlsys/CMakeFiles/UpdateInstaller_edl.dir/rule:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/UpdateInstaller_edl.dir/rule
+.PHONY : controlsys/CMakeFiles/UpdateInstaller_edl.dir/rule
+
+# Convenience name for target.
+UpdateInstaller_edl: controlsys/CMakeFiles/UpdateInstaller_edl.dir/rule
+.PHONY : UpdateInstaller_edl
+
+# fast build rule for target.
+UpdateInstaller_edl/fast:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/UpdateInstaller_edl.dir/build.make controlsys/CMakeFiles/UpdateInstaller_edl.dir/build
+.PHONY : UpdateInstaller_edl/fast
+
+# Convenience name for target.
 controlsys/CMakeFiles/ControlSys.dir/rule:
 	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 controlsys/CMakeFiles/ControlSys.dir/rule
 .PHONY : controlsys/CMakeFiles/ControlSys.dir/rule
@@ -259,53 +1491,29 @@ pal-test-negative/fast:
 	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/pal-test-negative.dir/build.make controlsys/CMakeFiles/pal-test-negative.dir/build
 .PHONY : pal-test-negative/fast
 
-src/core/auth_module.o: src/core/auth_module.c.o
-.PHONY : src/core/auth_module.o
+src/core/clients.o: src/core/clients.c.o
+.PHONY : src/core/clients.o
 
 # target to build an object file
-src/core/auth_module.c.o:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/auth_module.c.o
-.PHONY : src/core/auth_module.c.o
+src/core/clients.c.o:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/clients.c.o
+.PHONY : src/core/clients.c.o
 
-src/core/auth_module.i: src/core/auth_module.c.i
-.PHONY : src/core/auth_module.i
-
-# target to preprocess a source file
-src/core/auth_module.c.i:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/auth_module.c.i
-.PHONY : src/core/auth_module.c.i
-
-src/core/auth_module.s: src/core/auth_module.c.s
-.PHONY : src/core/auth_module.s
-
-# target to generate assembly for a file
-src/core/auth_module.c.s:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/auth_module.c.s
-.PHONY : src/core/auth_module.c.s
-
-src/core/card_verifier.o: src/core/card_verifier.c.o
-.PHONY : src/core/card_verifier.o
-
-# target to build an object file
-src/core/card_verifier.c.o:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/card_verifier.c.o
-.PHONY : src/core/card_verifier.c.o
-
-src/core/card_verifier.i: src/core/card_verifier.c.i
-.PHONY : src/core/card_verifier.i
+src/core/clients.i: src/core/clients.c.i
+.PHONY : src/core/clients.i
 
 # target to preprocess a source file
-src/core/card_verifier.c.i:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/card_verifier.c.i
-.PHONY : src/core/card_verifier.c.i
+src/core/clients.c.i:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/clients.c.i
+.PHONY : src/core/clients.c.i
 
-src/core/card_verifier.s: src/core/card_verifier.c.s
-.PHONY : src/core/card_verifier.s
+src/core/clients.s: src/core/clients.c.s
+.PHONY : src/core/clients.s
 
 # target to generate assembly for a file
-src/core/card_verifier.c.s:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/card_verifier.c.s
-.PHONY : src/core/card_verifier.c.s
+src/core/clients.c.s:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/clients.c.s
+.PHONY : src/core/clients.c.s
 
 src/core/event_channel.o: src/core/event_channel.c.o
 .PHONY : src/core/event_channel.o
@@ -355,53 +1563,29 @@ src/core/event_script.c.s:
 	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/event_script.c.s
 .PHONY : src/core/event_script.c.s
 
-src/core/init_module.o: src/core/init_module.c.o
-.PHONY : src/core/init_module.o
+src/core/ipc_transport.o: src/core/ipc_transport.c.o
+.PHONY : src/core/ipc_transport.o
 
 # target to build an object file
-src/core/init_module.c.o:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/init_module.c.o
-.PHONY : src/core/init_module.c.o
+src/core/ipc_transport.c.o:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/ipc_transport.c.o
+.PHONY : src/core/ipc_transport.c.o
 
-src/core/init_module.i: src/core/init_module.c.i
-.PHONY : src/core/init_module.i
-
-# target to preprocess a source file
-src/core/init_module.c.i:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/init_module.c.i
-.PHONY : src/core/init_module.c.i
-
-src/core/init_module.s: src/core/init_module.c.s
-.PHONY : src/core/init_module.s
-
-# target to generate assembly for a file
-src/core/init_module.c.s:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/init_module.c.s
-.PHONY : src/core/init_module.c.s
-
-src/core/journal.o: src/core/journal.c.o
-.PHONY : src/core/journal.o
-
-# target to build an object file
-src/core/journal.c.o:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/journal.c.o
-.PHONY : src/core/journal.c.o
-
-src/core/journal.i: src/core/journal.c.i
-.PHONY : src/core/journal.i
+src/core/ipc_transport.i: src/core/ipc_transport.c.i
+.PHONY : src/core/ipc_transport.i
 
 # target to preprocess a source file
-src/core/journal.c.i:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/journal.c.i
-.PHONY : src/core/journal.c.i
+src/core/ipc_transport.c.i:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/ipc_transport.c.i
+.PHONY : src/core/ipc_transport.c.i
 
-src/core/journal.s: src/core/journal.c.s
-.PHONY : src/core/journal.s
+src/core/ipc_transport.s: src/core/ipc_transport.c.s
+.PHONY : src/core/ipc_transport.s
 
 # target to generate assembly for a file
-src/core/journal.c.s:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/journal.c.s
-.PHONY : src/core/journal.c.s
+src/core/ipc_transport.c.s:
+	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/ipc_transport.c.s
+.PHONY : src/core/ipc_transport.c.s
 
 src/core/log.o: src/core/log.c.o
 .PHONY : src/core/log.o
@@ -427,78 +1611,6 @@ src/core/log.c.s:
 	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/log.c.s
 .PHONY : src/core/log.c.s
 
-src/core/net_verifier.o: src/core/net_verifier.c.o
-.PHONY : src/core/net_verifier.o
-
-# target to build an object file
-src/core/net_verifier.c.o:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/net_verifier.c.o
-.PHONY : src/core/net_verifier.c.o
-
-src/core/net_verifier.i: src/core/net_verifier.c.i
-.PHONY : src/core/net_verifier.i
-
-# target to preprocess a source file
-src/core/net_verifier.c.i:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/net_verifier.c.i
-.PHONY : src/core/net_verifier.c.i
-
-src/core/net_verifier.s: src/core/net_verifier.c.s
-.PHONY : src/core/net_verifier.s
-
-# target to generate assembly for a file
-src/core/net_verifier.c.s:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/net_verifier.c.s
-.PHONY : src/core/net_verifier.c.s
-
-src/core/output_controller.o: src/core/output_controller.c.o
-.PHONY : src/core/output_controller.o
-
-# target to build an object file
-src/core/output_controller.c.o:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/output_controller.c.o
-.PHONY : src/core/output_controller.c.o
-
-src/core/output_controller.i: src/core/output_controller.c.i
-.PHONY : src/core/output_controller.i
-
-# target to preprocess a source file
-src/core/output_controller.c.i:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/output_controller.c.i
-.PHONY : src/core/output_controller.c.i
-
-src/core/output_controller.s: src/core/output_controller.c.s
-.PHONY : src/core/output_controller.s
-
-# target to generate assembly for a file
-src/core/output_controller.c.s:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/output_controller.c.s
-.PHONY : src/core/output_controller.c.s
-
-src/core/power_verifier.o: src/core/power_verifier.c.o
-.PHONY : src/core/power_verifier.o
-
-# target to build an object file
-src/core/power_verifier.c.o:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/power_verifier.c.o
-.PHONY : src/core/power_verifier.c.o
-
-src/core/power_verifier.i: src/core/power_verifier.c.i
-.PHONY : src/core/power_verifier.i
-
-# target to preprocess a source file
-src/core/power_verifier.c.i:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/power_verifier.c.i
-.PHONY : src/core/power_verifier.c.i
-
-src/core/power_verifier.s: src/core/power_verifier.c.s
-.PHONY : src/core/power_verifier.s
-
-# target to generate assembly for a file
-src/core/power_verifier.c.s:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/power_verifier.c.s
-.PHONY : src/core/power_verifier.c.s
-
 src/core/state_machine.o: src/core/state_machine.c.o
 .PHONY : src/core/state_machine.o
 
@@ -523,30 +1635,6 @@ src/core/state_machine.c.s:
 	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/state_machine.c.s
 .PHONY : src/core/state_machine.c.s
 
-src/core/status_verifier.o: src/core/status_verifier.c.o
-.PHONY : src/core/status_verifier.o
-
-# target to build an object file
-src/core/status_verifier.c.o:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/status_verifier.c.o
-.PHONY : src/core/status_verifier.c.o
-
-src/core/status_verifier.i: src/core/status_verifier.c.i
-.PHONY : src/core/status_verifier.i
-
-# target to preprocess a source file
-src/core/status_verifier.c.i:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/status_verifier.c.i
-.PHONY : src/core/status_verifier.c.i
-
-src/core/status_verifier.s: src/core/status_verifier.c.s
-.PHONY : src/core/status_verifier.s
-
-# target to generate assembly for a file
-src/core/status_verifier.c.s:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/status_verifier.c.s
-.PHONY : src/core/status_verifier.c.s
-
 src/core/tx.o: src/core/tx.c.o
 .PHONY : src/core/tx.o
 
@@ -570,126 +1658,6 @@ src/core/tx.s: src/core/tx.c.s
 src/core/tx.c.s:
 	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/tx.c.s
 .PHONY : src/core/tx.c.s
-
-src/core/txn_builder.o: src/core/txn_builder.c.o
-.PHONY : src/core/txn_builder.o
-
-# target to build an object file
-src/core/txn_builder.c.o:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/txn_builder.c.o
-.PHONY : src/core/txn_builder.c.o
-
-src/core/txn_builder.i: src/core/txn_builder.c.i
-.PHONY : src/core/txn_builder.i
-
-# target to preprocess a source file
-src/core/txn_builder.c.i:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/txn_builder.c.i
-.PHONY : src/core/txn_builder.c.i
-
-src/core/txn_builder.s: src/core/txn_builder.c.s
-.PHONY : src/core/txn_builder.s
-
-# target to generate assembly for a file
-src/core/txn_builder.c.s:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/txn_builder.c.s
-.PHONY : src/core/txn_builder.c.s
-
-src/core/update_installer.o: src/core/update_installer.c.o
-.PHONY : src/core/update_installer.o
-
-# target to build an object file
-src/core/update_installer.c.o:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/update_installer.c.o
-.PHONY : src/core/update_installer.c.o
-
-src/core/update_installer.i: src/core/update_installer.c.i
-.PHONY : src/core/update_installer.i
-
-# target to preprocess a source file
-src/core/update_installer.c.i:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/update_installer.c.i
-.PHONY : src/core/update_installer.c.i
-
-src/core/update_installer.s: src/core/update_installer.c.s
-.PHONY : src/core/update_installer.s
-
-# target to generate assembly for a file
-src/core/update_installer.c.s:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/update_installer.c.s
-.PHONY : src/core/update_installer.c.s
-
-src/core/update_loader.o: src/core/update_loader.c.o
-.PHONY : src/core/update_loader.o
-
-# target to build an object file
-src/core/update_loader.c.o:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/update_loader.c.o
-.PHONY : src/core/update_loader.c.o
-
-src/core/update_loader.i: src/core/update_loader.c.i
-.PHONY : src/core/update_loader.i
-
-# target to preprocess a source file
-src/core/update_loader.c.i:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/update_loader.c.i
-.PHONY : src/core/update_loader.c.i
-
-src/core/update_loader.s: src/core/update_loader.c.s
-.PHONY : src/core/update_loader.s
-
-# target to generate assembly for a file
-src/core/update_loader.c.s:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/update_loader.c.s
-.PHONY : src/core/update_loader.c.s
-
-src/core/update_storage.o: src/core/update_storage.c.o
-.PHONY : src/core/update_storage.o
-
-# target to build an object file
-src/core/update_storage.c.o:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/update_storage.c.o
-.PHONY : src/core/update_storage.c.o
-
-src/core/update_storage.i: src/core/update_storage.c.i
-.PHONY : src/core/update_storage.i
-
-# target to preprocess a source file
-src/core/update_storage.c.i:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/update_storage.c.i
-.PHONY : src/core/update_storage.c.i
-
-src/core/update_storage.s: src/core/update_storage.c.s
-.PHONY : src/core/update_storage.s
-
-# target to generate assembly for a file
-src/core/update_storage.c.s:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/update_storage.c.s
-.PHONY : src/core/update_storage.c.s
-
-src/core/update_verifier.o: src/core/update_verifier.c.o
-.PHONY : src/core/update_verifier.o
-
-# target to build an object file
-src/core/update_verifier.c.o:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/update_verifier.c.o
-.PHONY : src/core/update_verifier.c.o
-
-src/core/update_verifier.i: src/core/update_verifier.c.i
-.PHONY : src/core/update_verifier.i
-
-# target to preprocess a source file
-src/core/update_verifier.c.i:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/update_verifier.c.i
-.PHONY : src/core/update_verifier.c.i
-
-src/core/update_verifier.s: src/core/update_verifier.c.s
-.PHONY : src/core/update_verifier.s
-
-# target to generate assembly for a file
-src/core/update_verifier.c.s:
-	cd /home/mpos/mpos-lab/kos/controlsys/build && $(MAKE) $(MAKESILENT) -f controlsys/CMakeFiles/ControlSys.dir/build.make controlsys/CMakeFiles/ControlSys.dir/src/core/update_verifier.c.s
-.PHONY : src/core/update_verifier.c.s
 
 src/main.o: src/main.c.o
 .PHONY : src/main.o
@@ -727,67 +1695,122 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... AuthInterface_idl_copy_controlsys.AuthInterface.idl"
+	@echo "... AuthInterface_idl_copy_gen_controlsys.AuthInterface.idl"
+	@echo "... AuthInterface_idl_gen_controlsys.AuthInterface.idl"
+	@echo "... AuthModule_edl_copy_controlsys.AuthModule.edl"
+	@echo "... AuthModule_edl_copy_gen_controlsys.AuthModule.edl"
+	@echo "... AuthModule_edl_gen_controlsys.AuthModule.edl"
+	@echo "... CardVerifierInterface_idl_copy_controlsys.CardVerifierInterface.idl"
+	@echo "... CardVerifierInterface_idl_copy_gen_controlsys.CardVerifierInterface.idl"
+	@echo "... CardVerifierInterface_idl_gen_controlsys.CardVerifierInterface.idl"
+	@echo "... CardVerifier_edl_copy_controlsys.CardVerifier.edl"
+	@echo "... CardVerifier_edl_copy_gen_controlsys.CardVerifier.edl"
+	@echo "... CardVerifier_edl_gen_controlsys.CardVerifier.edl"
+	@echo "... InputGuardInterface_idl_copy_controlsys.InputGuardInterface.idl"
+	@echo "... InputGuardInterface_idl_copy_gen_controlsys.InputGuardInterface.idl"
+	@echo "... InputGuardInterface_idl_gen_controlsys.InputGuardInterface.idl"
+	@echo "... InputGuard_edl_copy_controlsys.InputGuard.edl"
+	@echo "... InputGuard_edl_copy_gen_controlsys.InputGuard.edl"
+	@echo "... InputGuard_edl_gen_controlsys.InputGuard.edl"
+	@echo "... JournalInterface_idl_copy_controlsys.JournalInterface.idl"
+	@echo "... JournalInterface_idl_copy_gen_controlsys.JournalInterface.idl"
+	@echo "... JournalInterface_idl_gen_controlsys.JournalInterface.idl"
+	@echo "... Journal_edl_copy_controlsys.Journal.edl"
+	@echo "... Journal_edl_copy_gen_controlsys.Journal.edl"
+	@echo "... Journal_edl_gen_controlsys.Journal.edl"
+	@echo "... OutputControllerInterface_idl_copy_controlsys.OutputControllerInterface.idl"
+	@echo "... OutputControllerInterface_idl_copy_gen_controlsys.OutputControllerInterface.idl"
+	@echo "... OutputControllerInterface_idl_gen_controlsys.OutputControllerInterface.idl"
+	@echo "... OutputController_edl_copy_controlsys.OutputController.edl"
+	@echo "... OutputController_edl_copy_gen_controlsys.OutputController.edl"
+	@echo "... OutputController_edl_gen_controlsys.OutputController.edl"
+	@echo "... StatusVerifierInterface_idl_copy_controlsys.StatusVerifierInterface.idl"
+	@echo "... StatusVerifierInterface_idl_copy_gen_controlsys.StatusVerifierInterface.idl"
+	@echo "... StatusVerifierInterface_idl_gen_controlsys.StatusVerifierInterface.idl"
+	@echo "... StatusVerifier_edl_copy_controlsys.StatusVerifier.edl"
+	@echo "... StatusVerifier_edl_copy_gen_controlsys.StatusVerifier.edl"
+	@echo "... StatusVerifier_edl_gen_controlsys.StatusVerifier.edl"
+	@echo "... TransactionGeneratorInterface_idl_copy_controlsys.TransactionGeneratorInterface.idl"
+	@echo "... TransactionGeneratorInterface_idl_copy_gen_controlsys.TransactionGeneratorInterface.idl"
+	@echo "... TransactionGeneratorInterface_idl_gen_controlsys.TransactionGeneratorInterface.idl"
+	@echo "... TransactionGenerator_edl_copy_controlsys.TransactionGenerator.edl"
+	@echo "... TransactionGenerator_edl_copy_gen_controlsys.TransactionGenerator.edl"
+	@echo "... TransactionGenerator_edl_gen_controlsys.TransactionGenerator.edl"
+	@echo "... UpdateInstallerInterface_idl_copy_controlsys.UpdateInstallerInterface.idl"
+	@echo "... UpdateInstallerInterface_idl_copy_gen_controlsys.UpdateInstallerInterface.idl"
+	@echo "... UpdateInstallerInterface_idl_gen_controlsys.UpdateInstallerInterface.idl"
+	@echo "... UpdateInstaller_edl_copy_controlsys.UpdateInstaller.edl"
+	@echo "... UpdateInstaller_edl_copy_gen_controlsys.UpdateInstaller.edl"
+	@echo "... UpdateInstaller_edl_gen_controlsys.UpdateInstaller.edl"
+	@echo "... UpdateLoaderInterface_idl_copy_controlsys.UpdateLoaderInterface.idl"
+	@echo "... UpdateLoaderInterface_idl_copy_gen_controlsys.UpdateLoaderInterface.idl"
+	@echo "... UpdateLoaderInterface_idl_gen_controlsys.UpdateLoaderInterface.idl"
+	@echo "... UpdateLoader_edl_copy_controlsys.UpdateLoader.edl"
+	@echo "... UpdateLoader_edl_copy_gen_controlsys.UpdateLoader.edl"
+	@echo "... UpdateLoader_edl_gen_controlsys.UpdateLoader.edl"
+	@echo "... UpdateStorageInterface_idl_copy_controlsys.UpdateStorageInterface.idl"
+	@echo "... UpdateStorageInterface_idl_copy_gen_controlsys.UpdateStorageInterface.idl"
+	@echo "... UpdateStorageInterface_idl_gen_controlsys.UpdateStorageInterface.idl"
+	@echo "... UpdateStorage_edl_copy_controlsys.UpdateStorage.edl"
+	@echo "... UpdateStorage_edl_copy_gen_controlsys.UpdateStorage.edl"
+	@echo "... UpdateStorage_edl_gen_controlsys.UpdateStorage.edl"
+	@echo "... UpdateVerifierInterface_idl_copy_controlsys.UpdateVerifierInterface.idl"
+	@echo "... UpdateVerifierInterface_idl_copy_gen_controlsys.UpdateVerifierInterface.idl"
+	@echo "... UpdateVerifierInterface_idl_gen_controlsys.UpdateVerifierInterface.idl"
+	@echo "... UpdateVerifier_edl_copy_controlsys.UpdateVerifier.edl"
+	@echo "... UpdateVerifier_edl_copy_gen_controlsys.UpdateVerifier.edl"
+	@echo "... UpdateVerifier_edl_gen_controlsys.UpdateVerifier.edl"
 	@echo "... controlsys_edl_files_copy_controlsys.ControlSys.edl"
 	@echo "... controlsys_edl_files_copy_gen_controlsys.ControlSys.edl"
 	@echo "... controlsys_edl_files_gen_controlsys.ControlSys.edl"
 	@echo "... pal-test-negative"
 	@echo "... pal-test0"
+	@echo "... AuthInterface_idl"
+	@echo "... AuthModule_edl"
+	@echo "... CardVerifierInterface_idl"
+	@echo "... CardVerifier_edl"
 	@echo "... ControlSys"
+	@echo "... InputGuardInterface_idl"
+	@echo "... InputGuard_edl"
+	@echo "... JournalInterface_idl"
+	@echo "... Journal_edl"
+	@echo "... OutputControllerInterface_idl"
+	@echo "... OutputController_edl"
+	@echo "... StatusVerifierInterface_idl"
+	@echo "... StatusVerifier_edl"
+	@echo "... TransactionGeneratorInterface_idl"
+	@echo "... TransactionGenerator_edl"
+	@echo "... UpdateInstallerInterface_idl"
+	@echo "... UpdateInstaller_edl"
+	@echo "... UpdateLoaderInterface_idl"
+	@echo "... UpdateLoader_edl"
+	@echo "... UpdateStorageInterface_idl"
+	@echo "... UpdateStorage_edl"
+	@echo "... UpdateVerifierInterface_idl"
+	@echo "... UpdateVerifier_edl"
 	@echo "... controlsys_edl_files"
-	@echo "... src/core/auth_module.o"
-	@echo "... src/core/auth_module.i"
-	@echo "... src/core/auth_module.s"
-	@echo "... src/core/card_verifier.o"
-	@echo "... src/core/card_verifier.i"
-	@echo "... src/core/card_verifier.s"
+	@echo "... src/core/clients.o"
+	@echo "... src/core/clients.i"
+	@echo "... src/core/clients.s"
 	@echo "... src/core/event_channel.o"
 	@echo "... src/core/event_channel.i"
 	@echo "... src/core/event_channel.s"
 	@echo "... src/core/event_script.o"
 	@echo "... src/core/event_script.i"
 	@echo "... src/core/event_script.s"
-	@echo "... src/core/init_module.o"
-	@echo "... src/core/init_module.i"
-	@echo "... src/core/init_module.s"
-	@echo "... src/core/journal.o"
-	@echo "... src/core/journal.i"
-	@echo "... src/core/journal.s"
+	@echo "... src/core/ipc_transport.o"
+	@echo "... src/core/ipc_transport.i"
+	@echo "... src/core/ipc_transport.s"
 	@echo "... src/core/log.o"
 	@echo "... src/core/log.i"
 	@echo "... src/core/log.s"
-	@echo "... src/core/net_verifier.o"
-	@echo "... src/core/net_verifier.i"
-	@echo "... src/core/net_verifier.s"
-	@echo "... src/core/output_controller.o"
-	@echo "... src/core/output_controller.i"
-	@echo "... src/core/output_controller.s"
-	@echo "... src/core/power_verifier.o"
-	@echo "... src/core/power_verifier.i"
-	@echo "... src/core/power_verifier.s"
 	@echo "... src/core/state_machine.o"
 	@echo "... src/core/state_machine.i"
 	@echo "... src/core/state_machine.s"
-	@echo "... src/core/status_verifier.o"
-	@echo "... src/core/status_verifier.i"
-	@echo "... src/core/status_verifier.s"
 	@echo "... src/core/tx.o"
 	@echo "... src/core/tx.i"
 	@echo "... src/core/tx.s"
-	@echo "... src/core/txn_builder.o"
-	@echo "... src/core/txn_builder.i"
-	@echo "... src/core/txn_builder.s"
-	@echo "... src/core/update_installer.o"
-	@echo "... src/core/update_installer.i"
-	@echo "... src/core/update_installer.s"
-	@echo "... src/core/update_loader.o"
-	@echo "... src/core/update_loader.i"
-	@echo "... src/core/update_loader.s"
-	@echo "... src/core/update_storage.o"
-	@echo "... src/core/update_storage.i"
-	@echo "... src/core/update_storage.s"
-	@echo "... src/core/update_verifier.o"
-	@echo "... src/core/update_verifier.i"
-	@echo "... src/core/update_verifier.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

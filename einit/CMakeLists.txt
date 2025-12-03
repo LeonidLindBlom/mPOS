@@ -25,7 +25,21 @@ endif ()
 set (QEMU_FLAGS "--nographic -monitor none -chardev socket,id=eventbus,host=${EVENT_HOST},port=${EVENT_PORT},server=on,wait=off -serial chardev:eventbus -netdev user,id=hostnet0${HOSTFWD_FLAGS} -device virtio-net-device,netdev=hostnet0")
 set (QEMU_ENV             "QEMU_AUDIO_DRV=none")
 
-set (ENTITIES ControlSys Env ${dnet_ENTITY})
+set (ENTITIES
+     ControlSys
+     InputGuard
+     OutputController
+     CardVerifier
+     TransactionGenerator
+     StatusVerifier
+     AuthModule
+     Journal
+     UpdateLoader
+     UpdateStorage
+     UpdateVerifier
+     UpdateInstaller
+     Env
+     ${dnet_ENTITY})
 
 build_kos_hw_image (kos-image
                     EINIT_ENTITY EinitHw

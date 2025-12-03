@@ -1,0 +1,5 @@
+entity controlsys.UpdateStorage
+
+endpoints {
+    interface : controlsys.UpdateStorageInterface
+}

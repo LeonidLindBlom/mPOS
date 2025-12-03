@@ -4,10 +4,89 @@ entities:
   autostart: true
   command: /ControlSys
   args: []
+  env:
+    CTL_EVENT_TTY: /dev/stdin
   connections:
   - target: env.Env
     id: {var: ENV_SERVICE_NAME, include: env/env.h}
+  - target: controlsys.InputGuard
+    id: controlsys.inputguard
+  - target: controlsys.OutputController
+    id: controlsys.output
+  - target: controlsys.CardVerifier
+    id: controlsys.cardverif
+  - target: controlsys.TransactionGenerator
+    id: controlsys.txn
+  - target: controlsys.StatusVerifier
+    id: controlsys.statusverif
+  - target: controlsys.AuthModule
+    id: controlsys.auth
+  - target: controlsys.Journal
+    id: controlsys.journal
+  - target: controlsys.UpdateLoader
+    id: controlsys.update_loader
+  - target: controlsys.UpdateStorage
+    id: controlsys.update_storage
+  - target: controlsys.UpdateVerifier
+    id: controlsys.update_verifier
+  - target: controlsys.UpdateInstaller
+    id: controlsys.update_installer
   @INIT_ControlSys_ENTITY_CONNECTIONS@
+
+- name: controlsys.InputGuard
+  autostart: true
+  command: /InputGuard
+  args: []
+
+- name: controlsys.OutputController
+  autostart: true
+  command: /OutputController
+  args: []
+
+- name: controlsys.CardVerifier
+  autostart: true
+  command: /CardVerifier
+  args: []
+
+- name: controlsys.TransactionGenerator
+  autostart: true
+  command: /TransactionGenerator
+  args: []
+
+- name: controlsys.StatusVerifier
+  autostart: true
+  command: /StatusVerifier
+  args: []
+
+- name: controlsys.AuthModule
+  autostart: true
+  command: /AuthModule
+  args: []
+
+- name: controlsys.Journal
+  autostart: true
+  command: /Journal
+  args: []
+
+- name: controlsys.UpdateLoader
+  autostart: true
+  command: /UpdateLoader
+  args: []
+
+- name: controlsys.UpdateStorage
+  autostart: true
+  command: /UpdateStorage
+  args: []
+
+- name: controlsys.UpdateVerifier
+  autostart: true
+  command: /UpdateVerifier
+  args: []
+
+- name: controlsys.UpdateInstaller
+  autostart: true
+  command: /UpdateInstaller
+  args: []
 
 - name: env.Env
   autostart: true

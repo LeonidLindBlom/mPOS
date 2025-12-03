@@ -14,6 +14,15 @@
 # EXTERNAL cache entries
 ########################
 
+//Value Computed by CMake
+AuthModule_BINARY_DIR:STATIC=/home/mpos/mpos-lab/kos/controlsys/build/controlsys/domains/AuthModule
+
+//Value Computed by CMake
+AuthModule_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+AuthModule_SOURCE_DIR:STATIC=/home/mpos/mpos-lab/kos/controlsys/controlsys/domains/AuthModule
+
 //No help, variable specified on the command line.
 BOARD:UNINITIALIZED=RPI4_BCM2711
 
@@ -365,6 +374,15 @@ COMPILER_FEATURE_THREADSAFE_STATICS:STRING=Threadsafe statics
 //[ON] Turns on/off recommended compiler warnings
 COMPILER_FEATURE_WARNINGS:STRING=Common warnings
 
+//Value Computed by CMake
+CardVerifier_BINARY_DIR:STATIC=/home/mpos/mpos-lab/kos/controlsys/build/controlsys/domains/CardVerifier
+
+//Value Computed by CMake
+CardVerifier_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+CardVerifier_SOURCE_DIR:STATIC=/home/mpos/mpos-lab/kos/controlsys/controlsys/domains/CardVerifier
+
 //Dot tool for use with Doxygen
 DOXYGEN_DOT_EXECUTABLE:FILEPATH=/usr/bin/dot
 
@@ -376,6 +394,24 @@ EINIT:FILEPATH=/opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/einit
 
 //Path to a program.
 GDB:FILEPATH=/opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gdb
+
+//Value Computed by CMake
+InputGuard_BINARY_DIR:STATIC=/home/mpos/mpos-lab/kos/controlsys/build/controlsys/domains/InputGuard
+
+//Value Computed by CMake
+InputGuard_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+InputGuard_SOURCE_DIR:STATIC=/home/mpos/mpos-lab/kos/controlsys/controlsys/domains/InputGuard
+
+//Value Computed by CMake
+Journal_BINARY_DIR:STATIC=/home/mpos/mpos-lab/kos/controlsys/build/controlsys/domains/Journal
+
+//Value Computed by CMake
+Journal_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Journal_SOURCE_DIR:STATIC=/home/mpos/mpos-lab/kos/controlsys/controlsys/domains/Journal
 
 //KSS headers
 KSS_HEADERS:PATH=/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include
@@ -401,14 +437,77 @@ OBJCOPY:FILEPATH=/opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/aarch64-k
 //Path to a program.
 OBJDUMP_EXECUTABLE:FILEPATH=/opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/aarch64-kos/bin/objdump
 
+//Value Computed by CMake
+OutputController_BINARY_DIR:STATIC=/home/mpos/mpos-lab/kos/controlsys/build/controlsys/domains/OutputController
+
+//Value Computed by CMake
+OutputController_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+OutputController_SOURCE_DIR:STATIC=/home/mpos/mpos-lab/kos/controlsys/controlsys/domains/OutputController
+
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=/opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-pkg-config
 
 //Path to a program.
 QEMU:FILEPATH=/opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/qemu-system-aarch64
 
+//Value Computed by CMake
+StatusVerifier_BINARY_DIR:STATIC=/home/mpos/mpos-lab/kos/controlsys/build/controlsys/domains/StatusVerifier
+
+//Value Computed by CMake
+StatusVerifier_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+StatusVerifier_SOURCE_DIR:STATIC=/home/mpos/mpos-lab/kos/controlsys/controlsys/domains/StatusVerifier
+
 //Path to a program.
 TOOL_FILE:FILEPATH=/usr/bin/file
+
+//Value Computed by CMake
+TransactionGenerator_BINARY_DIR:STATIC=/home/mpos/mpos-lab/kos/controlsys/build/controlsys/domains/TransactionGenerator
+
+//Value Computed by CMake
+TransactionGenerator_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+TransactionGenerator_SOURCE_DIR:STATIC=/home/mpos/mpos-lab/kos/controlsys/controlsys/domains/TransactionGenerator
+
+//Value Computed by CMake
+UpdateInstaller_BINARY_DIR:STATIC=/home/mpos/mpos-lab/kos/controlsys/build/controlsys/domains/UpdateInstaller
+
+//Value Computed by CMake
+UpdateInstaller_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+UpdateInstaller_SOURCE_DIR:STATIC=/home/mpos/mpos-lab/kos/controlsys/controlsys/domains/UpdateInstaller
+
+//Value Computed by CMake
+UpdateLoader_BINARY_DIR:STATIC=/home/mpos/mpos-lab/kos/controlsys/build/controlsys/domains/UpdateLoader
+
+//Value Computed by CMake
+UpdateLoader_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+UpdateLoader_SOURCE_DIR:STATIC=/home/mpos/mpos-lab/kos/controlsys/controlsys/domains/UpdateLoader
+
+//Value Computed by CMake
+UpdateStorage_BINARY_DIR:STATIC=/home/mpos/mpos-lab/kos/controlsys/build/controlsys/domains/UpdateStorage
+
+//Value Computed by CMake
+UpdateStorage_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+UpdateStorage_SOURCE_DIR:STATIC=/home/mpos/mpos-lab/kos/controlsys/controlsys/domains/UpdateStorage
+
+//Value Computed by CMake
+UpdateVerifier_BINARY_DIR:STATIC=/home/mpos/mpos-lab/kos/controlsys/build/controlsys/domains/UpdateVerifier
+
+//Value Computed by CMake
+UpdateVerifier_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+UpdateVerifier_SOURCE_DIR:STATIC=/home/mpos/mpos-lab/kos/controlsys/controlsys/domains/UpdateVerifier
 
 //Path to a program.
 __TOOLCHAIN_AR:FILEPATH=/opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-ar
@@ -685,7 +784,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=15
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

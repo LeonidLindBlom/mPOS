@@ -4,7 +4,7 @@
 # compile C with /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/mpos/mpos-lab/kos/controlsys/build/_headers_build_ -I/home/mpos/mpos-lab/kos/controlsys/build/_headers_ -I/home/mpos/mpos-lab/kos/controlsys/build/../install/include -I/home/mpos/mpos-lab/kos/controlsys/controlsys/include
+C_INCLUDES = -I/home/mpos/mpos-lab/kos/controlsys/build/_headers_build_ -I/home/mpos/mpos-lab/kos/controlsys/build/_headers_ -I/home/mpos/mpos-lab/kos/controlsys/build/../install/include -I/home/mpos/mpos-lab/kos/controlsys/controlsys/include -I/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys
 
 C_FLAGS = -fstack-protector-strong -fstack-clash-protection -mbranch-protection=standard    -O2 -mbranch-protection=standard -mcpu=cortex-a72 -std=gnu11 -Wall -Wextra -Wconversion -Wsign-conversion -Wformat=2 -Wformat-security -Werror=format-security -Werror=return-type -Werror=implicit-function-declaration -Wno-error=deprecated-declarations -fvisibility=hidden -fcommon -fno-omit-frame-pointer -g
 

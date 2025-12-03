@@ -1,8 +1,29 @@
 ksm.module: \
+  /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/AuthInterface.idl \
+  /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/AuthModule.edl \
+  /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/CardVerifier.edl \
+  /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/CardVerifierInterface.idl \
   /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/ControlSys.edl \
+  /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/InputGuard.edl \
+  /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/InputGuardInterface.idl \
+  /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/Journal.edl \
+  /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/JournalInterface.idl \
+  /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/OutputController.edl \
+  /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/OutputControllerInterface.idl \
+  /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/StatusVerifier.edl \
+  /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/StatusVerifierInterface.idl \
+  /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/TransactionGenerator.edl \
+  /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/TransactionGeneratorInterface.idl \
+  /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateInstaller.edl \
+  /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateInstallerInterface.idl \
+  /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateLoader.edl \
+  /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateLoaderInterface.idl \
+  /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateStorage.edl \
+  /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateStorageInterface.idl \
+  /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateVerifier.edl \
+  /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateVerifierInterface.idl \
   /home/mpos/mpos-lab/kos/controlsys/build/_headers_/env/Env.edl \
   /home/mpos/mpos-lab/kos/controlsys/build/einit/EinitQeu-kss/Einit.edl \
-  /opt/KasperskyOS-Community-Edition-1.2.0.89/common/nonsecurity.psl \
   /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Audit.cdl \
   /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Audit.idl \
   /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/CM.cdl \

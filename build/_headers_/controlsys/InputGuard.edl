@@ -1,0 +1,5 @@
+entity controlsys.InputGuard
+
+endpoints {
+    interface : controlsys.InputGuardInterface
+}

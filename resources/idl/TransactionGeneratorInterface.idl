@@ -1,0 +1,14 @@
+package controlsys.TransactionGeneratorInterface
+
+typedef UInt8 Bool;
+
+const UInt8 CurrencyLen = 8;
+const UInt8 PayloadLen = 64;
+
+interface {
+    Build(in string<48> txId,
+          in UInt32 amountCents,
+          in string<CurrencyLen> currency,
+          in Bool approved,
+          out string<PayloadLen> payload);
+}

@@ -1,0 +1,19 @@
+package controlsys.InputGuardInterface
+
+typedef UInt8 Bool;
+
+const UInt8 CurrencyLen = 8;
+
+interface {
+    Heartbeat(in Bool networkOk,
+              in Bool pingOk,
+              in Bool powerOk,
+              in UInt16 signalStrength,
+              in UInt16 soc,
+              out Bool powerReady,
+              out Bool networkReady);
+
+    BeginTransaction(in UInt32 amountCents,
+                     in string<CurrencyLen> currency,
+                     out Bool allowed);
+}

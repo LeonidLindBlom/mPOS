@@ -10,11 +10,164 @@ use nk.base._
 use EDL Einit
 use EDL kl.core.Core
 use EDL controlsys.ControlSys
+use EDL controlsys.InputGuard
+use EDL controlsys.OutputController
+use EDL controlsys.CardVerifier
+use EDL controlsys.TransactionGenerator
+use EDL controlsys.StatusVerifier
+use EDL controlsys.AuthModule
+use EDL controlsys.Journal
+use EDL controlsys.UpdateLoader
+use EDL controlsys.UpdateStorage
+use EDL controlsys.UpdateVerifier
+use EDL controlsys.UpdateInstaller
 use EDL env.Env
 use EDL kl.drivers.DNetSrv
 
 @INIT_EXTERNAL_ENTITIES@
 
-/* Security policy in this example allows any interaction between processes and the KasperskyOS kernel. */
-/* It is used to simplify the example and it must not be used in real applications. */
-use nonsecurity._
+execute {
+    match src=Einit { grant () }
+    match src=kl.core.Core { grant () }
+    match src=controlsys.ControlSys { grant () }
+    match src=controlsys.InputGuard { grant () }
+    match src=controlsys.OutputController { grant () }
+    match src=controlsys.CardVerifier { grant () }
+    match src=controlsys.TransactionGenerator { grant () }
+    match src=controlsys.StatusVerifier { grant () }
+    match src=controlsys.AuthModule { grant () }
+    match src=controlsys.Journal { grant () }
+    match src=controlsys.UpdateLoader { grant () }
+    match src=controlsys.UpdateStorage { grant () }
+    match src=controlsys.UpdateVerifier { grant () }
+    match src=controlsys.UpdateInstaller { grant () }
+    match src=env.Env { grant () }
+    match src=kl.drivers.DNetSrv { grant () }
+}
+
+request {
+    match src=Einit { grant () }
+    match src=kl.core.Core { grant () }
+    match dst=kl.core.Core {
+        match src=Einit { grant () }
+        match src=controlsys.ControlSys { grant () }
+        match src=controlsys.InputGuard { grant () }
+        match src=controlsys.OutputController { grant () }
+        match src=controlsys.CardVerifier { grant () }
+        match src=controlsys.TransactionGenerator { grant () }
+        match src=controlsys.StatusVerifier { grant () }
+        match src=controlsys.AuthModule { grant () }
+        match src=controlsys.Journal { grant () }
+        match src=controlsys.UpdateLoader { grant () }
+        match src=controlsys.UpdateStorage { grant () }
+        match src=controlsys.UpdateVerifier { grant () }
+        match src=controlsys.UpdateInstaller { grant () }
+        match src=env.Env { grant () }
+        match src=kl.drivers.DNetSrv { grant () }
+    }
+    match dst=env.Env {
+        match src=controlsys.ControlSys { grant () }
+    }
+    match dst=controlsys.InputGuard {
+        match src=controlsys.ControlSys { grant () }
+    }
+    match dst=controlsys.OutputController {
+        match src=controlsys.ControlSys { grant () }
+    }
+    match dst=controlsys.CardVerifier {
+        match src=controlsys.ControlSys { grant () }
+    }
+    match dst=controlsys.TransactionGenerator {
+        match src=controlsys.ControlSys { grant () }
+    }
+    match dst=controlsys.StatusVerifier {
+        match src=controlsys.ControlSys { grant () }
+    }
+    match dst=controlsys.AuthModule {
+        match src=controlsys.ControlSys { grant () }
+    }
+    match dst=controlsys.Journal {
+        match src=controlsys.ControlSys { grant () }
+    }
+    match dst=controlsys.UpdateLoader {
+        match src=controlsys.ControlSys { grant () }
+    }
+    match dst=controlsys.UpdateStorage {
+        match src=controlsys.ControlSys { grant () }
+    }
+    match dst=controlsys.UpdateVerifier {
+        match src=controlsys.ControlSys { grant () }
+    }
+    match dst=controlsys.UpdateInstaller {
+        match src=controlsys.ControlSys { grant () }
+    }
+}
+
+response {
+    match dst=Einit { grant () }
+    match dst=kl.core.Core { grant () }
+    match src=kl.core.Core {
+        match dst=Einit { grant () }
+        match dst=controlsys.ControlSys { grant () }
+        match dst=controlsys.InputGuard { grant () }
+        match dst=controlsys.OutputController { grant () }
+        match dst=controlsys.CardVerifier { grant () }
+        match dst=controlsys.TransactionGenerator { grant () }
+        match dst=controlsys.StatusVerifier { grant () }
+        match dst=controlsys.AuthModule { grant () }
+        match dst=controlsys.Journal { grant () }
+        match dst=controlsys.UpdateLoader { grant () }
+        match dst=controlsys.UpdateStorage { grant () }
+        match dst=controlsys.UpdateVerifier { grant () }
+        match dst=controlsys.UpdateInstaller { grant () }
+        match dst=env.Env { grant () }
+        match dst=kl.drivers.DNetSrv { grant () }
+    }
+    match src=env.Env {
+        match dst=controlsys.ControlSys { grant () }
+    }
+    match src=controlsys.InputGuard {
+        match dst=controlsys.ControlSys { grant () }
+    }
+    match src=controlsys.OutputController {
+        match dst=controlsys.ControlSys { grant () }
+    }
+    match src=controlsys.CardVerifier {
+        match dst=controlsys.ControlSys { grant () }
+    }
+    match src=controlsys.TransactionGenerator {
+        match dst=controlsys.ControlSys { grant () }
+    }
+    match src=controlsys.StatusVerifier {
+        match dst=controlsys.ControlSys { grant () }
+    }
+    match src=controlsys.AuthModule {
+        match dst=controlsys.ControlSys { grant () }
+    }
+    match src=controlsys.Journal {
+        match dst=controlsys.ControlSys { grant () }
+    }
+    match src=controlsys.UpdateLoader {
+        match dst=controlsys.ControlSys { grant () }
+    }
+    match src=controlsys.UpdateStorage {
+        match dst=controlsys.ControlSys { grant () }
+    }
+    match src=controlsys.UpdateVerifier {
+        match dst=controlsys.ControlSys { grant () }
+    }
+    match src=controlsys.UpdateInstaller {
+        match dst=controlsys.ControlSys { grant () }
+    }
+    match src=kl.drivers.DNetSrv {
+        match dst=controlsys.ControlSys { grant () }
+    }
+}
+
+error {
+    grant ()
+}
+
+security {
+    grant ()
+}

@@ -1,0 +1,9 @@
+file(REMOVE_RECURSE
+  "../_headers_/controlsys/UpdateStorageInterface.idl.h"
+  "CMakeFiles/UpdateStorageInterface_idl_copy_gen_controlsys.UpdateStorageInterface.idl"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang )
+  include(CMakeFiles/UpdateStorageInterface_idl_copy_gen_controlsys.UpdateStorageInterface.idl.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

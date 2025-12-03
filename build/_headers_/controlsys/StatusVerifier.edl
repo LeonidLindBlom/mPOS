@@ -1,0 +1,5 @@
+entity controlsys.StatusVerifier
+
+endpoints {
+    interface : controlsys.StatusVerifierInterface
+}

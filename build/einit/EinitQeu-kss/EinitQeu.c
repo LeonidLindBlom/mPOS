@@ -9,17 +9,204 @@
 
 #include <env/env.h>
 
-static const EntityInfo taskInfo_controlsys_ControlSys_0 = {
+static const EndpointInfo endpointsInfo_controlsys_AuthModule_0[2] = {
+    {
+        .name = "controlsys.AuthModule.interface",
+        .riid = 0,
+        .iface_name = "controlsys.AuthInterface",
+    },
+    {
+        .name = "interface",
+        .riid = 0,
+        .iface_name = "controlsys.AuthInterface",
+    }
+};
+static const EntityInfo taskInfo_controlsys_AuthModule_0 = {
+    .eiid = "controlsys.AuthModule",
+    .max_endpoints = 2,
+    .endpoints = endpointsInfo_controlsys_AuthModule_0,
+};
+static const EndpointInfo endpointsInfo_controlsys_CardVerifier_1[2] = {
+    {
+        .name = "controlsys.CardVerifier.interface",
+        .riid = 0,
+        .iface_name = "controlsys.CardVerifierInterface",
+    },
+    {
+        .name = "interface",
+        .riid = 0,
+        .iface_name = "controlsys.CardVerifierInterface",
+    }
+};
+static const EntityInfo taskInfo_controlsys_CardVerifier_1 = {
+    .eiid = "controlsys.CardVerifier",
+    .max_endpoints = 2,
+    .endpoints = endpointsInfo_controlsys_CardVerifier_1,
+};
+static const EntityInfo taskInfo_controlsys_ControlSys_2 = {
     .eiid = "controlsys.ControlSys",
     .max_endpoints = 0,
     .endpoints = NK_NULL,
 };
-static const EntityInfo taskInfo_env_Env_1 = {
+static const EndpointInfo endpointsInfo_controlsys_InputGuard_3[2] = {
+    {
+        .name = "controlsys.InputGuard.interface",
+        .riid = 0,
+        .iface_name = "controlsys.InputGuardInterface",
+    },
+    {
+        .name = "interface",
+        .riid = 0,
+        .iface_name = "controlsys.InputGuardInterface",
+    }
+};
+static const EntityInfo taskInfo_controlsys_InputGuard_3 = {
+    .eiid = "controlsys.InputGuard",
+    .max_endpoints = 2,
+    .endpoints = endpointsInfo_controlsys_InputGuard_3,
+};
+static const EndpointInfo endpointsInfo_controlsys_Journal_4[2] = {
+    {
+        .name = "controlsys.Journal.interface",
+        .riid = 0,
+        .iface_name = "controlsys.JournalInterface",
+    },
+    {
+        .name = "interface",
+        .riid = 0,
+        .iface_name = "controlsys.JournalInterface",
+    }
+};
+static const EntityInfo taskInfo_controlsys_Journal_4 = {
+    .eiid = "controlsys.Journal",
+    .max_endpoints = 2,
+    .endpoints = endpointsInfo_controlsys_Journal_4,
+};
+static const EndpointInfo endpointsInfo_controlsys_OutputController_5[2] = {
+    {
+        .name = "controlsys.OutputController.interface",
+        .riid = 0,
+        .iface_name = "controlsys.OutputControllerInterface",
+    },
+    {
+        .name = "interface",
+        .riid = 0,
+        .iface_name = "controlsys.OutputControllerInterface",
+    }
+};
+static const EntityInfo taskInfo_controlsys_OutputController_5 = {
+    .eiid = "controlsys.OutputController",
+    .max_endpoints = 2,
+    .endpoints = endpointsInfo_controlsys_OutputController_5,
+};
+static const EndpointInfo endpointsInfo_controlsys_StatusVerifier_6[2] = {
+    {
+        .name = "controlsys.StatusVerifier.interface",
+        .riid = 0,
+        .iface_name = "controlsys.StatusVerifierInterface",
+    },
+    {
+        .name = "interface",
+        .riid = 0,
+        .iface_name = "controlsys.StatusVerifierInterface",
+    }
+};
+static const EntityInfo taskInfo_controlsys_StatusVerifier_6 = {
+    .eiid = "controlsys.StatusVerifier",
+    .max_endpoints = 2,
+    .endpoints = endpointsInfo_controlsys_StatusVerifier_6,
+};
+static const EndpointInfo endpointsInfo_controlsys_TransactionGenerator_7[2] = {
+    {
+        .name = "controlsys.TransactionGenerator.interface",
+        .riid = 0,
+        .iface_name = "controlsys.TransactionGeneratorInterface",
+    },
+    {
+        .name = "interface",
+        .riid = 0,
+        .iface_name = "controlsys.TransactionGeneratorInterface",
+    }
+};
+static const EntityInfo taskInfo_controlsys_TransactionGenerator_7 = {
+    .eiid = "controlsys.TransactionGenerator",
+    .max_endpoints = 2,
+    .endpoints = endpointsInfo_controlsys_TransactionGenerator_7,
+};
+static const EndpointInfo endpointsInfo_controlsys_UpdateInstaller_8[2] = {
+    {
+        .name = "controlsys.UpdateInstaller.interface",
+        .riid = 0,
+        .iface_name = "controlsys.UpdateInstallerInterface",
+    },
+    {
+        .name = "interface",
+        .riid = 0,
+        .iface_name = "controlsys.UpdateInstallerInterface",
+    }
+};
+static const EntityInfo taskInfo_controlsys_UpdateInstaller_8 = {
+    .eiid = "controlsys.UpdateInstaller",
+    .max_endpoints = 2,
+    .endpoints = endpointsInfo_controlsys_UpdateInstaller_8,
+};
+static const EndpointInfo endpointsInfo_controlsys_UpdateLoader_9[2] = {
+    {
+        .name = "controlsys.UpdateLoader.interface",
+        .riid = 0,
+        .iface_name = "controlsys.UpdateLoaderInterface",
+    },
+    {
+        .name = "interface",
+        .riid = 0,
+        .iface_name = "controlsys.UpdateLoaderInterface",
+    }
+};
+static const EntityInfo taskInfo_controlsys_UpdateLoader_9 = {
+    .eiid = "controlsys.UpdateLoader",
+    .max_endpoints = 2,
+    .endpoints = endpointsInfo_controlsys_UpdateLoader_9,
+};
+static const EndpointInfo endpointsInfo_controlsys_UpdateStorage_10[2] = {
+    {
+        .name = "controlsys.UpdateStorage.interface",
+        .riid = 0,
+        .iface_name = "controlsys.UpdateStorageInterface",
+    },
+    {
+        .name = "interface",
+        .riid = 0,
+        .iface_name = "controlsys.UpdateStorageInterface",
+    }
+};
+static const EntityInfo taskInfo_controlsys_UpdateStorage_10 = {
+    .eiid = "controlsys.UpdateStorage",
+    .max_endpoints = 2,
+    .endpoints = endpointsInfo_controlsys_UpdateStorage_10,
+};
+static const EndpointInfo endpointsInfo_controlsys_UpdateVerifier_11[2] = {
+    {
+        .name = "controlsys.UpdateVerifier.interface",
+        .riid = 0,
+        .iface_name = "controlsys.UpdateVerifierInterface",
+    },
+    {
+        .name = "interface",
+        .riid = 0,
+        .iface_name = "controlsys.UpdateVerifierInterface",
+    }
+};
+static const EntityInfo taskInfo_controlsys_UpdateVerifier_11 = {
+    .eiid = "controlsys.UpdateVerifier",
+    .max_endpoints = 2,
+    .endpoints = endpointsInfo_controlsys_UpdateVerifier_11,
+};
+static const EntityInfo taskInfo_env_Env_12 = {
     .eiid = "env.Env",
     .max_endpoints = 0,
     .endpoints = NK_NULL,
 };
-static const EndpointInfo endpointsInfo_kl_drivers_Bcm2711MboxArmToVc_2[4] = {
+static const EndpointInfo endpointsInfo_kl_drivers_Bcm2711MboxArmToVc_13[4] = {
     {
         .name = "kl.drivers.Bcm2711MboxArmToVc.driver",
         .riid = 0,
@@ -41,12 +228,12 @@ static const EndpointInfo endpointsInfo_kl_drivers_Bcm2711MboxArmToVc_2[4] = {
         .iface_name = "kl.drivers.Bcm2711MboxArmToVc",
     }
 };
-static const EntityInfo taskInfo_kl_drivers_Bcm2711MboxArmToVc_2 = {
+static const EntityInfo taskInfo_kl_drivers_Bcm2711MboxArmToVc_13 = {
     .eiid = "kl.drivers.Bcm2711MboxArmToVc",
     .max_endpoints = 4,
-    .endpoints = endpointsInfo_kl_drivers_Bcm2711MboxArmToVc_2,
+    .endpoints = endpointsInfo_kl_drivers_Bcm2711MboxArmToVc_13,
 };
-static const EndpointInfo endpointsInfo_kl_drivers_DNetSrv_3[8] = {
+static const EndpointInfo endpointsInfo_kl_drivers_DNetSrv_14[8] = {
     {
         .name = "kl.drivers.DNet.dnet",
         .riid = 0,
@@ -88,98 +275,337 @@ static const EndpointInfo endpointsInfo_kl_drivers_DNetSrv_3[8] = {
         .iface_name = "kl.drivers.DNetSupplicant",
     }
 };
-static const EntityInfo taskInfo_kl_drivers_DNetSrv_3 = {
+static const EntityInfo taskInfo_kl_drivers_DNetSrv_14 = {
     .eiid = "kl.drivers.DNetSrv",
     .max_endpoints = 8,
-    .endpoints = endpointsInfo_kl_drivers_DNetSrv_3,
+    .endpoints = endpointsInfo_kl_drivers_DNetSrv_14,
 };
 
 /* init entity entry point */
 int main(void) {
 
-    Entity * task_controlsys_ControlSys_0;
-    Entity * task_env_Env_1;
-    Entity * task_kl_drivers_Bcm2711MboxArmToVc_2;
-    Entity * task_kl_drivers_DNetSrv_3;
-
-    const char * taskInfo_controlsys_ControlSys_0_args[] = {
+    Entity * task_controlsys_AuthModule_0;
+    Entity * task_controlsys_CardVerifier_1;
+    Entity * task_controlsys_ControlSys_2;
+    Entity * task_controlsys_InputGuard_3;
+    Entity * task_controlsys_Journal_4;
+    Entity * task_controlsys_OutputController_5;
+    Entity * task_controlsys_StatusVerifier_6;
+    Entity * task_controlsys_TransactionGenerator_7;
+    Entity * task_controlsys_UpdateInstaller_8;
+    Entity * task_controlsys_UpdateLoader_9;
+    Entity * task_controlsys_UpdateStorage_10;
+    Entity * task_controlsys_UpdateVerifier_11;
+    Entity * task_env_Env_12;
+    Entity * task_kl_drivers_Bcm2711MboxArmToVc_13;
+    Entity * task_kl_drivers_DNetSrv_14;
+    const char * taskInfo_controlsys_ControlSys_2_env[] = {
+        "CTL_EVENT_TTY=/dev/stdin",
+        RTL_NULL
+    };
+    const char * taskInfo_controlsys_AuthModule_0_args[] = {
+        "AuthModule",
+        RTL_NULL
+    };
+    const char * taskInfo_controlsys_CardVerifier_1_args[] = {
+        "CardVerifier",
+        RTL_NULL
+    };
+    const char * taskInfo_controlsys_ControlSys_2_args[] = {
         "ControlSys",
         RTL_NULL
     };
-    const char * taskInfo_env_Env_1_args[] = {
+    const char * taskInfo_controlsys_InputGuard_3_args[] = {
+        "InputGuard",
+        RTL_NULL
+    };
+    const char * taskInfo_controlsys_Journal_4_args[] = {
+        "Journal",
+        RTL_NULL
+    };
+    const char * taskInfo_controlsys_OutputController_5_args[] = {
+        "OutputController",
+        RTL_NULL
+    };
+    const char * taskInfo_controlsys_StatusVerifier_6_args[] = {
+        "StatusVerifier",
+        RTL_NULL
+    };
+    const char * taskInfo_controlsys_TransactionGenerator_7_args[] = {
+        "TransactionGenerator",
+        RTL_NULL
+    };
+    const char * taskInfo_controlsys_UpdateInstaller_8_args[] = {
+        "UpdateInstaller",
+        RTL_NULL
+    };
+    const char * taskInfo_controlsys_UpdateLoader_9_args[] = {
+        "UpdateLoader",
+        RTL_NULL
+    };
+    const char * taskInfo_controlsys_UpdateStorage_10_args[] = {
+        "UpdateStorage",
+        RTL_NULL
+    };
+    const char * taskInfo_controlsys_UpdateVerifier_11_args[] = {
+        "UpdateVerifier",
+        RTL_NULL
+    };
+    const char * taskInfo_env_Env_12_args[] = {
         "Env",
         RTL_NULL
     };
-    const char * taskInfo_kl_drivers_Bcm2711MboxArmToVc_2_args[] = {
+    const char * taskInfo_kl_drivers_Bcm2711MboxArmToVc_13_args[] = {
         "bcm2711_mbox_arm2vc_qemu",
         RTL_NULL
     };
-    const char * taskInfo_kl_drivers_DNetSrv_3_args[] = {
+    const char * taskInfo_kl_drivers_DNetSrv_14_args[] = {
         "dnet_entity",
         RTL_NULL
     };
 
     /* initialize entities */
 
-    task_kl_drivers_Bcm2711MboxArmToVc_2 = EntityInitEx(
-        &taskInfo_kl_drivers_Bcm2711MboxArmToVc_2, "kl.drivers.Bcm2711MboxArmToVc", "bcm2711_mbox_arm2vc_qemu"
+    task_kl_drivers_Bcm2711MboxArmToVc_13 = EntityInitEx(
+        &taskInfo_kl_drivers_Bcm2711MboxArmToVc_13, "kl.drivers.Bcm2711MboxArmToVc", "bcm2711_mbox_arm2vc_qemu"
     );
-    if (!task_kl_drivers_Bcm2711MboxArmToVc_2) {
+    if (!task_kl_drivers_Bcm2711MboxArmToVc_13) {
         fprintf(
             stderr, "Can't initialize task \"kl.drivers.Bcm2711MboxArmToVc\"\n"
         );
         return EXIT_FAILURE;
     }
 
-    if (EntitySetArgs(task_kl_drivers_Bcm2711MboxArmToVc_2, taskInfo_kl_drivers_Bcm2711MboxArmToVc_2_args) != rcOk) {
+    if (EntitySetArgs(task_kl_drivers_Bcm2711MboxArmToVc_13, taskInfo_kl_drivers_Bcm2711MboxArmToVc_13_args) != rcOk) {
         fprintf(
             stderr, "Can't set args for task \"kl.drivers.Bcm2711MboxArmToVc\"\n"
         );
         return EXIT_FAILURE;
     }
-    task_kl_drivers_DNetSrv_3 = EntityInitEx(
-        &taskInfo_kl_drivers_DNetSrv_3, "kl.drivers.DNetSrv", "dnet_entity"
+    task_kl_drivers_DNetSrv_14 = EntityInitEx(
+        &taskInfo_kl_drivers_DNetSrv_14, "kl.drivers.DNetSrv", "dnet_entity"
     );
-    if (!task_kl_drivers_DNetSrv_3) {
+    if (!task_kl_drivers_DNetSrv_14) {
         fprintf(
             stderr, "Can't initialize task \"kl.drivers.DNetSrv\"\n"
         );
         return EXIT_FAILURE;
     }
 
-    if (EntitySetArgs(task_kl_drivers_DNetSrv_3, taskInfo_kl_drivers_DNetSrv_3_args) != rcOk) {
+    if (EntitySetArgs(task_kl_drivers_DNetSrv_14, taskInfo_kl_drivers_DNetSrv_14_args) != rcOk) {
         fprintf(
             stderr, "Can't set args for task \"kl.drivers.DNetSrv\"\n"
         );
         return EXIT_FAILURE;
     }
-    task_env_Env_1 = EntityInitEx(
-        &taskInfo_env_Env_1, "env.Env", "Env"
+    task_env_Env_12 = EntityInitEx(
+        &taskInfo_env_Env_12, "env.Env", "Env"
     );
-    if (!task_env_Env_1) {
+    if (!task_env_Env_12) {
         fprintf(
             stderr, "Can't initialize task \"env.Env\"\n"
         );
         return EXIT_FAILURE;
     }
 
-    if (EntitySetArgs(task_env_Env_1, taskInfo_env_Env_1_args) != rcOk) {
+    if (EntitySetArgs(task_env_Env_12, taskInfo_env_Env_12_args) != rcOk) {
         fprintf(
             stderr, "Can't set args for task \"env.Env\"\n"
         );
         return EXIT_FAILURE;
     }
-    task_controlsys_ControlSys_0 = EntityInitEx(
-        &taskInfo_controlsys_ControlSys_0, "controlsys.ControlSys", "ControlSys"
+    task_controlsys_UpdateVerifier_11 = EntityInitEx(
+        &taskInfo_controlsys_UpdateVerifier_11, "controlsys.UpdateVerifier", "UpdateVerifier"
     );
-    if (!task_controlsys_ControlSys_0) {
+    if (!task_controlsys_UpdateVerifier_11) {
+        fprintf(
+            stderr, "Can't initialize task \"controlsys.UpdateVerifier\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+
+    if (EntitySetArgs(task_controlsys_UpdateVerifier_11, taskInfo_controlsys_UpdateVerifier_11_args) != rcOk) {
+        fprintf(
+            stderr, "Can't set args for task \"controlsys.UpdateVerifier\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+    task_controlsys_UpdateStorage_10 = EntityInitEx(
+        &taskInfo_controlsys_UpdateStorage_10, "controlsys.UpdateStorage", "UpdateStorage"
+    );
+    if (!task_controlsys_UpdateStorage_10) {
+        fprintf(
+            stderr, "Can't initialize task \"controlsys.UpdateStorage\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+
+    if (EntitySetArgs(task_controlsys_UpdateStorage_10, taskInfo_controlsys_UpdateStorage_10_args) != rcOk) {
+        fprintf(
+            stderr, "Can't set args for task \"controlsys.UpdateStorage\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+    task_controlsys_UpdateLoader_9 = EntityInitEx(
+        &taskInfo_controlsys_UpdateLoader_9, "controlsys.UpdateLoader", "UpdateLoader"
+    );
+    if (!task_controlsys_UpdateLoader_9) {
+        fprintf(
+            stderr, "Can't initialize task \"controlsys.UpdateLoader\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+
+    if (EntitySetArgs(task_controlsys_UpdateLoader_9, taskInfo_controlsys_UpdateLoader_9_args) != rcOk) {
+        fprintf(
+            stderr, "Can't set args for task \"controlsys.UpdateLoader\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+    task_controlsys_UpdateInstaller_8 = EntityInitEx(
+        &taskInfo_controlsys_UpdateInstaller_8, "controlsys.UpdateInstaller", "UpdateInstaller"
+    );
+    if (!task_controlsys_UpdateInstaller_8) {
+        fprintf(
+            stderr, "Can't initialize task \"controlsys.UpdateInstaller\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+
+    if (EntitySetArgs(task_controlsys_UpdateInstaller_8, taskInfo_controlsys_UpdateInstaller_8_args) != rcOk) {
+        fprintf(
+            stderr, "Can't set args for task \"controlsys.UpdateInstaller\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+    task_controlsys_TransactionGenerator_7 = EntityInitEx(
+        &taskInfo_controlsys_TransactionGenerator_7, "controlsys.TransactionGenerator", "TransactionGenerator"
+    );
+    if (!task_controlsys_TransactionGenerator_7) {
+        fprintf(
+            stderr, "Can't initialize task \"controlsys.TransactionGenerator\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+
+    if (EntitySetArgs(task_controlsys_TransactionGenerator_7, taskInfo_controlsys_TransactionGenerator_7_args) != rcOk) {
+        fprintf(
+            stderr, "Can't set args for task \"controlsys.TransactionGenerator\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+    task_controlsys_StatusVerifier_6 = EntityInitEx(
+        &taskInfo_controlsys_StatusVerifier_6, "controlsys.StatusVerifier", "StatusVerifier"
+    );
+    if (!task_controlsys_StatusVerifier_6) {
+        fprintf(
+            stderr, "Can't initialize task \"controlsys.StatusVerifier\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+
+    if (EntitySetArgs(task_controlsys_StatusVerifier_6, taskInfo_controlsys_StatusVerifier_6_args) != rcOk) {
+        fprintf(
+            stderr, "Can't set args for task \"controlsys.StatusVerifier\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+    task_controlsys_OutputController_5 = EntityInitEx(
+        &taskInfo_controlsys_OutputController_5, "controlsys.OutputController", "OutputController"
+    );
+    if (!task_controlsys_OutputController_5) {
+        fprintf(
+            stderr, "Can't initialize task \"controlsys.OutputController\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+
+    if (EntitySetArgs(task_controlsys_OutputController_5, taskInfo_controlsys_OutputController_5_args) != rcOk) {
+        fprintf(
+            stderr, "Can't set args for task \"controlsys.OutputController\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+    task_controlsys_Journal_4 = EntityInitEx(
+        &taskInfo_controlsys_Journal_4, "controlsys.Journal", "Journal"
+    );
+    if (!task_controlsys_Journal_4) {
+        fprintf(
+            stderr, "Can't initialize task \"controlsys.Journal\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+
+    if (EntitySetArgs(task_controlsys_Journal_4, taskInfo_controlsys_Journal_4_args) != rcOk) {
+        fprintf(
+            stderr, "Can't set args for task \"controlsys.Journal\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+    task_controlsys_InputGuard_3 = EntityInitEx(
+        &taskInfo_controlsys_InputGuard_3, "controlsys.InputGuard", "InputGuard"
+    );
+    if (!task_controlsys_InputGuard_3) {
+        fprintf(
+            stderr, "Can't initialize task \"controlsys.InputGuard\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+
+    if (EntitySetArgs(task_controlsys_InputGuard_3, taskInfo_controlsys_InputGuard_3_args) != rcOk) {
+        fprintf(
+            stderr, "Can't set args for task \"controlsys.InputGuard\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+    task_controlsys_CardVerifier_1 = EntityInitEx(
+        &taskInfo_controlsys_CardVerifier_1, "controlsys.CardVerifier", "CardVerifier"
+    );
+    if (!task_controlsys_CardVerifier_1) {
+        fprintf(
+            stderr, "Can't initialize task \"controlsys.CardVerifier\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+
+    if (EntitySetArgs(task_controlsys_CardVerifier_1, taskInfo_controlsys_CardVerifier_1_args) != rcOk) {
+        fprintf(
+            stderr, "Can't set args for task \"controlsys.CardVerifier\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+    task_controlsys_AuthModule_0 = EntityInitEx(
+        &taskInfo_controlsys_AuthModule_0, "controlsys.AuthModule", "AuthModule"
+    );
+    if (!task_controlsys_AuthModule_0) {
+        fprintf(
+            stderr, "Can't initialize task \"controlsys.AuthModule\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+
+    if (EntitySetArgs(task_controlsys_AuthModule_0, taskInfo_controlsys_AuthModule_0_args) != rcOk) {
+        fprintf(
+            stderr, "Can't set args for task \"controlsys.AuthModule\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+    task_controlsys_ControlSys_2 = EntityInitEx(
+        &taskInfo_controlsys_ControlSys_2, "controlsys.ControlSys", "ControlSys"
+    );
+    if (!task_controlsys_ControlSys_2) {
         fprintf(
             stderr, "Can't initialize task \"controlsys.ControlSys\"\n"
         );
         return EXIT_FAILURE;
     }
-
-    if (EntitySetArgs(task_controlsys_ControlSys_0, taskInfo_controlsys_ControlSys_0_args) != rcOk) {
+    if (EntitySetEnv(task_controlsys_ControlSys_2, taskInfo_controlsys_ControlSys_2_env) != rcOk) {
+        fprintf(
+            stderr, "Can't set env for task \"controlsys.ControlSys\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+    if (EntitySetArgs(task_controlsys_ControlSys_2, taskInfo_controlsys_ControlSys_2_args) != rcOk) {
         fprintf(
             stderr, "Can't set args for task \"controlsys.ControlSys\"\n"
         );
@@ -188,12 +614,67 @@ int main(void) {
 
     /* setup connections between entities */
 
-    if (EntityConnectToService(task_kl_drivers_DNetSrv_3, task_kl_drivers_Bcm2711MboxArmToVc_2, "kl.drivers.Bcm2711MboxArmToVc") != rcOk) {
+    if (EntityConnectToService(task_kl_drivers_DNetSrv_14, task_kl_drivers_Bcm2711MboxArmToVc_13, "kl.drivers.Bcm2711MboxArmToVc") != rcOk) {
         fprintf(stderr, "Can't setup a connection %s\n", "kl.drivers.Bcm2711MboxArmToVc");
         return EXIT_FAILURE;
     }
 
-    if (EntityConnectToService(task_controlsys_ControlSys_0, task_env_Env_1, ENV_SERVICE_NAME) != rcOk) {
+
+
+
+
+
+
+
+
+
+
+
+    if (EntityConnectToService(task_controlsys_ControlSys_2, task_controlsys_AuthModule_0, "controlsys.auth") != rcOk) {
+        fprintf(stderr, "Can't setup a connection %s\n", "controlsys.auth");
+        return EXIT_FAILURE;
+    }
+    if (EntityConnectToService(task_controlsys_ControlSys_2, task_controlsys_CardVerifier_1, "controlsys.cardverif") != rcOk) {
+        fprintf(stderr, "Can't setup a connection %s\n", "controlsys.cardverif");
+        return EXIT_FAILURE;
+    }
+    if (EntityConnectToService(task_controlsys_ControlSys_2, task_controlsys_InputGuard_3, "controlsys.inputguard") != rcOk) {
+        fprintf(stderr, "Can't setup a connection %s\n", "controlsys.inputguard");
+        return EXIT_FAILURE;
+    }
+    if (EntityConnectToService(task_controlsys_ControlSys_2, task_controlsys_Journal_4, "controlsys.journal") != rcOk) {
+        fprintf(stderr, "Can't setup a connection %s\n", "controlsys.journal");
+        return EXIT_FAILURE;
+    }
+    if (EntityConnectToService(task_controlsys_ControlSys_2, task_controlsys_OutputController_5, "controlsys.output") != rcOk) {
+        fprintf(stderr, "Can't setup a connection %s\n", "controlsys.output");
+        return EXIT_FAILURE;
+    }
+    if (EntityConnectToService(task_controlsys_ControlSys_2, task_controlsys_StatusVerifier_6, "controlsys.statusverif") != rcOk) {
+        fprintf(stderr, "Can't setup a connection %s\n", "controlsys.statusverif");
+        return EXIT_FAILURE;
+    }
+    if (EntityConnectToService(task_controlsys_ControlSys_2, task_controlsys_TransactionGenerator_7, "controlsys.txn") != rcOk) {
+        fprintf(stderr, "Can't setup a connection %s\n", "controlsys.txn");
+        return EXIT_FAILURE;
+    }
+    if (EntityConnectToService(task_controlsys_ControlSys_2, task_controlsys_UpdateInstaller_8, "controlsys.update_installer") != rcOk) {
+        fprintf(stderr, "Can't setup a connection %s\n", "controlsys.update_installer");
+        return EXIT_FAILURE;
+    }
+    if (EntityConnectToService(task_controlsys_ControlSys_2, task_controlsys_UpdateLoader_9, "controlsys.update_loader") != rcOk) {
+        fprintf(stderr, "Can't setup a connection %s\n", "controlsys.update_loader");
+        return EXIT_FAILURE;
+    }
+    if (EntityConnectToService(task_controlsys_ControlSys_2, task_controlsys_UpdateStorage_10, "controlsys.update_storage") != rcOk) {
+        fprintf(stderr, "Can't setup a connection %s\n", "controlsys.update_storage");
+        return EXIT_FAILURE;
+    }
+    if (EntityConnectToService(task_controlsys_ControlSys_2, task_controlsys_UpdateVerifier_11, "controlsys.update_verifier") != rcOk) {
+        fprintf(stderr, "Can't setup a connection %s\n", "controlsys.update_verifier");
+        return EXIT_FAILURE;
+    }
+    if (EntityConnectToService(task_controlsys_ControlSys_2, task_env_Env_12, ENV_SERVICE_NAME) != rcOk) {
         fprintf(stderr, "Can't setup a connection %s\n", ENV_SERVICE_NAME);
         return EXIT_FAILURE;
     }
@@ -202,25 +683,91 @@ int main(void) {
 
     /* run entities */
 
-    if (EntityRun(task_kl_drivers_Bcm2711MboxArmToVc_2) != rcOk) {
+    if (EntityRun(task_kl_drivers_Bcm2711MboxArmToVc_13) != rcOk) {
         fprintf(
             stderr, "Can't run task \"kl.drivers.Bcm2711MboxArmToVc\"\n"
         );
         return EXIT_FAILURE;
     }
-    if (EntityRun(task_kl_drivers_DNetSrv_3) != rcOk) {
+    if (EntityRun(task_kl_drivers_DNetSrv_14) != rcOk) {
         fprintf(
             stderr, "Can't run task \"kl.drivers.DNetSrv\"\n"
         );
         return EXIT_FAILURE;
     }
-    if (EntityRun(task_env_Env_1) != rcOk) {
+    if (EntityRun(task_env_Env_12) != rcOk) {
         fprintf(
             stderr, "Can't run task \"env.Env\"\n"
         );
         return EXIT_FAILURE;
     }
-    if (EntityRun(task_controlsys_ControlSys_0) != rcOk) {
+    if (EntityRun(task_controlsys_UpdateVerifier_11) != rcOk) {
+        fprintf(
+            stderr, "Can't run task \"controlsys.UpdateVerifier\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+    if (EntityRun(task_controlsys_UpdateStorage_10) != rcOk) {
+        fprintf(
+            stderr, "Can't run task \"controlsys.UpdateStorage\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+    if (EntityRun(task_controlsys_UpdateLoader_9) != rcOk) {
+        fprintf(
+            stderr, "Can't run task \"controlsys.UpdateLoader\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+    if (EntityRun(task_controlsys_UpdateInstaller_8) != rcOk) {
+        fprintf(
+            stderr, "Can't run task \"controlsys.UpdateInstaller\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+    if (EntityRun(task_controlsys_TransactionGenerator_7) != rcOk) {
+        fprintf(
+            stderr, "Can't run task \"controlsys.TransactionGenerator\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+    if (EntityRun(task_controlsys_StatusVerifier_6) != rcOk) {
+        fprintf(
+            stderr, "Can't run task \"controlsys.StatusVerifier\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+    if (EntityRun(task_controlsys_OutputController_5) != rcOk) {
+        fprintf(
+            stderr, "Can't run task \"controlsys.OutputController\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+    if (EntityRun(task_controlsys_Journal_4) != rcOk) {
+        fprintf(
+            stderr, "Can't run task \"controlsys.Journal\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+    if (EntityRun(task_controlsys_InputGuard_3) != rcOk) {
+        fprintf(
+            stderr, "Can't run task \"controlsys.InputGuard\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+    if (EntityRun(task_controlsys_CardVerifier_1) != rcOk) {
+        fprintf(
+            stderr, "Can't run task \"controlsys.CardVerifier\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+    if (EntityRun(task_controlsys_AuthModule_0) != rcOk) {
+        fprintf(
+            stderr, "Can't run task \"controlsys.AuthModule\"\n"
+        );
+        return EXIT_FAILURE;
+    }
+    if (EntityRun(task_controlsys_ControlSys_2) != rcOk) {
         fprintf(
             stderr, "Can't run task \"controlsys.ControlSys\"\n"
         );

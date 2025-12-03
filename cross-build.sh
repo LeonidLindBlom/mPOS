@@ -27,7 +27,9 @@ if [ "$BUILD_WITH_GCC" == "y" ];then
     TOOLCHAIN_SUFFIX="-gcc"
 fi
 
-CMAKE_TARGETS="sim"
+# По умолчанию собираем все доменные бинарники + образ KOS.
+# QEMU (target `sim`) оставляем на усмотрение пользователя.
+CMAKE_TARGETS="ControlSys InputGuard OutputController CardVerifier TransactionGenerator StatusVerifier AuthModule Journal UpdateLoader UpdateStorage UpdateVerifier UpdateInstaller Env kos-qemu-image"
 
 function PrintHelp () {
     cat<<HELP

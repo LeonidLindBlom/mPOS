@@ -1,46 +1,46 @@
 RUN  controlsys-binary
-OK   controlsys-binary (5 ms)
+OK   controlsys-binary (4 ms)
 RUN  pal-negative-file
-OK   pal-negative-file (6 ms)
+OK   pal-negative-file (3 ms)
 RUN  pal-negative-min-seq
-Total sequences: 13 >= 12
-OK   pal-negative-min-seq (56 ms)
+Total sequences: 14 >= 12
+OK   pal-negative-min-seq (35 ms)
 RUN  pal-negative-unsigned
 Scenario negative_unsigned_transaction present with 2 sequences
-OK   pal-negative-unsigned (52 ms)
+OK   pal-negative-unsigned (43 ms)
 RUN  pal-negative-journal
 Scenario negative_journal_loss present with 2 sequences
-OK   pal-negative-journal (75 ms)
+OK   pal-negative-journal (34 ms)
 RUN  pal-negative-update
 Scenario negative_corrupted_update present with 2 sequences
-OK   pal-negative-update (92 ms)
+OK   pal-negative-update (38 ms)
 RUN  pal-negative-card
 Scenario negative_card_data_corruption present with 1 sequences
-OK   pal-negative-card (85 ms)
+OK   pal-negative-card (33 ms)
 RUN  pal-negative-replay
 Scenario negative_replayed_bank_response present with 1 sequences
-OK   pal-negative-replay (103 ms)
+OK   pal-negative-replay (40 ms)
 RUN  pal-negative-receipt
-Scenario negative_receipt_without_journal present with 1 sequences
-OK   pal-negative-receipt (84 ms)
+Scenario negative_receipt_without_journal present with 2 sequences
+OK   pal-negative-receipt (43 ms)
 RUN  pal-negative-power
 Scenario negative_power_drop_before_card present with 1 sequences
-OK   pal-negative-power (75 ms)
+OK   pal-negative-power (38 ms)
 RUN  pal-negative-third-party
 Scenario negative_third_party_app present with 1 sequences
-OK   pal-negative-third-party (76 ms)
+OK   pal-negative-third-party (33 ms)
 RUN  pal-negative-low-battery
 Scenario negative_update_low_battery present with 2 sequences
-OK   pal-negative-low-battery (35 ms)
+OK   pal-negative-low-battery (33 ms)
 RUN  pal-negative-unsigned-seq
 Scenario negative_unsigned_transaction contains sequences: ui-bypass-attempt, manager-rejects-unsigned
-OK   pal-negative-unsigned-seq (46 ms)
+OK   pal-negative-unsigned-seq (32 ms)
 RUN  pal-negative-update-seq
 Scenario negative_corrupted_update contains sequences: corrupted-image, verifier-fails
-OK   pal-negative-update-seq (44 ms)
+OK   pal-negative-update-seq (32 ms)
 RUN  pal-negative-low-battery-seq
 Scenario negative_update_low_battery contains sequences: battery-warning, install-aborted
-OK   pal-negative-low-battery-seq (70 ms)
+OK   pal-negative-low-battery-seq (35 ms)
 RUN  pal-negative-python
-OK   pal-negative-python (57 ms)
+OK   pal-negative-python (36 ms)
 PAL NEGATIVE TESTS COMPLETED

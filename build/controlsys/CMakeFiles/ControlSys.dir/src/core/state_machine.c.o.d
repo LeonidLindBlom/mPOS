@@ -15,21 +15,63 @@ controlsys/CMakeFiles/ControlSys.dir/src/core/state_machine.c.o: \
  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/common_int_types.h \
  /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/events.h \
  /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9.2.1/include/stdbool.h \
+ /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/event_channel.h \
  /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/log.h \
  /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/lib/gcc/aarch64-kos/9.2.1/include/stdarg.h \
- /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/card_verifier.h \
- /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/status_verifier.h \
- /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/net_verifier.h \
- /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/power_verifier.h \
- /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/init_module.h \
- /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/output_controller.h \
- /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/auth_module.h \
- /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/journal.h \
- /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/txn_builder.h \
- /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/update_loader.h \
- /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/update_storage.h \
- /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/update_verifier.h \
- /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/services/update_installer.h \
+ /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/nk_utils.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/nk/arena.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/nk/assert.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/nk/compiler.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/nk/errno.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/nk/stand.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/nk/stddef.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/nk/types.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/nk/inttypes.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/nk/compiler.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/services/rtl/nk_cstr.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/rtl/retcode.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/rtl/compiler.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/rtl/compiler-gcc.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/rtl/compiler-gcc-compat.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/rtl/inttypes.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/rtl/stdint.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/string.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/string.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/c/string.h \
+ /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/clients.h \
+ /home/mpos/mpos-lab/kos/controlsys/controlsys/include/controlsys/ipc_transport.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/coresrv/nk/transport-kos.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/coresrv/time/time_api.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/rtl/stdbool.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/rtl/stddef.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/rtl/if_time.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/rtl/rtc.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/nk/transport.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/handle/handletype.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/thread/tidtype.h \
+ /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/services/rtl/nk_msg.h \
+ /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/InputGuardInterface.idl.h \
+ /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/InputGuard.edl.h \
+ /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/OutputControllerInterface.idl.h \
+ /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/OutputController.edl.h \
+ /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/CardVerifierInterface.idl.h \
+ /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/CardVerifier.edl.h \
+ /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/TransactionGeneratorInterface.idl.h \
+ /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/TransactionGenerator.edl.h \
+ /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/StatusVerifierInterface.idl.h \
+ /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/StatusVerifier.edl.h \
+ /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/AuthInterface.idl.h \
+ /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/AuthModule.edl.h \
+ /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/JournalInterface.idl.h \
+ /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/Journal.edl.h \
+ /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateLoaderInterface.idl.h \
+ /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateLoader.edl.h \
+ /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateStorageInterface.idl.h \
+ /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateStorage.edl.h \
+ /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateVerifierInterface.idl.h \
+ /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateVerifier.edl.h \
+ /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateInstallerInterface.idl.h \
+ /home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateInstaller.edl.h \
  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/unistd.h \
  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/strict/posix/unistd.h \
  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/sys/types.h \

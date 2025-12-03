@@ -54,113 +54,457 @@ einit/ksm.module: _headers_/controlsys/ControlSys.edl \
   /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetSupplicant.idl \
   /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetWifi.idl \
   /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Driver.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/include/nk/base.psl \
+  _headers_/controlsys/AuthInterface.idl \
+  _headers_/controlsys/AuthModule.edl \
+  _headers_/controlsys/CardVerifier.edl \
+  _headers_/controlsys/CardVerifierInterface.idl \
+  _headers_/controlsys/ControlSys.edl \
+  _headers_/controlsys/InputGuard.edl \
+  _headers_/controlsys/InputGuardInterface.idl \
+  _headers_/controlsys/Journal.edl \
+  _headers_/controlsys/JournalInterface.idl \
+  _headers_/controlsys/OutputController.edl \
+  _headers_/controlsys/OutputControllerInterface.idl \
+  _headers_/controlsys/StatusVerifier.edl \
+  _headers_/controlsys/StatusVerifierInterface.idl \
+  _headers_/controlsys/TransactionGenerator.edl \
+  _headers_/controlsys/TransactionGeneratorInterface.idl \
+  _headers_/controlsys/UpdateInstaller.edl \
+  _headers_/controlsys/UpdateInstallerInterface.idl \
+  _headers_/controlsys/UpdateLoader.edl \
+  _headers_/controlsys/UpdateLoaderInterface.idl \
+  _headers_/controlsys/UpdateStorage.edl \
+  _headers_/controlsys/UpdateStorageInterface.idl \
+  _headers_/controlsys/UpdateVerifier.edl \
+  _headers_/controlsys/UpdateVerifierInterface.idl \
+  _headers_/env/Env.edl \
+  einit/EinitQeu-kss/Einit.edl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Audit.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Audit.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/CM.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/CM.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Core.edl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Execute.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/FS.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/FS.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/FSUnsafe.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/HAL.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/HAL.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Handle.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Handle.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IO.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IO.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IOMMU.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IOMMU.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IPC.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IPC.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Notice.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Notice.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/PM.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/PM.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Profiler.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Profiler.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Sync.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Sync.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Task.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Task.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Thread.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Thread.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Time.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Time.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Types.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/VMM.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/VMM.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/XHCIDBG.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/XHCIDBG.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Bcm2711MboxArmToVc.edl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Bcm2711MboxArmToVc.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Bcm2711MboxArmToVc.psl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNet.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNet.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetMac.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetSrv.edl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetSrv.psl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetSupplicant.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetWifi.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Driver.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/include/nk/base.psl \
+  _headers_/controlsys/AuthInterface.idl \
+  _headers_/controlsys/AuthModule.edl \
+  _headers_/controlsys/CardVerifier.edl \
+  _headers_/controlsys/CardVerifierInterface.idl \
+  _headers_/controlsys/ControlSys.edl \
+  _headers_/controlsys/InputGuard.edl \
+  _headers_/controlsys/InputGuardInterface.idl \
+  _headers_/controlsys/Journal.edl \
+  _headers_/controlsys/JournalInterface.idl \
+  _headers_/controlsys/OutputController.edl \
+  _headers_/controlsys/OutputControllerInterface.idl \
+  _headers_/controlsys/StatusVerifier.edl \
+  _headers_/controlsys/StatusVerifierInterface.idl \
+  _headers_/controlsys/TransactionGenerator.edl \
+  _headers_/controlsys/TransactionGeneratorInterface.idl \
+  _headers_/controlsys/UpdateInstaller.edl \
+  _headers_/controlsys/UpdateInstallerInterface.idl \
+  _headers_/controlsys/UpdateLoader.edl \
+  _headers_/controlsys/UpdateLoaderInterface.idl \
+  _headers_/controlsys/UpdateStorage.edl \
+  _headers_/controlsys/UpdateStorageInterface.idl \
+  _headers_/controlsys/UpdateVerifier.edl \
+  _headers_/controlsys/UpdateVerifierInterface.idl \
+  _headers_/env/Env.edl \
+  einit/EinitQeu-kss/Einit.edl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Audit.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Audit.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/CM.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/CM.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Core.edl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Execute.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/FS.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/FS.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/FSUnsafe.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/HAL.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/HAL.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Handle.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Handle.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IO.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IO.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IOMMU.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IOMMU.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IPC.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IPC.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Notice.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Notice.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/PM.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/PM.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Profiler.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Profiler.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Sync.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Sync.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Task.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Task.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Thread.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Thread.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Time.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Time.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Types.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/VMM.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/VMM.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/XHCIDBG.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/XHCIDBG.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Bcm2711MboxArmToVc.edl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Bcm2711MboxArmToVc.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Bcm2711MboxArmToVc.psl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNet.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNet.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetMac.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetSrv.edl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetSrv.psl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetSupplicant.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetWifi.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Driver.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/include/nk/base.psl \
+  _headers_/controlsys/AuthInterface.idl \
+  _headers_/controlsys/AuthModule.edl \
+  _headers_/controlsys/CardVerifier.edl \
+  _headers_/controlsys/CardVerifierInterface.idl \
+  _headers_/controlsys/ControlSys.edl \
+  _headers_/controlsys/InputGuard.edl \
+  _headers_/controlsys/InputGuardInterface.idl \
+  _headers_/controlsys/Journal.edl \
+  _headers_/controlsys/JournalInterface.idl \
+  _headers_/controlsys/OutputController.edl \
+  _headers_/controlsys/OutputControllerInterface.idl \
+  _headers_/controlsys/StatusVerifier.edl \
+  _headers_/controlsys/StatusVerifierInterface.idl \
+  _headers_/controlsys/TransactionGenerator.edl \
+  _headers_/controlsys/TransactionGeneratorInterface.idl \
+  _headers_/controlsys/UpdateInstaller.edl \
+  _headers_/controlsys/UpdateInstallerInterface.idl \
+  _headers_/controlsys/UpdateLoader.edl \
+  _headers_/controlsys/UpdateLoaderInterface.idl \
+  _headers_/controlsys/UpdateStorage.edl \
+  _headers_/controlsys/UpdateStorageInterface.idl \
+  _headers_/controlsys/UpdateVerifier.edl \
+  _headers_/controlsys/UpdateVerifierInterface.idl \
+  _headers_/env/Env.edl \
+  einit/EinitQeu-kss/Einit.edl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Audit.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Audit.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/CM.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/CM.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Core.edl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Execute.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/FS.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/FS.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/FSUnsafe.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/HAL.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/HAL.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Handle.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Handle.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IO.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IO.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IOMMU.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IOMMU.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IPC.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IPC.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Notice.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Notice.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/PM.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/PM.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Profiler.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Profiler.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Sync.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Sync.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Task.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Task.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Thread.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Thread.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Time.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Time.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Types.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/VMM.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/VMM.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/XHCIDBG.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/XHCIDBG.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Bcm2711MboxArmToVc.edl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Bcm2711MboxArmToVc.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Bcm2711MboxArmToVc.psl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNet.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNet.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetMac.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetSrv.edl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetSrv.psl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetSupplicant.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetWifi.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Driver.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/include/nk/base.psl \
+  _headers_/controlsys/AuthInterface.idl \
+  _headers_/controlsys/AuthModule.edl \
+  _headers_/controlsys/CardVerifier.edl \
+  _headers_/controlsys/CardVerifierInterface.idl \
+  _headers_/controlsys/ControlSys.edl \
+  _headers_/controlsys/InputGuard.edl \
+  _headers_/controlsys/InputGuardInterface.idl \
+  _headers_/controlsys/Journal.edl \
+  _headers_/controlsys/JournalInterface.idl \
+  _headers_/controlsys/OutputController.edl \
+  _headers_/controlsys/OutputControllerInterface.idl \
+  _headers_/controlsys/StatusVerifier.edl \
+  _headers_/controlsys/StatusVerifierInterface.idl \
+  _headers_/controlsys/TransactionGenerator.edl \
+  _headers_/controlsys/TransactionGeneratorInterface.idl \
+  _headers_/controlsys/UpdateInstaller.edl \
+  _headers_/controlsys/UpdateInstallerInterface.idl \
+  _headers_/controlsys/UpdateLoader.edl \
+  _headers_/controlsys/UpdateLoaderInterface.idl \
+  _headers_/controlsys/UpdateStorage.edl \
+  _headers_/controlsys/UpdateStorageInterface.idl \
+  _headers_/controlsys/UpdateVerifier.edl \
+  _headers_/controlsys/UpdateVerifierInterface.idl \
+  _headers_/env/Env.edl \
+  einit/EinitQeu-kss/Einit.edl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Audit.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Audit.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/CM.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/CM.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Core.edl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Execute.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/FS.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/FS.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/FSUnsafe.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/HAL.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/HAL.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Handle.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Handle.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IO.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IO.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IOMMU.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IOMMU.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IPC.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IPC.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Notice.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Notice.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/PM.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/PM.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Profiler.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Profiler.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Sync.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Sync.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Task.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Task.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Thread.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Thread.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Time.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Time.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Types.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/VMM.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/VMM.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/XHCIDBG.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/XHCIDBG.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Bcm2711MboxArmToVc.edl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Bcm2711MboxArmToVc.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Bcm2711MboxArmToVc.psl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNet.cdl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNet.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetMac.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetSrv.edl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetSrv.psl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetSupplicant.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetWifi.idl \
+  /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Driver.idl \
   /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/include/nk/base.psl
 
 
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetWifi.idl:
+_headers_/controlsys/UpdateVerifierInterface.idl:
 
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetSupplicant.idl:
+_headers_/controlsys/UpdateVerifier.edl:
 
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetSrv.edl:
+_headers_/controlsys/UpdateInstallerInterface.idl:
 
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNet.idl:
+_headers_/controlsys/UpdateInstaller.edl:
 
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNet.cdl:
+_headers_/controlsys/TransactionGeneratorInterface.idl:
 
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Bcm2711MboxArmToVc.idl:
+_headers_/controlsys/TransactionGenerator.edl:
 
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/VMM.idl:
+_headers_/controlsys/StatusVerifierInterface.idl:
 
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/VMM.cdl:
+_headers_/controlsys/StatusVerifier.edl:
 
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Types.idl:
+_headers_/controlsys/OutputControllerInterface.idl:
 
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Time.cdl:
+_headers_/controlsys/UpdateStorageInterface.idl:
 
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Thread.idl:
+_headers_/controlsys/OutputController.edl:
 
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Thread.cdl:
+_headers_/controlsys/Journal.edl:
 
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Task.idl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Task.cdl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/XHCIDBG.idl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Sync.idl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Sync.cdl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Time.idl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Core.edl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Profiler.idl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/include/nk/base.psl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/FS.cdl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/CM.idl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Handle.idl:
-
-_headers_/env/Env.edl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/common/nonsecurity.psl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Execute.idl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/CM.cdl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Audit.idl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/XHCIDBG.cdl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Notice.idl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetMac.idl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/FSUnsafe.idl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Driver.idl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Audit.cdl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/FS.idl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/HAL.idl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetSrv.psl:
-
-einit/EinitQeu-kss/Einit.edl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Bcm2711MboxArmToVc.psl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Profiler.cdl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Handle.cdl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IO.cdl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/HAL.cdl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IPC.idl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IO.idl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/PM.cdl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IOMMU.idl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Bcm2711MboxArmToVc.edl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IPC.cdl:
-
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/PM.idl:
-
-_headers_/controlsys/ControlSys.edl:
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Notice.cdl:
 
 /opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IOMMU.cdl:
 
-/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Notice.cdl:
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/PM.idl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IPC.cdl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IOMMU.idl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/PM.cdl:
+
+_headers_/controlsys/JournalInterface.idl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IO.idl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IPC.idl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/HAL.cdl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/IO.cdl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Handle.cdl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Profiler.cdl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/FS.idl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Audit.cdl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Driver.idl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/FSUnsafe.idl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetMac.idl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Notice.idl:
+
+_headers_/controlsys/ControlSys.edl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/XHCIDBG.cdl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Audit.idl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/HAL.idl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/CM.cdl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Bcm2711MboxArmToVc.edl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Execute.idl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Bcm2711MboxArmToVc.psl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/common/nonsecurity.psl:
+
+_headers_/controlsys/InputGuardInterface.idl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Handle.idl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/FS.cdl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/include/nk/base.psl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Profiler.idl:
+
+_headers_/controlsys/UpdateLoader.edl:
+
+_headers_/controlsys/AuthInterface.idl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Time.idl:
+
+_headers_/controlsys/UpdateStorage.edl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Sync.cdl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Sync.idl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/XHCIDBG.idl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Task.cdl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Task.idl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Thread.cdl:
+
+_headers_/controlsys/UpdateLoaderInterface.idl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Thread.idl:
+
+_headers_/env/Env.edl:
+
+_headers_/controlsys/CardVerifierInterface.idl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Time.cdl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Core.edl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Types.idl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/VMM.cdl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/VMM.idl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/Bcm2711MboxArmToVc.idl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNet.cdl:
+
+einit/EinitQeu-kss/Einit.edl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNet.idl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetSrv.edl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/CM.idl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetSupplicant.idl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetWifi.idl:
+
+/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/drivers/DNetSrv.psl:
+
+_headers_/controlsys/AuthModule.edl:
+
+_headers_/controlsys/CardVerifier.edl:
+
+_headers_/controlsys/InputGuard.edl:

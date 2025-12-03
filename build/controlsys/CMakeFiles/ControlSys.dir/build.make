@@ -153,187 +153,33 @@ controlsys/CMakeFiles/ControlSys.dir/src/core/event_channel.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ControlSys.dir/src/core/event_channel.c.s"
 	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/event_channel.c -o CMakeFiles/ControlSys.dir/src/core/event_channel.c.s
 
-controlsys/CMakeFiles/ControlSys.dir/src/core/card_verifier.c.o: controlsys/CMakeFiles/ControlSys.dir/flags.make
-controlsys/CMakeFiles/ControlSys.dir/src/core/card_verifier.c.o: /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/card_verifier.c
-controlsys/CMakeFiles/ControlSys.dir/src/core/card_verifier.c.o: controlsys/CMakeFiles/ControlSys.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object controlsys/CMakeFiles/ControlSys.dir/src/core/card_verifier.c.o"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT controlsys/CMakeFiles/ControlSys.dir/src/core/card_verifier.c.o -MF CMakeFiles/ControlSys.dir/src/core/card_verifier.c.o.d -o CMakeFiles/ControlSys.dir/src/core/card_verifier.c.o -c /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/card_verifier.c
+controlsys/CMakeFiles/ControlSys.dir/src/core/clients.c.o: controlsys/CMakeFiles/ControlSys.dir/flags.make
+controlsys/CMakeFiles/ControlSys.dir/src/core/clients.c.o: /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/clients.c
+controlsys/CMakeFiles/ControlSys.dir/src/core/clients.c.o: controlsys/CMakeFiles/ControlSys.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object controlsys/CMakeFiles/ControlSys.dir/src/core/clients.c.o"
+	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT controlsys/CMakeFiles/ControlSys.dir/src/core/clients.c.o -MF CMakeFiles/ControlSys.dir/src/core/clients.c.o.d -o CMakeFiles/ControlSys.dir/src/core/clients.c.o -c /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/clients.c
 
-controlsys/CMakeFiles/ControlSys.dir/src/core/card_verifier.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ControlSys.dir/src/core/card_verifier.c.i"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/card_verifier.c > CMakeFiles/ControlSys.dir/src/core/card_verifier.c.i
+controlsys/CMakeFiles/ControlSys.dir/src/core/clients.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ControlSys.dir/src/core/clients.c.i"
+	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/clients.c > CMakeFiles/ControlSys.dir/src/core/clients.c.i
 
-controlsys/CMakeFiles/ControlSys.dir/src/core/card_verifier.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ControlSys.dir/src/core/card_verifier.c.s"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/card_verifier.c -o CMakeFiles/ControlSys.dir/src/core/card_verifier.c.s
+controlsys/CMakeFiles/ControlSys.dir/src/core/clients.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ControlSys.dir/src/core/clients.c.s"
+	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/clients.c -o CMakeFiles/ControlSys.dir/src/core/clients.c.s
 
-controlsys/CMakeFiles/ControlSys.dir/src/core/status_verifier.c.o: controlsys/CMakeFiles/ControlSys.dir/flags.make
-controlsys/CMakeFiles/ControlSys.dir/src/core/status_verifier.c.o: /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/status_verifier.c
-controlsys/CMakeFiles/ControlSys.dir/src/core/status_verifier.c.o: controlsys/CMakeFiles/ControlSys.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object controlsys/CMakeFiles/ControlSys.dir/src/core/status_verifier.c.o"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT controlsys/CMakeFiles/ControlSys.dir/src/core/status_verifier.c.o -MF CMakeFiles/ControlSys.dir/src/core/status_verifier.c.o.d -o CMakeFiles/ControlSys.dir/src/core/status_verifier.c.o -c /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/status_verifier.c
+controlsys/CMakeFiles/ControlSys.dir/src/core/ipc_transport.c.o: controlsys/CMakeFiles/ControlSys.dir/flags.make
+controlsys/CMakeFiles/ControlSys.dir/src/core/ipc_transport.c.o: /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/ipc_transport.c
+controlsys/CMakeFiles/ControlSys.dir/src/core/ipc_transport.c.o: controlsys/CMakeFiles/ControlSys.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object controlsys/CMakeFiles/ControlSys.dir/src/core/ipc_transport.c.o"
+	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT controlsys/CMakeFiles/ControlSys.dir/src/core/ipc_transport.c.o -MF CMakeFiles/ControlSys.dir/src/core/ipc_transport.c.o.d -o CMakeFiles/ControlSys.dir/src/core/ipc_transport.c.o -c /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/ipc_transport.c
 
-controlsys/CMakeFiles/ControlSys.dir/src/core/status_verifier.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ControlSys.dir/src/core/status_verifier.c.i"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/status_verifier.c > CMakeFiles/ControlSys.dir/src/core/status_verifier.c.i
+controlsys/CMakeFiles/ControlSys.dir/src/core/ipc_transport.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ControlSys.dir/src/core/ipc_transport.c.i"
+	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/ipc_transport.c > CMakeFiles/ControlSys.dir/src/core/ipc_transport.c.i
 
-controlsys/CMakeFiles/ControlSys.dir/src/core/status_verifier.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ControlSys.dir/src/core/status_verifier.c.s"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/status_verifier.c -o CMakeFiles/ControlSys.dir/src/core/status_verifier.c.s
-
-controlsys/CMakeFiles/ControlSys.dir/src/core/net_verifier.c.o: controlsys/CMakeFiles/ControlSys.dir/flags.make
-controlsys/CMakeFiles/ControlSys.dir/src/core/net_verifier.c.o: /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/net_verifier.c
-controlsys/CMakeFiles/ControlSys.dir/src/core/net_verifier.c.o: controlsys/CMakeFiles/ControlSys.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object controlsys/CMakeFiles/ControlSys.dir/src/core/net_verifier.c.o"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT controlsys/CMakeFiles/ControlSys.dir/src/core/net_verifier.c.o -MF CMakeFiles/ControlSys.dir/src/core/net_verifier.c.o.d -o CMakeFiles/ControlSys.dir/src/core/net_verifier.c.o -c /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/net_verifier.c
-
-controlsys/CMakeFiles/ControlSys.dir/src/core/net_verifier.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ControlSys.dir/src/core/net_verifier.c.i"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/net_verifier.c > CMakeFiles/ControlSys.dir/src/core/net_verifier.c.i
-
-controlsys/CMakeFiles/ControlSys.dir/src/core/net_verifier.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ControlSys.dir/src/core/net_verifier.c.s"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/net_verifier.c -o CMakeFiles/ControlSys.dir/src/core/net_verifier.c.s
-
-controlsys/CMakeFiles/ControlSys.dir/src/core/power_verifier.c.o: controlsys/CMakeFiles/ControlSys.dir/flags.make
-controlsys/CMakeFiles/ControlSys.dir/src/core/power_verifier.c.o: /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/power_verifier.c
-controlsys/CMakeFiles/ControlSys.dir/src/core/power_verifier.c.o: controlsys/CMakeFiles/ControlSys.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object controlsys/CMakeFiles/ControlSys.dir/src/core/power_verifier.c.o"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT controlsys/CMakeFiles/ControlSys.dir/src/core/power_verifier.c.o -MF CMakeFiles/ControlSys.dir/src/core/power_verifier.c.o.d -o CMakeFiles/ControlSys.dir/src/core/power_verifier.c.o -c /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/power_verifier.c
-
-controlsys/CMakeFiles/ControlSys.dir/src/core/power_verifier.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ControlSys.dir/src/core/power_verifier.c.i"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/power_verifier.c > CMakeFiles/ControlSys.dir/src/core/power_verifier.c.i
-
-controlsys/CMakeFiles/ControlSys.dir/src/core/power_verifier.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ControlSys.dir/src/core/power_verifier.c.s"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/power_verifier.c -o CMakeFiles/ControlSys.dir/src/core/power_verifier.c.s
-
-controlsys/CMakeFiles/ControlSys.dir/src/core/init_module.c.o: controlsys/CMakeFiles/ControlSys.dir/flags.make
-controlsys/CMakeFiles/ControlSys.dir/src/core/init_module.c.o: /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/init_module.c
-controlsys/CMakeFiles/ControlSys.dir/src/core/init_module.c.o: controlsys/CMakeFiles/ControlSys.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object controlsys/CMakeFiles/ControlSys.dir/src/core/init_module.c.o"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT controlsys/CMakeFiles/ControlSys.dir/src/core/init_module.c.o -MF CMakeFiles/ControlSys.dir/src/core/init_module.c.o.d -o CMakeFiles/ControlSys.dir/src/core/init_module.c.o -c /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/init_module.c
-
-controlsys/CMakeFiles/ControlSys.dir/src/core/init_module.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ControlSys.dir/src/core/init_module.c.i"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/init_module.c > CMakeFiles/ControlSys.dir/src/core/init_module.c.i
-
-controlsys/CMakeFiles/ControlSys.dir/src/core/init_module.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ControlSys.dir/src/core/init_module.c.s"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/init_module.c -o CMakeFiles/ControlSys.dir/src/core/init_module.c.s
-
-controlsys/CMakeFiles/ControlSys.dir/src/core/output_controller.c.o: controlsys/CMakeFiles/ControlSys.dir/flags.make
-controlsys/CMakeFiles/ControlSys.dir/src/core/output_controller.c.o: /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/output_controller.c
-controlsys/CMakeFiles/ControlSys.dir/src/core/output_controller.c.o: controlsys/CMakeFiles/ControlSys.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object controlsys/CMakeFiles/ControlSys.dir/src/core/output_controller.c.o"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT controlsys/CMakeFiles/ControlSys.dir/src/core/output_controller.c.o -MF CMakeFiles/ControlSys.dir/src/core/output_controller.c.o.d -o CMakeFiles/ControlSys.dir/src/core/output_controller.c.o -c /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/output_controller.c
-
-controlsys/CMakeFiles/ControlSys.dir/src/core/output_controller.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ControlSys.dir/src/core/output_controller.c.i"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/output_controller.c > CMakeFiles/ControlSys.dir/src/core/output_controller.c.i
-
-controlsys/CMakeFiles/ControlSys.dir/src/core/output_controller.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ControlSys.dir/src/core/output_controller.c.s"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/output_controller.c -o CMakeFiles/ControlSys.dir/src/core/output_controller.c.s
-
-controlsys/CMakeFiles/ControlSys.dir/src/core/auth_module.c.o: controlsys/CMakeFiles/ControlSys.dir/flags.make
-controlsys/CMakeFiles/ControlSys.dir/src/core/auth_module.c.o: /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/auth_module.c
-controlsys/CMakeFiles/ControlSys.dir/src/core/auth_module.c.o: controlsys/CMakeFiles/ControlSys.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object controlsys/CMakeFiles/ControlSys.dir/src/core/auth_module.c.o"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT controlsys/CMakeFiles/ControlSys.dir/src/core/auth_module.c.o -MF CMakeFiles/ControlSys.dir/src/core/auth_module.c.o.d -o CMakeFiles/ControlSys.dir/src/core/auth_module.c.o -c /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/auth_module.c
-
-controlsys/CMakeFiles/ControlSys.dir/src/core/auth_module.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ControlSys.dir/src/core/auth_module.c.i"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/auth_module.c > CMakeFiles/ControlSys.dir/src/core/auth_module.c.i
-
-controlsys/CMakeFiles/ControlSys.dir/src/core/auth_module.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ControlSys.dir/src/core/auth_module.c.s"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/auth_module.c -o CMakeFiles/ControlSys.dir/src/core/auth_module.c.s
-
-controlsys/CMakeFiles/ControlSys.dir/src/core/journal.c.o: controlsys/CMakeFiles/ControlSys.dir/flags.make
-controlsys/CMakeFiles/ControlSys.dir/src/core/journal.c.o: /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/journal.c
-controlsys/CMakeFiles/ControlSys.dir/src/core/journal.c.o: controlsys/CMakeFiles/ControlSys.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object controlsys/CMakeFiles/ControlSys.dir/src/core/journal.c.o"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT controlsys/CMakeFiles/ControlSys.dir/src/core/journal.c.o -MF CMakeFiles/ControlSys.dir/src/core/journal.c.o.d -o CMakeFiles/ControlSys.dir/src/core/journal.c.o -c /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/journal.c
-
-controlsys/CMakeFiles/ControlSys.dir/src/core/journal.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ControlSys.dir/src/core/journal.c.i"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/journal.c > CMakeFiles/ControlSys.dir/src/core/journal.c.i
-
-controlsys/CMakeFiles/ControlSys.dir/src/core/journal.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ControlSys.dir/src/core/journal.c.s"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/journal.c -o CMakeFiles/ControlSys.dir/src/core/journal.c.s
-
-controlsys/CMakeFiles/ControlSys.dir/src/core/update_loader.c.o: controlsys/CMakeFiles/ControlSys.dir/flags.make
-controlsys/CMakeFiles/ControlSys.dir/src/core/update_loader.c.o: /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/update_loader.c
-controlsys/CMakeFiles/ControlSys.dir/src/core/update_loader.c.o: controlsys/CMakeFiles/ControlSys.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object controlsys/CMakeFiles/ControlSys.dir/src/core/update_loader.c.o"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT controlsys/CMakeFiles/ControlSys.dir/src/core/update_loader.c.o -MF CMakeFiles/ControlSys.dir/src/core/update_loader.c.o.d -o CMakeFiles/ControlSys.dir/src/core/update_loader.c.o -c /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/update_loader.c
-
-controlsys/CMakeFiles/ControlSys.dir/src/core/update_loader.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ControlSys.dir/src/core/update_loader.c.i"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/update_loader.c > CMakeFiles/ControlSys.dir/src/core/update_loader.c.i
-
-controlsys/CMakeFiles/ControlSys.dir/src/core/update_loader.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ControlSys.dir/src/core/update_loader.c.s"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/update_loader.c -o CMakeFiles/ControlSys.dir/src/core/update_loader.c.s
-
-controlsys/CMakeFiles/ControlSys.dir/src/core/update_storage.c.o: controlsys/CMakeFiles/ControlSys.dir/flags.make
-controlsys/CMakeFiles/ControlSys.dir/src/core/update_storage.c.o: /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/update_storage.c
-controlsys/CMakeFiles/ControlSys.dir/src/core/update_storage.c.o: controlsys/CMakeFiles/ControlSys.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object controlsys/CMakeFiles/ControlSys.dir/src/core/update_storage.c.o"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT controlsys/CMakeFiles/ControlSys.dir/src/core/update_storage.c.o -MF CMakeFiles/ControlSys.dir/src/core/update_storage.c.o.d -o CMakeFiles/ControlSys.dir/src/core/update_storage.c.o -c /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/update_storage.c
-
-controlsys/CMakeFiles/ControlSys.dir/src/core/update_storage.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ControlSys.dir/src/core/update_storage.c.i"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/update_storage.c > CMakeFiles/ControlSys.dir/src/core/update_storage.c.i
-
-controlsys/CMakeFiles/ControlSys.dir/src/core/update_storage.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ControlSys.dir/src/core/update_storage.c.s"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/update_storage.c -o CMakeFiles/ControlSys.dir/src/core/update_storage.c.s
-
-controlsys/CMakeFiles/ControlSys.dir/src/core/update_verifier.c.o: controlsys/CMakeFiles/ControlSys.dir/flags.make
-controlsys/CMakeFiles/ControlSys.dir/src/core/update_verifier.c.o: /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/update_verifier.c
-controlsys/CMakeFiles/ControlSys.dir/src/core/update_verifier.c.o: controlsys/CMakeFiles/ControlSys.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object controlsys/CMakeFiles/ControlSys.dir/src/core/update_verifier.c.o"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT controlsys/CMakeFiles/ControlSys.dir/src/core/update_verifier.c.o -MF CMakeFiles/ControlSys.dir/src/core/update_verifier.c.o.d -o CMakeFiles/ControlSys.dir/src/core/update_verifier.c.o -c /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/update_verifier.c
-
-controlsys/CMakeFiles/ControlSys.dir/src/core/update_verifier.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ControlSys.dir/src/core/update_verifier.c.i"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/update_verifier.c > CMakeFiles/ControlSys.dir/src/core/update_verifier.c.i
-
-controlsys/CMakeFiles/ControlSys.dir/src/core/update_verifier.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ControlSys.dir/src/core/update_verifier.c.s"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/update_verifier.c -o CMakeFiles/ControlSys.dir/src/core/update_verifier.c.s
-
-controlsys/CMakeFiles/ControlSys.dir/src/core/update_installer.c.o: controlsys/CMakeFiles/ControlSys.dir/flags.make
-controlsys/CMakeFiles/ControlSys.dir/src/core/update_installer.c.o: /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/update_installer.c
-controlsys/CMakeFiles/ControlSys.dir/src/core/update_installer.c.o: controlsys/CMakeFiles/ControlSys.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object controlsys/CMakeFiles/ControlSys.dir/src/core/update_installer.c.o"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT controlsys/CMakeFiles/ControlSys.dir/src/core/update_installer.c.o -MF CMakeFiles/ControlSys.dir/src/core/update_installer.c.o.d -o CMakeFiles/ControlSys.dir/src/core/update_installer.c.o -c /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/update_installer.c
-
-controlsys/CMakeFiles/ControlSys.dir/src/core/update_installer.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ControlSys.dir/src/core/update_installer.c.i"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/update_installer.c > CMakeFiles/ControlSys.dir/src/core/update_installer.c.i
-
-controlsys/CMakeFiles/ControlSys.dir/src/core/update_installer.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ControlSys.dir/src/core/update_installer.c.s"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/update_installer.c -o CMakeFiles/ControlSys.dir/src/core/update_installer.c.s
-
-controlsys/CMakeFiles/ControlSys.dir/src/core/txn_builder.c.o: controlsys/CMakeFiles/ControlSys.dir/flags.make
-controlsys/CMakeFiles/ControlSys.dir/src/core/txn_builder.c.o: /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/txn_builder.c
-controlsys/CMakeFiles/ControlSys.dir/src/core/txn_builder.c.o: controlsys/CMakeFiles/ControlSys.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object controlsys/CMakeFiles/ControlSys.dir/src/core/txn_builder.c.o"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT controlsys/CMakeFiles/ControlSys.dir/src/core/txn_builder.c.o -MF CMakeFiles/ControlSys.dir/src/core/txn_builder.c.o.d -o CMakeFiles/ControlSys.dir/src/core/txn_builder.c.o -c /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/txn_builder.c
-
-controlsys/CMakeFiles/ControlSys.dir/src/core/txn_builder.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ControlSys.dir/src/core/txn_builder.c.i"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/txn_builder.c > CMakeFiles/ControlSys.dir/src/core/txn_builder.c.i
-
-controlsys/CMakeFiles/ControlSys.dir/src/core/txn_builder.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ControlSys.dir/src/core/txn_builder.c.s"
-	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/txn_builder.c -o CMakeFiles/ControlSys.dir/src/core/txn_builder.c.s
+controlsys/CMakeFiles/ControlSys.dir/src/core/ipc_transport.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ControlSys.dir/src/core/ipc_transport.c.s"
+	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && /opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/bin/aarch64-kos-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mpos/mpos-lab/kos/controlsys/controlsys/src/core/ipc_transport.c -o CMakeFiles/ControlSys.dir/src/core/ipc_transport.c.s
 
 # Object files for target ControlSys
 ControlSys_OBJECTS = \
@@ -343,19 +189,8 @@ ControlSys_OBJECTS = \
 "CMakeFiles/ControlSys.dir/src/core/tx.c.o" \
 "CMakeFiles/ControlSys.dir/src/core/event_script.c.o" \
 "CMakeFiles/ControlSys.dir/src/core/event_channel.c.o" \
-"CMakeFiles/ControlSys.dir/src/core/card_verifier.c.o" \
-"CMakeFiles/ControlSys.dir/src/core/status_verifier.c.o" \
-"CMakeFiles/ControlSys.dir/src/core/net_verifier.c.o" \
-"CMakeFiles/ControlSys.dir/src/core/power_verifier.c.o" \
-"CMakeFiles/ControlSys.dir/src/core/init_module.c.o" \
-"CMakeFiles/ControlSys.dir/src/core/output_controller.c.o" \
-"CMakeFiles/ControlSys.dir/src/core/auth_module.c.o" \
-"CMakeFiles/ControlSys.dir/src/core/journal.c.o" \
-"CMakeFiles/ControlSys.dir/src/core/update_loader.c.o" \
-"CMakeFiles/ControlSys.dir/src/core/update_storage.c.o" \
-"CMakeFiles/ControlSys.dir/src/core/update_verifier.c.o" \
-"CMakeFiles/ControlSys.dir/src/core/update_installer.c.o" \
-"CMakeFiles/ControlSys.dir/src/core/txn_builder.c.o"
+"CMakeFiles/ControlSys.dir/src/core/clients.c.o" \
+"CMakeFiles/ControlSys.dir/src/core/ipc_transport.c.o"
 
 # External object files for target ControlSys
 ControlSys_EXTERNAL_OBJECTS =
@@ -366,22 +201,11 @@ controlsys/ControlSys: controlsys/CMakeFiles/ControlSys.dir/src/core/state_machi
 controlsys/ControlSys: controlsys/CMakeFiles/ControlSys.dir/src/core/tx.c.o
 controlsys/ControlSys: controlsys/CMakeFiles/ControlSys.dir/src/core/event_script.c.o
 controlsys/ControlSys: controlsys/CMakeFiles/ControlSys.dir/src/core/event_channel.c.o
-controlsys/ControlSys: controlsys/CMakeFiles/ControlSys.dir/src/core/card_verifier.c.o
-controlsys/ControlSys: controlsys/CMakeFiles/ControlSys.dir/src/core/status_verifier.c.o
-controlsys/ControlSys: controlsys/CMakeFiles/ControlSys.dir/src/core/net_verifier.c.o
-controlsys/ControlSys: controlsys/CMakeFiles/ControlSys.dir/src/core/power_verifier.c.o
-controlsys/ControlSys: controlsys/CMakeFiles/ControlSys.dir/src/core/init_module.c.o
-controlsys/ControlSys: controlsys/CMakeFiles/ControlSys.dir/src/core/output_controller.c.o
-controlsys/ControlSys: controlsys/CMakeFiles/ControlSys.dir/src/core/auth_module.c.o
-controlsys/ControlSys: controlsys/CMakeFiles/ControlSys.dir/src/core/journal.c.o
-controlsys/ControlSys: controlsys/CMakeFiles/ControlSys.dir/src/core/update_loader.c.o
-controlsys/ControlSys: controlsys/CMakeFiles/ControlSys.dir/src/core/update_storage.c.o
-controlsys/ControlSys: controlsys/CMakeFiles/ControlSys.dir/src/core/update_verifier.c.o
-controlsys/ControlSys: controlsys/CMakeFiles/ControlSys.dir/src/core/update_installer.c.o
-controlsys/ControlSys: controlsys/CMakeFiles/ControlSys.dir/src/core/txn_builder.c.o
+controlsys/ControlSys: controlsys/CMakeFiles/ControlSys.dir/src/core/clients.c.o
+controlsys/ControlSys: controlsys/CMakeFiles/ControlSys.dir/src/core/ipc_transport.c.o
 controlsys/ControlSys: controlsys/CMakeFiles/ControlSys.dir/build.make
 controlsys/ControlSys: controlsys/CMakeFiles/ControlSys.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking C executable ControlSys"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mpos/mpos-lab/kos/controlsys/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable ControlSys"
 	cd /home/mpos/mpos-lab/kos/controlsys/build/controlsys && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ControlSys.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

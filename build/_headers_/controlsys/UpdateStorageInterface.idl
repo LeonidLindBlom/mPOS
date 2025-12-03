@@ -1,0 +1,17 @@
+package controlsys.UpdateStorageInterface
+
+typedef UInt8 Bool;
+
+const UInt8 VersionLen = 16;
+
+interface {
+    Reset();
+    Append(in UInt32 chunkIndex,
+           in UInt32 chunkTotal,
+           in UInt32 chunkSize,
+           in string<VersionLen> version,
+           out Bool accepted);
+    Snapshot(out string<VersionLen> version,
+             out UInt32 totalSize,
+             out Bool complete);
+}

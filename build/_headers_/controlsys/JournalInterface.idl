@@ -1,0 +1,17 @@
+package controlsys.JournalInterface
+
+typedef UInt8 Bool;
+
+const UInt8 CurrencyLen = 8;
+const UInt8 RecordLen = 128;
+
+interface {
+    Append(in string<48> txId,
+           in UInt32 amountCents,
+           in string<CurrencyLen> currency,
+           in Bool approved,
+           out Bool ok);
+
+    Export(in UInt16 maxRecords,
+           out string<RecordLen> record);
+}

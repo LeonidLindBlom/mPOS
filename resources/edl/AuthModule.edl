@@ -1,0 +1,5 @@
+entity controlsys.AuthModule
+
+endpoints {
+    interface : controlsys.AuthInterface
+}

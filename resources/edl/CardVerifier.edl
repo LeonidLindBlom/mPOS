@@ -1,0 +1,5 @@
+entity controlsys.CardVerifier
+
+endpoints {
+    interface : controlsys.CardVerifierInterface
+}

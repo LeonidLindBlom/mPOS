@@ -4,33 +4,33 @@ RUN  event-scripts
 kTransactionScript: 5 events validated
 kUpdateScript: 5 events validated
 kLogExportScript: 4 events validated
-OK   event-scripts (51 ms)
+OK   event-scripts (31 ms)
 RUN  architecture-doc
 found marker: Домены безопасности ControlSys
 found marker: Сценарии из диаграмм
 found marker: Тестирование сквозных сценариев
-OK   architecture-doc (31 ms)
+OK   architecture-doc (30 ms)
 RUN  pal-file
-OK   pal-file (6 ms)
+OK   pal-file (4 ms)
 RUN  pal-min-seq
 Total sequences: 15 >= 12
-OK   pal-min-seq (61 ms)
+OK   pal-min-seq (34 ms)
 RUN  pal-transaction
 Scenario transaction_flow contains sequences: heartbeat, amount, card, pin, bank, status, receipt
-OK   pal-transaction (50 ms)
+OK   pal-transaction (37 ms)
 RUN  pal-update
 Scenario update_flow contains sequences: request, chunks, snapshot, verify-signature, install
-OK   pal-update (57 ms)
+OK   pal-update (31 ms)
 RUN  pal-log-export
 Scenario log_export_flow contains sequences: auth, export, export-complete
-OK   pal-log-export (38 ms)
+OK   pal-log-export (34 ms)
 RUN  pal-scenario-exists
 Scenario transaction_flow present with 7 sequences
-OK   pal-scenario-exists (47 ms)
+OK   pal-scenario-exists (34 ms)
 RUN  readme-pal
-OK   readme-pal (4 ms)
+OK   readme-pal (8 ms)
 RUN  cmake-pal-target
-OK   cmake-pal-target (10 ms)
+OK   cmake-pal-target (6 ms)
 RUN  python-syntax
-OK   python-syntax (44 ms)
+OK   python-syntax (40 ms)
 PAL TESTS COMPLETED

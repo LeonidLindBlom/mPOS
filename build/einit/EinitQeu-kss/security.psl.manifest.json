@@ -1,11 +1,121 @@
 {
     "cdls": {
+        "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/AuthModule.edl": {
+            "deps": {
+                "cdlDeps": [],
+                "idlDeps": [
+                    "controlsys/AuthInterface.idl"
+                ]
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/AuthModule.edl",
+            "parent": "security.psl"
+        },
+        "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/CardVerifier.edl": {
+            "deps": {
+                "cdlDeps": [],
+                "idlDeps": [
+                    "controlsys/CardVerifierInterface.idl"
+                ]
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/CardVerifier.edl",
+            "parent": "security.psl"
+        },
         "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/ControlSys.edl": {
             "deps": {
                 "cdlDeps": [],
                 "idlDeps": []
             },
             "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/ControlSys.edl",
+            "parent": "security.psl"
+        },
+        "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/InputGuard.edl": {
+            "deps": {
+                "cdlDeps": [],
+                "idlDeps": [
+                    "controlsys/InputGuardInterface.idl"
+                ]
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/InputGuard.edl",
+            "parent": "security.psl"
+        },
+        "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/Journal.edl": {
+            "deps": {
+                "cdlDeps": [],
+                "idlDeps": [
+                    "controlsys/JournalInterface.idl"
+                ]
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/Journal.edl",
+            "parent": "security.psl"
+        },
+        "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/OutputController.edl": {
+            "deps": {
+                "cdlDeps": [],
+                "idlDeps": [
+                    "controlsys/OutputControllerInterface.idl"
+                ]
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/OutputController.edl",
+            "parent": "security.psl"
+        },
+        "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/StatusVerifier.edl": {
+            "deps": {
+                "cdlDeps": [],
+                "idlDeps": [
+                    "controlsys/StatusVerifierInterface.idl"
+                ]
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/StatusVerifier.edl",
+            "parent": "security.psl"
+        },
+        "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/TransactionGenerator.edl": {
+            "deps": {
+                "cdlDeps": [],
+                "idlDeps": [
+                    "controlsys/TransactionGeneratorInterface.idl"
+                ]
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/TransactionGenerator.edl",
+            "parent": "security.psl"
+        },
+        "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateInstaller.edl": {
+            "deps": {
+                "cdlDeps": [],
+                "idlDeps": [
+                    "controlsys/UpdateInstallerInterface.idl"
+                ]
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateInstaller.edl",
+            "parent": "security.psl"
+        },
+        "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateLoader.edl": {
+            "deps": {
+                "cdlDeps": [],
+                "idlDeps": [
+                    "controlsys/UpdateLoaderInterface.idl"
+                ]
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateLoader.edl",
+            "parent": "security.psl"
+        },
+        "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateStorage.edl": {
+            "deps": {
+                "cdlDeps": [],
+                "idlDeps": [
+                    "controlsys/UpdateStorageInterface.idl"
+                ]
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateStorage.edl",
+            "parent": "security.psl"
+        },
+        "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateVerifier.edl": {
+            "deps": {
+                "cdlDeps": [],
+                "idlDeps": [
+                    "controlsys/UpdateVerifierInterface.idl"
+                ]
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateVerifier.edl",
             "parent": "security.psl"
         },
         "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/env/Env.edl": {
@@ -257,12 +367,122 @@
         }
     },
     "edls": {
+        "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/AuthModule.edl": {
+            "deps": {
+                "cdlDeps": [],
+                "idlDeps": [
+                    "controlsys/AuthInterface.idl"
+                ]
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/AuthModule.edl",
+            "parent": "security.psl"
+        },
+        "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/CardVerifier.edl": {
+            "deps": {
+                "cdlDeps": [],
+                "idlDeps": [
+                    "controlsys/CardVerifierInterface.idl"
+                ]
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/CardVerifier.edl",
+            "parent": "security.psl"
+        },
         "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/ControlSys.edl": {
             "deps": {
                 "cdlDeps": [],
                 "idlDeps": []
             },
             "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/ControlSys.edl",
+            "parent": "security.psl"
+        },
+        "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/InputGuard.edl": {
+            "deps": {
+                "cdlDeps": [],
+                "idlDeps": [
+                    "controlsys/InputGuardInterface.idl"
+                ]
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/InputGuard.edl",
+            "parent": "security.psl"
+        },
+        "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/Journal.edl": {
+            "deps": {
+                "cdlDeps": [],
+                "idlDeps": [
+                    "controlsys/JournalInterface.idl"
+                ]
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/Journal.edl",
+            "parent": "security.psl"
+        },
+        "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/OutputController.edl": {
+            "deps": {
+                "cdlDeps": [],
+                "idlDeps": [
+                    "controlsys/OutputControllerInterface.idl"
+                ]
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/OutputController.edl",
+            "parent": "security.psl"
+        },
+        "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/StatusVerifier.edl": {
+            "deps": {
+                "cdlDeps": [],
+                "idlDeps": [
+                    "controlsys/StatusVerifierInterface.idl"
+                ]
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/StatusVerifier.edl",
+            "parent": "security.psl"
+        },
+        "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/TransactionGenerator.edl": {
+            "deps": {
+                "cdlDeps": [],
+                "idlDeps": [
+                    "controlsys/TransactionGeneratorInterface.idl"
+                ]
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/TransactionGenerator.edl",
+            "parent": "security.psl"
+        },
+        "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateInstaller.edl": {
+            "deps": {
+                "cdlDeps": [],
+                "idlDeps": [
+                    "controlsys/UpdateInstallerInterface.idl"
+                ]
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateInstaller.edl",
+            "parent": "security.psl"
+        },
+        "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateLoader.edl": {
+            "deps": {
+                "cdlDeps": [],
+                "idlDeps": [
+                    "controlsys/UpdateLoaderInterface.idl"
+                ]
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateLoader.edl",
+            "parent": "security.psl"
+        },
+        "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateStorage.edl": {
+            "deps": {
+                "cdlDeps": [],
+                "idlDeps": [
+                    "controlsys/UpdateStorageInterface.idl"
+                ]
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateStorage.edl",
+            "parent": "security.psl"
+        },
+        "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateVerifier.edl": {
+            "deps": {
+                "cdlDeps": [],
+                "idlDeps": [
+                    "controlsys/UpdateVerifierInterface.idl"
+                ]
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateVerifier.edl",
             "parent": "security.psl"
         },
         "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/env/Env.edl": {
@@ -330,6 +550,83 @@
         }
     },
     "idls": {
+        "controlsys/AuthInterface.idl": {
+            "deps": {
+                "idlDeps": []
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/AuthInterface.idl",
+            "parent": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/AuthModule.edl"
+        },
+        "controlsys/CardVerifierInterface.idl": {
+            "deps": {
+                "idlDeps": []
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/CardVerifierInterface.idl",
+            "parent": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/CardVerifier.edl"
+        },
+        "controlsys/InputGuardInterface.idl": {
+            "deps": {
+                "idlDeps": []
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/InputGuardInterface.idl",
+            "parent": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/InputGuard.edl"
+        },
+        "controlsys/JournalInterface.idl": {
+            "deps": {
+                "idlDeps": []
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/JournalInterface.idl",
+            "parent": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/Journal.edl"
+        },
+        "controlsys/OutputControllerInterface.idl": {
+            "deps": {
+                "idlDeps": []
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/OutputControllerInterface.idl",
+            "parent": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/OutputController.edl"
+        },
+        "controlsys/StatusVerifierInterface.idl": {
+            "deps": {
+                "idlDeps": []
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/StatusVerifierInterface.idl",
+            "parent": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/StatusVerifier.edl"
+        },
+        "controlsys/TransactionGeneratorInterface.idl": {
+            "deps": {
+                "idlDeps": []
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/TransactionGeneratorInterface.idl",
+            "parent": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/TransactionGenerator.edl"
+        },
+        "controlsys/UpdateInstallerInterface.idl": {
+            "deps": {
+                "idlDeps": []
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateInstallerInterface.idl",
+            "parent": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateInstaller.edl"
+        },
+        "controlsys/UpdateLoaderInterface.idl": {
+            "deps": {
+                "idlDeps": []
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateLoaderInterface.idl",
+            "parent": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateLoader.edl"
+        },
+        "controlsys/UpdateStorageInterface.idl": {
+            "deps": {
+                "idlDeps": []
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateStorageInterface.idl",
+            "parent": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateStorage.edl"
+        },
+        "controlsys/UpdateVerifierInterface.idl": {
+            "deps": {
+                "idlDeps": []
+            },
+            "found": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateVerifierInterface.idl",
+            "parent": "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateVerifier.edl"
+        },
         "kl/core/Audit.idl": {
             "deps": {
                 "idlDeps": [
@@ -620,22 +917,22 @@
             "found": "/opt/KasperskyOS-Community-Edition-1.2.0.89/toolchain/include/nk/base.psl",
             "parent": "security.psl"
         },
-        "nonsecurity.psl": {
-            "deps": {
-                "cdlDeps": [],
-                "edlDeps": [],
-                "idlDeps": [],
-                "pslDeps": [],
-                "pslProviders": []
-            },
-            "found": "/opt/KasperskyOS-Community-Edition-1.2.0.89/common/nonsecurity.psl",
-            "parent": "security.psl"
-        },
         "security.psl": {
             "deps": {
                 "cdlDeps": [],
                 "edlDeps": [
+                    "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/AuthModule.edl",
+                    "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/CardVerifier.edl",
                     "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/ControlSys.edl",
+                    "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/InputGuard.edl",
+                    "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/Journal.edl",
+                    "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/OutputController.edl",
+                    "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/StatusVerifier.edl",
+                    "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/TransactionGenerator.edl",
+                    "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateInstaller.edl",
+                    "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateLoader.edl",
+                    "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateStorage.edl",
+                    "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/controlsys/UpdateVerifier.edl",
                     "/home/mpos/mpos-lab/kos/controlsys/build/_headers_/env/Env.edl",
                     "/home/mpos/mpos-lab/kos/controlsys/build/einit/EinitQeu-kss/Einit.edl",
                     "/opt/KasperskyOS-Community-Edition-1.2.0.89/sysroot-aarch64-kos/include/kl/core/Core.edl",
@@ -647,8 +944,7 @@
                 "pslDeps": [
                     "kl/drivers/Bcm2711MboxArmToVc.psl",
                     "kl/drivers/DNetSrv.psl",
-                    "nk/base.psl",
-                    "nonsecurity.psl"
+                    "nk/base.psl"
                 ],
                 "pslProviders": []
             },

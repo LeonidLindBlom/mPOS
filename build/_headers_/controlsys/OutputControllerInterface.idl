@@ -1,0 +1,22 @@
+package controlsys.OutputControllerInterface
+
+typedef UInt8 Bool;
+
+const UInt8 CurrencyLen = 8;
+
+interface {
+    InviteCard(in string<48> txId,
+               in UInt32 amountCents,
+               in string<CurrencyLen> currency);
+
+    RequestPIN(in string<48> txId);
+
+    ShowStatus(in string<64> message);
+
+    ShowError(in string<64> message);
+
+    PrintReceipt(in string<48> txId,
+                 in UInt32 amountCents,
+                 in string<CurrencyLen> currency,
+                 in Bool approved);
+}
